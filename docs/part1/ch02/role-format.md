@@ -86,7 +86,7 @@ Anthropic 문서는 역할을 한 문장만 줘도 챗봇의 행동과 말투가
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Prompt engineering overview / Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview), Claude Platform Docs. 역할 주기, 예시 3~5개, 태그로 구분하기는 이 문서의 내용이에요. 2026-11-07 열람.
+    - Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), Claude Platform Docs. 역할 주기, 예시 3~5개, 태그로 구분하기는 이 문서의 내용이에요. 2026-11-07 열람.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

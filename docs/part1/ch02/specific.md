@@ -86,7 +86,7 @@ Anthropic 문서는 챗봇을 "똑똑하지만 우리 회사 사정을 모르는
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Prompt engineering overview / Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview), Claude Platform Docs. "새 직원" 비유, 구체적인 형식과 조건, 순서 있는 단계는 이 문서의 내용이에요. 2026-11-07 열람.
+    - Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), Claude Platform Docs. "새 직원" 비유, 구체적인 형식과 조건, 순서 있는 단계는 이 문서의 내용이에요. 2026-11-07 열람.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

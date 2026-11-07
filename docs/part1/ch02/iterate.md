@@ -73,7 +73,7 @@
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Prompt engineering overview / Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview), Claude Platform Docs. 구체적으로 지시하기와 이유 설명하기를 참고했어요. 2026-11-07 열람.
+    - Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), Claude Platform Docs. 구체적으로 지시하기와 이유 설명하기를 참고했어요. 2026-11-07 열람.
     - Anthropic, [Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows), Claude Platform Docs. 길어지는 대화에서 정확도가 떨어질 수 있다는 설명을 참고했어요. 2026-11-07 열람.
 
 - **기준 날짜:** 2026-11-07

@@ -79,7 +79,7 @@ Anthropic 문서가 알려 주는 간단한 점검법이 있어요. 내가 쓴 �
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Prompt engineering overview / Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview), Claude Platform Docs. 지시를 구체적으로 쓰기, 이유 설명하기, 동료 테스트는 이 문서의 내용이에요. 2026-11-07 열람.
+    - Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), Claude Platform Docs. 지시를 구체적으로 쓰기, 이유 설명하기, 동료 테스트는 이 문서의 내용이에요. 2026-11-07 열람.
     - Anthropic, [Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows), Claude Platform Docs. 컨텍스트 창과 컨텍스트 로트 설명을 참고했어요. 2026-11-07 열람.
 
 - **기준 날짜:** 2026-11-07

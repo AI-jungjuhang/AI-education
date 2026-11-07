@@ -101,7 +101,7 @@
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Prompt engineering overview / Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview), Claude Platform Docs. 태그로 내용을 나누는 방법을 참고했어요. 2026-11-07 열람.
+    - Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), Claude Platform Docs. 태그로 내용을 나누는 방법을 참고했어요. 2026-11-07 열람.
     - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11. 보안 이야기에 프롬프트 인젝션이 나온다는 점은 검색 요약에서 확인했고, 정확한 구간은 확인하지 못했어요.
 
 - **기준 날짜:** 2026-11-07
