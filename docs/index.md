@@ -38,19 +38,25 @@ hide:
 
 처음부터 끝까지 읽어도 되고, 필요한 부만 골라 읽어도 돼요. ★는 심화예요.
 
-| 부 | 이 부에서 | 상태 |
+<!-- AUTO:progress -->
+| 부 | 이 부에서 | 진행 |
 |---|---|---|
-| I 처음 쓰는 AI | 챗봇이 뭘 하는 기계인지, 왜 틀리는지 | **작성 중** (1장) |
-| II 일에 붙이기 | 글쓰기·조사·정리에 바로 쓰는 방법 | 준비 중 |
-| III 원리 한 스푼 | 토큰, 학습, 확률을 한 스푼씩 | 준비 중 |
-| IV 도구와 에이전트 | 검색·파일·도구를 쓰는 AI | 준비 중 |
-| V 원리로 쓰기 ★ | 원리를 알고 판단하며 쓰기 | 준비 중 |
-| 부록 | 용어와 참고 자료 | 준비 중 |
+| [I 처음 쓰는 AI](part1/index.md) | AI 챗봇을 처음 쓰는 사람을 위한 부예요 | **3/18 작성** |
+| [II 일에 붙이기](part2/index.md) | 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요 | 준비 중 |
+| [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 준비 중 |
+| [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 준비 중 |
+| [V 원리로 쓰기 ★](part5/index.md) | 심화예요 | 준비 중 |
+| [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 준비 중 |
 
-## 지금 읽을 수 있는 것
+전체 70페이지 중 3페이지를 썼어요.
+<!-- /AUTO:progress -->
 
+## 최근에 쓴 글
+
+<!-- AUTO:recent -->
 <div class="ep-list">
-<a href="part1/ch01/next-word/"><span class="ep-no">1.1.1</span><span class="ep-title">챗봇은 '다음 말'을 맞히는 기계</span><span class="ep-time">읽기 5분</span></a>
-<div class="soon"><span class="ep-no">1.1.2</span><span class="ep-title">글자를 토큰이라는 조각으로 쪼개 읽는다</span><span class="ep-time">다음 차례</span></div>
-<div class="soon"><span class="ep-no">1.1.3</span><span class="ep-title">그럴듯하지만 틀릴 수 있다 (환각)</span><span class="ep-time">그다음 차례</span></div>
+<a href="part1/ch01/hallucination/"><span class="ep-no">새 글</span><span class="ep-title">그럴듯하지만 틀릴 수 있다: 환각</span><span class="ep-time">읽기 6분</span></a>
+<a href="part1/ch01/tokens/"><span class="ep-no">새 글</span><span class="ep-title">글자를 '토큰'이라는 조각으로 쪼개 읽는다</span><span class="ep-time">읽기 5분</span></a>
+<a href="part1/ch01/next-word/"><span class="ep-no">새 글</span><span class="ep-title">챗봇은 '다음 말'을 맞히는 기계</span><span class="ep-time">읽기 5분</span></a>
 </div>
+<!-- /AUTO:recent -->

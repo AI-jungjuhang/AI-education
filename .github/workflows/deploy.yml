@@ -1,7 +1,7 @@
 name: Deploy
 on:
   push:
-    branches: [main]
+    branches: [main, claude/korean-ai-textbook-site-kbmkii]
   workflow_dispatch:
 permissions:
   contents: write

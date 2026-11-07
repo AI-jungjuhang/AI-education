@@ -1,4 +1,10 @@
 # III 원리 한 스푼
 
-!!! info "준비 중"
-    이 부는 v0.1 이후에 채웁니다.
+어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요.
+
+<div class="ep-list">
+<div class="soon"><span class="ep-no">9장</span><span class="ep-title">AI는 어떻게 배울까</span><span class="ep-time">0/3 작성</span></div>
+<div class="soon"><span class="ep-no">10장</span><span class="ep-title">말이 숫자로 바뀌는 방법</span><span class="ep-time">0/3 작성</span></div>
+<div class="soon"><span class="ep-no">11장</span><span class="ep-title">어텐션</span><span class="ep-time">0/3 작성</span></div>
+<div class="soon"><span class="ep-no">12장</span><span class="ep-title">확률로 문장 만들기</span><span class="ep-time">0/3 작성</span></div>
+</div>
