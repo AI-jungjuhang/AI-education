@@ -78,9 +78,9 @@ parts:
     - num: '6.1'
       title: 알아보고 배우기
       pages:
-      - {slug: quick-intro, title: 낯선 분야 빠르게 파악하기, min: 5, done: false}
-      - {slug: long-docs, title: 긴 자료 읽고 정리하기, min: 5, done: false}
-      - {slug: tutor, title: 공부 도우미로 쓰기, min: 5, done: false}
+      - {slug: quick-intro, title: 낯선 분야 빠르게 파악하기, min: 5, done: true}
+      - {slug: long-docs, title: 긴 자료 읽고 정리하기, min: 5, done: true}
+      - {slug: tutor, title: 공부 도우미로 쓰기, min: 5, done: true}
   - num: 7
     title: 정리와 숫자에 붙이기
     blurb: 회의록, 표, 계산처럼 정리가 필요한 일에 AI를 쓰는 법이에요.

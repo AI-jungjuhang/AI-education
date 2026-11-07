@@ -42,24 +42,24 @@ hide:
 | 부 | 이 부에서 | 진행 |
 |---|---|---|
 | [I 처음 쓰는 AI](part1/index.md) | AI 챗봇을 처음 쓰는 사람을 위한 부예요 | 완료 (18) |
-| [II 일에 붙이기](part2/index.md) | 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요 | **3/12 작성** |
+| [II 일에 붙이기](part2/index.md) | 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요 | **6/12 작성** |
 | [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 준비 중 |
 | [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 준비 중 |
 | [V 원리로 쓰기 ★](part5/index.md) | 심화예요 | 준비 중 |
 | [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 준비 중 |
 
-전체 70페이지 중 21페이지를 썼어요.
+전체 70페이지 중 24페이지를 썼어요.
 <!-- /AUTO:progress -->
 
 ## 최근에 쓴 글
 
 <!-- AUTO:recent -->
 <div class="ep-list">
+<a href="part2/ch06/tutor/"><span class="ep-no">새 글</span><span class="ep-title">공부 도우미로 쓰기</span><span class="ep-time">읽기 5분</span></a>
+<a href="part2/ch06/long-docs/"><span class="ep-no">새 글</span><span class="ep-title">긴 자료 읽고 정리하기</span><span class="ep-time">읽기 5분</span></a>
+<a href="part2/ch06/quick-intro/"><span class="ep-no">새 글</span><span class="ep-title">낯선 분야 빠르게 파악하기</span><span class="ep-time">읽기 5분</span></a>
 <a href="part2/ch05/summarize/"><span class="ep-no">새 글</span><span class="ep-title">요약하기</span><span class="ep-time">읽기 5분</span></a>
 <a href="part2/ch05/rewrite/"><span class="ep-no">새 글</span><span class="ep-title">고쳐 쓰기와 말투 바꾸기</span><span class="ep-time">읽기 5분</span></a>
 <a href="part2/ch05/first-draft/"><span class="ep-no">새 글</span><span class="ep-title">초안 만들기</span><span class="ep-time">읽기 5분</span></a>
-<a href="part1/ch04/choose/"><span class="ep-no">새 글</span><span class="ep-title">내 일에 맞는 AI 고르기</span><span class="ep-time">읽기 5분</span></a>
-<a href="part1/ch04/free-paid/"><span class="ep-no">새 글</span><span class="ep-title">무료와 유료는 뭐가 다를까</span><span class="ep-time">읽기 5분</span></a>
-<a href="part1/ch04/kinds/"><span class="ep-no">새 글</span><span class="ep-title">챗봇, 검색형, 이미지, 음성: 종류 나누기</span><span class="ep-time">읽기 5분</span></a>
 </div>
 <!-- /AUTO:recent -->

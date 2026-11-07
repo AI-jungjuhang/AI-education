@@ -82,6 +82,10 @@ nav:
         - "요약하기": part2/ch05/summarize.md
     - "6장 조사와 공부에 붙이기":
       - part2/ch06/index.md
+      - "6.1 알아보고 배우기":
+        - "낯선 분야 빠르게 파악하기": part2/ch06/quick-intro.md
+        - "긴 자료 읽고 정리하기": part2/ch06/long-docs.md
+        - "공부 도우미로 쓰기": part2/ch06/tutor.md
     - "7장 정리와 숫자에 붙이기":
       - part2/ch07/index.md
     - "8장 일하는 방식 만들기":
