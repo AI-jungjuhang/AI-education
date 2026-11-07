@@ -68,9 +68,9 @@ parts:
     - num: '5.1'
       title: 글쓰기 도우미
       pages:
-      - {slug: first-draft, title: 초안 만들기, min: 5, done: false}
-      - {slug: rewrite, title: 고쳐 쓰기와 말투 바꾸기, min: 5, done: false}
-      - {slug: summarize, title: 요약하기, min: 5, done: false}
+      - {slug: first-draft, title: 초안 만들기, min: 5, done: true}
+      - {slug: rewrite, title: 고쳐 쓰기와 말투 바꾸기, min: 5, done: true}
+      - {slug: summarize, title: 요약하기, min: 5, done: true}
   - num: 6
     title: 조사와 공부에 붙이기
     blurb: 낯선 분야를 파악하고, 긴 자료를 읽고, 공부하는 데 AI를 쓰는 법이에요.

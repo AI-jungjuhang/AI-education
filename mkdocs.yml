@@ -76,6 +76,10 @@ nav:
     - part2/index.md
     - "5장 글쓰기에 붙이기":
       - part2/ch05/index.md
+      - "5.1 글쓰기 도우미":
+        - "초안 만들기": part2/ch05/first-draft.md
+        - "고쳐 쓰기와 말투 바꾸기": part2/ch05/rewrite.md
+        - "요약하기": part2/ch05/summarize.md
     - "6장 조사와 공부에 붙이기":
       - part2/ch06/index.md
     - "7장 정리와 숫자에 붙이기":
