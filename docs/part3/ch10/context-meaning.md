@@ -73,7 +73,7 @@
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - 3Blue1Brown, [Transformers, the tech behind LLMs (Deep Learning 5장)](https://www.3blue1brown.com/lessons/gpt), 2024-04-01. 처음 임베딩이 토큰별 변환표에서 나온다는 설명을 확인했어요.
-    - Peters 외, [Deep contextualized word representations](https://arxiv.org/abs/1802.05365), arXiv, 2018-02-15. 초록 전체를 읽었어요. 저자 목록은 이 환경에서 확인하지 못했어요. 문맥 반영 표현, 다의어 모델링, 양방향 언어 모델, 여섯 가지 과제 개선은 초록 내용이에요.
+    - Peters 외, [Deep contextualized word representations](https://arxiv.org/abs/1802.05365), arXiv, 2018-02-15. 초록 전체를 읽었어요. 저자 Matthew E. Peters 외는 arXiv 페이지에서 확인했어요. 문맥 반영 표현, 다의어 모델링, 양방향 언어 모델, 여섯 가지 과제 개선은 초록 내용이에요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

@@ -132,9 +132,9 @@ parts:
     - num: '11.1'
       title: 어디를 볼까
       pages:
-      - {slug: attention-idea, title: '어텐션: 중요한 곳을 골라 본다', min: 6, done: false}
-      - {slug: transformer-layer, title: 트랜스포머 한 층의 모양, min: 6, done: false}
-      - {slug: context-window, title: '컨텍스트 창: 한 번에 보는 범위', min: 5, done: false}
+      - {slug: attention-idea, title: '어텐션: 중요한 곳을 골라 본다', min: 6, done: true}
+      - {slug: transformer-layer, title: 트랜스포머 한 층의 모양, min: 6, done: true}
+      - {slug: context-window, title: '컨텍스트 창: 한 번에 보는 범위', min: 5, done: true}
   - num: 12
     title: 확률로 문장 만들기
     blurb: 점수표에서 다음 말을 뽑는 방법과, 답이 매번 다른 이유를 알아봐요.

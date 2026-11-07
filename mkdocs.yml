@@ -114,6 +114,10 @@ nav:
         - "문맥에 따라 뜻이 달라진다": part3/ch10/context-meaning.md
     - "11장 어텐션":
       - part3/ch11/index.md
+      - "11.1 어디를 볼까":
+        - "어텐션: 중요한 곳을 골라 본다": part3/ch11/attention-idea.md
+        - "트랜스포머 한 층의 모양": part3/ch11/transformer-layer.md
+        - "컨텍스트 창: 한 번에 보는 범위": part3/ch11/context-window.md
     - "12장 확률로 문장 만들기":
       - part3/ch12/index.md
   - "IV 도구와 에이전트":
