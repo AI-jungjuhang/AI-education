@@ -12,14 +12,20 @@ theme:
     - navigation.footer
     - content.code.copy
     - toc.follow
+  font:
+    text: IBM Plex Sans KR
+    code: JetBrains Mono
   palette:
     - scheme: default
-      primary: indigo
+      primary: custom
+      accent: custom
       toggle: {icon: material/weather-night, name: 다크 모드}
     - scheme: slate
-      primary: indigo
+      primary: custom
+      accent: custom
       toggle: {icon: material/weather-sunny, name: 라이트 모드}
 extra_css:
+  - https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap
   - stylesheets/extra.css
 markdown_extensions:
   - admonition
@@ -27,6 +33,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed: {alternate_style: true}
   - attr_list
+  - pymdownx.mark
   - md_in_html
   - toc: {permalink: true}
 nav:

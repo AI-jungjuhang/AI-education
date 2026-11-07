@@ -1,2 +1,51 @@
-.advanced-badge{color:#e8a200;font-weight:700}
-.kid-box{border-left:4px solid #4caf50}
+/* 디자인 방향: 차분한 잉크 블루 + 형광펜 포인트. 장식은 줄이고 읽기 편하게. */
+:root{
+  --ink:#1b2a4a; --ink-soft:#44506b; --blue:#2b4acb;
+  --marker:#ffe46b; --paper:#fbfcfe; --card:#ffffff; --line:#e1e6f0; --tint:#f1f4fb;
+  --font-head:"Gowun Batang","Noto Serif KR",serif;
+}
+[data-md-color-scheme="default"]{
+  --md-primary-fg-color:var(--ink); --md-primary-bg-color:#fff;
+  --md-accent-fg-color:var(--blue);
+  --md-default-bg-color:var(--paper); --md-default-fg-color:var(--ink);
+  --md-typeset-a-color:var(--blue);
+}
+[data-md-color-scheme="slate"]{
+  --md-primary-fg-color:#0e1424; --md-primary-bg-color:#e8ecf7;
+  --md-accent-fg-color:#9fb0ff;
+  --md-default-bg-color:#11161f; --md-default-fg-color:#e6e9f1;
+  --md-typeset-a-color:#9fb0ff;
+  --ink:#e6e9f1; --ink-soft:#a9b2c7; --marker:#ffe46b;
+  --card:#1a2030; --line:#2c3446; --tint:#161c2a;
+}
+.md-typeset{font-size:.86rem;line-height:1.9;color:var(--md-default-fg-color)}
+.md-content__inner{max-width:46rem}
+/* 한국어는 어절 단위로 줄바꿈 */
+.md-typeset,.md-typeset h1,.md-typeset h2,.md-typeset td,.md-typeset th{word-break:keep-all;overflow-wrap:break-word}
+.md-typeset pre,.md-typeset code{word-break:normal}
+.md-typeset h1{font-family:var(--font-head);font-weight:700;font-size:2.1rem;line-height:1.35;color:var(--ink);letter-spacing:-.01em;margin:0 0 1.4rem}
+.md-typeset h2{font-family:var(--font-head);font-weight:700;font-size:1.45rem;color:var(--ink);margin:2.6rem 0 .8rem;padding-bottom:.35rem;border-bottom:1px solid var(--line)}
+.md-typeset strong{font-weight:700}
+/* 형광펜: 핵심 문장 한두 곳에만 */
+.md-typeset mark{background:linear-gradient(transparent 52%,var(--marker) 52%,var(--marker) 92%,transparent 92%);color:inherit;padding:0 .12em;font-weight:500}
+[data-md-color-scheme="slate"] .md-typeset mark{background:linear-gradient(transparent 52%,rgba(255,228,107,.38) 52%,rgba(255,228,107,.38) 92%,transparent 92%)}
+/* 상자: 두꺼운 왼쪽 선 + 부드러운 면. 종류마다 색만 다르게 */
+.md-typeset .admonition,.md-typeset details{border:0;border-left:5px solid var(--blue);border-radius:10px;box-shadow:none;background:var(--tint);padding:.2rem .5rem .5rem;font-size:.84rem}
+.md-typeset .admonition-title,.md-typeset summary{background:transparent!important;font-family:var(--font-head);font-weight:700;font-size:.95rem;color:var(--ink)}
+.md-typeset .admonition-title::before,.md-typeset summary::before{background-color:currentColor}
+.md-typeset .admonition.abstract{border-color:var(--blue);background:var(--tint)}
+.md-typeset .admonition.tip{border-color:#2e9d5b;background:rgba(46,157,91,.09)}
+.md-typeset .admonition.note,.md-typeset .admonition.info{border-color:#d98a00;background:rgba(217,138,0,.1)}
+.md-typeset .admonition.quote{border-color:var(--ink-soft);background:var(--tint);color:var(--ink-soft);font-size:.8rem}
+.md-typeset .admonition.quote .admonition-title{color:var(--ink-soft)}
+/* 표와 코드 */
+.md-typeset table:not([class]){border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:.84rem;box-shadow:none}
+.md-typeset table:not([class]) th{background:var(--tint);color:var(--ink);font-weight:700}
+.md-typeset table:not([class]) td,.md-typeset table:not([class]) th{border-color:var(--line)}
+.md-typeset pre>code{border-radius:10px;background:var(--tint);font-size:.78rem;line-height:1.7;border-left:4px solid var(--line)}
+.md-typeset hr{border-color:var(--line);margin:2.4rem 0 1rem}
+.md-typeset ul li,.md-typeset ol li{margin-bottom:.3rem}
+.md-header{box-shadow:none;border-bottom:1px solid rgba(255,255,255,.08)}
+.md-tabs{background:var(--md-primary-fg-color)}
+.advanced-badge{color:#d98a00;font-weight:700}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
