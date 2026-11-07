@@ -48,6 +48,10 @@ nav:
         - "그럴듯하지만 틀릴 수 있다: 환각": part1/ch01/hallucination.md
     - "2장 질문을 잘하는 법":
       - part1/ch02/index.md
+      - "2.1 질문의 기본기":
+        - "맥락을 주면 답이 달라진다": part1/ch02/context.md
+        - "역할, 형식, 예시를 정해 준다": part1/ch02/role-format.md
+        - "구체적으로 쓰되 한 번에 하나씩": part1/ch02/specific.md
     - "3장 믿어도 될 때와 안 될 때":
       - part1/ch03/index.md
     - "4장 어떤 AI를 고를까":

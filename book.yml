@@ -22,9 +22,9 @@ parts:
     - num: '2.1'
       title: 질문의 기본기
       pages:
-      - {slug: context, title: 맥락을 주면 답이 달라진다, min: 5, done: false}
-      - {slug: role-format, title: '역할, 형식, 예시를 정해 준다', min: 5, done: false}
-      - {slug: specific, title: 구체적으로 쓰되 한 번에 하나씩, min: 5, done: false}
+      - {slug: context, title: 맥락을 주면 답이 달라진다, min: 5, done: true}
+      - {slug: role-format, title: '역할, 형식, 예시를 정해 준다', min: 5, done: true}
+      - {slug: specific, title: 구체적으로 쓰되 한 번에 하나씩, min: 5, done: true}
     - num: '2.2'
       title: 대화로 다듬기
       pages:
