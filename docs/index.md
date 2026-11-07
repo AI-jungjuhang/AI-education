@@ -45,21 +45,21 @@ hide:
 | [II 일에 붙이기](part2/index.md) | 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요 | 완료 (12) |
 | [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 완료 (12) |
 | [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 완료 (9) |
-| [V 원리로 쓰기 ★](part5/index.md) | 심화예요 | **3/15 작성** |
+| [V 원리로 쓰기 ★](part5/index.md) | 심화예요 | **6/15 작성** |
 | [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 준비 중 |
 
-전체 70페이지 중 54페이지를 썼어요.
+전체 70페이지 중 57페이지를 썼어요.
 <!-- /AUTO:progress -->
 
 ## 최근에 쓴 글
 
 <!-- AUTO:recent -->
 <div class="ep-list">
+<a href="part5/ch17/alignment/"><span class="ep-no">새 글</span><span class="ep-title">정렬: 사람의 뜻에 맞추기</span><span class="ep-time">읽기 7분</span></a>
+<a href="part5/ch17/rl-reasoning/"><span class="ep-no">새 글</span><span class="ep-title">강화학습과 추론 모델</span><span class="ep-time">읽기 7분</span></a>
+<a href="part5/ch17/scaling/"><span class="ep-no">새 글</span><span class="ep-title">스케일링: 크게 만들면 좋아질까</span><span class="ep-time">읽기 7분</span></a>
 <a href="part5/ch16/circuits/"><span class="ep-no">새 글</span><span class="ep-title">회로: 생각의 길 따라가기</span><span class="ep-time">읽기 7분</span></a>
 <a href="part5/ch16/features/"><span class="ep-no">새 글</span><span class="ep-title">특징: 모델 안의 개념들</span><span class="ep-time">읽기 7분</span></a>
 <a href="part5/ch16/interp-intro/"><span class="ep-no">새 글</span><span class="ep-title">왜 모델 속을 봐야 할까</span><span class="ep-time">읽기 7분</span></a>
-<a href="part4/ch15/evaluate/"><span class="ep-no">새 글</span><span class="ep-title">평가하고 고치기</span><span class="ep-time">읽기 6분</span></a>
-<a href="part4/ch15/tool-design/"><span class="ep-no">새 글</span><span class="ep-title">도구를 잘 설계하기</span><span class="ep-time">읽기 6분</span></a>
-<a href="part4/ch15/instructions/"><span class="ep-no">새 글</span><span class="ep-title">좋은 지시문 쓰기</span><span class="ep-time">읽기 6분</span></a>
 </div>
 <!-- /AUTO:recent -->

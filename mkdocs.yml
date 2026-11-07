@@ -154,6 +154,10 @@ nav:
         - "회로: 생각의 길 따라가기": part5/ch16/circuits.md
     - "17장 학습의 심화 ★":
       - part5/ch17/index.md
+      - "17.1 더 깊은 학습":
+        - "스케일링: 크게 만들면 좋아질까": part5/ch17/scaling.md
+        - "강화학습과 추론 모델": part5/ch17/rl-reasoning.md
+        - "정렬: 사람의 뜻에 맞추기": part5/ch17/alignment.md
     - "18장 평가와 한계 ★":
       - part5/ch18/index.md
     - "19장 대가들은 어디를 보고 있나 ★":

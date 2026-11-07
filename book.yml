@@ -200,9 +200,9 @@ parts:
     - num: '17.1'
       title: 더 깊은 학습
       pages:
-      - {slug: scaling, title: '스케일링: 크게 만들면 좋아질까', min: 7, done: false}
-      - {slug: rl-reasoning, title: 강화학습과 추론 모델, min: 7, done: false}
-      - {slug: alignment, title: '정렬: 사람의 뜻에 맞추기', min: 7, done: false}
+      - {slug: scaling, title: '스케일링: 크게 만들면 좋아질까', min: 7, done: true}
+      - {slug: rl-reasoning, title: 강화학습과 추론 모델, min: 7, done: true}
+      - {slug: alignment, title: '정렬: 사람의 뜻에 맞추기', min: 7, done: true}
   - num: 18
     title: 평가와 한계 ★
     blurb: AI가 얼마나 잘하는지 재는 방법과 그 한계예요.
