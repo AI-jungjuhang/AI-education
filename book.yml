@@ -98,9 +98,9 @@ parts:
     - num: '8.1'
       title: 나만의 루틴
       pages:
-      - {slug: prompt-library, title: 자주 쓰는 질문 모아 두기, min: 5, done: false}
-      - {slug: rollout-check, title: 일에 적용하기 전 체크리스트, min: 5, done: false}
-      - {slug: team-rules, title: 팀에서 정하는 규칙, min: 5, done: false}
+      - {slug: prompt-library, title: 자주 쓰는 질문 모아 두기, min: 5, done: true}
+      - {slug: rollout-check, title: 일에 적용하기 전 체크리스트, min: 5, done: true}
+      - {slug: team-rules, title: 팀에서 정하는 규칙, min: 5, done: true}
 - id: 3
   title: III 원리 한 스푼
   blurb: 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요.

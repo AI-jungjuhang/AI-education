@@ -94,6 +94,10 @@ nav:
         - "계산을 맡길 때 조심할 것": part2/ch07/math-caution.md
     - "8장 일하는 방식 만들기":
       - part2/ch08/index.md
+      - "8.1 나만의 루틴":
+        - "자주 쓰는 질문 모아 두기": part2/ch08/prompt-library.md
+        - "일에 적용하기 전 체크리스트": part2/ch08/rollout-check.md
+        - "팀에서 정하는 규칙": part2/ch08/team-rules.md
   - "III 원리 한 스푼":
     - part3/index.md
     - "9장 AI는 어떻게 배울까":

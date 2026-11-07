@@ -6,5 +6,5 @@
 <a href="ch05/"><span class="ep-no">5장</span><span class="ep-title">글쓰기에 붙이기</span><span class="ep-time">3/3 작성</span></a>
 <a href="ch06/"><span class="ep-no">6장</span><span class="ep-title">조사와 공부에 붙이기</span><span class="ep-time">3/3 작성</span></a>
 <a href="ch07/"><span class="ep-no">7장</span><span class="ep-title">정리와 숫자에 붙이기</span><span class="ep-time">3/3 작성</span></a>
-<div class="soon"><span class="ep-no">8장</span><span class="ep-title">일하는 방식 만들기</span><span class="ep-time">0/3 작성</span></div>
+<a href="ch08/"><span class="ep-no">8장</span><span class="ep-title">일하는 방식 만들기</span><span class="ep-time">3/3 작성</span></a>
 </div>
