@@ -44,22 +44,22 @@ hide:
 | [I 처음 쓰는 AI](part1/index.md) | AI 챗봇을 처음 쓰는 사람을 위한 부예요 | 완료 (18) |
 | [II 일에 붙이기](part2/index.md) | 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요 | 완료 (12) |
 | [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 완료 (12) |
-| [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | **6/9 작성** |
+| [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 완료 (9) |
 | [V 원리로 쓰기 ★](part5/index.md) | 심화예요 | 준비 중 |
 | [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 준비 중 |
 
-전체 70페이지 중 48페이지를 썼어요.
+전체 70페이지 중 51페이지를 썼어요.
 <!-- /AUTO:progress -->
 
 ## 최근에 쓴 글
 
 <!-- AUTO:recent -->
 <div class="ep-list">
+<a href="part4/ch15/evaluate/"><span class="ep-no">새 글</span><span class="ep-title">평가하고 고치기</span><span class="ep-time">읽기 6분</span></a>
+<a href="part4/ch15/tool-design/"><span class="ep-no">새 글</span><span class="ep-title">도구를 잘 설계하기</span><span class="ep-time">읽기 6분</span></a>
+<a href="part4/ch15/instructions/"><span class="ep-no">새 글</span><span class="ep-title">좋은 지시문 쓰기</span><span class="ep-time">읽기 6분</span></a>
 <a href="part4/ch14/failures/"><span class="ep-no">새 글</span><span class="ep-title">에이전트가 실패하는 모습과 안전장치</span><span class="ep-time">읽기 6분</span></a>
 <a href="part4/ch14/loop/"><span class="ep-no">새 글</span><span class="ep-title">계획하고, 행동하고, 확인한다</span><span class="ep-time">읽기 6분</span></a>
 <a href="part4/ch14/what-agent/"><span class="ep-no">새 글</span><span class="ep-title">에이전트란 무엇일까</span><span class="ep-time">읽기 6분</span></a>
-<a href="part4/ch13/connectors/"><span class="ep-no">새 글</span><span class="ep-title">도구를 연결하는 표준: MCP</span><span class="ep-time">읽기 5분</span></a>
-<a href="part4/ch13/files-code/"><span class="ep-no">새 글</span><span class="ep-title">파일을 읽고 코드를 실행하는 AI</span><span class="ep-time">읽기 5분</span></a>
-<a href="part4/ch13/search-rag/"><span class="ep-no">새 글</span><span class="ep-title">검색을 붙이면 달라지는 것</span><span class="ep-time">읽기 6분</span></a>
 </div>
 <!-- /AUTO:recent -->

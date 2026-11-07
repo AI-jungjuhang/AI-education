@@ -140,6 +140,10 @@ nav:
         - "에이전트가 실패하는 모습과 안전장치": part4/ch14/failures.md
     - "15장 에이전트 만들어 보기":
       - part4/ch15/index.md
+      - "15.1 설계 맛보기":
+        - "좋은 지시문 쓰기": part4/ch15/instructions.md
+        - "도구를 잘 설계하기": part4/ch15/tool-design.md
+        - "평가하고 고치기": part4/ch15/evaluate.md
   - "V 원리로 쓰기 ★":
     - part5/index.md
     - "16장 모델 속을 들여다보기 ★":
