@@ -88,9 +88,9 @@ parts:
     - num: '7.1'
       title: 문서와 표
       pages:
-      - {slug: meeting-notes, title: 회의록과 메일 정리, min: 5, done: false}
-      - {slug: tables, title: 표와 엑셀 함수 도움받기, min: 5, done: false}
-      - {slug: math-caution, title: 계산을 맡길 때 조심할 것, min: 5, done: false}
+      - {slug: meeting-notes, title: 회의록과 메일 정리, min: 5, done: true}
+      - {slug: tables, title: 표와 엑셀 함수 도움받기, min: 5, done: true}
+      - {slug: math-caution, title: 계산을 맡길 때 조심할 것, min: 5, done: true}
   - num: 8
     title: 일하는 방식 만들기
     blurb: 한 번 쓰고 끝내지 않고, 나와 팀의 일하는 방식으로 만드는 법이에요.
