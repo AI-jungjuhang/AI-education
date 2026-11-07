@@ -103,7 +103,10 @@ def sfx_rattle(d):
         y[j:j+500] += (np.sin(2 * np.pi * rng.uniform(300, 700) * np.arange(500) / SR) * np.exp(-np.arange(500) / SR * 70) * 0.5)[:len(y[j:j+500])]
     return y * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 0.5 * 0.9
 G = {'pop': 0.75, 'slam': 0.95, 'whoosh': 0.5, 'tick': 0.55, 'ding': 0.5, 'buzz': 0.6, 'rattle': 0.5}
-if SOFT: G = {k: v * 0.45 for k, v in G.items()}
+if SOFT: G = {'pop': 0.18, 'slam': 0.22, 'whoosh': 0.12, 'tick': 0.14, 'ding': 0.14, 'buzz': 0.16, 'rattle': 0.14}   # 음악보다 확실히 작게
+_put = put
+if SOFT:
+    def put(buf, x, t0, gain=1.0, pan=0.0): return _put(buf, lp(x, 3500), t0, gain, pan)
 for e in tl['sfx']:
     t0 = e['b'] * BEAT; k = e['t']
     if k == 'pop': put(L, sfx_pop(), t0, G[k])
