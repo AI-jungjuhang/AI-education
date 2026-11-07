@@ -6,7 +6,7 @@
 <a href="check-sources/"><span class="ep-no">3.1.1</span><span class="ep-title">출처 확인하는 법</span><span class="ep-time">읽기 5분</span></a>
 <a href="check-numbers/"><span class="ep-no">3.1.2</span><span class="ep-title">숫자와 인용 대조하기</span><span class="ep-time">읽기 5분</span></a>
 <a href="second-opinion/"><span class="ep-no">3.1.3</span><span class="ep-title">두 번째 의견 구하기</span><span class="ep-time">읽기 5분</span></a>
-<div class="soon"><span class="ep-no">3.2.1</span><span class="ep-title">개인정보와 민감한 자료</span><span class="ep-time">준비 중</span></div>
-<div class="soon"><span class="ep-no">3.2.2</span><span class="ep-title">저작권과 표절</span><span class="ep-time">준비 중</span></div>
-<div class="soon"><span class="ep-no">3.2.3</span><span class="ep-title">편향과 한계 알아보기</span><span class="ep-time">준비 중</span></div>
+<a href="privacy/"><span class="ep-no">3.2.1</span><span class="ep-title">개인정보와 민감한 자료</span><span class="ep-time">읽기 5분</span></a>
+<a href="copyright/"><span class="ep-no">3.2.2</span><span class="ep-title">저작권과 표절</span><span class="ep-time">읽기 5분</span></a>
+<a href="bias/"><span class="ep-no">3.2.3</span><span class="ep-title">편향과 한계 알아보기</span><span class="ep-time">읽기 5분</span></a>
 </div>

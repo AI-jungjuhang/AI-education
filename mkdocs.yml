@@ -62,6 +62,10 @@ nav:
         - "출처 확인하는 법": part1/ch03/check-sources.md
         - "숫자와 인용 대조하기": part1/ch03/check-numbers.md
         - "두 번째 의견 구하기": part1/ch03/second-opinion.md
+      - "3.2 안전하게 쓰기":
+        - "개인정보와 민감한 자료": part1/ch03/privacy.md
+        - "저작권과 표절": part1/ch03/copyright.md
+        - "편향과 한계 알아보기": part1/ch03/bias.md
     - "4장 어떤 AI를 고를까":
       - part1/ch04/index.md
   - "II 일에 붙이기":
