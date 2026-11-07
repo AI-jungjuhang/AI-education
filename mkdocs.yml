@@ -120,6 +120,10 @@ nav:
         - "컨텍스트 창: 한 번에 보는 범위": part3/ch11/context-window.md
     - "12장 확률로 문장 만들기":
       - part3/ch12/index.md
+      - "12.1 고르는 방법":
+        - "온도: 얼마나 모험할까": part3/ch12/temperature.md
+        - "샘플링: 뽑는 방법": part3/ch12/sampling.md
+        - "긴 답이 이어지는 과정": part3/ch12/long-answer.md
   - "IV 도구와 에이전트":
     - part4/index.md
     - "13장 도구를 쓰는 AI":

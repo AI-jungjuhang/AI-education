@@ -142,9 +142,9 @@ parts:
     - num: '12.1'
       title: 고르는 방법
       pages:
-      - {slug: temperature, title: '온도: 얼마나 모험할까', min: 5, done: false}
-      - {slug: sampling, title: '샘플링: 뽑는 방법', min: 5, done: false}
-      - {slug: long-answer, title: 긴 답이 이어지는 과정, min: 5, done: false}
+      - {slug: temperature, title: '온도: 얼마나 모험할까', min: 5, done: true}
+      - {slug: sampling, title: '샘플링: 뽑는 방법', min: 5, done: true}
+      - {slug: long-answer, title: 긴 답이 이어지는 과정, min: 5, done: true}
 - id: 4
   title: IV 도구와 에이전트
   blurb: 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요.
