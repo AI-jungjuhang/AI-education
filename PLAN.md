@@ -7,7 +7,7 @@
 cd /home/user/ai-education && git checkout claude/korean-ai-textbook-site-kbmkii && git pull -q origin claude/korean-ai-textbook-site-kbmkii
 python3 tools/build_book.py --status      # 진행 수와 다음에 쓸 페이지
 ```
-저장소가 없으면: `git clone https://github.com/sehoon3554-ctrl/ai-education /home/user/ai-education` 후 위 브랜치로 이동. `pip install -r requirements.txt pyyaml`도 필요할 수 있다.
+저장소가 없으면 `add_repo`로 다시 연결해서 받고 위 브랜치로 이동한다. `pip install -r requirements.txt pyyaml`도 필요할 수 있다.
 
 ## 한 페이지를 쓰는 순서
 1. `book.yml`에서 다음 `done: false` 페이지를 고른다. 순서대로 쓴다.

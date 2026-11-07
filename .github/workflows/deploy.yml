@@ -1,7 +1,6 @@
 name: Deploy
 on:
-  push:
-    branches: [main, claude/korean-ai-textbook-site-kbmkii]
+  # 사이트는 Cloudflare Pages가 배포한다. GitHub Pages는 저장소를 비공개로 바꾸면 쓸 수 없어서 자동 실행을 껐다.
   workflow_dispatch:
 permissions:
   contents: write
