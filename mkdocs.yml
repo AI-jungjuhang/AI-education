@@ -147,6 +147,9 @@ nav:
     - part5/index.md
     - "16장 5A 첫걸음":
       - part5/ch16/index.md
+      - "16.1 슬래시 명령":
+        - "자주 쓰는 슬래시 명령": part5/ch16/slash-basics.md
+        - "내 단축 명령 만들기": part5/ch16/slash-custom.md
     - "17장 5B 자동화와 연결":
       - part5/ch17/index.md
     - "18장 5C 고급 ★":
