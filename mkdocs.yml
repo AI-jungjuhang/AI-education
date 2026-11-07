@@ -68,6 +68,10 @@ nav:
         - "편향과 한계 알아보기": part1/ch03/bias.md
     - "4장 어떤 AI를 고를까":
       - part1/ch04/index.md
+      - "4.1 종류와 고르는 법":
+        - "챗봇, 검색형, 이미지, 음성: 종류 나누기": part1/ch04/kinds.md
+        - "무료와 유료는 뭐가 다를까": part1/ch04/free-paid.md
+        - "내 일에 맞는 AI 고르기": part1/ch04/choose.md
   - "II 일에 붙이기":
     - part2/index.md
     - "5장 글쓰기에 붙이기":

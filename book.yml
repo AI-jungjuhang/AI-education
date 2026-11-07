@@ -54,9 +54,9 @@ parts:
     - num: '4.1'
       title: 종류와 고르는 법
       pages:
-      - {slug: kinds, title: '챗봇, 검색형, 이미지, 음성: 종류 나누기', min: 5, done: false}
-      - {slug: free-paid, title: 무료와 유료는 뭐가 다를까, min: 5, done: false}
-      - {slug: choose, title: 내 일에 맞는 AI 고르기, min: 5, done: false}
+      - {slug: kinds, title: '챗봇, 검색형, 이미지, 음성: 종류 나누기', min: 5, done: true}
+      - {slug: free-paid, title: 무료와 유료는 뭐가 다를까, min: 5, done: true}
+      - {slug: choose, title: 내 일에 맞는 AI 고르기, min: 5, done: true}
 - id: 2
   title: II 일에 붙이기
   blurb: 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요. 바로 써먹는 요령이 중심이에요.
