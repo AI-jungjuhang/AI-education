@@ -242,16 +242,16 @@ parts:
     - num: '18.1'
       title: 고급 기능
       pages:
-      - {slug: plan-mode, title: 계획부터 세우고 맡기기, min: 7, done: false}
-      - {slug: permissions, title: 권한 모드와 안전장치, min: 7, done: false}
-      - {slug: background-tasks, title: 백그라운드와 예약 작업, min: 7, done: false}
-      - {slug: agent-teams, title: 에이전트 팀, min: 7, done: false}
+      - {slug: plan-mode, title: 계획부터 세우고 맡기기, min: 7, done: true}
+      - {slug: permissions, title: 권한 모드와 안전장치, min: 7, done: true}
+      - {slug: background-tasks, title: 백그라운드와 예약 작업, min: 7, done: true}
+      - {slug: agent-teams, title: 에이전트 팀, min: 7, done: true}
     - num: '18.2'
       title: 플러그인과 CLI 숙련
       pages:
-      - {slug: plugin-bundle, title: 플러그인으로 묶어 나누기, min: 8, done: false}
-      - {slug: super-skill, title: '실습: 영상 제작 슈퍼 스킬', min: 9, done: false}
-      - {slug: cli-automation, title: CLI로 자동화 파이프라인 만들기, min: 8, done: false}
+      - {slug: plugin-bundle, title: 플러그인으로 묶어 나누기, min: 8, done: true}
+      - {slug: super-skill, title: '실습: 영상 제작 슈퍼 스킬', min: 9, done: true}
+      - {slug: cli-automation, title: CLI로 자동화 파이프라인 만들기, min: 8, done: true}
 - id: 6
   title: VI 원리로 쓰기 ★
   blurb: 심화예요. 모델 속을 들여다보고, 학습과 평가의 깊은 이야기를 읽고, 이 분야를 만든 사람들의 생각을 따라가요.

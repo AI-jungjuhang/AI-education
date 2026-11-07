@@ -11,6 +11,12 @@ AI를 기초부터 심화까지 다루는 한국어 웹 교과서(MkDocs Materia
 - 페이지 작성은 `.claude/skills/topic-page`, 디자인은 `.claude/skills/frontend-design`을 따른다.
 - 개발 브랜치: `claude/korean-ai-textbook-site-kbmkii`. 빌드: `mkdocs build`.
 
+## V부 Claude Code 실전 (2026-11-07 추가, 기준 Claude Code 2.1.319)
+- 구조: V부 = 16장 5A 첫걸음(5.1~5.4) / 17장 5B 자동화와 연결(5.5~5.8) / 18장 5C 고급★(5.9~5.10). 기존 V부는 VI부(19~22장)로 옮겼다. 폴더는 part5(새), part6(기존).
+- 원전: luongnv89/claude-howto(MIT). 사실 기준은 https://code.claude.com/docs. 페이지마다 기준 버전과 날짜를 적고, 원전 문장은 옮기지 않는다.
+- 검증용 예시: `studio` 플러그인(`claude plugin validate`로 통과 확인), 형식 검사 훅 스크립트, 반복문 스크립트(가짜 claude로 구조만 확인). 모델을 호출한 실제 결과는 확인하지 못했다.
+- 아직 안 한 일: VI부에 기획안의 레벨 6 주제(컨텍스트 관리, 프롬프트 원리, 모델 고르기, 검증 루프) 추가 여부는 사용자 결정 대기.
+
 ## 나중에 할 일: 인터뷰·대담을 참고 자료에 포함
 - 대상 예: Karpathy, Sam Altman, Geoffrey Hinton 등 AI를 만든 사람들의 인터뷰와 강연. 목적은 AI 발전 방향과 그들의 통찰을 담는 것.
 - 인터뷰는 사실이 아니라 **발언과 견해**다. 본문에서 "누가, 언제, 어디서 한 말"인지 밝히고 사실 설명과 구분한다. 예측은 예측이라고 쓴다.
