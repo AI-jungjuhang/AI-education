@@ -3,141 +3,233 @@
 <meta name="viewport" content="width=1080">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-/* 디자인: 책 사이트와 같은 흰 바탕, 먹색 글자, 파란 포인트 하나, 연한 형광펜.
-   쇼츠 화면에서 가려지는 아래 약 20%와 가장자리를 피해 글을 가운데 위쪽에 둔다. */
-:root{--ink:#111827;--soft:#4b5563;--faint:#9ca3af;--blue:#1d4ed8;--marker:#fef08a;--line:#e5e7eb;--tint:#f3f4f6;--bg:#fff}
+/* 쇼츠 v2: 팝 스티커 스타일. 진한 파란 바탕, 굵은 테두리와 그림자 카드, 장면마다 색 전환.
+   모든 등장 시각은 박자(beat) 단위. 128bpm 한 박 = 0.46875초. 효과음은 data-sfx로 지정하고 render.js가 모아서 음악에 넣는다.
+   쇼츠 화면에서 가려지는 영역(아래 약 22%)을 피해 글을 .in 안(위 200px ~ 아래 430px 여백)에 둔다. */
+:root{--blue:#2F7FD8;--red:#FC5424;--yellow:#FFD93D;--green:#2BC48A;--ink:#242424;--white:#FCFCFC}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:var(--ink);
-  font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all;letter-spacing:-.02em}
-.tag{position:absolute;top:96px;left:90px;right:90px;font-size:34px;font-weight:600;color:var(--faint);display:flex;justify-content:space-between}
-.scene{position:absolute;left:90px;right:90px;top:190px;height:1330px;display:flex;flex-direction:column;justify-content:center;gap:40px;opacity:0}
-.small{font-size:58px;font-weight:600;color:var(--soft);line-height:1.3}
-.mid{font-size:76px;font-weight:800;line-height:1.28}
-.body{font-size:66px;font-weight:700;line-height:1.35}
-.big{font-size:164px;font-weight:800;line-height:1.12;letter-spacing:-.04em}
-.mark{background:linear-gradient(transparent 58%,var(--marker) 58%,var(--marker) 94%,transparent 94%);background-repeat:no-repeat;background-size:0% 100%;padding:0 .06em}
-.quote{font-size:88px;font-weight:800;line-height:1.25;padding:44px 48px;border:3px solid var(--line);border-radius:36px;background:var(--tint)}
-.chips{display:flex;flex-wrap:wrap;gap:24px}
-.chip{font-size:68px;font-weight:800;padding:20px 40px;border-radius:999px;border:3px solid var(--ink);background:#fff}
-.chip.no{border-color:var(--faint);color:var(--faint);text-decoration:line-through}
-.chip.pick{background:var(--blue);border-color:var(--blue);color:#fff}
-.note{font-size:50px;font-weight:600;color:var(--soft)}
-.row{display:flex;align-items:center;gap:28px}
-.row .l{width:230px;font-size:64px;font-weight:800}
-.row .track{width:430px;height:76px;border-radius:20px;background:var(--tint);overflow:hidden}
-.row .bar{height:100%;width:0;background:var(--blue);border-radius:20px}
-.row .v{width:150px;font-size:60px;font-weight:800;text-align:right}
-.row.dim .l,.row.dim .v{color:var(--faint)}.row.dim .bar{background:var(--faint)}
-.warn{display:inline-block;font-size:56px;font-weight:800;padding:14px 30px;border-radius:24px;background:var(--marker);width:fit-content}
-.die{width:260px;height:260px;border:8px solid var(--ink);border-radius:56px;position:relative;background:#fff;margin:0 auto}
-.die i{position:absolute;width:44px;height:44px;border-radius:50%;background:var(--ink)}
-.builder{display:flex;flex-wrap:wrap;gap:20px 18px;align-items:center}
-.w{font-size:64px;font-weight:800;padding:14px 28px;border-radius:22px;background:var(--tint);border:3px solid var(--line)}
-.w.new{background:var(--marker);border-color:#facc15}
-.arrow{font-size:60px;color:var(--faint);font-weight:800}
-.pill{font-weight:800;border-radius:999px;padding:22px 52px;background:var(--ink);color:#fff;width:fit-content}
-.tip{border:5px solid var(--blue);border-radius:40px;padding:44px 48px;background:#eff6ff}
-.tip .k{font-size:46px;font-weight:800;color:var(--blue);margin-bottom:14px}
-.tip .t{font-size:64px;font-weight:800;line-height:1.35}
-.hr{height:4px;background:var(--line);width:100%}
-.url{font-size:60px;font-weight:800;color:var(--blue)}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(--ink);
+  font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all;letter-spacing:-.03em;font-weight:900}
+.scene{position:absolute;inset:0;overflow:hidden;display:none;transform-origin:50% 45%}
+.in{position:absolute;left:70px;right:70px;top:230px;bottom:400px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;text-align:center}
+[data-b]{will-change:transform,opacity}
+.st{color:#fff;-webkit-text-stroke:16px var(--ink);paint-order:stroke fill;line-height:1.08}
+.st.dark{color:var(--ink);-webkit-text-stroke:16px #fff}
+.st.yel{color:var(--yellow)}
+.huge{font-size:190px}.big{font-size:150px}.mid{font-size:104px}.sm{font-size:74px}
+.sticker{background:#fff;border:8px solid var(--ink);border-radius:36px;box-shadow:12px 12px 0 var(--ink);padding:22px 44px;font-size:84px;line-height:1.12;width:fit-content}
+.c-red{background:var(--red);color:#fff}.c-yellow{background:var(--yellow)}.c-green{background:var(--green)}.c-blue{background:var(--blue);color:#fff}.c-ink{background:var(--ink);color:#fff}
+.chips{display:flex;gap:26px;flex-wrap:wrap;justify-content:center}
+.chip{font-size:84px;padding:20px 44px;border-radius:999px;border:8px solid var(--ink);box-shadow:9px 9px 0 var(--ink)}
+.chip.no{background:#d4d4d8;color:#71717a;text-decoration:line-through;box-shadow:none;border-color:#71717a}
+.row{display:flex;align-items:center;gap:26px;padding:20px 30px;width:900px}
+.row .l{width:240px;font-size:70px;text-align:left}
+.row .track{width:400px;height:74px;border:7px solid var(--ink);border-radius:22px;background:#e5e7eb;overflow:hidden}
+.row .bar{height:100%;width:0;background:var(--red)}
+.row .v{width:170px;font-size:68px;text-align:right}
+.row.dim .bar{background:#9ca3af}.row.dim{background:#f3f4f6}
+.tag{position:absolute;top:66px;left:70px;right:70px;display:flex;justify-content:space-between;z-index:30}
+.pill{font-size:34px;padding:10px 26px;border-radius:999px;border:5px solid var(--ink);background:#fff}
+.pill.k{background:var(--ink);color:#fff}
+.prog{position:absolute;top:140px;left:70px;right:70px;height:12px;display:flex;gap:8px;z-index:30}
+.prog i{flex:1;background:rgba(36,36,36,.28);border-radius:6px;overflow:hidden;position:relative}
+.prog i b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--ink)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:40;pointer-events:none}
+.mas{position:absolute;width:330px;height:370px}
+.dieW{width:300px;height:300px}
+.die{width:100%;height:100%;border:10px solid var(--ink);border-radius:64px;background:#fff;box-shadow:12px 12px 0 var(--ink);position:relative}
+.die i{position:absolute;width:52px;height:52px;border-radius:50%;background:var(--ink);display:none}
+.wd{font-size:68px;padding:16px 30px;border-radius:26px;border:7px solid var(--ink);background:#fff;box-shadow:8px 8px 0 var(--ink)}
+.arrow{font-size:70px;color:var(--ink)}
+.card{width:900px;padding:14px 34px !important;background:#fff;border:8px solid var(--ink);border-radius:32px;box-shadow:12px 12px 0 var(--ink);padding:22px 34px;display:flex;align-items:center;gap:26px}
+.card .n{font-size:60px;width:110px}
+.card .ln{display:flex;flex-direction:column;gap:14px;flex:1}
+.card .ln b{display:block;height:26px;border-radius:13px}
+.cf{position:absolute;width:26px;height:26px;border-radius:6px;opacity:0}
+.small{font-size:44px;color:#fff;-webkit-text-stroke:0}
 </style></head><body>
-<div class="tag"><span>열 살도 이해하는 AI</span><span>1.1.1</span></div>
+<div class="tag"><span class="pill k">AI 정주행</span><span class="pill">1.1.1</span></div>
+<div class="prog" id="prog"></div>
+<div id="flash"></div>
 
-<section class="scene" id="s1">
-  <div class="small" data-r="0.3">AI 챗봇이 하는 일은</div>
-  <div class="big" data-r="0.7"><span class="mark" id="m1">다음 말</span><br>맞히기</div>
-  <div class="mid" data-r="2.2">딱 이것뿐이에요</div>
-</section>
+<template id="mascot"><svg viewBox="-20 -30 340 390" width="100%" height="100%" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M30 205 Q-12 215 0 255" fill="none" stroke="#242424" stroke-width="11"/><path d="M270 205 Q312 215 300 255" fill="none" stroke="#242424" stroke-width="11"/>
+  <path d="M150 28 Q138 -14 180 -8 Q176 26 150 28Z" fill="#5CB85C" stroke="#242424" stroke-width="8"/>
+  <path d="M150 22 C232 22 282 92 276 178 C271 272 222 330 150 330 C78 330 29 272 24 178 C18 92 68 22 150 22Z" fill="#E9B96E" stroke="#242424" stroke-width="11"/>
+  <ellipse cx="86" cy="96" rx="14" ry="9" fill="#D49A4F"/><ellipse cx="214" cy="276" rx="16" ry="10" fill="#D49A4F"/><ellipse cx="236" cy="108" rx="10" ry="7" fill="#D49A4F"/>
+  <circle cx="72" cy="206" r="19" fill="#FF8A80" opacity=".75"/><circle cx="228" cy="206" r="19" fill="#FF8A80" opacity=".75"/>
+  <g class="e-open"><circle cx="108" cy="150" r="27" fill="#fff" stroke="#242424" stroke-width="8"/><circle cx="192" cy="150" r="27" fill="#fff" stroke="#242424" stroke-width="8"/><circle cx="112" cy="153" r="12" fill="#242424"/><circle cx="188" cy="153" r="12" fill="#242424"/></g>
+  <g class="e-wide"><circle cx="108" cy="148" r="34" fill="#fff" stroke="#242424" stroke-width="8"/><circle cx="192" cy="148" r="34" fill="#fff" stroke="#242424" stroke-width="8"/><circle cx="108" cy="150" r="9" fill="#242424"/><circle cx="192" cy="150" r="9" fill="#242424"/></g>
+  <g class="e-happy" fill="none" stroke="#242424" stroke-width="10"><path d="M80 158 Q108 120 136 158"/><path d="M164 158 Q192 120 220 158"/></g>
+  <g class="m-smile" fill="none" stroke="#242424" stroke-width="10"><path d="M112 222 Q150 260 188 222"/></g>
+  <g class="m-o"><ellipse cx="150" cy="238" rx="19" ry="26" fill="#7a2b2b" stroke="#242424" stroke-width="8"/></g>
+  <g class="m-grin"><path d="M100 212 Q150 292 200 212Z" fill="#7a2b2b" stroke="#242424" stroke-width="9"/><path d="M118 214 Q150 232 182 214 L180 226 Q150 240 120 226Z" fill="#fff"/></g>
+</svg></template>
 
-<section class="scene" id="s2">
-  <div class="small" data-r="0.2">친구가 말했어요</div>
-  <div class="quote" data-r="0.6">“오늘 점심은<br>라면이랑 …”</div>
-  <div class="mid" data-r="2.4">다음 말은 뭘까요?</div>
+<!-- 1. 훅 0~4박 -->
+<section class="scene" data-a="0" data-e="4" data-bg="#2F7FD8"><div class="in">
+  <div class="st huge" data-b="0" data-anim="slam" data-sfx="slam">AI 챗봇</div>
+  <div class="st huge" data-b="1" data-anim="slam" data-sfx="slam">정체 공개!</div>
+  <div class="sticker c-yellow" data-b="2.4" data-anim="slideR" data-rot="-3" data-sfx="whoosh">하는 일은 딱 하나!</div>
+</div><div class="mas" data-face="wide:o" data-b="3" data-anim="pop" data-sfx="pop" style="right:50px;top:1130px"></div></section>
+
+<!-- 2. 정체 4~8박 -->
+<section class="scene" data-a="4" data-e="8" data-bg="#FFD93D"><div class="in">
+  <div class="st dark huge" data-b="4" data-anim="slam" data-sfx="slam">다음 말</div>
+  <div class="st dark huge" data-b="5" data-anim="slam" data-sfx="slam">맞히기</div>
+  <div class="sticker c-red" data-b="6.4" data-anim="pop" data-rot="4" data-sfx="pop">이게 전부!</div>
+</div><div class="mas" data-face="happy:grin" data-b="5.6" data-anim="pop" data-sfx="pop" style="left:40px;top:1140px"></div></section>
+
+<!-- 3. 이어 말하기 놀이 8~16박 -->
+<section class="scene" data-a="8" data-e="16" data-bg="#FCFCFC"><div class="in">
+  <div class="sticker" data-b="8" data-anim="slideL" data-sfx="pop" style="font-size:78px">친구: “오늘 점심은<br>라면이랑…”</div>
+  <div class="sticker c-yellow" data-b="10" data-anim="pop" data-rot="-2" data-sfx="pop">다음 말은?</div>
   <div class="chips">
-    <div class="chip" data-r="3.6">김밥</div><div class="chip" data-r="4.3">만두</div><div class="chip" data-r="5.0">떡볶이</div>
+    <div class="chip c-red" data-b="11" data-anim="pop" data-sfx="pop">김밥</div>
+    <div class="chip c-yellow" data-b="12" data-anim="pop" data-sfx="pop">만두</div>
+    <div class="chip c-green" data-b="13" data-anim="pop" data-sfx="pop">떡볶이</div>
   </div>
-  <div class="chips"><div class="chip no" data-r="6.1">우주선</div></div>
-  <div class="note" data-r="6.6">이런 말은 안 와요</div>
-</section>
+  <div class="chip no" data-b="14.2" data-anim="shake" data-sfx="buzz">우주선</div>
+</div></section>
 
-<section class="scene" id="s3">
-  <div class="mid" data-r="0.2">챗봇은 후보마다<br>점수를 매겨요</div>
-  <div class="row"><div class="l">김밥</div><div class="track"><div class="bar" data-b="30" data-s="1.2"></div></div><div class="v" data-r="1.2">30%</div></div>
-  <div class="row"><div class="l">만두</div><div class="track"><div class="bar" data-b="20" data-s="2.0"></div></div><div class="v" data-r="2.0">20%</div></div>
-  <div class="row"><div class="l">떡볶이</div><div class="track"><div class="bar" data-b="15" data-s="2.8"></div></div><div class="v" data-r="2.8">15%</div></div>
-  <div class="row dim"><div class="l">우주선</div><div class="track"><div class="bar" data-b="1.5" data-s="3.6"></div></div><div class="v" data-r="3.6" style="font-size:44px">거의 0</div></div>
-  <div class="warn" data-r="4.8">숫자는 이해를 돕는 예시예요</div>
-</section>
+<!-- 4. 점수표 16~24박 -->
+<section class="scene" data-a="16" data-e="24" data-bg="#2F7FD8"><div class="in" style="gap:26px">
+  <div class="st big" data-b="16" data-anim="slam" data-sfx="slam">후보마다 점수!</div>
+  <div class="sticker row" data-b="17.5" data-anim="slideL" data-sfx="pop"><div class="l">김밥</div><div class="track"><div class="bar" data-b="17.5" data-anim="grow" data-v="100"></div></div><div class="v" data-b="17.5" data-anim="count" data-v="30" data-fmt="%">0%</div></div>
+  <div class="sticker row" data-b="18.5" data-anim="slideL" data-sfx="pop"><div class="l">만두</div><div class="track"><div class="bar" data-b="18.5" data-anim="grow" data-v="67"></div></div><div class="v" data-b="18.5" data-anim="count" data-v="20" data-fmt="%">0%</div></div>
+  <div class="sticker row" data-b="19.5" data-anim="slideL" data-sfx="pop"><div class="l">떡볶이</div><div class="track"><div class="bar" data-b="19.5" data-anim="grow" data-v="50"></div></div><div class="v" data-b="19.5" data-anim="count" data-v="15" data-fmt="%">0%</div></div>
+  <div class="sticker row dim" data-b="20.5" data-anim="slideL" data-sfx="pop"><div class="l">우주선</div><div class="track"><div class="bar" data-b="20.5" data-anim="grow" data-v="4"></div></div><div class="v" style="font-size:50px">거의 0</div></div>
+  <div class="sticker c-yellow" data-b="22" data-anim="pop" data-rot="-5" data-sfx="ding" style="font-size:64px">숫자는 예시예요!</div>
+</div></section>
 
-<section class="scene" id="s4">
-  <div class="mid" data-r="0.2">그다음<br>주사위를 굴려요</div>
-  <div class="die" id="die"><i style="left:46px;top:46px"></i><i style="right:46px;top:46px"></i><i style="left:108px;top:108px"></i><i style="left:46px;bottom:46px"></i><i style="right:46px;bottom:46px"></i></div>
-  <div class="chips" style="justify-content:center">
-    <div class="chip" id="c1">김밥</div><div class="chip" id="c2">만두</div><div class="chip" id="c3">떡볶이</div>
+<!-- 5. 주사위 24~32박 -->
+<section class="scene" data-a="24" data-e="32" data-bg="#FC5424"><div class="in" style="gap:30px">
+  <div class="st big" data-b="24" data-anim="slam" data-sfx="slam">주사위 뽑기!</div>
+  <div class="dieW" id="dieW" data-b="25" data-anim="dice" data-sfx="rattle" data-dur="2.5"><div class="die" id="die"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  <div class="sticker c-yellow" data-b="28" data-anim="slam" data-sfx="ding" style="font-size:120px">김밥!</div>
+  <div class="st sm" data-b="29.4" data-anim="slideL" data-sfx="pop">높은 말이 잘 뽑혀요</div>
+  <div class="st sm" data-b="30.6" data-anim="slideR" data-sfx="pop">낮은 말도 가끔!</div>
+</div></section>
+
+<!-- 6. 이어 붙이기 32~44박 -->
+<section class="scene" data-a="32" data-e="44" data-bg="#FCFCFC"><div class="in" style="gap:30px">
+  <div class="sticker c-blue" data-b="32" data-anim="slideL" data-sfx="whoosh" style="font-size:78px">뽑은 말은 뒤에 붙여요</div>
+  <div class="wd" data-b="33.2" data-anim="pop" data-sfx="pop">하늘이 파란 이유는</div>
+  <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center;width:940px">
+    <span class="arrow" data-b="35" data-anim="pop">→</span><span class="wd c-yellow" data-b="35" data-anim="slam" data-sfx="tick">햇빛이</span>
+    <span class="arrow" data-b="37" data-anim="pop">→</span><span class="wd c-yellow" data-b="37" data-anim="slam" data-sfx="tick">공기에</span>
+    <span class="arrow" data-b="39" data-anim="pop">→</span><span class="wd c-yellow" data-b="39" data-anim="slam" data-sfx="tick">부딪혀</span>
+    <span class="arrow" data-b="41" data-anim="pop">→</span><span class="wd" data-b="41" data-anim="slam" data-sfx="tick">…</span>
   </div>
-  <div class="body" data-r="3.6">확률이 높은 말이 잘 뽑혀요</div>
-  <div class="body" style="color:var(--soft)" data-r="5.2">낮은 말도 가끔 뽑혀요</div>
-</section>
+  <div class="sticker c-red" data-b="42" data-anim="pop" data-rot="3" data-sfx="ding" style="font-size:78px">또 뽑고, 또 뽑고!</div>
+</div></section>
 
-<section class="scene" id="s5">
-  <div class="mid" data-r="0.2">뽑은 말은 글 뒤에 붙고<br>또 다음 말을 골라요</div>
-  <div class="builder">
-    <div class="w" data-r="0.9">하늘이 파란 이유는</div>
-    <div class="arrow" data-r="2.6">→</div><div class="w new" data-r="2.8">햇빛이</div>
-    <div class="arrow" data-r="4.8">→</div><div class="w new" data-r="5.0">공기에</div>
-    <div class="arrow" data-r="7.0">→</div><div class="w new" data-r="7.2">부딪혀</div>
+<!-- 7. 반복하면 44~52박 -->
+<section class="scene" data-a="44" data-e="52" data-bg="#FFD93D"><div class="in" style="gap:34px">
+  <div class="st dark big" data-b="44" data-anim="slam" data-sfx="slam">계속 반복하면?</div>
+  <div class="sticker" data-b="45.8" data-anim="slideL" data-sfx="pop" style="font-size:90px">문장</div>
+  <div class="sticker c-green" data-b="47.2" data-anim="slideR" data-sfx="pop" style="font-size:112px">문단</div>
+  <div class="sticker c-red" data-b="48.6" data-anim="slam" data-sfx="ding" style="font-size:136px">편지 한 통!</div>
+</div><div id="conf" data-b="48.6" data-anim="confetti"></div></section>
+
+<!-- 8. 답이 달라요 52~64박 -->
+<section class="scene" data-a="52" data-e="64" data-bg="#2F7FD8"><div class="in" style="gap:20px;top:250px">
+  <div class="st big" style="font-size:120px" data-b="52" data-anim="slam" data-sfx="slam">같은 질문인데…</div>
+  <div class="st big yel" style="font-size:120px" data-b="53.6" data-anim="slam" data-sfx="slam">답은 매번 달라요!</div>
+  <div class="card" data-b="56" data-anim="slideR" data-sfx="pop"><div class="n">1번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:55%;background:var(--red)"></b></div></div>
+  <div class="card" data-b="57.2" data-anim="slideR" data-sfx="pop"><div class="n">2번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:80%;background:var(--red)"></b></div></div>
+  <div class="card" data-b="58.4" data-anim="slideR" data-sfx="pop"><div class="n">3번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:35%;background:var(--red)"></b></div></div>
+  <div style="display:flex;gap:22px;flex-wrap:wrap;justify-content:center">
+    <div class="sticker c-green" data-b="60.4" data-anim="pop" data-sfx="ding" style="font-size:62px">겹치는 건 믿고</div>
+    <div class="sticker c-red" data-b="62" data-anim="pop" data-rot="-2" data-sfx="ding" style="font-size:62px">달라지는 건 의심!</div>
   </div>
-  <div class="note" data-r="8.4">…</div>
-</section>
+  <div class="small" data-b="56" data-anim="pop">그림은 이해를 돕는 예시예요</div>
+</div></section>
 
-<section class="scene" id="s6">
-  <div class="mid" data-r="0.2">이걸 계속 반복하면</div>
-  <div class="pill" style="font-size:72px" data-r="1.2">문장이 되고</div>
-  <div class="pill" style="font-size:88px" data-r="2.3">문단이 되고</div>
-  <div class="pill" style="font-size:104px;background:var(--blue)" data-r="3.4">편지 한 통이 돼요</div>
-</section>
+<!-- 9. 써먹기 64~76박 -->
+<section class="scene" data-a="64" data-e="76" data-bg="#FCFCFC"><div class="in" style="gap:32px">
+  <div class="sticker c-red" data-b="64" data-anim="slam" data-sfx="slam" style="font-size:78px">오늘의 써먹기</div>
+  <div class="st dark big" data-b="65.6" data-anim="slam" data-sfx="slam" style="-webkit-text-stroke:0">중요한 질문은</div>
+  <div class="st dark big" data-b="67" data-anim="slam" data-sfx="slam" style="-webkit-text-stroke:0;color:var(--red)">세 번 물어보기!</div>
+  <div style="display:flex;gap:28px">
+    <div class="sticker c-blue" data-b="68.8" data-anim="pop" data-sfx="tick" style="font-size:96px;padding:10px 46px">1</div>
+    <div class="sticker c-blue" data-b="69.6" data-anim="pop" data-sfx="tick" style="font-size:96px;padding:10px 46px">2</div>
+    <div class="sticker c-blue" data-b="70.4" data-anim="pop" data-sfx="tick" style="font-size:96px;padding:10px 46px">3</div>
+  </div>
+  <div class="sticker c-yellow" data-b="72.4" data-anim="pop" data-rot="-2" data-sfx="ding" style="font-size:66px">달라지는 부분은 더 의심!</div>
+</div></section>
 
-<section class="scene" id="s7">
-  <div class="mid" data-r="0.2">그래서 같은 질문도<br>답이 <span class="mark" id="m7">조금씩 달라요</span></div>
-  <div class="tip" data-r="2.6"><div class="k">오늘 바로 써먹기</div><div class="t">중요한 질문은 세 번 물어보고, 매번 달라지는 부분을 더 의심하세요</div></div>
-</section>
-
-<section class="scene" id="s8">
-  <div class="small" data-r="0.2">다음 편</div>
-  <div class="mid" data-r="0.6">글자를 ‘토큰’이라는<br>조각으로 읽는다</div>
-  <div class="hr" data-r="1.4"></div>
-  <div class="body" data-r="1.8">열 살도 이해하는 AI</div>
-  <div class="note" data-r="2.3">자세한 설명과 출처는</div>
-  <div class="url" data-r="2.8">프로필 링크의 책 사이트에서</div>
-</section>
+<!-- 10. 다음 편 76~88박 -->
+<section class="scene" data-a="76" data-e="88" data-bg="#2F7FD8"><div class="in" style="gap:24px;bottom:560px">
+  <div class="sticker c-yellow" data-b="76" data-anim="slam" data-sfx="slam" style="font-size:70px">다음 편</div>
+  <div class="st big" data-b="77.4" data-anim="slam" data-sfx="slam">글자를<br>‘토큰’으로<br>읽는다?!</div>
+  <div class="sticker" data-b="81" data-anim="slam" data-sfx="slam" style="font-size:100px">AI 정주행</div>
+  <div class="st sm" data-b="82.2" data-anim="pop" data-sfx="pop" style="font-size:58px;-webkit-text-stroke:12px var(--ink)">열 살도 이해하는 AI 교과서</div>
+  <div class="sticker c-red beat" data-b="84" data-anim="pop" data-sfx="ding" style="font-size:64px">프로필 링크에서 보기</div>
+</div><div class="mas" data-face="happy:grin" data-b="78" data-anim="pop" data-sfx="pop" style="left:395px;top:1380px;width:290px;height:325px"></div></section>
 
 <script>
-const D=58;
-const S=[[0,5,'s1'],[5,13,'s2'],[13,22,'s3'],[22,30,'s4'],[30,40,'s5'],[40,45.5,'s6'],[45.5,53,'s7'],[53,58,'s8']];
+const BPM=128,BEAT=60/BPM,TOTAL=88;
 const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
-const ease=x=>1-Math.pow(1-x,3);
-const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
-function reveal(el,t,s,d=0.6,dy=44){const p=ease(clamp((t-s)/d,0,1));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;}
-function sweep(el,t,s,d=0.7){el.style.backgroundSize=(ease(clamp((t-s)/d,0,1))*100)+'% 100%';}
+const outCubic=x=>1-Math.pow(1-x,3);
+const outBack=(x,c=2.2)=>1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);
+const outBounce=x=>{const n=7.5625,d=2.75;if(x<1/d)return n*x*x;if(x<2/d)return n*(x-=1.5/d)*x+.75;if(x<2.5/d)return n*(x-=2.25/d)*x+.9375;return n*(x-=2.625/d)*x+.984375;};
+const scenes=[...document.querySelectorAll('.scene')];
+// 마스코트 표정
+const T=document.getElementById('mascot');
+document.querySelectorAll('.mas').forEach(m=>{m.appendChild(T.content.cloneNode(true));const [e,mo]=m.dataset.face.split(':');
+  m.querySelectorAll('.e-open,.e-wide,.e-happy,.m-smile,.m-o,.m-grin').forEach(g=>g.style.display='none');
+  m.querySelector('.e-'+e).style.display='';m.querySelector('.m-'+mo).style.display='';});
+// 진행 바
+const prog=document.getElementById('prog');scenes.forEach(()=>{const i=document.createElement('i');i.innerHTML='<b></b>';prog.appendChild(i)});
+// 색종이
+const conf=document.getElementById('conf');const COL=['#FC5424','#FFD93D','#2BC48A','#2F7FD8','#fff'];
+for(let i=0;i<34;i++){const s=document.createElement('span');s.className='cf';s.style.background=COL[i%5];s.style.border='4px solid #242424';conf.appendChild(s);}
+const dots=[[0,0,0,0,0,0,1],[1,0,0,0,0,1,0],[1,0,0,1,0,0,1],[1,1,0,0,0,1,1],[1,1,0,1,0,1,1],[1,1,1,0,1,1,1]];
+function dieFace(f){const pos=[[22,22],[22,124],[22,226],[124,124],[226,22],[226,124],[226,226]];const ds=document.querySelectorAll('#die i');
+  const faces={1:[3],2:[0,6],3:[0,3,6],4:[0,2,4,6],5:[0,2,3,4,6],6:[0,1,2,4,5,6]};ds.forEach((d,i)=>{d.style.display=faces[f].includes(i)?'block':'none';d.style.left=pos[i][0]+'px';d.style.top=pos[i][1]+'px'});}
+function shakeXY(t,a=18){return [Math.sin(t*90)*a*Math.exp(-t*7),Math.cos(t*77)*a*Math.exp(-t*7)];}
+function anim(el,rel,b){
+  const k=el.dataset.anim,rot=+(el.dataset.rot||0);
+  if(rel<0){el.style.opacity=0;el.style.transform='scale(0)';return;}
+  let s=1,x=0,y=0,r=rot,op=clamp(rel/0.06,0,1);
+  const beatPulse=el.classList.contains('beat')||el.classList.contains('mas')?1+0.05*Math.exp(-5*((b%1+1)%1)):1;
+  if(k==='pop'){const p=clamp(rel/0.34,0,1);s=0.2+0.8*outBack(p);r=rot+(1-p)*-12;}
+  else if(k==='slam'){const p=clamp(rel/0.22,0,1);s=1+1.5*Math.pow(1-p,2);[x,y]=shakeXY(rel);}
+  else if(k==='slideL'){const p=clamp(rel/0.4,0,1);x=-1300*(1-outBack(p,1.4));}
+  else if(k==='slideR'){const p=clamp(rel/0.4,0,1);x=1300*(1-outBack(p,1.4));}
+  else if(k==='shake'){const p=clamp(rel/0.3,0,1);s=0.4+0.6*outBack(p);[x,y]=shakeXY(rel,30);}
+  else if(k==='grow'){el.style.width=(+el.dataset.v*outBack(clamp(rel/0.45,0,1),1.2))+'%';op=1;s=1;}
+  else if(k==='count'){const p=outCubic(clamp(rel/0.5,0,1));el.textContent=Math.round(+el.dataset.v*p)+(el.dataset.fmt||'');op=1;}
+  else if(k==='dice'){const roll=2.5*BEAT;
+    if(rel<0.3){const p=rel/0.3;y=-900*(1-outBounce(p));r=0;}
+    else if(rel<roll){const q=rel-0.3;r=q*1500;x=Math.sin(q*60)*40;y=Math.abs(Math.sin(q*22))*-60;dieFace(1+Math.floor(q*28)%6);}
+    else{const q=rel-roll;dieFace(5);r=0;y=-70*Math.exp(-q*9)*Math.abs(Math.cos(q*28));s=1+0.1*Math.exp(-q*8);}
+    op=1;}
+  else if(k==='confetti'){el.style.opacity=1;const ps=el.children;for(let i=0;i<ps.length;i++){const a=(i*137.5)*Math.PI/180,sp=500+(i%7)*130;const q=Math.max(rel,0);
+      const px=540+Math.cos(a)*sp*q,py=1050+Math.sin(a)*sp*q*0.9+1500*q*q;ps[i].style.opacity=clamp(1-q/1.3,0,1);ps[i].style.transform=`translate(${px}px,${py}px) rotate(${q*700+i*40}deg)`;ps[i].style.left=0;ps[i].style.top=0;}
+    return;}
+  el.style.opacity=op;
+  el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s*beatPulse})`;
+}
 window.seek=function(t){
-  for(const [a,b,id] of S){
-    const el=document.getElementById(id);const l=t-a;
-    const fi=clamp(l/0.45,0,1), fo=id==='s8'?1:clamp((b-t)/0.4,0,1);
-    el.style.opacity=(l>=0&&t<b)?Math.min(fi,fo):0;
-    if(!(l>=0&&t<b))continue;
-    el.querySelectorAll('[data-r]').forEach(n=>reveal(n,l,parseFloat(n.dataset.r)));
-    el.querySelectorAll('.bar[data-b]').forEach(n=>{const s=parseFloat(n.dataset.s);n.style.width=(ease(clamp((l-s)/0.9,0,1))*parseFloat(n.dataset.b)/30*100)+'%';});
-    if(id==='s1')sweep(document.getElementById('m1'),l,0.9,0.8);
-    if(id==='s7')sweep(document.getElementById('m7'),l,1.2,0.8);
-    if(id==='s4'){
-      const die=document.getElementById('die');const p=clamp((l-0.9)/1.6,0,1);
-      die.style.transform=`rotate(${(1-ease(p))*720}deg) scale(${0.85+0.15*back(p)})`;die.style.opacity=clamp((l-0.6)/0.3,0,1);
-      ['c1','c2','c3'].forEach((id2,i)=>{const c=document.getElementById(id2);const pk=l>2.9;
-        c.className='chip'+(id2==='c1'&&pk?' pick':'');c.style.opacity=clamp((l-0.9)/0.5,0,1)*(id2==='c1'||!pk?1:0.35);
-        c.style.transform=(id2==='c1'&&pk)?`scale(${1+0.1*Math.sin(clamp((l-2.9)/0.5,0,1)*Math.PI)})`:'none';});
-    }
-  }
+  const b=t/BEAT;
+  scenes.forEach((sc,idx)=>{
+    const a=+sc.dataset.a,e=+sc.dataset.e,last=idx===scenes.length-1;
+    const on=b>=a&&(b<e||(last&&b<=e));
+    sc.style.display=on?'block':'none';
+    const seg=prog.children[idx].firstChild;seg.style.width=(clamp((b-a)/(e-a),0,1)*100)+'%';
+    if(!on)return;
+    sc.style.background=sc.dataset.bg;
+    sc.style.transform=`scale(${1+0.045*clamp((b-a)/(e-a),0,1)})`;
+    sc.querySelectorAll('[data-b]').forEach(el=>{if(el.dataset.anim)anim(el,(b-(+el.dataset.b))*BEAT,b);});
+    document.getElementById('flash').style.opacity=Math.max(0,1-((b-a)*BEAT)/0.16)*0.85;
+  });
+  prog.style.display='flex';
 };
+// 효과음 목록을 render.js가 읽어 간다
+window.collectSfx=()=>{const out=[];scenes.forEach(sc=>out.push({b:+sc.dataset.a,t:'whoosh',d:0}));
+  document.querySelectorAll('[data-sfx]').forEach(e=>out.push({b:+e.dataset.b,t:e.dataset.sfx,d:+(e.dataset.dur||0)}));
+  return {bpm:BPM,total:TOTAL,sfx:out.sort((x,y)=>x.b-y.b)};};
 window.seek(0);
 </script></body></html>

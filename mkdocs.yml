@@ -1,5 +1,5 @@
-site_name: 열 살도 이해하는 AI
-site_description: 처음 쓰는 사람부터 원리로 쓰는 사람까지, AI를 기초에서 심화까지 다루는 한국어 교과서
+site_name: AI 정주행
+site_description: 열 살도 이해하는 AI 교과서. 처음 쓰는 사람부터 원리로 쓰는 사람까지, AI를 기초에서 심화까지 다루는 한국어 웹 교과서
 # site_url은 새 주소(Cloudflare Pages)가 정해지면 채운다. repo_url은 저장소 주소(아이디 포함)를 사이트에 드러내지 않으려고 둔다.
 theme:
   name: material

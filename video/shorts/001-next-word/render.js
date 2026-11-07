@@ -1,9 +1,8 @@
-// 사용법: node render.js <프레임 폴더> [fps=30] [workers=4]
-// scene.html의 seek(t)로 시간을 정해 프레임마다 JPEG를 저장한다. 같은 입력이면 같은 영상이 나온다.
+// 사용법: node render.js <프레임 폴더> <timeline.json 경로> [fps=30] [workers=4]
+// scene.html의 seek(t)로 시간을 정해 프레임마다 JPEG를 저장하고, 효과음 위치(timeline.json)를 장면 파일에서 뽑아 저장한다.
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
-const out = process.argv[2], FPS = +(process.argv[3] || 30), W = +(process.argv[4] || 4);
-const D = 58, N = D * FPS;
+const out = process.argv[2], TL = process.argv[3], FPS = +(process.argv[4] || 30), W = +(process.argv[5] || 4);
 fs.mkdirSync(out, { recursive: true });
 (async () => {
   const b = await chromium.launch();
@@ -13,15 +12,18 @@ fs.mkdirSync(out, { recursive: true });
   for (let i = 0; i < W; i++) {
     const p = await ctx.newPage(); await p.goto(url, { waitUntil: 'networkidle' }).catch(() => {});
     // 글꼴 조각이 모두 내려받아지도록 모든 장면의 글자를 한 번씩 그려 본다
-    for (const t of [1, 8, 15, 24, 34, 42, 50, 56]) { await p.evaluate(x => window.seek(x), t); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(250); }
+    for (const t of [1.2, 3, 5, 8, 11, 14, 17, 19.5, 22, 25, 28, 31, 34, 37, 40.5]) { await p.evaluate(x => window.seek(x), t); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(200); }
     pages.push(p);
   }
-  const check = await pages[0].evaluate(() => document.fonts.check('800 40px "Pretendard Variable"'));
-  console.log('Pretendard 로드:', check);
+  console.log('Pretendard 로드:', await pages[0].evaluate(() => document.fonts.check('900 40px "Pretendard Variable"')));
+  const tl = await pages[0].evaluate(() => window.collectSfx());
+  fs.writeFileSync(TL, JSON.stringify(tl, null, 1));
+  const D = tl.total * 60 / tl.bpm, N = Math.round(D * FPS);
+  console.log(`길이 ${D.toFixed(2)}초, 프레임 ${N}, 효과음 ${tl.sfx.length}개`);
   let done = 0;
   await Promise.all(pages.map(async (p, w) => {
     for (let i = w; i < N; i += W) {
-      await p.evaluate(x => window.seek(x), i / FPS);
+      await p.evaluate(x => window.seek(x), Math.min(i / FPS, D - 0.001));
       await p.screenshot({ path: path.join(out, `f${String(i).padStart(5, '0')}.jpg`), type: 'jpeg', quality: 92 });
       if (++done % 300 === 0) console.log(`${done}/${N}`);
     }
