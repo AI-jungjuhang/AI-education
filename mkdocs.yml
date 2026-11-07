@@ -150,6 +150,15 @@ nav:
       - "16.1 슬래시 명령":
         - "자주 쓰는 슬래시 명령": part5/ch16/slash-basics.md
         - "내 단축 명령 만들기": part5/ch16/slash-custom.md
+      - "16.2 CLAUDE.md":
+        - "Claude가 매번 읽는 메모": part5/ch16/claudemd-intro.md
+        - "좋은 CLAUDE.md 쓰는 법": part5/ch16/claudemd-write.md
+      - "16.3 체크포인트":
+        - "되돌리기로 마음 놓고 실험하기": part5/ch16/checkpoint-rewind.md
+        - "체크포인트와 git은 뭐가 다를까": part5/ch16/checkpoint-vs-git.md
+      - "16.4 CLI 기초":
+        - "대화 모드와 한 줄 모드": part5/ch16/cli-modes.md
+        - "파일을 넘겨 한 줄로 일 시키기": part5/ch16/cli-pipe.md
     - "17장 5B 자동화와 연결":
       - part5/ch17/index.md
     - "18장 5C 고급 ★":

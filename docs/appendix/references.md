@@ -53,12 +53,13 @@
 | [TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958) | [환각은 어떻게 재나](../part6/ch21/eval-hallu.md) |
 | [Why Language Models Hallucinate](https://arxiv.org/abs/2509.04664) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [환각은 어떻게 재나](../part6/ch21/eval-hallu.md) |
 
-### Anthropic 문서와 글 (16개)
+### Anthropic 문서와 글 (22개)
 
 | 자료 | 이 책에서 쓴 페이지 |
 |---|---|
 | [Building effective AI agents](https://www.anthropic.com/research/building-effective-agents) | [에이전트가 실패하는 모습과 안전장치](../part4/ch14/failures.md), [계획하고, 행동하고, 확인한다](../part4/ch14/loop.md), [에이전트란 무엇일까](../part4/ch14/what-agent.md), [평가하고 고치기](../part4/ch15/evaluate.md), [좋은 지시문 쓰기](../part4/ch15/instructions.md), [도구를 잘 설계하기](../part4/ch15/tool-design.md) |
 | [Choosing the right model](https://platform.claude.com/docs/en/about-claude/models/choosing-a-model) | [내 일에 맞는 AI 고르기](../part1/ch04/choose.md), [무료와 유료는 뭐가 다를까](../part1/ch04/free-paid.md) |
+| [Claude Code 공식 문서: 명령 목록(commands)](https://code.claude.com/docs/en/commands.md) | [되돌리기로 마음 놓고 실험하기](../part5/ch16/checkpoint-rewind.md), [자주 쓰는 슬래시 명령](../part5/ch16/slash-basics.md), [내 단축 명령 만들기](../part5/ch16/slash-custom.md) |
 | [Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows) | [맥락을 주면 답이 달라진다](../part1/ch02/context.md), [새 대화가 나을 때](../part1/ch02/fresh-start.md), [고쳐 달라고 말하는 법](../part1/ch02/iterate.md), [요약하기](../part2/ch05/summarize.md), [긴 자료 읽고 정리하기](../part2/ch06/long-docs.md), [컨텍스트 창: 한 번에 보는 범위](../part3/ch11/context-window.md) |
 | [Define success criteria and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests) | [자주 쓰는 질문 모아 두기](../part2/ch08/prompt-library.md), [일에 적용하기 전 체크리스트](../part2/ch08/rollout-check.md), [평가하고 고치기](../part4/ch15/evaluate.md) |
 | [Effective context engineering for AI agents](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents) | [계획하고, 행동하고, 확인한다](../part4/ch14/loop.md) |
@@ -73,6 +74,11 @@
 | [Tool use with Claude](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) | [파일을 읽고 코드를 실행하는 AI](../part4/ch13/files-code.md), [검색을 붙이면 달라지는 것](../part4/ch13/search-rag.md) |
 | [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [긴 답이 이어지는 과정](../part3/ch12/long-answer.md), [회로: 생각의 길 따라가기](../part6/ch19/circuits.md), [왜 모델 속을 봐야 할까](../part6/ch19/interp-intro.md), [정렬: 사람의 뜻에 맞추기](../part6/ch20/alignment.md), [강화학습과 추론 모델](../part6/ch20/rl-reasoning.md) |
 | [Writing effective tools for AI agents](https://www.anthropic.com/research/writing-tools-for-agents) | [평가하고 고치기](../part4/ch15/evaluate.md), [도구를 잘 설계하기](../part4/ch15/tool-design.md) |
+| [공식 문서: Claude가 프로젝트를 기억하는 법(memory)](https://code.claude.com/docs/en/memory.md) | [Claude가 매번 읽는 메모: CLAUDE.md](../part5/ch16/claudemd-intro.md), [좋은 CLAUDE.md 쓰는 법](../part5/ch16/claudemd-write.md) |
+| [공식 문서: CLI 레퍼런스](https://code.claude.com/docs/en/cli-reference.md) | [대화 모드와 한 줄 모드](../part5/ch16/cli-modes.md), [파일을 넘겨 한 줄로 일 시키기](../part5/ch16/cli-pipe.md) |
+| [공식 문서: 스킬로 Claude 확장하기](https://code.claude.com/docs/en/skills.md) | [내 단축 명령 만들기](../part5/ch16/slash-custom.md) |
+| [공식 문서: 체크포인트(checkpointing)](https://code.claude.com/docs/en/checkpointing.md) | [되돌리기로 마음 놓고 실험하기](../part5/ch16/checkpoint-rewind.md), [체크포인트와 git은 뭐가 다를까](../part5/ch16/checkpoint-vs-git.md) |
+| [프로그램에서 실행하기(headless)](https://code.claude.com/docs/en/headless.md) | [대화 모드와 한 줄 모드](../part5/ch16/cli-modes.md), [파일을 넘겨 한 줄로 일 시키기](../part5/ch16/cli-pipe.md) |
 
 ### 영상과 강의 (6개)
 
@@ -110,11 +116,15 @@
 | [LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) | [에이전트가 실패하는 모습과 안전장치](../part4/ch14/failures.md) |
 | [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) | [도구를 연결하는 표준: MCP](../part4/ch13/connectors.md) |
 
-### 보도와 기타 (7개)
+### 보도와 기타 (11개)
 
 | 자료 | 이 책에서 쓴 페이지 |
 |---|---|
+| [claude-howto 02-memory](https://github.com/luongnv89/claude-howto/tree/main/02-memory) | [Claude가 매번 읽는 메모: CLAUDE.md](../part5/ch16/claudemd-intro.md), [좋은 CLAUDE.md 쓰는 법](../part5/ch16/claudemd-write.md) |
+| [claude-howto 08-checkpoints](https://github.com/luongnv89/claude-howto/tree/main/08-checkpoints) | [되돌리기로 마음 놓고 실험하기](../part5/ch16/checkpoint-rewind.md), [체크포인트와 git은 뭐가 다를까](../part5/ch16/checkpoint-vs-git.md) |
+| [claude-howto 10-cli](https://github.com/luongnv89/claude-howto/tree/main/10-cli) | [대화 모드와 한 줄 모드](../part5/ch16/cli-modes.md), [파일을 넘겨 한 줄로 일 시키기](../part5/ch16/cli-pipe.md) |
 | [Deep Dive](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [챗봇은 '다음 말'을 맞히는 기계](../part1/ch01/next-word.md), [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md), [읽고 따라 하기: 사전학습](../part3/ch09/pretraining.md), [강화학습과 추론 모델](../part6/ch20/rl-reasoning.md), [Andrej Karpathy의 시선](../part6/ch22/karpathy.md) |
+| [luongnv89/claude-howto 01-slash-commands](https://github.com/luongnv89/claude-howto/tree/main/01-slash-commands) | [자주 쓰는 슬래시 명령](../part5/ch16/slash-basics.md), [내 단축 명령 만들기](../part5/ch16/slash-custom.md) |
 | [보도 내용](https://www.heraldk.com/article/2025110215591135596) | [저작권과 표절](../part1/ch03/copyright.md) |
 | [보도 내용](https://view.asiae.co.kr/article/2026022609294663830) | [저작권과 표절](../part1/ch03/copyright.md) |
 | [보도 내용](https://v.daum.net/v/20250806130146966) | [개인정보와 민감한 자료](../part1/ch03/privacy.md), [팀에서 정하는 규칙](../part2/ch08/team-rules.md) |
