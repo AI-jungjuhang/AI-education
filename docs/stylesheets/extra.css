@@ -49,3 +49,9 @@
 .md-tabs{background:var(--md-primary-fg-color)}
 .advanced-badge{color:#d98a00;font-weight:700}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* 홈: 약속 카드와 버튼 */
+.md-typeset .grid.cards>ul>li,.md-typeset .grid.cards>ol>li{border:1px solid var(--line);border-radius:12px;background:var(--card);box-shadow:none;padding:.9rem 1rem}
+.md-typeset .grid.cards>ul>li:hover{border-color:var(--md-accent-fg-color)}
+.md-typeset .md-button{border-radius:999px;font-weight:700}
+.md-typeset .md-button--primary{background:var(--ink);border-color:var(--ink);color:#fff}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary{background:#9fb0ff;border-color:#9fb0ff;color:#11161f}
