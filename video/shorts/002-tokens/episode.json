@@ -1,0 +1,126 @@
+{
+ "id": "002-tokens",
+ "tag": "1.1.2",
+ "scenes": [
+  {
+   "type": "title",
+   "bg": "blue",
+   "lines": [
+    "챗봇은 글자를",
+    "안 읽어요!"
+   ],
+   "sticker": {
+    "t": "그럼 뭘 읽을까?",
+    "c": "yellow",
+    "anim": "slideR",
+    "rot": -3
+   },
+   "at": {
+    "sticker": 3.4
+   },
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   },
+   "beats": 6
+  },
+  {
+   "type": "title",
+   "bg": "yellow",
+   "lines": [
+    "레고 블록",
+    "토큰!"
+   ],
+   "sticker": {
+    "t": "조각으로 읽어요",
+    "c": "red",
+    "anim": "pop",
+    "rot": 4
+   },
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 1.6
+   },
+   "beats": 5
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "이렇게 쪼개요",
+   "items": [
+    {
+     "t": "인공지능 → 인공 | 지능",
+     "c": "yellow",
+     "size": 58
+    },
+    {
+     "t": "감자튀김 → 감자 | 튀김",
+     "c": "green",
+     "size": 58
+    },
+    {
+     "t": "쿠쿠루삥뽕 → 쿠|쿠|루|삥|뽕",
+     "c": "red",
+     "size": 50
+    }
+   ],
+   "note": "예시예요! 실제는 챗봇마다 달라요",
+   "beats": 10
+  },
+  {
+   "type": "vs",
+   "bg": "blue",
+   "title": "조각 수 비교!",
+   "left": {
+    "t": "영어는 조각이 적게",
+    "c": "green"
+   },
+   "right": {
+    "t": "다른 언어는 최대 15배!",
+    "c": "red"
+   },
+   "note": "한 연구의 보고예요",
+   "beats": 10
+  },
+  {
+   "type": "title",
+   "bg": "yellow",
+   "lines": [
+    "글자 세기는",
+    "서툴러요!"
+   ],
+   "sticker": {
+    "t": "조각으로 읽으니까",
+    "c": "red",
+    "anim": "pop",
+    "rot": 4
+   },
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 1.6
+   },
+   "beats": 5
+  },
+  {
+   "type": "tip",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "lines": [
+    "글자 수는",
+    "직접 세기!"
+   ],
+   "sticker": "챗봇이 세면 ‘풀어 쓰게’ 하기",
+   "at": {
+    "sticker": 5
+   },
+   "beats": 9
+  },
+  {
+   "type": "outro",
+   "beats": 8
+  }
+ ]
+}

@@ -4,22 +4,22 @@
 
 | 번호 | 영상 | 원본 페이지 | 길이 | 상태 |
 |---|---|---|---|---|
-| 001 | 챗봇은 '다음 말'을 맞히는 기계 | 1.1.1 | 40초 | v2(팝 스티커·박자 편집), 평가 대기 |
+| 001 | 챗봇은 '다음 말'을 맞히는 기계 | 1.1.1 | 40초 | 확정(사용자 평가 반영) |
+| 002 | 글자를 '토큰'이라는 조각으로 쪼개 읽는다 | 1.1.2 | 25초 | 초안, 평가 대기 |
 
 ## 만들기
 
+영상은 **재료 상자**(`video/engine`)로 만들어요. 새 영상은 `shorts/NNN-이름/episode.json`(장면표)만 쓰고 이렇게 실행해요. 블록 종류와 쓰는 법은 [engine/README.md](engine/README.md)에 있어요.
+
 ```bash
-cd video/shorts/001-next-word
-bash build.sh        # 프레임 렌더링 → 음악 → mp4 (out/ 폴더)
+bash video/engine/build.sh video/shorts/002-tokens        # 조용한 음악(기본)
+MUSIC=loud bash video/engine/build.sh video/shorts/002-tokens   # 신나는 음악
 ```
 
-필요한 것: Node와 Playwright(Chromium), ffmpeg, Python 3와 numpy, scipy. 처음부터 끝까지 이 환경에서 약 1~2분 걸렸어요.
+필요한 것: Node와 Playwright(Chromium), ffmpeg, Python 3와 numpy, scipy. 편당 약 1분이에요.
 
-## 구성
+## 폴더 구성
 
-- `script.md`: 장면표와 근거(원본 페이지의 어느 부분인지), 평가 질문
-- `scene.html`: 모든 장면. `seek(t)`로 시간을 정하면 그 시점의 화면이 그려져요
-- `render.js`: 프레임마다 `seek`하고 JPEG로 저장
-- `make_music.py`: 배경음악과 효과음을 직접 합성(저작권 문제 없음). 박자는 128bpm이에요
-- `out/timeline.json`: 렌더링할 때 만들어지는 효과음 목록(박자와 종류)
-- `build.sh`: 위를 이어서 mp4와 썸네일 생성
+- `engine/`: 재료 상자(블록 라이브러리, 장면 생성기, 렌더러, 음악 합성, 빌드 스크립트)
+- `shorts/NNN-이름/episode.json`: 장면표(영상의 원본). `scene.html`과 `out/`은 여기서 만들어져요
+- `shorts/NNN-이름/script.md`: 근거와 평가 질문
