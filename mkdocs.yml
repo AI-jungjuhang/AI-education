@@ -1,0 +1,44 @@
+site_name: 열 살도 이해하는 AI
+site_description: 처음 쓰는 사람부터 원리로 쓰는 사람까지, AI를 기초에서 심화까지 다루는 한국어 교과서
+site_url: https://sehoon3554-ctrl.github.io/AI-education/
+repo_url: https://github.com/sehoon3554-ctrl/AI-education
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle: {icon: material/weather-night, name: 다크 모드}
+    - scheme: slate
+      primary: indigo
+      toggle: {icon: material/weather-sunny, name: 라이트 모드}
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed: {alternate_style: true}
+  - attr_list
+  - md_in_html
+  - toc: {permalink: true}
+nav:
+  - 홈: index.md
+  - I 처음 쓰는 AI:
+    - part1/index.md
+    - 1장 AI 챗봇은 뭘 하는 기계일까:
+      - part1/ch01/index.md
+      - 1.1 챗봇이 하는 일:
+        - 챗봇은 '다음 말'을 맞히는 기계: part1/ch01/next-word.md
+  - II 일에 붙이기: part2/index.md
+  - III 원리 한 스푼: part3/index.md
+  - IV 도구와 에이전트: part4/index.md
+  - V 원리로 쓰기 ★: part5/index.md
+  - 부록: appendix/index.md
