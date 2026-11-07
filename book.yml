@@ -190,9 +190,9 @@ parts:
     - num: '16.1'
       title: 해석 가능성
       pages:
-      - {slug: interp-intro, title: 왜 모델 속을 봐야 할까, min: 7, done: false}
-      - {slug: features, title: '특징: 모델 안의 개념들', min: 7, done: false}
-      - {slug: circuits, title: '회로: 생각의 길 따라가기', min: 7, done: false}
+      - {slug: interp-intro, title: 왜 모델 속을 봐야 할까, min: 7, done: true}
+      - {slug: features, title: '특징: 모델 안의 개념들', min: 7, done: true}
+      - {slug: circuits, title: '회로: 생각의 길 따라가기', min: 7, done: true}
   - num: 17
     title: 학습의 심화 ★
     blurb: 스케일링, 강화학습과 추론 모델, 정렬을 살펴봐요.

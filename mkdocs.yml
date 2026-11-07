@@ -148,6 +148,10 @@ nav:
     - part5/index.md
     - "16장 모델 속을 들여다보기 ★":
       - part5/ch16/index.md
+      - "16.1 해석 가능성":
+        - "왜 모델 속을 봐야 할까": part5/ch16/interp-intro.md
+        - "특징: 모델 안의 개념들": part5/ch16/features.md
+        - "회로: 생각의 길 따라가기": part5/ch16/circuits.md
     - "17장 학습의 심화 ★":
       - part5/ch17/index.md
     - "18장 평가와 한계 ★":
