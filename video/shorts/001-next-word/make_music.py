@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """박자에 맞춘 신나는 배경음악과 효과음을 직접 합성한다(저작권 문제 없음).
-사용: python3 make_music.py <timeline.json> <출력.wav>
+사용: python3 make_music.py <timeline.json> <출력.wav> [soft]
+두 번째 인자 soft: 드럼 없이 부드러운 패드·플럭·가벼운 박자만 쓰는 조용한 버전(효과음도 작게).
 timeline.json은 render.js가 scene.html에서 뽑은 효과음 위치(박 단위). 128bpm, C - Am - F - G."""
 import sys, json, numpy as np
 from scipy.signal import butter, sosfilt
-tl = json.load(open(sys.argv[1])); out = sys.argv[2]
+tl = json.load(open(sys.argv[1])); out = sys.argv[2]; SOFT = len(sys.argv) > 3 and sys.argv[3] == 'soft'
 BPM = tl['bpm']; BEAT = 60 / BPM; TOTAL = tl['total']; SR = 44100
 D = TOTAL * BEAT; n = int((D + 0.6) * SR)
 rng = np.random.default_rng(7)
@@ -41,19 +42,40 @@ def pluck(f, d=0.28):
 chords = [([261.63, 329.63, 392.00], 65.41), ([220.00, 261.63, 329.63], 55.00), ([174.61, 220.00, 261.63], 43.65), ([196.00, 246.94, 293.66], 49.00)]
 lift = [(24, 32), (44, 52), (76, 88)]
 def in_lift(b): return any(a <= b < e for a, e in lift)
+def pad(freqs, d):
+    t = tt(d); e = np.clip(t / 0.35, 0, 1) * np.clip((d - t) / 0.4, 0, 1); y = 0
+    for f in freqs: y = y + np.sin(2 * np.pi * f * t) + 0.3 * np.sin(2 * np.pi * 2 * f * t)
+    return lp(y, 1800) * e * 0.09
+def soft_kick():
+    t = tt(0.25); f = 90 * np.exp(-t * 25) + 48
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 14) * 0.5
+def soft_pluck(f, d=0.5):
+    t = tt(d); return (np.sin(2 * np.pi * f * t) + 0.2 * np.sin(2 * np.pi * 3 * f * t)) * np.exp(-t * 7) * np.clip(t / 0.004, 0, 1) * 0.14
 nb = int(TOTAL)
-for i in range(nb):
-    t0 = i * BEAT; bar = i // 4; ch, root = chords[bar % 4]; ph = i % 4
-    put(L, kick(), t0, 1.0 if i else 1.2)
-    if ph in (1, 3): put(L, snare(), t0, 0.9); put(L, clap(), t0, 0.7)
-    put(L, hat(), t0 + BEAT / 2, 0.8, 0.25)
-    if ph == 3: put(L, hat(True), t0 + BEAT / 2, 0.7, -0.25)
-    if in_lift(i):
-        for q in (0.25, 0.75): put(L, hat(), t0 + q * BEAT, 0.55, 0.3 if q < .5 else -0.3)
-        for q, f in enumerate([ch[0], ch[1], ch[2], ch[1] * 2]): put(L, pluck(f * 2), t0 + q * BEAT / 4 * 1, 0.8, (-0.4, 0.4)[q % 2])
-    if ph == 0:
-        for pos in (0, 0.75, 1.5, 2.0, 2.75, 3.5): put(L, bass(root, BEAT * 0.4), t0 + pos * BEAT, 1.0)
-        put(L, stab(ch, 0.2), t0 + 0.5 * BEAT, 0.9, 0.2); put(L, stab(ch, 0.2), t0 + 2.5 * BEAT, 0.9, -0.2)
+if SOFT:
+    mel = [0, 2, 1, 2, 0, 2, 1, 0]
+    for i in range(nb):
+        t0 = i * BEAT; bar = i // 4; ch, root = chords[bar % 4]; ph = i % 4
+        if ph == 0:
+            put(L, pad(ch + [root * 4], BEAT * 4.2), t0, 1.0, 0.0)
+            put(L, bass(root * 2, BEAT * 1.6), t0, 0.35)
+        if ph in (0, 2): put(L, soft_kick(), t0, 0.5)
+        put(L, hat(), t0 + BEAT / 2, 0.18, 0.25 if i % 2 else -0.25)
+        k = mel[(i // 1) % len(mel)]
+        if ph in (0, 1, 3) or in_lift(i): put(L, soft_pluck(ch[k] * 2), t0 + (0.5 * BEAT if ph == 3 else 0), 0.8, (-0.3, 0.3)[i % 2])
+else:
+    for i in range(nb):
+      t0 = i * BEAT; bar = i // 4; ch, root = chords[bar % 4]; ph = i % 4
+      put(L, kick(), t0, 1.0 if i else 1.2)
+      if ph in (1, 3): put(L, snare(), t0, 0.9); put(L, clap(), t0, 0.7)
+      put(L, hat(), t0 + BEAT / 2, 0.8, 0.25)
+      if ph == 3: put(L, hat(True), t0 + BEAT / 2, 0.7, -0.25)
+      if in_lift(i):
+          for q in (0.25, 0.75): put(L, hat(), t0 + q * BEAT, 0.55, 0.3 if q < .5 else -0.3)
+          for q, f in enumerate([ch[0], ch[1], ch[2], ch[1] * 2]): put(L, pluck(f * 2), t0 + q * BEAT / 4 * 1, 0.8, (-0.4, 0.4)[q % 2])
+      if ph == 0:
+          for pos in (0, 0.75, 1.5, 2.0, 2.75, 3.5): put(L, bass(root, BEAT * 0.4), t0 + pos * BEAT, 1.0)
+          put(L, stab(ch, 0.2), t0 + 0.5 * BEAT, 0.9, 0.2); put(L, stab(ch, 0.2), t0 + 2.5 * BEAT, 0.9, -0.2)
 # ---- 효과음 ----
 def sfx_pop():
     t = tt(0.14); f = 950 * np.exp(-t * 20) + 260; return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 26) * 0.8
@@ -81,6 +103,7 @@ def sfx_rattle(d):
         y[j:j+500] += (np.sin(2 * np.pi * rng.uniform(300, 700) * np.arange(500) / SR) * np.exp(-np.arange(500) / SR * 70) * 0.5)[:len(y[j:j+500])]
     return y * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 0.5 * 0.9
 G = {'pop': 0.75, 'slam': 0.95, 'whoosh': 0.5, 'tick': 0.55, 'ding': 0.5, 'buzz': 0.6, 'rattle': 0.5}
+if SOFT: G = {k: v * 0.45 for k, v in G.items()}
 for e in tl['sfx']:
     t0 = e['b'] * BEAT; k = e['t']
     if k == 'pop': put(L, sfx_pop(), t0, G[k])

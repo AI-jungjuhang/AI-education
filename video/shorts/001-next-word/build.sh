@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 W=${TMPDIR:-/tmp}/shorts-001; rm -rf "$W"; mkdir -p "$W/frames" out
 node render.js "$W/frames" "$W/timeline.json" 30 4
 cp "$W/timeline.json" out/timeline.json
-python3 make_music.py "$W/timeline.json" "$W/audio.wav"
+python3 make_music.py "$W/timeline.json" "$W/audio.wav" ${MUSIC:-}   # MUSIC=soft 이면 조용한 버전
 # 소리 크기를 쇼츠·릴스에서 흔한 수준(약 -14 LUFS)으로 맞춘다
 ffmpeg -y -loglevel error -i "$W/audio.wav" -af loudnorm=I=-14:TP=-1.5:LRA=9 -ar 48000 "$W/audio_n.wav"
 ffmpeg -y -loglevel error -framerate 30 -i "$W/frames/f%05d.jpg" -i "$W/audio_n.wav" \
