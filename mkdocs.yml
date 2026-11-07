@@ -161,6 +161,22 @@ nav:
         - "파일을 넘겨 한 줄로 일 시키기": part5/ch16/cli-pipe.md
     - "17장 5B 자동화와 연결":
       - part5/ch17/index.md
+      - "17.1 스킬":
+        - "SKILL.md는 어떻게 생겼을까": part5/ch17/skill-anatomy.md
+        - "실습: 영상 한 편 만들기 스킬": part5/ch17/skill-video.md
+        - "남의 스킬과 설정을 열기 전에": part5/ch17/skill-safety.md
+      - "17.2 훅":
+        - "특정 순간에 자동으로 실행하기": part5/ch17/hook-basics.md
+        - "실습: 자동 검사관 달기": part5/ch17/hook-checker.md
+        - "훅은 내 권한으로 돌아간다": part5/ch17/hook-safety.md
+      - "17.3 MCP":
+        - "MCP는 Claude의 연결 잭": part5/ch17/mcp-intro.md
+        - "실습: 외부 서비스 연결하기": part5/ch17/mcp-connect.md
+        - "토큰은 읽기 전용으로": part5/ch17/mcp-token-safety.md
+      - "17.4 서브에이전트":
+        - "일을 나눠 맡기는 서브에이전트": part5/ch17/subagent-intro.md
+        - "실습: 조사·대본·검토 에이전트": part5/ch17/subagent-team.md
+        - "서브에이전트와 MCP는 뭐가 다를까": part5/ch17/subagent-vs-mcp.md
     - "18장 5C 고급 ★":
       - part5/ch18/index.md
   - "VI 원리로 쓰기 ★":

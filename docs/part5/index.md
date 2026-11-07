@@ -4,6 +4,6 @@ Claude Code로 직접 일을 시켜요. 슬래시 명령부터 스킬, 훅, MCP,
 
 <div class="ep-list">
 <a href="ch16/"><span class="ep-no">16장</span><span class="ep-title">5A 첫걸음</span><span class="ep-time">8/8 작성</span></a>
-<div class="soon"><span class="ep-no">17장</span><span class="ep-title">5B 자동화와 연결</span><span class="ep-time">0/12 작성</span></div>
+<a href="ch17/"><span class="ep-no">17장</span><span class="ep-title">5B 자동화와 연결</span><span class="ep-time">12/12 작성</span></a>
 <div class="soon"><span class="ep-no">18장</span><span class="ep-title">5C 고급 ★</span><span class="ep-time">0/7 작성</span></div>
 </div>

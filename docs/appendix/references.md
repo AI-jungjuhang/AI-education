@@ -53,7 +53,7 @@
 | [TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958) | [환각은 어떻게 재나](../part6/ch21/eval-hallu.md) |
 | [Why Language Models Hallucinate](https://arxiv.org/abs/2509.04664) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [환각은 어떻게 재나](../part6/ch21/eval-hallu.md) |
 
-### Anthropic 문서와 글 (22개)
+### Anthropic 문서와 글 (28개)
 
 | 자료 | 이 책에서 쓴 페이지 |
 |---|---|
@@ -76,8 +76,14 @@
 | [Writing effective tools for AI agents](https://www.anthropic.com/research/writing-tools-for-agents) | [평가하고 고치기](../part4/ch15/evaluate.md), [도구를 잘 설계하기](../part4/ch15/tool-design.md) |
 | [공식 문서: Claude가 프로젝트를 기억하는 법(memory)](https://code.claude.com/docs/en/memory.md) | [Claude가 매번 읽는 메모: CLAUDE.md](../part5/ch16/claudemd-intro.md), [좋은 CLAUDE.md 쓰는 법](../part5/ch16/claudemd-write.md) |
 | [공식 문서: CLI 레퍼런스](https://code.claude.com/docs/en/cli-reference.md) | [대화 모드와 한 줄 모드](../part5/ch16/cli-modes.md), [파일을 넘겨 한 줄로 일 시키기](../part5/ch16/cli-pipe.md) |
-| [공식 문서: 스킬로 Claude 확장하기](https://code.claude.com/docs/en/skills.md) | [내 단축 명령 만들기](../part5/ch16/slash-custom.md) |
+| [공식 문서: MCP — 환경 변수 참조, 서버 관리, 인증](https://code.claude.com/docs/en/mcp.md) | [실습: 외부 서비스 연결하기](../part5/ch17/mcp-connect.md), [MCP는 Claude의 연결 잭](../part5/ch17/mcp-intro.md), [토큰은 읽기 전용으로, 끝나면 폐기](../part5/ch17/mcp-token-safety.md), [서브에이전트와 MCP는 뭐가 다를까](../part5/ch17/subagent-vs-mcp.md) |
+| [공식 문서: 권한 — 믿기 전에 실행되는 것](https://code.claude.com/docs/en/permissions.md) | [훅은 내 권한으로 돌아간다](../part5/ch17/hook-safety.md), [남의 스킬과 설정을 열기 전에](../part5/ch17/skill-safety.md) |
+| [공식 문서: 서브에이전트 — 서브에이전트와 메인 대화 고르기](https://code.claude.com/docs/en/sub-agents.md) | [일을 나눠 맡기는 서브에이전트](../part5/ch17/subagent-intro.md), [실습: 조사·대본·검토 에이전트](../part5/ch17/subagent-team.md), [서브에이전트와 MCP는 뭐가 다를까](../part5/ch17/subagent-vs-mcp.md) |
+| [공식 문서: 스킬로 Claude 확장하기](https://code.claude.com/docs/en/skills.md) | [내 단축 명령 만들기](../part5/ch16/slash-custom.md), [SKILL.md는 어떻게 생겼을까](../part5/ch17/skill-anatomy.md), [남의 스킬과 설정을 열기 전에](../part5/ch17/skill-safety.md), [실습: 영상 한 편 만들기 스킬](../part5/ch17/skill-video.md), [서브에이전트와 MCP는 뭐가 다를까](../part5/ch17/subagent-vs-mcp.md) |
 | [공식 문서: 체크포인트(checkpointing)](https://code.claude.com/docs/en/checkpointing.md) | [되돌리기로 마음 놓고 실험하기](../part5/ch16/checkpoint-rewind.md), [체크포인트와 git은 뭐가 다를까](../part5/ch16/checkpoint-vs-git.md) |
+| [공식 문서: 훅 레퍼런스 — 면책과 작업공간 신뢰](https://code.claude.com/docs/en/hooks.md) | [특정 순간에 자동으로 실행하기: 훅](../part5/ch17/hook-basics.md), [실습: 자동 검사관 달기](../part5/ch17/hook-checker.md), [훅은 내 권한으로 돌아간다](../part5/ch17/hook-safety.md), [서브에이전트와 MCP는 뭐가 다를까](../part5/ch17/subagent-vs-mcp.md) |
+| [공식 문서: 훅으로 자동화하기](https://code.claude.com/docs/en/hooks-guide.md) | [특정 순간에 자동으로 실행하기: 훅](../part5/ch17/hook-basics.md), [실습: 자동 검사관 달기](../part5/ch17/hook-checker.md), [훅은 내 권한으로 돌아간다](../part5/ch17/hook-safety.md) |
+| [보안: 프롬프트 인젝션과 MCP 보안](https://code.claude.com/docs/en/security.md) | [MCP는 Claude의 연결 잭](../part5/ch17/mcp-intro.md), [토큰은 읽기 전용으로, 끝나면 폐기](../part5/ch17/mcp-token-safety.md), [남의 스킬과 설정을 열기 전에](../part5/ch17/skill-safety.md) |
 | [프로그램에서 실행하기(headless)](https://code.claude.com/docs/en/headless.md) | [대화 모드와 한 줄 모드](../part5/ch16/cli-modes.md), [파일을 넘겨 한 줄로 일 시키기](../part5/ch16/cli-pipe.md) |
 
 ### 영상과 강의 (6개)
@@ -116,11 +122,16 @@
 | [LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) | [에이전트가 실패하는 모습과 안전장치](../part4/ch14/failures.md) |
 | [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) | [도구를 연결하는 표준: MCP](../part4/ch13/connectors.md) |
 
-### 보도와 기타 (11개)
+### 보도와 기타 (16개)
 
 | 자료 | 이 책에서 쓴 페이지 |
 |---|---|
 | [claude-howto 02-memory](https://github.com/luongnv89/claude-howto/tree/main/02-memory) | [Claude가 매번 읽는 메모: CLAUDE.md](../part5/ch16/claudemd-intro.md), [좋은 CLAUDE.md 쓰는 법](../part5/ch16/claudemd-write.md) |
+| [claude-howto 03-skills](https://github.com/luongnv89/claude-howto/tree/main/03-skills) | [SKILL.md는 어떻게 생겼을까](../part5/ch17/skill-anatomy.md), [남의 스킬과 설정을 열기 전에](../part5/ch17/skill-safety.md), [실습: 영상 한 편 만들기 스킬](../part5/ch17/skill-video.md) |
+| [claude-howto 04-subagents](https://github.com/luongnv89/claude-howto/tree/main/04-subagents) | [일을 나눠 맡기는 서브에이전트](../part5/ch17/subagent-intro.md), [실습: 조사·대본·검토 에이전트](../part5/ch17/subagent-team.md) |
+| [claude-howto 04-subagents, 05-mcp](https://github.com/luongnv89/claude-howto) | [서브에이전트와 MCP는 뭐가 다를까](../part5/ch17/subagent-vs-mcp.md) |
+| [claude-howto 05-mcp](https://github.com/luongnv89/claude-howto/tree/main/05-mcp) | [실습: 외부 서비스 연결하기](../part5/ch17/mcp-connect.md), [MCP는 Claude의 연결 잭](../part5/ch17/mcp-intro.md), [토큰은 읽기 전용으로, 끝나면 폐기](../part5/ch17/mcp-token-safety.md) |
+| [claude-howto 06-hooks](https://github.com/luongnv89/claude-howto/tree/main/06-hooks) | [특정 순간에 자동으로 실행하기: 훅](../part5/ch17/hook-basics.md), [실습: 자동 검사관 달기](../part5/ch17/hook-checker.md), [훅은 내 권한으로 돌아간다](../part5/ch17/hook-safety.md) |
 | [claude-howto 08-checkpoints](https://github.com/luongnv89/claude-howto/tree/main/08-checkpoints) | [되돌리기로 마음 놓고 실험하기](../part5/ch16/checkpoint-rewind.md), [체크포인트와 git은 뭐가 다를까](../part5/ch16/checkpoint-vs-git.md) |
 | [claude-howto 10-cli](https://github.com/luongnv89/claude-howto/tree/main/10-cli) | [대화 모드와 한 줄 모드](../part5/ch16/cli-modes.md), [파일을 넘겨 한 줄로 일 시키기](../part5/ch16/cli-pipe.md) |
 | [Deep Dive](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [챗봇은 '다음 말'을 맞히는 기계](../part1/ch01/next-word.md), [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md), [읽고 따라 하기: 사전학습](../part3/ch09/pretraining.md), [강화학습과 추론 모델](../part6/ch20/rl-reasoning.md), [Andrej Karpathy의 시선](../part6/ch22/karpathy.md) |
