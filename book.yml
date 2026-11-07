@@ -166,9 +166,9 @@ parts:
     - num: '14.1'
       title: 스스로 일하는 AI
       pages:
-      - {slug: what-agent, title: 에이전트란 무엇일까, min: 6, done: false}
-      - {slug: loop, title: '계획하고, 행동하고, 확인한다', min: 6, done: false}
-      - {slug: failures, title: 에이전트가 실패하는 모습과 안전장치, min: 6, done: false}
+      - {slug: what-agent, title: 에이전트란 무엇일까, min: 6, done: true}
+      - {slug: loop, title: '계획하고, 행동하고, 확인한다', min: 6, done: true}
+      - {slug: failures, title: 에이전트가 실패하는 모습과 안전장치, min: 6, done: true}
   - num: 15
     title: 에이전트 만들어 보기
     blurb: 지시문, 도구, 평가를 중심으로 에이전트 설계를 맛봐요.
