@@ -68,9 +68,9 @@
 ## 출처와 기준
 
 !!! quote "참고한 원전 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Andrej Karpathy, *[1hr Talk] Intro to Large Language Models*, YouTube, 2023-11. 영상 ID `zjkBMFhNj_g`.
-    - 3Blue1Brown, *Large Language Models explained briefly* 및 *Deep Learning* 시리즈 (Transformers 편).
+    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11. 제목·영상 ID 확인함.
+    - 3Blue1Brown, [Transformers, the tech behind LLMs (Deep Learning 5장)](https://www.3blue1brown.com/lessons/gpt), 2024-04-01. 제목·게시일 확인함.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안, 저자 평가 대기
-- **확인 필요:** 작성 환경에서 외부 사이트를 열 수 없어, 위 원전의 정확한 제목·URL·타임스탬프는 아직 대조하지 못했어요. 대조 후 링크와 영상 구간을 채울 예정이에요.
+- **확인 필요:** 영상 구간(타임스탬프)과 Anthropic 문서 출처는 아직 넣지 못했어요.
