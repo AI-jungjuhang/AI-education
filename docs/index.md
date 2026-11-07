@@ -41,25 +41,25 @@ hide:
 <!-- AUTO:progress -->
 | 부 | 이 부에서 | 진행 |
 |---|---|---|
-| [I 처음 쓰는 AI](part1/index.md) | AI 챗봇을 처음 쓰는 사람을 위한 부예요 | **9/18 작성** |
+| [I 처음 쓰는 AI](part1/index.md) | AI 챗봇을 처음 쓰는 사람을 위한 부예요 | **12/18 작성** |
 | [II 일에 붙이기](part2/index.md) | 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요 | 준비 중 |
 | [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 준비 중 |
 | [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 준비 중 |
 | [V 원리로 쓰기 ★](part5/index.md) | 심화예요 | 준비 중 |
 | [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 준비 중 |
 
-전체 70페이지 중 9페이지를 썼어요.
+전체 70페이지 중 12페이지를 썼어요.
 <!-- /AUTO:progress -->
 
 ## 최근에 쓴 글
 
 <!-- AUTO:recent -->
 <div class="ep-list">
+<a href="part1/ch03/second-opinion/"><span class="ep-no">새 글</span><span class="ep-title">두 번째 의견 구하기</span><span class="ep-time">읽기 5분</span></a>
+<a href="part1/ch03/check-numbers/"><span class="ep-no">새 글</span><span class="ep-title">숫자와 인용 대조하기</span><span class="ep-time">읽기 5분</span></a>
+<a href="part1/ch03/check-sources/"><span class="ep-no">새 글</span><span class="ep-title">출처 확인하는 법</span><span class="ep-time">읽기 5분</span></a>
 <a href="part1/ch02/templates/"><span class="ep-no">새 글</span><span class="ep-title">나만의 질문 틀 만들기</span><span class="ep-time">읽기 5분</span></a>
 <a href="part1/ch02/fresh-start/"><span class="ep-no">새 글</span><span class="ep-title">새 대화가 나을 때</span><span class="ep-time">읽기 4분</span></a>
 <a href="part1/ch02/iterate/"><span class="ep-no">새 글</span><span class="ep-title">고쳐 달라고 말하는 법</span><span class="ep-time">읽기 5분</span></a>
-<a href="part1/ch02/specific/"><span class="ep-no">새 글</span><span class="ep-title">구체적으로 쓰되 한 번에 하나씩</span><span class="ep-time">읽기 5분</span></a>
-<a href="part1/ch02/role-format/"><span class="ep-no">새 글</span><span class="ep-title">역할, 형식, 예시를 정해 준다</span><span class="ep-time">읽기 5분</span></a>
-<a href="part1/ch02/context/"><span class="ep-no">새 글</span><span class="ep-title">맥락을 주면 답이 달라진다</span><span class="ep-time">읽기 5분</span></a>
 </div>
 <!-- /AUTO:recent -->

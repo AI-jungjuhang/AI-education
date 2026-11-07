@@ -58,6 +58,10 @@ nav:
         - "나만의 질문 틀 만들기": part1/ch02/templates.md
     - "3장 믿어도 될 때와 안 될 때":
       - part1/ch03/index.md
+      - "3.1 검증하는 습관":
+        - "출처 확인하는 법": part1/ch03/check-sources.md
+        - "숫자와 인용 대조하기": part1/ch03/check-numbers.md
+        - "두 번째 의견 구하기": part1/ch03/second-opinion.md
     - "4장 어떤 AI를 고를까":
       - part1/ch04/index.md
   - "II 일에 붙이기":

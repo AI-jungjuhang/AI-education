@@ -38,9 +38,9 @@ parts:
     - num: '3.1'
       title: 검증하는 습관
       pages:
-      - {slug: check-sources, title: 출처 확인하는 법, min: 5, done: false}
-      - {slug: check-numbers, title: 숫자와 인용 대조하기, min: 5, done: false}
-      - {slug: second-opinion, title: 두 번째 의견 구하기, min: 5, done: false}
+      - {slug: check-sources, title: 출처 확인하는 법, min: 5, done: true}
+      - {slug: check-numbers, title: 숫자와 인용 대조하기, min: 5, done: true}
+      - {slug: second-opinion, title: 두 번째 의견 구하기, min: 5, done: true}
     - num: '3.2'
       title: 안전하게 쓰기
       pages:
