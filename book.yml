@@ -112,9 +112,9 @@ parts:
     - num: '9.1'
       title: 학습의 세 단계
       pages:
-      - {slug: pretraining, title: '읽고 따라 하기: 사전학습', min: 6, done: false}
-      - {slug: tuning, title: '사람에게 배우기: 미세조정과 피드백', min: 6, done: false}
-      - {slug: scale, title: '크기가 왜 중요할까: 파라미터', min: 5, done: false}
+      - {slug: pretraining, title: '읽고 따라 하기: 사전학습', min: 6, done: true}
+      - {slug: tuning, title: '사람에게 배우기: 미세조정과 피드백', min: 6, done: true}
+      - {slug: scale, title: '크기가 왜 중요할까: 파라미터', min: 5, done: true}
   - num: 10
     title: 말이 숫자로 바뀌는 방법
     blurb: 토큰이 숫자 묶음이 되고, 뜻이 거리가 되는 과정을 알아봐요.

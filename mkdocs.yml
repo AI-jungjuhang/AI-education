@@ -102,6 +102,10 @@ nav:
     - part3/index.md
     - "9장 AI는 어떻게 배울까":
       - part3/ch09/index.md
+      - "9.1 학습의 세 단계":
+        - "읽고 따라 하기: 사전학습": part3/ch09/pretraining.md
+        - "사람에게 배우기: 미세조정과 피드백": part3/ch09/tuning.md
+        - "크기가 왜 중요할까: 파라미터": part3/ch09/scale.md
     - "10장 말이 숫자로 바뀌는 방법":
       - part3/ch10/index.md
     - "11장 어텐션":
