@@ -87,3 +87,9 @@ body,.md-typeset{font-family:var(--font)}
 /* 상자 테두리는 종류와 관계없이 연회색으로 통일 */
 .md-typeset .admonition,.md-typeset details,.md-typeset .admonition.abstract,.md-typeset .admonition.tip,.md-typeset .admonition.note,.md-typeset .admonition.info,.md-typeset .admonition.quote{border-color:var(--line)!important}
 .md-typeset .admonition.abstract .admonition-title::before{background-color:var(--blue)}
+/* 검색창: 연한 회색 칸, 아이콘과 글자가 겹치지 않게 */
+.md-search__form{background:var(--tint);border:1px solid var(--line);border-radius:10px;box-shadow:none}
+.md-search__input{color:var(--ink);font-size:.72rem}
+.md-search__input::placeholder{color:var(--ink-faint)}
+.md-search__icon,.md-search__input+.md-search__icon{color:var(--ink-soft)}
+.md-header__source{margin-left:.8rem}
