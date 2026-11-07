@@ -46,20 +46,20 @@ hide:
 | [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 완료 (12) |
 | [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 완료 (9) |
 | [V 원리로 쓰기 ★](part5/index.md) | 심화예요 | 완료 (15) |
-| [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 준비 중 |
+| [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 완료 (4) |
 
-전체 70페이지 중 66페이지를 썼어요.
+전체 70페이지 중 70페이지를 썼어요.
 <!-- /AUTO:progress -->
 
 ## 최근에 쓴 글
 
 <!-- AUTO:recent -->
 <div class="ep-list">
+<a href="appendix/references/"><span class="ep-no">새 글</span><span class="ep-title">참고 자료 목록</span><span class="ep-time">읽기 4분</span></a>
+<a href="appendix/reading-order/"><span class="ep-no">새 글</span><span class="ep-title">읽는 순서 추천</span><span class="ep-time">읽기 3분</span></a>
+<a href="appendix/prompt-bank/"><span class="ep-no">새 글</span><span class="ep-title">질문 모음</span><span class="ep-time">읽기 5분</span></a>
+<a href="appendix/glossary/"><span class="ep-no">새 글</span><span class="ep-title">용어집</span><span class="ep-time">읽기 5분</span></a>
 <a href="part5/ch19/views-compare/"><span class="ep-no">새 글</span><span class="ep-title">입장 비교: 어디서 갈릴까</span><span class="ep-time">읽기 8분</span></a>
 <a href="part5/ch19/hassabis/"><span class="ep-no">새 글</span><span class="ep-title">Demis Hassabis의 시선</span><span class="ep-time">읽기 8분</span></a>
-<a href="part5/ch19/amodei/"><span class="ep-no">새 글</span><span class="ep-title">Dario Amodei의 시선</span><span class="ep-time">읽기 8분</span></a>
-<a href="part5/ch19/hinton/"><span class="ep-no">새 글</span><span class="ep-title">Geoffrey Hinton의 시선</span><span class="ep-time">읽기 8분</span></a>
-<a href="part5/ch19/altman/"><span class="ep-no">새 글</span><span class="ep-title">Sam Altman의 시선</span><span class="ep-time">읽기 8분</span></a>
-<a href="part5/ch19/karpathy/"><span class="ep-no">새 글</span><span class="ep-title">Andrej Karpathy의 시선</span><span class="ep-time">읽기 8분</span></a>
 </div>
 <!-- /AUTO:recent -->

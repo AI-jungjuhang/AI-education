@@ -230,7 +230,7 @@ parts:
   title: 부록
   blurb: 용어, 질문 모음, 읽는 순서, 참고 자료예요.
   flat:
-  - {slug: glossary, title: 용어집, min: 5, done: false}
-  - {slug: prompt-bank, title: 질문 모음, min: 5, done: false}
-  - {slug: reading-order, title: 읽는 순서 추천, min: 3, done: false}
-  - {slug: references, title: 참고 자료 목록, min: 4, done: false}
+  - {slug: glossary, title: 용어집, min: 5, done: true}
+  - {slug: prompt-bank, title: 질문 모음, min: 5, done: true}
+  - {slug: reading-order, title: 읽는 순서 추천, min: 3, done: true}
+  - {slug: references, title: 참고 자료 목록, min: 4, done: true}
