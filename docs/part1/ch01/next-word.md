@@ -85,9 +85,9 @@
 ## 출처와 기준
 
 !!! quote "참고한 원전 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11. 제목·영상 ID 확인함.
+    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11-23. 제목·영상 ID는 YouTube에서 확인했어요. 챕터는 00:00:20 LLM Inference, 00:04:17 LLM Training, 00:11:22 How do they work?예요. 같은 시리즈의 [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)에서 사전학습만 마친 모델은 "아직 어시스턴트가 아니라 토큰 자동완성이고 확률적인 시스템"이라고 설명하는 것을 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 자막([강연](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models), [Deep Dive](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt))으로 확인했어요.
     - 3Blue1Brown, [Transformers, the tech behind LLMs (Deep Learning 5장)](https://www.3blue1brown.com/lessons/gpt), 2024-04-01. 제목·게시일 확인함.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안, 저자 평가 대기
-- **확인 필요:** 영상 구간(타임스탬프)과 Anthropic 문서 출처는 아직 넣지 못했어요.
+- **확인 필요:** Anthropic 문서 출처는 아직 넣지 못했어요. 영상은 비공식 자동 생성 자막(오류 가능)과 챕터 목록으로만 대조했고 직접 보지는 못했어요.

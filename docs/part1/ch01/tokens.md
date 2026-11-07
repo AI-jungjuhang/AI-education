@@ -89,10 +89,11 @@
 ## 출처와 기준
 
 !!! quote "참고한 원전 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Andrej Karpathy, [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE), YouTube, 2024. 제목·영상 ID 확인함.
+    - Andrej Karpathy, [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE), YouTube, 2024. 제목·영상 ID는 YouTube에서 확인했어요. 챕터(00:05:50 웹 UI에서 토큰화 예시, 00:23:50 BPE 알고리즘)와, 영어 데이터가 훨씬 많아서 영어 토큰이 길어지고 비영어(한국어 예시를 보여 줘요)는 더 불리하다는 설명을 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 [자막·챕터](https://rosetta.to/u/andrejkarpathy/let-s-build-the-gpt-tokenizer)로 확인했어요.
+    - Andrej Karpathy, [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI), YouTube. 챕터 '02:01:11 tokenization revisited: models struggle with spelling'에서 모델은 글자가 아니라 토큰을 보고 세기에 서툴다고 설명하는 것을 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 [자막·챕터](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt)로 확인했어요.
     - 3Blue1Brown, [Transformers, the tech behind LLMs (Deep Learning 5장)](https://www.3blue1brown.com/lessons/gpt), 2024-04-01.
     - Petrov 외, [Language Model Tokenizers Introduce Unfairness Between Languages](https://arxiv.org/abs/2305.15425), arXiv, 2023-05-17. 언어에 따라 토큰 길이가 최대 15배 차이 난다는 보고는 이 논문의 초록 내용이에요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안
-- **확인 필요:** 영상 구간(타임스탬프), 한국어가 정확히 몇 배인지는 이 페이지에서 다루지 않았어요. 토큰 수를 세어 주는 도구는 서비스마다 결과가 달라요.
+- **확인 필요:** 한국어가 정확히 몇 배인지는 이 페이지에서 다루지 않았어요. 토큰 수를 세어 주는 도구는 서비스마다 결과가 달라요. 영상은 YouTube 자막을 직접 가져올 수 없어 비공식 자동 생성 자막(오류 가능)으로만 대조했어요.

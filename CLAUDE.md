@@ -15,3 +15,9 @@ AI를 기초부터 심화까지 다루는 한국어 웹 교과서(MkDocs Materia
 - 인용은 최소로 하고 다시 써서 설명한다. 말하지 않은 것을 말한 것처럼 쓰지 않는다. 링크와 날짜를 확인한 것만 적는다.
 - 견해는 시간이 지나면 바뀌므로 기준 날짜를 꼭 적는다. 서로 다른 입장은 한쪽만 싣지 않고 함께 보여 준다.
 - 이 규칙은 `.claude/skills/topic-page`에도 반영한다.
+
+## 영상 내용을 확인하는 방법 (2026-11-07 기준)
+- 작업 환경(클라우드)의 IP를 YouTube가 막아서 `yt-dlp`와 `youtube-transcript-api`가 실패한다("봇이 아닌지 확인" 요구, IpBlocked).
+- 우회로 1(쓰는 중): 제3자 사이트 Rosetta(`rosetta.to/u/<채널>/<영상-슬러그>`)가 자막 전문과 YouTube 챕터를 제공한다. 자동 생성이라 오류가 있을 수 있으므로 **비공식 자막이라고 밝히고**, 인용은 최소로 하며, 챕터 시각은 YouTube 챕터 기준으로만 적는다.
+- 우회로 2(미사용): GitHub의 `artemchuikin/youtube-skills`(TranscriptOut API), `supadata-ai/mcp`는 계정과 API 키가 필요한 상용 서비스다. 사용자의 이메일을 외부에 보내므로 사용자가 직접 요청하기 전에는 쓰지 않는다.
+- 우회로 3: 사용자가 자기 컴퓨터에서 `yt-dlp --write-auto-subs --skip-download`로 자막을 받아 저장소에 올리면 가장 정확하다.

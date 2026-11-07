@@ -3,7 +3,7 @@
 <p class="ep-meta"><span>19장 · 19.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
 
 !!! warning "이 페이지를 읽는 법"
-    이 페이지는 **한 사람의 글에서 읽은 견해와 예측**을 소개해요. 사실이 아니에요. 아래 내용은 본인 블로그에 직접 쓴 글만 근거로 했고, **영상 강연은 이 환경에서 자막을 가져올 수 없어서 내용을 쓰지 않았어요.** 인용은 최소로 했고 나머지는 이해한 대로 다시 썼어요.
+    이 페이지는 **한 사람의 글에서 읽은 견해와 예측**을 소개해요. 사실이 아니에요. 아래 내용은 본인 블로그에 직접 쓴 글이 중심이에요. **영상 강연은 YouTube 자막을 직접 가져올 수 없어서, 제3자 사이트(Rosetta)가 자동 생성한 비공식 자막과 챕터로만 일부 대조했어요(오류가 있을 수 있어요). 그 내용은 5번 섹션에 따로 모았어요.** 인용은 최소로 했고 나머지는 이해한 대로 다시 썼어요.
 
 !!! abstract "이 페이지에서 배우는 것"
     - Karpathy는 2022년 글에서 ==33년 뒤(2055년)의 신경망은 구조는 지금과 거시적으로 같고 훨씬 클 것==이라고 예측했다.
@@ -44,7 +44,22 @@ Karpathy는 Yann LeCun 외의 1989년 논문(손글씨 우편번호 인식)을 �
 | 모델이 훨씬 커진다 | 9장 파라미터, 17장 스케일링과 그 논쟁 |
 | 쉬워 보여도 쉬운 추상화가 아니다 | 8장 일에 적용하기 전 점검, 18장 평가 |
 
-## 5. 어디까지가 사실이고 어디부터가 예측인가
+## 5. 영상 강연에서 (비공식 자막으로 확인한 것)
+
+이 책이 앞 장들에서 소개한 세 영상은 [Rosetta](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models)라는 제3자 사이트에 자막과 챕터가 올라 있어요. 사이트는 자막에서 자동 생성했고 오류가 있을 수 있다고 스스로 밝혀요. 아래는 그 자막에서 직접 읽어 확인한 내용을 **의역**한 거예요. (영상에서 한 말을 가장 정확히 알려면 영상을 직접 보세요.)
+
+| 영상 | 확인한 내용 (의역) | 이 책에서 |
+|---|---|---|
+| [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) ([자막](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt)) | 사전학습만 마친 모델은 **"아직 어시스턴트가 아니라 토큰 자동완성"**이고 **확률적(stochastic) 시스템**이라고 설명해요. 그런데도 다음 토큰을 맞히는 과정에서 세상에 대해 많이 배우고 그 지식을 파라미터에 저장한다고 해요. | [1장 다음 말](../part1/ch01/next-word.md), [9장 사전학습](../part3/ch09/pretraining.md) |
+| 같은 영상, 챕터 '01:20:32 hallucinations, tool use, knowledge/working memory' | 환각은 **모델이 정보를 지어내는 것**이고 큰 문제인데, 초기 모델부터 있었고 **완화책 덕분에 조금 나아졌다**고 해요. | [1장 환각](../part1/ch01/hallucination.md) |
+| 같은 영상, 챕터 '01:46:56 models need tokens to think' | **계산을 여러 토큰에 나눠** 쓰고, 중간 결과를 만들게 하거나 **가능하면 도구를 쓰라**고 해요. 모델이 한 번에 다 하게 하면 **완전히 믿지 못한다**고 말해요. | [7장 계산](../part2/ch07/math-caution.md), [17장 추론 모델](../part5/ch17/rl-reasoning.md) |
+| 같은 영상, 챕터 '02:01:11 tokenization revisited: models struggle with spelling' | **모델은 글자가 아니라 토큰을 봐서** 글자 세기에 서툴다고 해요. "strawberry에 R이 몇 개?"가 화제였는데, 오랫동안 최신 모델들이 둘이라고 우겼고 **지금은 맞힌다**고 말해요. | [1장 토큰](../part1/ch01/tokens.md) |
+| [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) ([자막](https://rosetta.to/u/andrejkarpathy/let-s-build-the-gpt-tokenizer)) | 한국어 예시를 보여 주며 **영어 데이터가 훨씬 많아서** 모델과 토크나이저 모두 영어에 유리하고, 영어는 토큰이 길어지는 만큼 **비영어는 더 불리하다**고 설명해요. | [1장 토큰](../part1/ch01/tokens.md) |
+| [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) ([챕터·자막](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models)) | 챕터 '00:08:58 LLM dreams', '00:27:43 Tool Use', '00:33:32 Multimodality', '00:42:15 LLM OS', '00:46:14 Jailbreaks', '00:51:30 Prompt Injection'이 있어요. | [1장 환각](../part1/ch01/hallucination.md), [4장 종류](../part1/ch04/kinds.md), [2장 질문 틀](../part1/ch02/templates.md) |
+
+위 내용은 앞 장들의 설명과 **같은 방향**이에요. 이 영상들에서 위험이나 안전에 대한 그의 입장을 이 책은 읽지 못했어요.
+
+## 6. 어디까지가 사실이고 어디부터가 예측인가
 
 | 구분 | 내용 |
 |---|---|
@@ -91,8 +106,8 @@ Karpathy는 Yann LeCun 외의 1989년 논문(손글씨 우편번호 인식)을 �
     - Andrej Karpathy, [Deep Neural Nets: 33 years ago and 33 years from now](https://karpathy.github.io/2022/03/14/lecun1989/), 블로그, 2022-03-14. 본문 앞부분과 결론부를 읽고 확인했어요.
     - Andrej Karpathy, [A Recipe for Training Neural Networks](https://karpathy.github.io/2019/04/25/recipe/), 블로그, 2019-04-25. 도입부를 읽고 확인했어요.
     - Andrej Karpathy, [블로그 목록](https://karpathy.github.io/). *microgpt*(2026-02-12)의 한 줄 소개만 확인했어요.
-    - 영상(YouTube): [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI). 제목은 확인했고, 이 환경에서 자막을 가져올 수 없어 내용은 쓰지 않았어요.
+    - 영상(YouTube): [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI), [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE). 제목과 ID는 YouTube에서 확인했어요. 내용은 제3자 사이트 Rosetta의 비공식 자동 생성 자막과 챕터([강연](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models), [Deep Dive](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt), [토크나이저](https://rosetta.to/u/andrejkarpathy/let-s-build-the-gpt-tokenizer))로 일부만 대조했고, 영상을 직접 보지는 못했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안
-- **확인 필요:** 글의 번역은 의역이고 원문과 대조가 필요해요. 그의 최근 견해(2023년 이후 강연과 인터뷰)는 영상이라 확인하지 못했어요. 연도 표현과 "천만 배"는 글의 서술을 풀어 쓴 거예요. 표와 비교는 제가 정리했어요.
+- **확인 필요:** 글의 번역은 의역이고 원문과 대조가 필요해요. 영상 내용은 비공식 자동 생성 자막(오류 가능)으로만 일부 대조했고, 위험이나 안전에 대한 그의 최근 견해(강연과 인터뷰)는 확인하지 못했어요. 연도 표현과 "천만 배"는 글의 서술을 풀어 쓴 거예요. 표와 비교는 제가 정리했어요.

@@ -86,6 +86,7 @@
     - Snell 외, [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://arxiv.org/abs/2408.03314), arXiv, 2024-08-06. 초록 일부를 읽었어요(끝부분은 잘려서 읽지 못했어요).
     - DeepSeek-AI, [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948), arXiv, 2025-01-22. 초록 전체를 읽었어요.
     - Anthropic, [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model), 2025-03-27. 생각의 사슬이 때로 오해하게 만든다는 설명을 참고했어요.
+    - Andrej Karpathy, [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI), YouTube. 챕터 '01:46:56 models need tokens to think'에서 계산을 여러 토큰에 나눠 쓰고, 중간 결과를 만들게 하거나 가능하면 도구를 쓰라고 권하며, 모델이 한 번에 다 하게 하면 완전히 믿지 못한다고 말하는 것을 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 [자막](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt)으로 확인했어요. '02:27:47 DeepSeek-R1' 챕터는 더 보기용이에요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

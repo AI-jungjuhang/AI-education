@@ -7,7 +7,7 @@
 !!! warning "이해관계와 한계를 알려 드려요"
     - **이 책의 초안은 AI(Claude)의 도움으로 쓰였어요.** 그 AI는 Anthropic이 만들었고, 이 책은 **Anthropic의 문서와 연구 글을 여러 번 인용해요.** 특히 질문 요령, 환각, 해석 가능성, 에이전트 이야기에서 그래요. 독자는 이 점을 알고 읽어야 하고, Anthropic이 **아닌** 출처로도 확인해 보시길 권해요.
     - **확인 수준이 자료마다 달라요.** 논문은 대부분 **초록만** 읽었고, 블로그 글과 에세이는 **일부 또는 전문**을 읽었어요. 각 페이지의 "출처와 기준"에 어디까지 읽었는지 적었어요.
-    - **영상은 내용을 확인하지 못했어요.** YouTube 자막을 이 작업 환경에서 가져올 수 없어서, 영상은 제목과 영상 ID만 확인하고 내용은 쓰지 않았어요. 영상 발언을 인용하지 않았어요.
+    - **영상은 YouTube 자막을 직접 가져올 수 없었어요.** 이 작업 환경의 접속을 YouTube가 막아서(봇 확인 요구) 영상을 직접 볼 수 없었어요. Karpathy 영상 세 편은 제3자 사이트 Rosetta가 자막에서 자동 생성한 **비공식 자막과 챕터**로만 일부 대조했고(오류 가능), 나머지 영상(3Blue1Brown 등)은 제목만 확인하거나 같은 내용의 텍스트판을 읽었어요.
     - **한국 공식 안내서(개인정보보호위원회, 문화체육관광부·한국저작권위원회)는 공식 원문을 열지 못하고 보도로만 확인했어요.**
     - **번역은 의역이에요.** 영어 원문과 대조가 필요해요. 문장은 옮기지 않고 이해한 대로 다시 썼어요.
     - **시간이 지나면 낡아요.** 모델 이름, 수치, 기능, 요금은 열람한 날(2026-11-07) 기준이에요.
@@ -79,10 +79,10 @@
 | 자료 | 이 책에서 쓴 페이지 |
 |---|---|
 | [Attention in transformers, step-by-step (Deep Learning 6장)](https://www.3blue1brown.com/lessons/attention) | [어텐션: 중요한 곳을 골라 본다](../part3/ch11/attention-idea.md), [컨텍스트 창: 한 번에 보는 범위](../part3/ch11/context-window.md) |
-| [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) | [읽고 따라 하기: 사전학습](../part3/ch09/pretraining.md), [Andrej Karpathy의 시선](../part5/ch19/karpathy.md) |
+| [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [챗봇은 '다음 말'을 맞히는 기계](../part1/ch01/next-word.md), [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md), [읽고 따라 하기: 사전학습](../part3/ch09/pretraining.md), [강화학습과 추론 모델](../part5/ch17/rl-reasoning.md), [Andrej Karpathy의 시선](../part5/ch19/karpathy.md) |
 | [How might LLMs store facts (Deep Learning 7장)](https://www.3blue1brown.com/lessons/mlp) | [트랜스포머 한 층의 모양](../part3/ch11/transformer-layer.md) |
 | [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) | [Andrej Karpathy의 시선](../part5/ch19/karpathy.md) |
-| [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md) |
+| [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md), [Andrej Karpathy의 시선](../part5/ch19/karpathy.md) |
 | [Transformers, the tech behind LLMs (Deep Learning 5장)](https://www.3blue1brown.com/lessons/gpt) | [챗봇은 '다음 말'을 맞히는 기계](../part1/ch01/next-word.md), [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md), [읽고 따라 하기: 사전학습](../part3/ch09/pretraining.md), [비슷한 뜻은 가까이 있다](../part3/ch10/closeness.md), [문맥에 따라 뜻이 달라진다](../part3/ch10/context-meaning.md), [토큰이 숫자 묶음이 된다](../part3/ch10/tokens-to-vectors.md), [컨텍스트 창: 한 번에 보는 범위](../part3/ch11/context-window.md), [트랜스포머 한 층의 모양](../part3/ch11/transformer-layer.md), [긴 답이 이어지는 과정](../part3/ch12/long-answer.md), [샘플링: 뽑는 방법](../part3/ch12/sampling.md), [온도: 얼마나 모험할까](../part3/ch12/temperature.md) |
 
 ### 사람들이 직접 쓴 글과 공개 발언 (12개)
@@ -110,14 +110,17 @@
 | [LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) | [에이전트가 실패하는 모습과 안전장치](../part4/ch14/failures.md) |
 | [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) | [도구를 연결하는 표준: MCP](../part4/ch13/connectors.md) |
 
-### 보도와 기타 (4개)
+### 보도와 기타 (7개)
 
 | 자료 | 이 책에서 쓴 페이지 |
 |---|---|
+| [Deep Dive](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [챗봇은 '다음 말'을 맞히는 기계](../part1/ch01/next-word.md), [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md), [읽고 따라 하기: 사전학습](../part3/ch09/pretraining.md), [강화학습과 추론 모델](../part5/ch17/rl-reasoning.md), [Andrej Karpathy의 시선](../part5/ch19/karpathy.md) |
 | [보도 내용](https://www.heraldk.com/article/2025110215591135596) | [저작권과 표절](../part1/ch03/copyright.md) |
 | [보도 내용](https://view.asiae.co.kr/article/2026022609294663830) | [저작권과 표절](../part1/ch03/copyright.md) |
 | [보도 내용](https://v.daum.net/v/20250806130146966) | [개인정보와 민감한 자료](../part1/ch03/privacy.md), [팀에서 정하는 규칙](../part2/ch08/team-rules.md) |
 | [여러 보도](https://community.openai.com/t/sam-altmans-a-new-blog-post-june-10-2025/1284906) | [Sam Altman의 시선](../part5/ch19/altman.md) |
+| [자막·챕터](https://rosetta.to/u/andrejkarpathy/let-s-build-the-gpt-tokenizer) | [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../part1/ch01/tokens.md), [Andrej Karpathy의 시선](../part5/ch19/karpathy.md) |
+| [챕터 목록·자막](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models) | [그럴듯하지만 틀릴 수 있다: 환각](../part1/ch01/hallucination.md), [챗봇은 '다음 말'을 맞히는 기계](../part1/ch01/next-word.md), [나만의 질문 틀 만들기](../part1/ch02/templates.md), [챗봇, 검색형, 이미지, 음성: 종류 나누기](../part1/ch04/kinds.md), [Andrej Karpathy의 시선](../part5/ch19/karpathy.md) |
 
 <!-- /AUTO:refs -->
 

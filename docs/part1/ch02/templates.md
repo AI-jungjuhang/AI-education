@@ -102,8 +102,8 @@
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), Claude Platform Docs. 태그로 내용을 나누는 방법을 참고했어요. 2026-11-07 열람.
-    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11. 보안 이야기에 프롬프트 인젝션이 나온다는 점은 검색 요약에서 확인했고, 정확한 구간은 확인하지 못했어요.
+    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11-23. 보안 소개('00:45:43')와 챕터 '00:46:14 Jailbreaks', '00:51:30 Prompt Injection'을 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 [챕터 목록](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models)으로 확인했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안
-- **확인 필요:** 틀 세 가지와 기본 틀의 칸 구성은 제가 만든 예시예요. Karpathy 강연의 프롬프트 인젝션 구간(타임스탬프)은 영상에서 직접 확인하지 못했어요.
+- **확인 필요:** 틀 세 가지와 기본 틀의 칸 구성은 제가 만든 예시예요. Karpathy 강연의 프롬프트 인젝션 구간은 비공식 챕터 목록으로만 확인했고 영상을 직접 보지는 못했어요.

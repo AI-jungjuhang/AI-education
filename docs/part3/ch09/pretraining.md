@@ -76,8 +76,8 @@ GPT-3 논문(2020)은 이렇게 큰 모델이 사전학습만으로도, 몇 가�
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - Brown 외, [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165), arXiv, 2020-05-28. 초록 전체를 읽었어요. 1,750억 파라미터, 이전보다 10배, 몇 가지 예시와 지시만으로 여러 일을 하는 점, 어려워한 데이터셋과 웹 문서 학습의 방법론적 문제 언급은 초록 내용이에요.
     - 3Blue1Brown, [Transformers, the tech behind LLMs (Deep Learning 5장)](https://www.3blue1brown.com/lessons/gpt), 2024-04-01. 더 깊이 보려는 분을 위한 추천이에요.
-    - Andrej Karpathy, [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI), YouTube. 제목과 영상 ID는 확인했어요. 더 깊이 보려는 분을 위한 추천이고, 이 페이지의 설명은 영상 내용과 대조하지 않았어요.
+    - Andrej Karpathy, [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI), YouTube. 더 깊이 보려는 분을 위한 추천이에요. 챕터 '00:01:00 pretraining data (internet)', '00:07:47 tokenization', '00:14:27 neural network I/O'와, 사전학습만 마친 모델이 "토큰 자동완성이고 확률적"이라는 설명을 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 [자막·챕터](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt)로 확인했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안
-- **확인 필요:** 논문은 초록만 읽었어요. 사전학습 여섯 단계 설명은 일반적인 설명을 제가 정리한 것이고, 영상과의 대조와 타임스탬프는 확인하지 못했어요. 현재 모델의 학습 자료와 방식은 공개 정보가 제한적이라 구체적으로 쓰지 않았어요.
+- **확인 필요:** 논문은 초록만 읽었어요. 사전학습 여섯 단계 설명은 일반적인 설명을 제가 정리한 것이고, 영상은 비공식 자동 생성 자막(오류 가능)으로 일부만 대조했어요. 현재 모델의 학습 자료와 방식은 공개 정보가 제한적이라 구체적으로 쓰지 않았어요.

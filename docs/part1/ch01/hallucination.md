@@ -88,8 +88,8 @@ Anthropic이 공개한 환각 줄이는 방법에서 쉽게 쓸 수 있는 것�
     - Kalai 외, [Why Language Models Hallucinate](https://arxiv.org/abs/2509.04664), arXiv, 2025-09-04 (OpenAI 연구진). 환각 원인에 대한 이 논문의 주장은 "주장"으로 표시했어요.
     - Anthropic, [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model), 2025-03-27. 환각 부분을 참고했어요.
     - Anthropic, [Reduce hallucinations](https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations), Claude Platform Docs. 2026-11-07에 열람했어요. 문서는 바뀔 수 있어요.
-    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11.
+    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11-23. 챕터 '00:08:58 LLM dreams'에서 모델이 학습한 분포에서 글을 꿈꾸듯 만들어 내고, 예컨대 지어낸 ISBN 번호가 거의 확실히 존재하지 않을 것이라고 설명하는 것을 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 [자막](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models)으로 확인했어요. 또 [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)의 챕터 '01:20:32 hallucinations, tool use, knowledge/working memory'에서 환각은 모델이 정보를 지어내는 것이며 초기 모델부터 있었고 완화책 덕분에 조금 나아졌다고 말하는 것을 [자막](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt)으로 확인했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안
-- **확인 필요:** Karpathy 영상에서 환각을 다루는 구간(타임스탬프)은 아직 넣지 못했어요. 위 표의 "안전한 편 / 틀리기 쉬운 편"은 출처가 있는 규칙이 아니라 일반적인 경향을 정리한 거예요.
+- **확인 필요:** 영상은 비공식 자동 생성 자막(오류 가능)으로만 대조했어요. 위 표의 "안전한 편 / 틀리기 쉬운 편"은 출처가 있는 규칙이 아니라 일반적인 경향을 정리한 거예요.

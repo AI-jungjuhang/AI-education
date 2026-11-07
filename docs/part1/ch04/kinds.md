@@ -65,7 +65,7 @@ Karpathy의 LLM 소개 강연은 언어 모델이 글뿐 아니라 이미지와 
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11. 멀티모달과 도구 사용을 다루는 구간이 있다는 점은 영상의 검색 요약으로 확인했어요. 구체적인 구간은 영상에서 확인하지 못했어요.
+    - Andrej Karpathy, [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), YouTube, 2023-11-23. 챕터 '00:27:43 Tool Use (Browser, Calculator, Interpreter, DALL-E)'와 '00:33:32 Multimodality (Vision, Audio)'를 제3자 사이트 Rosetta가 자막에서 자동 생성한 비공식 [챕터 목록·자막](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models)으로 확인했어요. 영상을 직접 보지는 못했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안
