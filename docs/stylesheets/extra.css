@@ -41,15 +41,18 @@ body,.md-typeset{font-family:var(--font)}
 .md-typeset h2{font-family:var(--font);font-weight:700;font-size:1.3rem;letter-spacing:-.02em;color:var(--ink);margin:2.6rem 0 .8rem;padding-bottom:0;border:0}
 .md-typeset strong{font-weight:700}
 /* 제목 아래 정보 줄 */
-.md-typeset .ep-meta{margin:0 0 1.6rem;font-size:.7rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.3rem .9rem}
-.md-typeset .ep-meta span+span::before{content:"·";margin-right:.9rem;color:var(--ink-faint)}
+.md-typeset .ep-meta{margin:0 0 1.6rem;font-size:.7rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.3rem .6rem}
+.md-typeset .ep-meta span+span::before{content:"·";margin-right:.6rem;color:var(--ink-faint)}
 .md-typeset .ep-bar{display:block;border:1px solid var(--line);border-radius:12px;padding:.7rem 1rem;font-size:.75rem;color:var(--ink-soft);margin:0 0 1.8rem;background:var(--tint)}
 /* 형광펜: 핵심 문장 한두 곳에만 */
 .md-typeset mark{background:linear-gradient(transparent 58%,var(--marker) 58%,var(--marker) 94%,transparent 94%);color:inherit;padding:0 .1em;font-weight:600}
 [data-md-color-scheme="slate"] .md-typeset mark{background:linear-gradient(transparent 58%,rgba(254,240,138,.3) 58%,rgba(254,240,138,.3) 94%,transparent 94%)}
 /* 상자: 흰 면 + 1px 선 + 둥근 모서리. 종류는 아이콘 색으로만 구분 */
-.md-typeset .admonition,.md-typeset details{border:1px solid var(--line);border-radius:12px;box-shadow:none;background:var(--tint);padding:.3rem .9rem .6rem;font-size:.8rem}
-.md-typeset .admonition-title,.md-typeset summary{background:transparent!important;font-weight:700;font-size:.82rem;color:var(--ink);padding-left:1.8rem}
+.md-typeset .admonition,.md-typeset details{border:1px solid var(--line);border-radius:12px;box-shadow:none;background:var(--tint);font-size:.8rem}
+.md-typeset .admonition,.md-typeset details{padding:0 .8rem .5rem}
+.md-typeset .admonition-title,.md-typeset summary{background:transparent!important;font-weight:700;font-size:.82rem;color:var(--ink);margin:0 -.8rem;padding:.55rem .8rem .3rem 2.4rem}
+.md-typeset .admonition-title::before,.md-typeset summary::before{left:.8rem;top:.7rem}
+.md-typeset .admonition-title+ul,.md-typeset .admonition-title+ol,.md-typeset .admonition-title+p{margin-top:.1rem}
 .md-typeset .admonition-title::before,.md-typeset summary::before{background-color:var(--blue)}
 .md-typeset .admonition.tip .admonition-title::before{background-color:#059669}
 .md-typeset .admonition.note .admonition-title::before,.md-typeset .admonition.info .admonition-title::before{background-color:#d97706}
@@ -83,3 +86,4 @@ body,.md-typeset{font-family:var(--font)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 /* 상자 테두리는 종류와 관계없이 연회색으로 통일 */
 .md-typeset .admonition,.md-typeset details,.md-typeset .admonition.abstract,.md-typeset .admonition.tip,.md-typeset .admonition.note,.md-typeset .admonition.info,.md-typeset .admonition.quote{border-color:var(--line)!important}
+.md-typeset .admonition.abstract .admonition-title::before{background-color:var(--blue)}
