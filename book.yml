@@ -210,9 +210,9 @@ parts:
     - num: '18.1'
       title: 얼마나 잘할까
       pages:
-      - {slug: benchmarks, title: 벤치마크의 함정, min: 7, done: false}
-      - {slug: eval-hallu, title: 환각은 어떻게 재나, min: 7, done: false}
-      - {slug: risks, title: 안전과 위험을 보는 눈, min: 7, done: false}
+      - {slug: benchmarks, title: 벤치마크의 함정, min: 7, done: true}
+      - {slug: eval-hallu, title: 환각은 어떻게 재나, min: 7, done: true}
+      - {slug: risks, title: 안전과 위험을 보는 눈, min: 7, done: true}
   - num: 19
     title: 대가들은 어디를 보고 있나 ★
     blurb: 이 분야를 만든 사람들의 인터뷰와 강연에서 AI의 발전 방향과 통찰을 읽어요. 발언은 사실이 아니라 견해예요.

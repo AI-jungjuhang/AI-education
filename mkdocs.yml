@@ -160,6 +160,10 @@ nav:
         - "정렬: 사람의 뜻에 맞추기": part5/ch17/alignment.md
     - "18장 평가와 한계 ★":
       - part5/ch18/index.md
+      - "18.1 얼마나 잘할까":
+        - "벤치마크의 함정": part5/ch18/benchmarks.md
+        - "환각은 어떻게 재나": part5/ch18/eval-hallu.md
+        - "안전과 위험을 보는 눈": part5/ch18/risks.md
     - "19장 대가들은 어디를 보고 있나 ★":
       - part5/ch19/index.md
   - "부록":
