@@ -156,9 +156,9 @@ parts:
     - num: '13.1'
       title: 검색, 파일, 연결
       pages:
-      - {slug: search-rag, title: 검색을 붙이면 달라지는 것, min: 6, done: false}
-      - {slug: files-code, title: 파일을 읽고 코드를 실행하는 AI, min: 5, done: false}
-      - {slug: connectors, title: '도구를 연결하는 표준: MCP', min: 5, done: false}
+      - {slug: search-rag, title: 검색을 붙이면 달라지는 것, min: 6, done: true}
+      - {slug: files-code, title: 파일을 읽고 코드를 실행하는 AI, min: 5, done: true}
+      - {slug: connectors, title: '도구를 연결하는 표준: MCP', min: 5, done: true}
   - num: 14
     title: 에이전트
     blurb: 스스로 계획하고 행동하는 AI가 무엇이고 어떻게 실패하는지 알아봐요.

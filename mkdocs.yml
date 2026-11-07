@@ -128,6 +128,10 @@ nav:
     - part4/index.md
     - "13장 도구를 쓰는 AI":
       - part4/ch13/index.md
+      - "13.1 검색, 파일, 연결":
+        - "검색을 붙이면 달라지는 것": part4/ch13/search-rag.md
+        - "파일을 읽고 코드를 실행하는 AI": part4/ch13/files-code.md
+        - "도구를 연결하는 표준: MCP": part4/ch13/connectors.md
     - "14장 에이전트":
       - part4/ch14/index.md
     - "15장 에이전트 만들어 보기":
