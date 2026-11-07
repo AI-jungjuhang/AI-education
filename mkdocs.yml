@@ -108,6 +108,10 @@ nav:
         - "크기가 왜 중요할까: 파라미터": part3/ch09/scale.md
     - "10장 말이 숫자로 바뀌는 방법":
       - part3/ch10/index.md
+      - "10.1 임베딩":
+        - "토큰이 숫자 묶음이 된다": part3/ch10/tokens-to-vectors.md
+        - "비슷한 뜻은 가까이 있다": part3/ch10/closeness.md
+        - "문맥에 따라 뜻이 달라진다": part3/ch10/context-meaning.md
     - "11장 어텐션":
       - part3/ch11/index.md
     - "12장 확률로 문장 만들기":
