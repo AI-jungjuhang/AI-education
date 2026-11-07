@@ -220,12 +220,12 @@ parts:
     - num: '19.1'
       title: 인터뷰로 읽는 방향
       pages:
-      - {slug: karpathy, title: Andrej Karpathy의 시선, min: 8, done: false}
-      - {slug: altman, title: Sam Altman의 시선, min: 8, done: false}
-      - {slug: hinton, title: Geoffrey Hinton의 시선, min: 8, done: false}
-      - {slug: amodei, title: Dario Amodei의 시선, min: 8, done: false}
-      - {slug: hassabis, title: Demis Hassabis의 시선, min: 8, done: false}
-      - {slug: views-compare, title: '입장 비교: 어디서 갈릴까', min: 8, done: false}
+      - {slug: karpathy, title: Andrej Karpathy의 시선, min: 8, done: true}
+      - {slug: altman, title: Sam Altman의 시선, min: 8, done: true}
+      - {slug: hinton, title: Geoffrey Hinton의 시선, min: 8, done: true}
+      - {slug: amodei, title: Dario Amodei의 시선, min: 8, done: true}
+      - {slug: hassabis, title: Demis Hassabis의 시선, min: 8, done: true}
+      - {slug: views-compare, title: '입장 비교: 어디서 갈릴까', min: 8, done: true}
 - id: A
   title: 부록
   blurb: 용어, 질문 모음, 읽는 순서, 참고 자료예요.

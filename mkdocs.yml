@@ -166,5 +166,12 @@ nav:
         - "안전과 위험을 보는 눈": part5/ch18/risks.md
     - "19장 대가들은 어디를 보고 있나 ★":
       - part5/ch19/index.md
+      - "19.1 인터뷰로 읽는 방향":
+        - "Andrej Karpathy의 시선": part5/ch19/karpathy.md
+        - "Sam Altman의 시선": part5/ch19/altman.md
+        - "Geoffrey Hinton의 시선": part5/ch19/hinton.md
+        - "Dario Amodei의 시선": part5/ch19/amodei.md
+        - "Demis Hassabis의 시선": part5/ch19/hassabis.md
+        - "입장 비교: 어디서 갈릴까": part5/ch19/views-compare.md
   - "부록":
     - appendix/index.md
