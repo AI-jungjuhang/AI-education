@@ -19,7 +19,7 @@
 ## 2. 실제로 확인된 사례
 
 - **단어 벡터 연구(2016):** 뉴스 기사로 학습한 단어 표현에서 성별에 대한 고정관념이 나타난다는 연구가 있어요. 예를 들어 직업을 나타내는 단어와 성별이 편향된 방향으로 연결돼 있었고, 연구진은 이를 줄이는 방법도 제안했어요. 이 연구는 챗봇이 아니라 그 바탕이 되는 단어 표현에 대한 것이에요.
-- **의사결정 연구(2023):** Anthropic 연구진은 대출이나 주거 자격 같은 중요한 결정에 언어 모델을 쓸 때 차별이 생길 가능성을 미리 평가하는 방법을 제안했어요. 70가지 결정 상황에서 사람의 나이, 성별, 인종 같은 정보를 바꿔 가며 결과가 달라지는지 보는 방식이에요.
+- **의사결정 연구(2023):** Anthropic 연구진은 대출이나 주거 자격 같은 중요한 결정에 언어 모델을 쓸 때 차별이 생길 가능성을 미리 평가하는 방법을 제안했어요. 70가지 결정 상황에서 사람의 인구통계 정보를 체계적으로 바꿔 가며 결과가 달라지는지 보는 방식이에요. 연구진은 당시 Claude 2.0 모델에서 일부 상황에 한해 한쪽을 유리하게 하거나 불리하게 하는 차별 패턴을 확인했고, 질문을 신중하게 쓰는 것만으로도 이를 크게 줄이는 기법을 제시했어요. 그러면서도 위험이 큰 결정을 언어 모델에 자동으로 맡기는 것은 권하지 않는다고 밝혔어요.
 
 ## 3. 편향이 생기는 곳
 
@@ -72,7 +72,7 @@
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - Bolukbasi 외, [Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings](https://arxiv.org/abs/1607.06520), arXiv, 2016-07-21. 초록을 읽고 요약했어요.
-    - [Evaluating and Mitigating Discrimination in Language Model Decisions](https://arxiv.org/abs/2312.03689), arXiv, 2023-12-06 (Anthropic). 초록을 읽고 요약했어요. 70가지 결정 시나리오라는 설명은 초록에 나와 있어요.
+    - [Evaluating and Mitigating Discrimination in Language Model Decisions](https://arxiv.org/abs/2312.03689), arXiv, 2023-12-06 (Anthropic). 초록 전체를 읽고 요약했어요.
     - [Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548), arXiv, 2023-10-20. 초록을 읽고 요약했어요.
     - Petrov 외, [Language Model Tokenizers Introduce Unfairness Between Languages](https://arxiv.org/abs/2305.15425), arXiv, 2023-05-17.
 
