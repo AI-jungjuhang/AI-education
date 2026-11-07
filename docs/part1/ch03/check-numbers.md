@@ -82,7 +82,7 @@ Anthropic 문서는 긴 문서를 다룰 때 먼저 **관련 문장을 한 자 �
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - Anthropic, [Reduce hallucinations](https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations), Claude Platform Docs. 먼저 원문 인용을 뽑게 하는 방법과 best-of-N 검증을 참고했어요. 2026-11-07 열람.
-    - 앞 페이지(토큰)의 설명: [글자를 '토큰'이라는 조각으로 쪼개 읽는다](tokens.md)
+    - 앞 페이지(토큰)의 설명: [글자를 '토큰'이라는 조각으로 쪼개 읽는다](../ch01/tokens.md)
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

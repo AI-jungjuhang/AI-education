@@ -299,6 +299,30 @@ parts:
       - {slug: amodei, title: Dario Amodei의 시선, min: 8, done: true}
       - {slug: hassabis, title: Demis Hassabis의 시선, min: 8, done: true}
       - {slug: views-compare, title: '입장 비교: 어디서 갈릴까', min: 8, done: true}
+  - num: 23
+    title: 원리로 쓰기
+    blurb: 앞에서 배운 원리가 실제 사용법으로 바뀌는 장이에요. 이러니까 이렇게 쓰는 게 유리하다는 이유를 네 가지로 정리해요.
+    sections:
+    - num: '23.1'
+      title: 컨텍스트 관리
+      pages:
+      - {slug: context-fill, title: '기억 공간은 무엇으로 채워질까', min: 7, done: true}
+      - {slug: context-habits, title: '기억 공간을 아끼는 습관', min: 7, done: true}
+    - num: '23.2'
+      title: 프롬프트를 원리로 이해하기
+      pages:
+      - {slug: prompt-why, title: '왜 맥락·예시·형식이 먹힐까', min: 7, done: true}
+      - {slug: prompt-agent, title: '일을 맡기는 말은 어떻게 다를까', min: 7, done: true}
+    - num: '23.3'
+      title: 모델 고르기
+      pages:
+      - {slug: model-choice, title: '모델은 어떻게 고를까', min: 7, done: true}
+      - {slug: model-effort, title: '생각 시간(노력 수준)을 조절하기', min: 6, done: true}
+    - num: '23.4'
+      title: 검증 루프 만들기
+      pages:
+      - {slug: verify-loop, title: '확인할 수 있는 검사를 쥐여 주기', min: 7, done: true}
+      - {slug: verify-build, title: '실습: 우리 채널의 검증 루프', min: 8, done: true}
 - id: A
   title: 부록
   blurb: 용어, 질문 모음, 읽는 순서, 참고 자료예요.

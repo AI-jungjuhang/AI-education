@@ -48,10 +48,10 @@ hide:
 | [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 완료 (12) |
 | [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 완료 (9) |
 | [V Claude Code 실전](part5/index.md) | Claude Code로 직접 일을 시켜요 | 완료 (27) |
-| [VI 원리로 쓰기 ★](part6/index.md) | 심화예요 | 완료 (15) |
+| [VI 원리로 쓰기 ★](part6/index.md) | 심화예요 | 완료 (23) |
 | [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 완료 (4) |
 
-전체 97페이지 중 97페이지를 썼어요.
+전체 105페이지 중 105페이지를 썼어요.
 <!-- /AUTO:progress -->
 
 ## 최근에 쓴 글
@@ -62,7 +62,7 @@ hide:
 <a href="appendix/reading-order/"><span class="ep-no">새 글</span><span class="ep-title">읽는 순서 추천</span><span class="ep-time">읽기 3분</span></a>
 <a href="appendix/prompt-bank/"><span class="ep-no">새 글</span><span class="ep-title">질문 모음</span><span class="ep-time">읽기 5분</span></a>
 <a href="appendix/glossary/"><span class="ep-no">새 글</span><span class="ep-title">용어집</span><span class="ep-time">읽기 5분</span></a>
-<a href="part6/ch22/views-compare/"><span class="ep-no">새 글</span><span class="ep-title">입장 비교: 어디서 갈릴까</span><span class="ep-time">읽기 8분</span></a>
-<a href="part6/ch22/hassabis/"><span class="ep-no">새 글</span><span class="ep-title">Demis Hassabis의 시선</span><span class="ep-time">읽기 8분</span></a>
+<a href="part6/ch23/verify-build/"><span class="ep-no">새 글</span><span class="ep-title">실습: 우리 채널의 검증 루프</span><span class="ep-time">읽기 8분</span></a>
+<a href="part6/ch23/verify-loop/"><span class="ep-no">새 글</span><span class="ep-title">확인할 수 있는 검사를 쥐여 주기</span><span class="ep-time">읽기 7분</span></a>
 </div>
 <!-- /AUTO:recent -->

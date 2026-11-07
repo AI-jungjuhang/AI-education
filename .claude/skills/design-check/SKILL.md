@@ -9,7 +9,7 @@ description: 이 교과서 사이트의 화면(CSS, 레이아웃, 메뉴, 새 �
 
 ## 순서
 
-1. `mkdocs build`로 `site/`를 만든다.
+1. `mkdocs build --strict`로 `site/`를 만든다. **`-q`는 붙이지 않고 종료 코드(`echo $?`)가 0인지 확인한다.** `-q`는 경고가 있어도 0으로 끝나 깨진 링크를 숨긴다.
 2. 서버로 띄운다. 파일(file://)로 열면 검색창 같은 스크립트 의존 요소가 숨겨져 틀린 결과가 나온다.
    `python3 -m http.server 8765 --directory site &`
 3. 점검한다. 홈과 새로 쓴 페이지를 넣는다.

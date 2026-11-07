@@ -218,6 +218,20 @@ nav:
         - "Dario Amodei의 시선": part6/ch22/amodei.md
         - "Demis Hassabis의 시선": part6/ch22/hassabis.md
         - "입장 비교: 어디서 갈릴까": part6/ch22/views-compare.md
+    - "23장 원리로 쓰기":
+      - part6/ch23/index.md
+      - "23.1 컨텍스트 관리":
+        - "기억 공간은 무엇으로 채워질까": part6/ch23/context-fill.md
+        - "기억 공간을 아끼는 습관": part6/ch23/context-habits.md
+      - "23.2 프롬프트를 원리로 이해하기":
+        - "왜 맥락·예시·형식이 먹힐까": part6/ch23/prompt-why.md
+        - "일을 맡기는 말은 어떻게 다를까": part6/ch23/prompt-agent.md
+      - "23.3 모델 고르기":
+        - "모델은 어떻게 고를까": part6/ch23/model-choice.md
+        - "생각 시간(노력 수준)을 조절하기": part6/ch23/model-effort.md
+      - "23.4 검증 루프 만들기":
+        - "확인할 수 있는 검사를 쥐여 주기": part6/ch23/verify-loop.md
+        - "실습: 우리 채널의 검증 루프": part6/ch23/verify-build.md
   - "부록":
     - appendix/index.md
     - "용어집": appendix/glossary.md
