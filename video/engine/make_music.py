@@ -40,7 +40,7 @@ def stab(freqs, d):
 def pluck(f, d=0.28):
     t = tt(d); return (np.sin(2 * np.pi * f * t) + 0.35 * np.sin(2 * np.pi * 2 * f * t)) * np.exp(-t * 12) * np.clip(t / 0.003, 0, 1) * 0.16
 chords = [([261.63, 329.63, 392.00], 65.41), ([220.00, 261.63, 329.63], 55.00), ([174.61, 220.00, 261.63], 43.65), ([196.00, 246.94, 293.66], 49.00)]
-lift = [(26, 34), (46, 54), (78, 90)]
+lift = [tuple(x) for x in tl.get('lift', [])]
 def in_lift(b): return any(a <= b < e for a, e in lift)
 def pad(freqs, d):
     t = tt(d); e = np.clip(t / 0.35, 0, 1) * np.clip((d - t) / 0.4, 0, 1); y = 0

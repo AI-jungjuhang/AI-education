@@ -1,18 +1,19 @@
-// 사용법: node render.js <프레임 폴더> <timeline.json 경로> [fps=30] [workers=4]
+// 사용법: node render.js <scene.html 경로> <프레임 폴더> <timeline.json 경로> [fps=30] [workers=4]
 // scene.html의 seek(t)로 시간을 정해 프레임마다 JPEG를 저장하고, 효과음 위치(timeline.json)를 장면 파일에서 뽑아 저장한다.
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
-const out = process.argv[2], TL = process.argv[3], FPS = +(process.argv[4] || 30), W = +(process.argv[5] || 4);
+const SCENE = process.argv[2], out = process.argv[3], TL = process.argv[4], FPS = +(process.argv[5] || 30), W = +(process.argv[6] || 4);
 fs.mkdirSync(out, { recursive: true });
 (async () => {
   const b = await chromium.launch();
   const ctx = await b.newContext({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
-  const url = 'file://' + path.resolve(__dirname, 'scene.html');
+  const url = 'file://' + path.resolve(SCENE);
   const pages = [];
   for (let i = 0; i < W; i++) {
     const p = await ctx.newPage(); await p.goto(url, { waitUntil: 'networkidle' }).catch(() => {});
     // 글꼴 조각이 모두 내려받아지도록 모든 장면의 글자를 한 번씩 그려 본다
-    for (const t of [1.2, 3, 5, 8, 11, 14, 17, 19.5, 22, 25, 28, 31, 34, 37, 40.5]) { await p.evaluate(x => window.seek(x), t); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(200); }
+    const total = await p.evaluate(() => window.collectSfx().total * 60 / 128);
+    for (let t = 1; t < total; t += 2.5) { await p.evaluate(x => window.seek(x), t); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(200); }
     pages.push(p);
   }
   console.log('Pretendard 로드:', await pages[0].evaluate(() => document.fonts.check('900 40px "Pretendard Variable"')));

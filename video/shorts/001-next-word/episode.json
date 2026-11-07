@@ -1,0 +1,195 @@
+{
+ "id": "001-next-word",
+ "tag": "1.1.1",
+ "scenes": [
+  {
+   "type": "title",
+   "bg": "blue",
+   "lines": [
+    "AI 챗봇",
+    "정체 공개!"
+   ],
+   "sticker": {
+    "t": "하는 일은 딱 하나!",
+    "c": "yellow",
+    "anim": "slideR",
+    "rot": -3
+   },
+   "at": {
+    "sticker": 3.4
+   },
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   },
+   "beats": 6
+  },
+  {
+   "type": "title",
+   "bg": "yellow",
+   "lines": [
+    "다음 말",
+    "맞히기"
+   ],
+   "sticker": {
+    "t": "이게 전부!",
+    "c": "red",
+    "anim": "pop",
+    "rot": 4
+   },
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 1.6
+   },
+   "beats": 4
+  },
+  {
+   "type": "choices",
+   "say": "친구: “오늘 점심은\n라면이랑…”",
+   "ask": "다음 말은?",
+   "chips": [
+    {
+     "t": "김밥",
+     "c": "red"
+    },
+    {
+     "t": "만두",
+     "c": "yellow"
+    },
+    {
+     "t": "떡볶이",
+     "c": "green"
+    }
+   ],
+   "no": "우주선",
+   "beats": 8
+  },
+  {
+   "type": "bars",
+   "title": "후보마다 점수!",
+   "rows": [
+    {
+     "name": "김밥",
+     "pct": 30,
+     "bar": 100
+    },
+    {
+     "name": "만두",
+     "pct": 20,
+     "bar": 67
+    },
+    {
+     "name": "떡볶이",
+     "pct": 15,
+     "bar": 50
+    },
+    {
+     "name": "우주선",
+     "bar": 4,
+     "label": "거의 0",
+     "dim": true
+    }
+   ],
+   "note": "숫자는 예시예요!",
+   "beats": 8
+  },
+  {
+   "type": "dice",
+   "title": "주사위 뽑기!",
+   "result": "김밥!",
+   "lines": [
+    "높은 말이 잘 뽑혀요",
+    "낮은 말도 가끔!"
+   ],
+   "beats": 8
+  },
+  {
+   "type": "chain",
+   "head": "뽑은 말은 뒤에 붙여요",
+   "start": "하늘이 파란 이유는",
+   "words": [
+    "햇빛이",
+    "공기에",
+    "부딪혀",
+    "…"
+   ],
+   "tail": "또 뽑고, 또 뽑고!",
+   "beats": 12
+  },
+  {
+   "type": "stack",
+   "title": "계속 반복하면?",
+   "items": [
+    {
+     "t": "문장",
+     "size": 90
+    },
+    {
+     "t": "문단",
+     "c": "green",
+     "size": 112
+    },
+    {
+     "t": "편지 한 통!",
+     "c": "red",
+     "size": 136
+    }
+   ],
+   "beats": 8
+  },
+  {
+   "type": "cards",
+   "lines": [
+    "같은 질문인데…",
+    "답은 매번 달라요!"
+   ],
+   "cards": [
+    {
+     "label": "1번",
+     "red": 55
+    },
+    {
+     "label": "2번",
+     "red": 80
+    },
+    {
+     "label": "3번",
+     "red": 35
+    }
+   ],
+   "stickers": [
+    {
+     "t": "겹치는 건 믿고",
+     "c": "green"
+    },
+    {
+     "t": "달라지는 건 의심!",
+     "c": "red"
+    }
+   ],
+   "note": "그림은 이해를 돕는 예시예요",
+   "beats": 12
+  },
+  {
+   "type": "tip",
+   "label": "오늘의 써먹기",
+   "lines": [
+    "중요한 질문은",
+    "세 번 물어보기!"
+   ],
+   "badges": [
+    "1",
+    "2",
+    "3"
+   ],
+   "sticker": "달라지는 부분은 더 의심!",
+   "beats": 12
+  },
+  {
+   "type": "outro",
+   "beats": 8
+  }
+ ]
+}
