@@ -12,9 +12,7 @@ theme:
     - navigation.footer
     - content.code.copy
     - toc.follow
-  font:
-    text: IBM Plex Sans KR
-    code: JetBrains Mono
+  font: false
   palette:
     - scheme: default
       primary: custom
@@ -25,7 +23,8 @@ theme:
       accent: custom
       toggle: {icon: material/weather-sunny, name: 라이트 모드}
 extra_css:
-  - https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap
+  - https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css
+  - https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap
   - stylesheets/extra.css
 markdown_extensions:
   - admonition

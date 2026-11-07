@@ -8,3 +8,10 @@ AI를 기초부터 심화까지 다루는 한국어 웹 교과서(MkDocs Materia
 - 진행: 페이지마다 멈춰서 사용자 평가를 받는다. 영상화는 v0.2부터.
 - 페이지 작성은 `.claude/skills/topic-page`, 디자인은 `.claude/skills/frontend-design`을 따른다.
 - 개발 브랜치: `claude/korean-ai-textbook-site-kbmkii`. 빌드: `mkdocs build`.
+
+## 나중에 할 일: 인터뷰·대담을 참고 자료에 포함
+- 대상 예: Karpathy, Sam Altman, Geoffrey Hinton 등 AI를 만든 사람들의 인터뷰와 강연. 목적은 AI 발전 방향과 그들의 통찰을 담는 것.
+- 인터뷰는 사실이 아니라 **발언과 견해**다. 본문에서 "누가, 언제, 어디서 한 말"인지 밝히고 사실 설명과 구분한다. 예측은 예측이라고 쓴다.
+- 인용은 최소로 하고 다시 써서 설명한다. 말하지 않은 것을 말한 것처럼 쓰지 않는다. 링크와 날짜를 확인한 것만 적는다.
+- 견해는 시간이 지나면 바뀌므로 기준 날짜를 꼭 적는다. 서로 다른 입장은 한쪽만 싣지 않고 함께 보여 준다.
+- 이 규칙은 `.claude/skills/topic-page`에도 반영한다.

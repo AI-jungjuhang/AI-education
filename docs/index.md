@@ -49,6 +49,8 @@ hide:
 
 ## 지금 읽을 수 있는 것
 
-1. [챗봇은 '다음 말'을 맞히는 기계](part1/ch01/next-word.md): 읽는 데 약 5분
-2. 글자를 토큰이라는 조각으로 쪼개 읽는다: 다음 차례
-3. 그럴듯하지만 틀릴 수 있다(환각): 그다음 차례
+<div class="ep-list">
+<a href="part1/ch01/next-word/"><span class="ep-no">1.1.1</span><span class="ep-title">챗봇은 '다음 말'을 맞히는 기계</span><span class="ep-time">읽기 5분</span></a>
+<div class="soon"><span class="ep-no">1.1.2</span><span class="ep-title">글자를 토큰이라는 조각으로 쪼개 읽는다</span><span class="ep-time">다음 차례</span></div>
+<div class="soon"><span class="ep-no">1.1.3</span><span class="ep-title">그럴듯하지만 틀릴 수 있다 (환각)</span><span class="ep-time">그다음 차례</span></div>
+</div>
