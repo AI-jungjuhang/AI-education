@@ -28,9 +28,9 @@ parts:
     - num: '2.2'
       title: 대화로 다듬기
       pages:
-      - {slug: iterate, title: 고쳐 달라고 말하는 법, min: 5, done: false}
-      - {slug: fresh-start, title: 새 대화가 나을 때, min: 4, done: false}
-      - {slug: templates, title: 나만의 질문 틀 만들기, min: 5, done: false}
+      - {slug: iterate, title: 고쳐 달라고 말하는 법, min: 5, done: true}
+      - {slug: fresh-start, title: 새 대화가 나을 때, min: 4, done: true}
+      - {slug: templates, title: 나만의 질문 틀 만들기, min: 5, done: true}
   - num: 3
     title: 믿어도 될 때와 안 될 때
     blurb: 틀릴 수 있다는 걸 알았으니, 확인하는 습관과 안전하게 쓰는 법을 익혀요.
