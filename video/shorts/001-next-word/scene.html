@@ -175,17 +175,15 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(-
   <div class="sticker c-yellow" data-b="72.4" data-anim="pop" data-rot="-2" data-sfx="ding" style="font-size:66px">달라지는 부분은 더 의심!</div>
 </div></section>
 
-<!-- 10. 다음 편 76~88박 -->
-<section class="scene" data-a="76" data-e="88" data-bg="#2F7FD8"><div class="in" style="gap:24px;bottom:560px">
-  <div class="sticker c-yellow" data-b="76" data-anim="slam" data-sfx="slam" style="font-size:70px">다음 편</div>
-  <div class="st big" data-b="77.4" data-anim="slam" data-sfx="slam">글자를<br>‘토큰’으로<br>읽는다?!</div>
-  <div class="sticker" data-b="81" data-anim="slam" data-sfx="slam" style="font-size:100px">AI 정주행</div>
-  <div class="st sm" data-b="82.2" data-anim="pop" data-sfx="pop" style="font-size:58px;-webkit-text-stroke:12px var(--ink)">열 살도 이해하는 AI 교과서</div>
-  <div class="sticker c-red beat" data-b="84" data-anim="pop" data-sfx="ding" style="font-size:64px">프로필 링크에서 보기</div>
-</div><div class="mas" data-face="happy:grin" data-b="78" data-anim="pop" data-sfx="pop" style="left:395px;top:1380px;width:290px;height:325px"></div></section>
+<!-- 10. 마무리 76~84박 (다음 편 예고는 사용자 결정으로 뺌) -->
+<section class="scene" data-a="76" data-e="84" data-bg="#2F7FD8"><div class="in" style="gap:34px;bottom:520px">
+  <div class="sticker" data-b="76" data-anim="slam" data-sfx="slam" style="font-size:120px">AI 정주행</div>
+  <div class="st sm" data-b="77.2" data-anim="pop" data-sfx="pop" style="font-size:62px;-webkit-text-stroke:12px var(--ink)">열 살도 이해하는 AI 교과서</div>
+  <div class="sticker c-red beat" data-b="79" data-anim="pop" data-sfx="ding" style="font-size:68px">프로필 링크에서 보기</div>
+</div><div class="mas" data-face="happy:grin" data-b="77" data-anim="pop" data-sfx="pop" style="left:395px;top:1330px;width:290px;height:325px"></div></section>
 
 <script>
-const BPM=128,BEAT=60/BPM,TOTAL=88;
+const BPM=128,BEAT=60/BPM,TOTAL=84;
 const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
 const outCubic=x=>1-Math.pow(1-x,3);
 const outBack=(x,c=2.2)=>1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);
