@@ -1,9 +1,13 @@
-# 18장 평가와 한계 ★
+# 18장 5C 고급 ★
 
-AI가 얼마나 잘하는지 재는 방법과 그 한계예요.
+심화예요. 계획부터 세우고 맡기는 법, 권한과 백그라운드 작업, 그리고 지금까지 만든 것을 하나로 묶어 나누는 법이에요.
 
 <div class="ep-list">
-<a href="benchmarks/"><span class="ep-no">18.1.1</span><span class="ep-title">벤치마크의 함정</span><span class="ep-time">읽기 7분</span></a>
-<a href="eval-hallu/"><span class="ep-no">18.1.2</span><span class="ep-title">환각은 어떻게 재나</span><span class="ep-time">읽기 7분</span></a>
-<a href="risks/"><span class="ep-no">18.1.3</span><span class="ep-title">안전과 위험을 보는 눈</span><span class="ep-time">읽기 7분</span></a>
+<div class="soon"><span class="ep-no">18.1.1</span><span class="ep-title">계획부터 세우고 맡기기</span><span class="ep-time">준비 중</span></div>
+<div class="soon"><span class="ep-no">18.1.2</span><span class="ep-title">권한 모드와 안전장치</span><span class="ep-time">준비 중</span></div>
+<div class="soon"><span class="ep-no">18.1.3</span><span class="ep-title">백그라운드와 예약 작업</span><span class="ep-time">준비 중</span></div>
+<div class="soon"><span class="ep-no">18.1.4</span><span class="ep-title">에이전트 팀</span><span class="ep-time">준비 중</span></div>
+<div class="soon"><span class="ep-no">18.2.1</span><span class="ep-title">플러그인으로 묶어 나누기</span><span class="ep-time">준비 중</span></div>
+<div class="soon"><span class="ep-no">18.2.2</span><span class="ep-title">실습: 영상 제작 슈퍼 스킬</span><span class="ep-time">준비 중</span></div>
+<div class="soon"><span class="ep-no">18.2.3</span><span class="ep-title">CLI로 자동화 파이프라인 만들기</span><span class="ep-time">준비 중</span></div>
 </div>

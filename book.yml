@@ -180,44 +180,117 @@ parts:
       - {slug: tool-design, title: 도구를 잘 설계하기, min: 6, done: true}
       - {slug: evaluate, title: 평가하고 고치기, min: 6, done: true}
 - id: 5
-  title: V 원리로 쓰기 ★
-  blurb: 심화예요. 모델 속을 들여다보고, 학습과 평가의 깊은 이야기를 읽고, 이 분야를 만든 사람들의 생각을 따라가요.
+  title: V Claude Code 실전
+  blurb: Claude Code로 직접 일을 시켜요. 슬래시 명령부터 스킬, 훅, MCP, 서브에이전트, 플러그인까지, 우리 채널 제작 흐름을 자동화하면서 배워요.
   chapters:
   - num: 16
+    title: 5A 첫걸음
+    blurb: Claude Code를 켜고 말을 걸고, 규칙을 적어 두고, 실수해도 되돌리고, 한 줄로 일을 시키는 법이에요.
+    sections:
+    - num: '16.1'
+      title: 슬래시 명령
+      pages:
+      - {slug: slash-basics, title: 자주 쓰는 슬래시 명령, min: 6, done: false}
+      - {slug: slash-custom, title: 내 단축 명령 만들기, min: 7, done: false}
+    - num: '16.2'
+      title: CLAUDE.md
+      pages:
+      - {slug: claudemd-intro, title: Claude가 매번 읽는 메모, min: 6, done: false}
+      - {slug: claudemd-write, title: 좋은 CLAUDE.md 쓰는 법, min: 7, done: false}
+    - num: '16.3'
+      title: 체크포인트
+      pages:
+      - {slug: checkpoint-rewind, title: 되돌리기로 마음 놓고 실험하기, min: 6, done: false}
+      - {slug: checkpoint-vs-git, title: 체크포인트와 git은 뭐가 다를까, min: 6, done: false}
+    - num: '16.4'
+      title: CLI 기초
+      pages:
+      - {slug: cli-modes, title: 대화 모드와 한 줄 모드, min: 6, done: false}
+      - {slug: cli-pipe, title: 파일을 넘겨 한 줄로 일 시키기, min: 6, done: false}
+  - num: 17
+    title: 5B 자동화와 연결
+    blurb: 반복 작업을 스킬로 묶고, 훅으로 자동 검사하고, MCP로 바깥 서비스를 잇고, 서브에이전트에 일을 나눠 맡겨요.
+    sections:
+    - num: '17.1'
+      title: 스킬
+      pages:
+      - {slug: skill-anatomy, title: SKILL.md는 어떻게 생겼을까, min: 7, done: false}
+      - {slug: skill-video, title: '실습: 영상 한 편 만들기 스킬', min: 8, done: false}
+      - {slug: skill-safety, title: 남의 스킬과 설정을 열기 전에, min: 6, done: false}
+    - num: '17.2'
+      title: 훅
+      pages:
+      - {slug: hook-basics, title: 특정 순간에 자동으로 실행하기, min: 7, done: false}
+      - {slug: hook-checker, title: '실습: 자동 검사관 달기', min: 7, done: false}
+      - {slug: hook-safety, title: 훅은 내 권한으로 돌아간다, min: 6, done: false}
+    - num: '17.3'
+      title: MCP
+      pages:
+      - {slug: mcp-intro, title: MCP는 Claude의 연결 잭, min: 6, done: false}
+      - {slug: mcp-connect, title: '실습: 외부 서비스 연결하기', min: 7, done: false}
+      - {slug: mcp-token-safety, title: 토큰은 읽기 전용으로, 끝나면 폐기, min: 6, done: false}
+    - num: '17.4'
+      title: 서브에이전트
+      pages:
+      - {slug: subagent-intro, title: 일을 나눠 맡기는 서브에이전트, min: 7, done: false}
+      - {slug: subagent-team, title: '실습: 조사·대본·검토 에이전트', min: 8, done: false}
+      - {slug: subagent-vs-mcp, title: 서브에이전트와 MCP는 뭐가 다를까, min: 5, done: false}
+  - num: 18
+    title: 5C 고급 ★
+    blurb: 심화예요. 계획부터 세우고 맡기는 법, 권한과 백그라운드 작업, 그리고 지금까지 만든 것을 하나로 묶어 나누는 법이에요.
+    sections:
+    - num: '18.1'
+      title: 고급 기능
+      pages:
+      - {slug: plan-mode, title: 계획부터 세우고 맡기기, min: 7, done: false}
+      - {slug: permissions, title: 권한 모드와 안전장치, min: 7, done: false}
+      - {slug: background-tasks, title: 백그라운드와 예약 작업, min: 7, done: false}
+      - {slug: agent-teams, title: 에이전트 팀, min: 7, done: false}
+    - num: '18.2'
+      title: 플러그인과 CLI 숙련
+      pages:
+      - {slug: plugin-bundle, title: 플러그인으로 묶어 나누기, min: 8, done: false}
+      - {slug: super-skill, title: '실습: 영상 제작 슈퍼 스킬', min: 9, done: false}
+      - {slug: cli-automation, title: CLI로 자동화 파이프라인 만들기, min: 8, done: false}
+- id: 6
+  title: VI 원리로 쓰기 ★
+  blurb: 심화예요. 모델 속을 들여다보고, 학습과 평가의 깊은 이야기를 읽고, 이 분야를 만든 사람들의 생각을 따라가요.
+  chapters:
+  - num: 19
     title: 모델 속을 들여다보기 ★
     blurb: 해석 가능성 연구가 알아낸 것들이에요.
     sections:
-    - num: '16.1'
+    - num: '19.1'
       title: 해석 가능성
       pages:
       - {slug: interp-intro, title: 왜 모델 속을 봐야 할까, min: 7, done: true}
       - {slug: features, title: '특징: 모델 안의 개념들', min: 7, done: true}
       - {slug: circuits, title: '회로: 생각의 길 따라가기', min: 7, done: true}
-  - num: 17
+  - num: 20
     title: 학습의 심화 ★
     blurb: 스케일링, 강화학습과 추론 모델, 정렬을 살펴봐요.
     sections:
-    - num: '17.1'
+    - num: '20.1'
       title: 더 깊은 학습
       pages:
       - {slug: scaling, title: '스케일링: 크게 만들면 좋아질까', min: 7, done: true}
       - {slug: rl-reasoning, title: 강화학습과 추론 모델, min: 7, done: true}
       - {slug: alignment, title: '정렬: 사람의 뜻에 맞추기', min: 7, done: true}
-  - num: 18
+  - num: 21
     title: 평가와 한계 ★
     blurb: AI가 얼마나 잘하는지 재는 방법과 그 한계예요.
     sections:
-    - num: '18.1'
+    - num: '21.1'
       title: 얼마나 잘할까
       pages:
       - {slug: benchmarks, title: 벤치마크의 함정, min: 7, done: true}
       - {slug: eval-hallu, title: 환각은 어떻게 재나, min: 7, done: true}
       - {slug: risks, title: 안전과 위험을 보는 눈, min: 7, done: true}
-  - num: 19
+  - num: 22
     title: 대가들은 어디를 보고 있나 ★
     blurb: 이 분야를 만든 사람들의 인터뷰와 강연에서 AI의 발전 방향과 통찰을 읽어요. 발언은 사실이 아니라 견해예요.
     sections:
-    - num: '19.1'
+    - num: '22.1'
       title: 인터뷰로 읽는 방향
       pages:
       - {slug: karpathy, title: Andrej Karpathy의 시선, min: 8, done: true}

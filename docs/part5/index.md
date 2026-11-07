@@ -1,10 +1,9 @@
-# V 원리로 쓰기 ★
+# V Claude Code 실전
 
-심화예요. 모델 속을 들여다보고, 학습과 평가의 깊은 이야기를 읽고, 이 분야를 만든 사람들의 생각을 따라가요.
+Claude Code로 직접 일을 시켜요. 슬래시 명령부터 스킬, 훅, MCP, 서브에이전트, 플러그인까지, 우리 채널 제작 흐름을 자동화하면서 배워요.
 
 <div class="ep-list">
-<a href="ch16/"><span class="ep-no">16장</span><span class="ep-title">모델 속을 들여다보기 ★</span><span class="ep-time">3/3 작성</span></a>
-<a href="ch17/"><span class="ep-no">17장</span><span class="ep-title">학습의 심화 ★</span><span class="ep-time">3/3 작성</span></a>
-<a href="ch18/"><span class="ep-no">18장</span><span class="ep-title">평가와 한계 ★</span><span class="ep-time">3/3 작성</span></a>
-<a href="ch19/"><span class="ep-no">19장</span><span class="ep-title">대가들은 어디를 보고 있나 ★</span><span class="ep-time">6/6 작성</span></a>
+<div class="soon"><span class="ep-no">16장</span><span class="ep-title">5A 첫걸음</span><span class="ep-time">0/8 작성</span></div>
+<div class="soon"><span class="ep-no">17장</span><span class="ep-title">5B 자동화와 연결</span><span class="ep-time">0/12 작성</span></div>
+<div class="soon"><span class="ep-no">18장</span><span class="ep-title">5C 고급 ★</span><span class="ep-time">0/7 작성</span></div>
 </div>

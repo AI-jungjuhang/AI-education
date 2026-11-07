@@ -143,35 +143,43 @@ nav:
         - "좋은 지시문 쓰기": part4/ch15/instructions.md
         - "도구를 잘 설계하기": part4/ch15/tool-design.md
         - "평가하고 고치기": part4/ch15/evaluate.md
-  - "V 원리로 쓰기 ★":
+  - "V Claude Code 실전":
     - part5/index.md
-    - "16장 모델 속을 들여다보기 ★":
+    - "16장 5A 첫걸음":
       - part5/ch16/index.md
-      - "16.1 해석 가능성":
-        - "왜 모델 속을 봐야 할까": part5/ch16/interp-intro.md
-        - "특징: 모델 안의 개념들": part5/ch16/features.md
-        - "회로: 생각의 길 따라가기": part5/ch16/circuits.md
-    - "17장 학습의 심화 ★":
+    - "17장 5B 자동화와 연결":
       - part5/ch17/index.md
-      - "17.1 더 깊은 학습":
-        - "스케일링: 크게 만들면 좋아질까": part5/ch17/scaling.md
-        - "강화학습과 추론 모델": part5/ch17/rl-reasoning.md
-        - "정렬: 사람의 뜻에 맞추기": part5/ch17/alignment.md
-    - "18장 평가와 한계 ★":
+    - "18장 5C 고급 ★":
       - part5/ch18/index.md
-      - "18.1 얼마나 잘할까":
-        - "벤치마크의 함정": part5/ch18/benchmarks.md
-        - "환각은 어떻게 재나": part5/ch18/eval-hallu.md
-        - "안전과 위험을 보는 눈": part5/ch18/risks.md
-    - "19장 대가들은 어디를 보고 있나 ★":
-      - part5/ch19/index.md
-      - "19.1 인터뷰로 읽는 방향":
-        - "Andrej Karpathy의 시선": part5/ch19/karpathy.md
-        - "Sam Altman의 시선": part5/ch19/altman.md
-        - "Geoffrey Hinton의 시선": part5/ch19/hinton.md
-        - "Dario Amodei의 시선": part5/ch19/amodei.md
-        - "Demis Hassabis의 시선": part5/ch19/hassabis.md
-        - "입장 비교: 어디서 갈릴까": part5/ch19/views-compare.md
+  - "VI 원리로 쓰기 ★":
+    - part6/index.md
+    - "19장 모델 속을 들여다보기 ★":
+      - part6/ch19/index.md
+      - "19.1 해석 가능성":
+        - "왜 모델 속을 봐야 할까": part6/ch19/interp-intro.md
+        - "특징: 모델 안의 개념들": part6/ch19/features.md
+        - "회로: 생각의 길 따라가기": part6/ch19/circuits.md
+    - "20장 학습의 심화 ★":
+      - part6/ch20/index.md
+      - "20.1 더 깊은 학습":
+        - "스케일링: 크게 만들면 좋아질까": part6/ch20/scaling.md
+        - "강화학습과 추론 모델": part6/ch20/rl-reasoning.md
+        - "정렬: 사람의 뜻에 맞추기": part6/ch20/alignment.md
+    - "21장 평가와 한계 ★":
+      - part6/ch21/index.md
+      - "21.1 얼마나 잘할까":
+        - "벤치마크의 함정": part6/ch21/benchmarks.md
+        - "환각은 어떻게 재나": part6/ch21/eval-hallu.md
+        - "안전과 위험을 보는 눈": part6/ch21/risks.md
+    - "22장 대가들은 어디를 보고 있나 ★":
+      - part6/ch22/index.md
+      - "22.1 인터뷰로 읽는 방향":
+        - "Andrej Karpathy의 시선": part6/ch22/karpathy.md
+        - "Sam Altman의 시선": part6/ch22/altman.md
+        - "Geoffrey Hinton의 시선": part6/ch22/hinton.md
+        - "Dario Amodei의 시선": part6/ch22/amodei.md
+        - "Demis Hassabis의 시선": part6/ch22/hassabis.md
+        - "입장 비교: 어디서 갈릴까": part6/ch22/views-compare.md
   - "부록":
     - appendix/index.md
     - "용어집": appendix/glossary.md
