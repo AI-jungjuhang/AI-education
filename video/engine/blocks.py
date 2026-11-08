@@ -41,6 +41,7 @@ def mascot_html(cx, m):
     if isinstance(m, str): m = {'face': m}
     face = m.get('face', 'happy:grin'); side = m.get('side', 'right')
     pos = {'right': 'right:50px;top:1250px', 'left': 'left:40px;top:1140px', 'center': 'left:395px;top:1330px;width:290px;height:325px'}[side]
+    if m.get('y'): pos = pos.replace('top:' + pos.split('top:')[1].split('px')[0] + 'px', 'top:%dpx' % m['y'])
     return f'<div class="mas" data-face="{face}" data-b="{cx.b("mascot", m.get("at", 4.4))}" data-anim="pop" data-sfx="pop" style="{pos}"></div>'
 
 # ---------------- 블록 ----------------
@@ -171,9 +172,9 @@ def b_speech(cx, sc, bg):
 
 def b_notes(cx, sc, bg):
     """메모지 흩어 붙이기(최대 4장). 제목은 왼쪽 위."""
-    slots = [(40, 470, -4), (570, 560, 3), (60, 1010, 2.5), (560, 1100, -3)]
+    slots = [(40, 520, -4), (560, 600, 3), (60, 1060, 2.5), (550, 1140, -3)]
     cols = ['#FFE680', '#9BE7C4', '#FFB3C1', '#A9D2FF']
-    ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:190px;font-size:104px">{esc(sc["title"])}</div>']
+    ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:200px;font-size:112px">{esc(sc["title"])}</div>']
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
         ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]}"><b>{esc(it["head"])}</b><span>{esc(it["body"])}</span></div>')
@@ -194,15 +195,15 @@ def b_split(cx, sc, bg):
 
 def b_check(cx, sc, bg):
     """체크리스트 종이. 항목이 나타난 뒤 체크 표시가 톡 찍힌다."""
-    items = sc['items']; top = sc.get('top', 430)
+    items = sc['items']; top = sc.get('top', 400); rowh = int(sc.get('rowh', 159))
     ex = [f'<div class="sticker c-red" data-b="{cx.b("label", 0)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 150}px;font-size:68px;z-index:6" data-rot="-3">{esc(sc.get("label", "오늘의 써먹기"))}</div>']
     rows = ''.join(f'<div class="row2" data-b="{cx.b(f"r{i}", 1.4 + 2.0 * i)}" data-anim="slideL" data-sfx="pop"><div class="bx"></div><div>{esc(t)}</div></div>' for i, t in enumerate(items))
     ex.append(f'<div class="check" style="top:{top}px">{rows}</div>')
     # 체크 표시: 각 줄 상자 위에 겹쳐 찍는다(줄 높이를 알 수 없어 고정 간격 사용)
     for i, _ in enumerate(items):
-        ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:{122}px;top:{top + 52 + i * int(sc.get("step", 135))}px">✓</div>')
+        ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:122px;top:{top + 20 + (rowh - 92) // 2 + i * rowh}px">✓</div>')
     if sc.get('note'):
-        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', -2, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 150 + len(items) * int(sc.get('step', 135))), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
+        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', -2, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 90 + len(items) * rowh + 60), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
     return [], max(8, cx.last + 3.2), '\n'.join(ex)
 
 def b_bigword(cx, sc, bg):
