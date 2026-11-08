@@ -1,0 +1,6 @@
+{"id":"051-tool-design","tag":"15.1.2","name":"도구 설계","scenes":[
+{"type":"bigword","bg":"blue","lines":["AI의 도구함엔","이름표가 필요해요"],"fs":110,"sticker":{"t":"서랍마다 이름표가 없으면\n헤매잖아요","c":"yellow","y":1000,"size":66},"icon":"sliders","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"list","bg":"white","title":"도구를 만드는 다섯 원칙","items":[{"t":"필요한 도구만","c":"green","size":60},{"t":"이름으로 분명히 구분","c":"yellow","size":60},{"t":"다음 판단에 쓸 결과","c":"blue","size":60},{"t":"결과는 짧게","c":"red","size":60},{"t":"설명서는 정성껏","c":"green","size":60}],"beats":12},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"items":[{"who":"other","name":"개발자가 아니어도","t":"AI에게 주는 ==자료==에\n같은 생각을 써요","size":66,"icon":"doc"},{"who":"other","t":"필요한 파일만,\n이름은 분명하게","size":66}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"split","bg":"white","marks":true,"top":{"label":"파일 이름","t":"최종_진짜최종\n.xlsx","c":"red","size":96},"bottom":{"label":"파일 이름","t":"==2026_매출_월별==\n.xlsx","c":"green","size":92,"small":"\"이 열은 이런 뜻\" 설명도 한 줄"},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["AI에게 주는\n==자료 줄이기==","\"이 열은 이런 뜻\"\n==한 줄 붙이기==","결과는\n==짧게 받기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

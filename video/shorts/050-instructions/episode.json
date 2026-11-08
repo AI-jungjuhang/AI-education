@@ -1,0 +1,6 @@
+{"id":"050-instructions","tag":"15.1.1","name":"지시문","scenes":[
+{"type":"bigword","bg":"blue","lines":["에이전트에겐","첫 출근 안내서를"],"fs":112,"sticker":{"t":"똑똑하지만 우리 사정을 모르는\n새 직원이라고 생각해요","c":"yellow","y":1000,"size":60},"icon":"doc","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"notes","bg":"white","title":"안내서에\n담을 것","items":[{"head":"역할과 목표","ex":"도서관 행사 안내","icon":"target"},{"head":"하지 말 것","ex":"예약·결제 대신 하기","icon":"lock"},{"head":"모를 때","ex":"안내 데스크로","icon":"question"},{"head":"멈출 때","ex":"두 번 찾아도 없으면","icon":"clock"}],"beats":13},
+{"type":"split","bg":"white","marks":true,"top":{"label":"이렇게만 쓰면","t":"결제는\n하지 마","c":"red","size":104,"small":"막힌 길만 알려 줘요"},"bottom":{"label":"이렇게 쓰면","t":"==결제 대신\n안내 데스크를\n알려 줘==","c":"green","size":88},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"목표 옆에","t":"==이유==도 붙이기","size":80,"icon":"person"},{"who":"other","t":"예: 정확해야 해.\n헛걸음하면 안 되니까","size":64}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["첫 세 줄에\n==역할·목표·이유==","\"==모를 때==\" 칸\n꼭 쓰기","이상한 행동을 보면\n==한 줄씩 추가=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

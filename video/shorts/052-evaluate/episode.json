@@ -1,0 +1,6 @@
+{"id":"052-evaluate","tag":"15.1.3","name":"평가하기","scenes":[
+{"type":"bigword","bg":"blue","lines":["느낌 대신","점수를 재요"],"fs":125,"sticker":{"t":"운동선수도\n기록을 재고 고치잖아요","c":"yellow","y":1000,"size":70},"icon":"target","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"예: 성공 기준 한 줄","t":"문의 10개 중 9개 이상\n==정확한 규정 인용==","size":64,"icon":"person"},{"who":"other","t":"기준이 있어야\n나아졌는지 알 수 있어요","size":64}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"notes","bg":"blue","title":"시험 문제\n10개","items":[{"head":"쉬운 것\n6개","icon":"check"},{"head":"어려운 것\n3개","icon":"sliders"},{"head":"이상한 것\n1개","body":"규정에 없는 질문","icon":"question"}],"beats":12},
+{"type":"split","bg":"white","marks":true,"top":{"label":"고칠 때","t":"여러 곳을\n한꺼번에","c":"red","size":104,"small":"뭐가 효과였는지 몰라요"},"bottom":{"label":"고칠 때","t":"==한 곳만 고치고\n다시 재기==","c":"green","size":96},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["시험 문제 몇 개는\n==숨겨 두기==||고칠 땐 보지 않고 마지막에만","AI 채점도\n==일부는 사람이 확인==","모델이 바뀌면\n==같은 시험으로 다시=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
