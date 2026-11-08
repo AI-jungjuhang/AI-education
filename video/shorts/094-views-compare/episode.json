@@ -1,0 +1,6 @@
+{"id":"094-views-compare","tag":"22.1.6","name":"입장 비교","scenes":[
+{"type":"bigword","bg":"blue","lines":["전문가들도","서로 다르게 말해요"],"fs":112,"sticker":{"t":"같은 성명에 서명해도\n생각이 같은 건 아니에요","c":"yellow","y":1000,"size":64},"icon":"people","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"notes","bg":"white","title":"어디서\n갈릴까","items":[{"head":"위험의\n무게중심","icon":"warn"},{"head":"누가 어떻게\n통제하나","icon":"lock"},{"head":"속도에 대한\n확신","icon":"clock"},{"head":"이해관계","icon":"people"}],"beats":12},
+{"type":"list","bg":"blue","title":"발언을 볼 때 여덟 질문","items":[{"t":"누가? 언제? 어디서?","c":"green","size":56},{"t":"사실? 견해? 예측?","c":"yellow","size":56},{"t":"근거는? 이해관계는?","c":"green","size":56},{"t":"한계를 말했나? 반대 의견은?","c":"yellow","size":52}],"beats":12},
+{"type":"split","bg":"white","marks":true,"top":{"label":"유명한 사람의 말이니","t":"그대로\n믿기","c":"red","size":110},"bottom":{"label":"누구의 말이든","t":"==표로 칸을\n채워 보기==","c":"green","size":104,"small":"누가, 언제, 무엇을, 어떤 근거로"},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["연도 예측은\n==적어 두고 확인==","\"모른다\"는 말을\n==존중하기==","==다른 목소리==도\n찾아 읽기"],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

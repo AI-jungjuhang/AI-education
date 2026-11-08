@@ -1,0 +1,117 @@
+{
+ "id": "093-hassabis",
+ "tag": "22.1.5",
+ "name": "Hassabis",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Hassabis는",
+    "AI를 과학의 도구로"
+   ],
+   "fs": 110,
+   "sticker": {
+    "t": "2024년 노벨 화학상\n전화 인터뷰에서 한 말이에요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 62
+   },
+   "icon": "person",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "2024년 10월, 노벨상 인터뷰",
+     "t": "예측 가능한 미래에는\n==질문과 가설은 사람==이",
+     "size": 62,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "\"예측 가능한 미래에는\"\n조건이 붙은 말이에요",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "AI가 잘하는 일",
+    "t": "자료 정리,\n패턴 찾기, 초안",
+    "c": "green",
+    "size": 92,
+    "icon": "sliders"
+   },
+   "bottom": {
+    "label": "사람이 할 일",
+    "t": "==질문 정하기,\n의미 해석하기==",
+    "c": "yellow",
+    "size": 92,
+    "icon": "person"
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "읽을 때\n주의",
+   "items": [
+    {
+     "head": "DeepMind\nCEO예요",
+     "icon": "people"
+    },
+    {
+     "head": "위험 이야기는\n이 자료에 없어요",
+     "icon": "search"
+    },
+    {
+     "head": "조건을 빼면\n다른 주장",
+     "icon": "warn"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "질문은\n==내가 먼저 한 줄로==",
+    "AI는\n==잡일에 쓰기==",
+    "조건부 말은\n==조건과 함께 기억=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

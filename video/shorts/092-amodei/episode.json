@@ -1,0 +1,117 @@
+{
+ "id": "092-amodei",
+ "tag": "22.1.4",
+ "name": "Amodei",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Amodei는",
+    "이로움과 위험을 둘 다"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "이 책을 도운 Claude를\n만든 회사의 CEO예요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "person",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "2024년 10월 에세이",
+     "t": "위험을 자주 말하는 건\n==비관론자라서가 아니에요==",
+     "size": 60,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "위험은 정해진 게 아니라\n줄일 수 있어서래요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "bigword",
+   "bg": "orange",
+   "lines": [
+    "속 들여다보기와",
+    "능력의 경주"
+   ],
+   "fs": 110,
+   "sticker": {
+    "t": "2025년 4월 에세이:\n속 보기가 따라잡아야 해요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "search",
+   "beats": 9
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "사실·견해·예측\n나눠 보기",
+   "items": [
+    {
+     "t": "서술: 내부를 잘 모른다",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "예측: 빠르면 2026~27 큰 변화",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "회사 목표: 2027년까지 문제 찾기",
+     "c": "blue",
+     "size": 52
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "글쓴이의\n==소속과 이해관계== 먼저",
+    "\"우리 목표\"는\n==예측과 구분==",
+    "스스로 한계를 적은\n==문장에 주목=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
