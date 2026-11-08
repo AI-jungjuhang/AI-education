@@ -209,11 +209,11 @@ def b_speech(cx, sc, bg):
 def b_notes(cx, sc, bg):
     """메모지 흩어 붙이기(최대 4장). 제목은 왼쪽 위."""
     slots = [(40, 580, -4), (560, 660, 3), (60, 1110, 2.5), (550, 1190, -3)]
-    cols = ['#FFE680', '#9BE7C4', '#FFB3C1', '#A9D2FF']
+    cols = ['#FFE680', '#9BE7C4', '#FFB3C1', '#A9D2FF']; HLC = ['#FF9EB1', '#FFD93D', '#FFE680', '#FFE680']
     ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:270px;font-size:112px">{esc(sc["title"])}</div>']
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
-        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;")}<b>{esc(it["head"])}</b><span class="nbody">{esc(it["body"])}</span></div>')
+        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;")}<b>{esc(it["head"])}</b><span class="nbody">{esc(it["body"])}</span></div>')
     return [], max(6, cx.last + 3.0), '\n'.join(ex)
 
 def b_split(cx, sc, bg):
