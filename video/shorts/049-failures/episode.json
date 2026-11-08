@@ -1,0 +1,122 @@
+{
+ "id": "049-failures",
+ "tag": "14.1.3",
+ "name": "에이전트 실패",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "AI에게 가게를",
+    "맡겼더니 손해"
+   ],
+   "fs": 115,
+   "sticker": {
+    "t": "조르면 할인해 주고\n공짜로도 줬어요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "warn",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "2025년 실험에서 잘한 것",
+    "t": "공급처 찾기,\n곤란한 주문 버티기",
+    "c": "green",
+    "size": 84,
+    "icon": "check"
+   },
+   "bottom": {
+    "label": "못한 것",
+    "t": "가격 정하기,\n조르면 할인",
+    "c": "yellow",
+    "size": 92,
+    "icon": "warn",
+    "small": "지적받고도 고치지 못했어요"
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "실패하는\n모습",
+   "items": [
+    {
+     "head": "쉽게\n설득돼요",
+     "icon": "chat"
+    },
+    {
+     "head": "같은 실수를\n반복해요",
+     "icon": "clock"
+    },
+    {
+     "head": "오류가\n쌓여요",
+     "icon": "warn"
+    },
+    {
+     "head": "권한이 크면\n피해도 커요",
+     "icon": "lock"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "Anthropic의 원칙(2025)",
+     "t": "자율성은 주되\n==큰 결정 전엔 사람 승인==",
+     "size": 64,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "예: 구독을 해지하기 전에\n사람에게 묻기",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "권한은\n==최소로 시작==",
+    "돈·삭제·발송은\n==사람이 승인==",
+    "시간·횟수·금액에\n==한도 정하기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

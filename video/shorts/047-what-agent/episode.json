@@ -1,0 +1,6 @@
+{"id":"047-what-agent","tag":"14.1.1","name":"에이전트","scenes":[
+{"type":"bigword","bg":"blue","lines":["에이전트는","스스로 방법을 정해요"],"fs":108,"sticker":{"t":"냉장고를 열어 보고\n메뉴를 정하는 요리사처럼요","c":"yellow","y":1000,"size":64},"icon":"target","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"워크플로","t":"정해진\n순서대로","c":"yellow","size":104,"icon":"doc","small":"요리 설명서를 따르는 로봇처럼"},"bottom":{"label":"에이전트","t":"==순서를\n스스로 정해요==","c":"green","size":100,"icon":"person","small":"단계를 미리 알 수 없는 일에 알맞아요"},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"items":[{"who":"other","name":"Anthropic의 조언(2024)","t":"==가장 단순한 방법==부터\n찾으세요","size":66,"icon":"bulb"},{"who":"other","t":"에이전트는 느리고 비싸고\n실수가 쌓일 수 있어요","size":60}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"list","bg":"white","title":"맡길 때 정할 것","items":[{"t":"멈출 때: \"10단계 안에\"","c":"red","size":60},{"t":"점검: \"계획 먼저 보여 줘\"","c":"yellow","size":60},{"t":"연습: 중요하지 않은 곳에서","c":"green","size":60}],"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["먼저\n==가장 단순한 방법==","순서가 정해진 일은\n==단계로 나눠 맡기기==","처음엔\n==연습용으로 시험=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
