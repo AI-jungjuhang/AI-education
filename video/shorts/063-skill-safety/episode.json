@@ -1,0 +1,124 @@
+{
+ "id": "063-skill-safety",
+ "tag": "17.1.3",
+ "name": "남의 스킬",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "남의 .claude/는",
+    "열기 전에 읽어요"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "낯선 집 규칙 쪽지는\n따르기 전에 먼저 읽죠",
+    "c": "yellow",
+    "y": 1000,
+    "size": 66
+   },
+   "icon": "warn",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "모르는 저장소에서",
+    "t": "claude -p",
+    "c": "red",
+    "size": 120,
+    "small": "믿음 확인 창이 안 떠요"
+   },
+   "bottom": {
+    "label": "모르는 저장소는",
+    "t": "==대화 모드로 열고\n확인 창 보기==",
+    "c": "green",
+    "size": 92
+   },
+   "beats": 11
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "열기 전 점검표",
+   "items": [
+    {
+     "t": "1. settings.json의 hooks",
+     "c": "green",
+     "size": 54
+    },
+    {
+     "t": "2. .mcp.json의 서버",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "3. 스킬의 ! 줄, allowed-tools",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "4. CLAUDE.md의 이상한 지시",
+     "c": "red",
+     "size": 54
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "꼭 -p로 돌려야 하면",
+     "t": "==--bare==로 실행",
+     "size": 80,
+     "icon": "lock"
+    },
+    {
+     "who": "other",
+     "t": "프로젝트의 훅, 스킬,\nMCP 서버를 읽지 않아요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "열기 전에\n==설정 파일부터== 읽기||.claude/ 폴더와 .mcp.json",
+    "확인 창의 \"믿기\"는\n==이유가 분명할 때만==",
+    "내 스킬도 나누기 전\n==! 줄 다시 보기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
