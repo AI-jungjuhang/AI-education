@@ -1,0 +1,120 @@
+{
+ "id": "015-copyright",
+ "tag": "3.2.2",
+ "name": "저작권",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "챗봇이 쓴 글도",
+    "닮을 수 있어요"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "많은 글을 읽고 배워서\n어딘가의 글과 비슷해져요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "book",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이렇게 부탁하면",
+    "t": "이 글처럼\n써 줘",
+    "c": "red",
+    "size": 104,
+    "small": "베낀 글에 가까워질 수 있어요"
+   },
+   "bottom": {
+    "label": "이렇게 부탁하면",
+    "t": "==핵심을\n내 말로 정리해 줘==",
+    "c": "green",
+    "size": 88
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "이럴 때\n조심해요",
+   "items": [
+    {
+     "head": "남의 글을\n넣을 때",
+     "body": "필요한 부분만",
+     "icon": "doc"
+    },
+    {
+     "head": "결과를\n쓸 때",
+     "body": "닮은 작품 확인",
+     "icon": "search"
+    },
+    {
+     "head": "내 이름으로\n낼 때",
+     "body": "학교·직장 규칙",
+     "icon": "person"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "쓰기 전에",
+     "t": "문장에 ==따옴표==를\n붙여 검색해 보기",
+     "size": 72,
+     "icon": "search"
+    },
+    {
+     "who": "other",
+     "t": "닮은 글이 있는지\n가장 쉽게 알 수 있어요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "학교·직장의\n==AI 규칙== 먼저 보기",
+    "AI를 썼다면 ==밝히기==||예: 초안 작성에 AI를 사용함",
+    "돈 벌 때 쓰려면\n==약관== 읽기"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
