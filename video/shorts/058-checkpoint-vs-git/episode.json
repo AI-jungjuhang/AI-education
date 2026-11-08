@@ -1,0 +1,126 @@
+{
+ "id": "058-checkpoint-vs-git",
+ "tag": "16.3.2",
+ "name": "체크포인트와 git",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "체크포인트는 지우개,",
+    "git은 사진첩"
+   ],
+   "fs": 100,
+   "sticker": {
+    "t": "중요한 건\n사진첩에 넣어요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "book",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "체크포인트가\n못 하는 것",
+   "items": [
+    {
+     "head": "명령창으로\n바꾼 파일",
+     "icon": "doc"
+    },
+    {
+     "head": "다른 일꾼이\n바꾼 파일",
+     "body": "서브에이전트",
+     "icon": "people"
+    },
+    {
+     "head": "내가 밖에서\n고친 파일",
+     "icon": "person"
+    },
+    {
+     "head": "바로가기\n링크 파일",
+     "icon": "pin"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "두 겹 습관",
+   "items": [
+    {
+     "t": "1. 시작 전에 커밋",
+     "c": "green",
+     "size": 64
+    },
+    {
+     "t": "2. 작업 중엔 /rewind",
+     "c": "yellow",
+     "size": 64
+    },
+    {
+     "t": "3. 마음에 들면 다시 커밋",
+     "c": "green",
+     "size": 64
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "큰 작업 전에",
+     "t": "바뀐 파일을 확인하고\n==커밋 메시지 초안==을 써 줘",
+     "size": 62,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "커밋은 확인한 뒤에\n내가 해요",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "서브에이전트 전엔\n==반드시 커밋==",
+    "명령창으로 바꾼 건\n==git으로 되돌리기==",
+    "일 하나 끝날 때마다\n==커밋하기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

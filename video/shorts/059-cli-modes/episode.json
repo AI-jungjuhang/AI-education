@@ -1,0 +1,122 @@
+{
+ "id": "059-cli-modes",
+ "tag": "16.4.1",
+ "name": "한 줄 모드",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "claude -p는",
+    "자판기예요"
+   ],
+   "fs": 125,
+   "sticker": {
+    "t": "버튼 한 번에\n답 하나 받고 끝나요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "chat",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "대화 모드",
+    "t": "claude",
+    "c": "yellow",
+    "size": 120,
+    "icon": "chat",
+    "small": "식당처럼 주고받아요"
+   },
+   "bottom": {
+    "label": "한 줄 모드",
+    "t": "==claude -p \"질문\"==",
+    "c": "green",
+    "size": 88,
+    "icon": "check",
+    "small": "사람 없이도 돌아가요"
+   },
+   "beats": 11
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "지난 대화\n이어 가기",
+   "items": [
+    {
+     "t": "claude -c → 최근 대화 이어 가기",
+     "c": "green",
+     "size": 50
+    },
+    {
+     "t": "claude -r \"이름\" → 그 대화 다시 열기",
+     "c": "yellow",
+     "size": 50
+    },
+    {
+     "t": "/resume → 대화 안에서 고르기",
+     "c": "green",
+     "size": 50
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "폴더를 하나 더할 때",
+     "t": "claude --add-dir\n../다른폴더",
+     "size": 66,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "그 폴더를 고칠 권한이 생겨요.\n==믿을 수 있는 폴더만==요",
+     "size": 58
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "한 번 묻고 끝나면\n==claude -p==",
+    "어제 하던 일은\n==claude -c==",
+    "이름 붙인 대화는\n==claude -r \"이름\"=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
