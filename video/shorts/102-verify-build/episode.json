@@ -1,0 +1,6 @@
+{"id":"102-verify-build","tag":"23.4.2","name":"검증 실습","scenes":[
+{"type":"bigword","bg":"blue","lines":["검사가","\"끝\"을 허락해요"],"fs":120,"sticker":{"t":"세 겹의 문지기를\n세워요","c":"yellow","y":1000,"size":72},"icon":"lock","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"notes","bg":"white","title":"세 겹의\n문지기","items":[{"head":"① 형식","body":"고칠 때마다\n출처 절 확인","icon":"doc"},{"head":"② 빌드","body":"답을 마칠 때\n경고 0개","icon":"check"},{"head":"③ 내용","body":"원본에 없는 말","icon":"search"}],"beats":12},
+{"type":"split","bg":"white","marks":true,"top":{"label":"빌드 검사에","t":"mkdocs build\n--strict -q","c":"red","size":88,"small":"-q를 붙이면 경고가 있어도 통과해요"},"bottom":{"label":"빌드 검사는","t":"==mkdocs build\n--strict==","c":"green","size":96,"small":"이 책을 쓰며 직접 겪은 일이에요"},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"items":[{"who":"other","name":"되돌려 보내는 훅에는","t":"==반복 방지 장치==가\n꼭 필요해요","size":70,"icon":"warn"},{"who":"other","t":"한 번 되돌린 뒤엔\n멈추게 해요","size":66}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["조용한 옵션이\n==실패를 숨기는지== 확인","새 검사는\n==틀린 경우도 시험==","되돌리는 훅엔\n==반복 방지=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

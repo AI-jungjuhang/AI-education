@@ -1,0 +1,126 @@
+{
+ "id": "101-verify-loop",
+ "tag": "23.4.1",
+ "name": "검증 루프",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "AI에게도",
+    "정답지를 쥐여 줘요"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "끝난 것처럼 보이면\n멈추거든요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "check",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "검사의 네 단계",
+   "items": [
+    {
+     "t": "① 부탁에 쓰기",
+     "c": "green",
+     "size": 62
+    },
+    {
+     "t": "② /goal로 목표 두기",
+     "c": "yellow",
+     "size": 62
+    },
+    {
+     "t": "③ Stop 훅으로 강제",
+     "c": "blue",
+     "size": 62
+    },
+    {
+     "t": "④ 다른 눈이 검토",
+     "c": "red",
+     "size": 62
+    }
+   ],
+   "note": "아래로 갈수록 강해요",
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "보고를 받을 때",
+    "t": "\"다 통과했어요\"",
+    "c": "red",
+    "size": 92,
+    "small": "말만으로는 알 수 있는 게 없어요"
+   },
+   "bottom": {
+    "label": "보고를 받을 때",
+    "t": "==명령과 출력\n전체 보여 줘==",
+    "c": "green",
+    "size": 100
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "검토를 맡길 때",
+     "t": "==정확성만== 봐 줘.\n스타일은 빼고",
+     "size": 72,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "찾으라고 하면\n항상 뭔가 찾아내거든요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "끝의 모양을\n==합격/불합격으로==||예: 링크 검사에서 경고 0개",
+    "검토 범위는\n==좁게==",
+    "모든 보고에\n==명령과 출력 요구=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
