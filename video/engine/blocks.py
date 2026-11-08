@@ -118,10 +118,18 @@ def b_bars(cx, sc, bg):
     if sc.get('note'): p.append(sticker(cx, 'note', 1.5 + len(sc['rows']) + 0.5, sc['note'], 'yellow', 'pop', -5, 'ding', 64))
     return p, max(4, cx.last + 2.0), ''
 
+_FACE = {'f': 5, 'k': 2, 'r': 3, 'l': 4, 't': 1, 'b': 6}   # 앞=5(맨 마지막에 보이는 면), 뒤=2, 오른쪽=3, 왼쪽=4, 위=1, 아래=6
+_PIPS = {1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8]}
+def _faces():
+    out = ''
+    for k, n in _FACE.items():
+        out += f'<div class="face f-{k}">' + ''.join('<i class="on"></i>' if j in _PIPS[n] else '<i></i>' for j in range(9)) + '</div>'
+    return out
+
 def b_dice(cx, sc, bg):
     cx.t('die', 1)
     p = [lines_html(cx, [sc['title']], bg, 'big'),
-         f'<div class="dieW" id="dieW" data-b="{cx.b("die", 1)}" data-anim="dice" data-sfx="rattle" data-dur="2.5"><div class="die" id="die">' + '<i></i>' * 7 + '</div></div>',
+         f'<div class="dieW" id="dieW" data-b="{cx.b("die", 1)}" data-anim="dice" data-sfx="rattle" data-dur="2.5"><div class="cube" id="cube">' + _faces() + '</div></div>',
          f'<div class="sticker c-yellow" data-b="{cx.b("result", 4)}" data-anim="slam" data-sfx="ding" style="font-size:120px">{esc(sc["result"])}</div>']
     for i, ln in enumerate(sc.get('lines', [])):
         p.append(f'<div class="st sm" data-b="{cx.b(f"dl{i}", 5.4 + i * 1.2)}" data-anim="{"slideL" if i % 2 == 0 else "slideR"}" data-sfx="pop">{esc(ln)}</div>')
@@ -261,7 +269,7 @@ def b_check(cx, sc, bg):
         ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", d + 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:122px;top:{y + (rh[i] - 92) // 2}px">✓</div>')
         y += rh[i]
     if sc.get('note'):
-        ex.append(sticker(cx, 'note', d + 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 110 + sum(rh) + 20), 1))
+        ex.append(sticker(cx, 'note', d + 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 110 + sum(rh) + 56), 1))
     return [], max(8, cx.last + 3.2), '\n'.join(ex)
 
 def b_bigword(cx, sc, bg):

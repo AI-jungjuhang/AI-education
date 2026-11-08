@@ -37,7 +37,14 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(-
 #flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:40;pointer-events:none}
 .mas{position:absolute;width:330px;height:370px}
 .dieW{width:300px;height:300px}
-.die{width:100%;height:100%;border:10px solid var(--ink);border-radius:64px;background:#fff;box-shadow:12px 12px 0 var(--ink);position:relative}
+.dieW{perspective:1100px;filter:drop-shadow(14px 16px 0 rgba(36,36,36,.9))}
+.cube{width:260px;height:260px;margin:20px 20px 56px;position:relative;transform-style:preserve-3d}
+.face{position:absolute;inset:0;border:10px solid var(--ink);border-radius:44px;background:#fff;display:grid;grid-template:repeat(3,1fr)/repeat(3,1fr);padding:26px;box-sizing:border-box;backface-visibility:hidden}
+.face i{width:48px;height:48px;border-radius:50%;place-self:center}
+.face i.on{background:var(--ink)}
+.f-f{transform:translateZ(130px)}.f-k{transform:rotateY(180deg) translateZ(130px);background:#e9e9e9}
+.f-r{transform:rotateY(90deg) translateZ(130px);background:#d9d9d9}.f-l{transform:rotateY(-90deg) translateZ(130px);background:#e2e2e2}
+.f-t{transform:rotateX(90deg) translateZ(130px);background:#fff}.f-b{transform:rotateX(-90deg) translateZ(130px);background:#cfcfcf}
 .die i{position:absolute;width:52px;height:52px;border-radius:50%;background:var(--ink);display:none}
 .wd{font-size:68px;padding:16px 30px;border-radius:26px;border:7px solid var(--ink);background:#fff;box-shadow:8px 8px 0 var(--ink)}
 .arrow{font-size:70px;color:var(--ink)}
@@ -136,7 +143,7 @@ mark.hl{color:var(--ink);background:linear-gradient(transparent 50%,var(--hlc,#F
 <!-- 4. dice 26~34박 -->
 <section class="scene" data-a="26" data-e="34" data-bg="#FC5424"><div class="in" style="gap:30px">
   <div class="st big" data-b="26" data-anim="slam" data-sfx="slam">주사위 뽑기!</div>
-  <div class="dieW" id="dieW" data-b="27" data-anim="dice" data-sfx="rattle" data-dur="2.5"><div class="die" id="die"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  <div class="dieW" id="dieW" data-b="27" data-anim="dice" data-sfx="rattle" data-dur="2.5"><div class="cube" id="cube"><div class="face f-f"><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i></div><div class="face f-k"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i></div><div class="face f-r"><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i></div><div class="face f-l"><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i></div><div class="face f-t"><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i></div><div class="face f-b"><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i></div></div></div>
   <div class="sticker c-yellow" data-b="30" data-anim="slam" data-sfx="ding" style="font-size:120px">김밥!</div>
   <div class="st sm" data-b="31.4" data-anim="slideL" data-sfx="pop">높은 말이 잘 뽑혀요</div>
   <div class="st sm" data-b="32.6" data-anim="slideR" data-sfx="pop">낮은 말도 가끔!</div>
@@ -212,11 +219,11 @@ function anim(el,rel,b){
   else if(k==='shake'){const p=clamp(rel/0.3,0,1);s=0.4+0.6*outBack(p);[x,y]=shakeXY(rel,30);}
   else if(k==='grow'){el.style.width=(+el.dataset.v*outBack(clamp(rel/0.45,0,1),1.2))+'%';op=1;s=1;}
   else if(k==='count'){const p=outCubic(clamp(rel/0.5,0,1));el.textContent=Math.round(+el.dataset.v*p)+(el.dataset.fmt||'');op=1;}
-  else if(k==='dice'){const roll=2.5*BEAT;
-    if(rel<0.3){const p=rel/0.3;y=-900*(1-outBounce(p));r=0;}
-    else if(rel<roll){const q=rel-0.3;r=q*1500;x=Math.sin(q*60)*40;y=Math.abs(Math.sin(q*22))*-60;dieFace(1+Math.floor(q*28)%6);}
-    else{const q=rel-roll;dieFace(5);r=0;y=-70*Math.exp(-q*9)*Math.abs(Math.cos(q*28));s=1+0.1*Math.exp(-q*8);}
-    op=1;}
+  else if(k==='dice'){const roll=2.5*BEAT,cube=document.getElementById('cube'),FX=-24,FY=-32;let ax=FX,ay=FY;
+    if(rel<0.3){const p=rel/0.3;y=-900*(1-outBounce(p));ax=FX+300;ay=FY+420;}
+    else if(rel<roll){const q=rel-0.3,p=clamp(q/(roll-0.3),0,1),u=Math.pow(1-p,1.6);ax=FX+u*1080+300*(1-p);ay=FY+u*1440+420*(1-p);y=Math.abs(Math.sin(q*22))*-60*(1-p);x=Math.sin(q*60)*40*(1-p);}
+    else{const q=rel-roll;y=-70*Math.exp(-q*9)*Math.abs(Math.cos(q*28));s=1+0.1*Math.exp(-q*8);}
+    if(cube)cube.style.transform=`rotateX(${ax}deg) rotateY(${ay}deg)`;r=0;op=1;}
   else if(k==='confetti'){el.style.opacity=1;const ps=el.children;for(let i=0;i<ps.length;i++){const a=(i*137.5)*Math.PI/180,sp=500+(i%7)*130;const q=Math.max(rel,0);
       const px=540+Math.cos(a)*sp*q,py=1050+Math.sin(a)*sp*q*0.9+1500*q*q;ps[i].style.opacity=clamp(1-q/1.3,0,1);ps[i].style.transform=`translate(${px}px,${py}px) rotate(${q*700+i*40}deg)`;ps[i].style.left=0;ps[i].style.top=0;}
     return;}
