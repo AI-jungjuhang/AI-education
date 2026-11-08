@@ -1,0 +1,150 @@
+{
+ "id": "008-iterate",
+ "tag": "2.2.1",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "미용실에서",
+    "\"좀 다르게요\""
+   ],
+   "fs": 150,
+   "sticker": {
+    "t": "어디를 바꾸라는 거지?",
+    "c": "yellow",
+    "y": 1000,
+    "size": 76
+   },
+   "icon": "question",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이렇게 말하면",
+    "t": "좀 다르게\n해 주세요",
+    "c": "red",
+    "size": 96,
+    "small": "어디를, 얼마나, 어떤 방향으로?"
+   },
+   "bottom": {
+    "label": "이렇게 말하면",
+    "t": "==앞머리만 짧게,\n옆은 그대로==",
+    "c": "green",
+    "size": 92
+   },
+   "beats": 10
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "챗봇에게",
+     "t": "별로야.\n다시 해 줘.",
+     "size": 80,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "챗봇 입장",
+     "t": "어디가 문제인지\n알 단서가 없어요",
+     "size": 66,
+     "icon": "question"
+    },
+    {
+     "who": "other",
+     "t": "==어디를, 어떻게==\n말해 줘야 알아요",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1340
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "고칠 때\n이렇게 해요",
+   "items": [
+    {
+     "head": "==한 번에\n한 가지==",
+     "body": "길이·말투·내용\n중 하나만",
+     "icon": "sliders"
+    },
+    {
+     "head": "==그대로 둘\n부분==",
+     "body": "첫 문단은\n그대로 둬",
+     "icon": "check"
+    },
+    {
+     "head": "==이유==",
+     "body": "읽는 분이\n어르신이라서",
+     "icon": "people"
+    },
+    {
+     "head": "==여러 버전==",
+     "body": "서로 다르게\n여러 가지로",
+     "icon": "doc"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "약한 피드백",
+    "t": "딱딱해",
+    "c": "red",
+    "size": 110,
+    "small": "뭘 어떻게 바꾸라는 걸까?"
+   },
+   "bottom": {
+    "label": "센 피드백",
+    "t": "==존댓말은 그대로,\n문장 끝만 \"~예요\"로\n부드럽게==",
+    "c": "green",
+    "size": 76
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "rowh": 246,
+   "icon": "bulb",
+   "items": [
+    "==어디를 어떻게== 바꿀지 말하기||예: 2번째 문단을 초등학생이 알 만한 말로",
+    "마음에 든 곳은\n==그대로 두라고== 말하기",
+    "고친 뒤에는\n==뭘 바꿨는지== 물어보기"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1560
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
