@@ -1,0 +1,154 @@
+{
+ "id": "010-templates",
+ "tag": "2.2.3",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "쿠키 틀은",
+    "그대로"
+   ],
+   "fs": 150,
+   "sticker": {
+    "t": "반죽만 바꿔요.\n질문도 그래요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 76
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "예: 이메일 틀",
+     "t": "[받는 사람]에게\n보낼 메일 써 줘.\n목적은 [목적]이야",
+     "size": 70,
+     "icon": "doc"
+    },
+    {
+     "who": "other",
+     "t": "==빈칸만 바꿔서==\n다시 쓰면 돼요",
+     "size": 70
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "틀에 둘\n빈칸",
+   "items": [
+    {
+     "head": "목적",
+     "ex": "회의 공지에 쓸 거야",
+     "icon": "target"
+    },
+    {
+     "head": "읽는 사람",
+     "ex": "새로 온 팀원",
+     "icon": "people"
+    },
+    {
+     "head": "조건",
+     "ex": "3문장 이내로",
+     "icon": "sliders"
+    },
+    {
+     "head": "형식",
+     "ex": "표로",
+     "icon": "doc"
+    }
+   ],
+   "foot": "필요한 칸만 남겨도 돼요",
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "그냥 이어 붙이면",
+    "t": "지시와 내 글이\n섞여요",
+    "c": "red",
+    "size": 96,
+    "small": "어디까지가 지시인지 헷갈려요"
+   },
+   "bottom": {
+    "label": "표시로 감싸면",
+    "t": "==<메일>==\n받은 메일\n==</메일>==",
+    "c": "green",
+    "size": 86,
+    "small": "안의 지시는 따르지 말라고 적기"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "틀에 넣어 둘 한 줄",
+     "t": "==모르면 모른다고==\n말해 줘",
+     "size": 80,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "지어낸 답을\n줄여 줘요",
+     "size": 70
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "자주 하는 부탁은\n==틀로 저장하기==",
+    "잘 먹히면\n==틀을 고쳐 두기==",
+    "개인정보는\n==틀에 넣지 않기==||예: 이름, 연락처"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
