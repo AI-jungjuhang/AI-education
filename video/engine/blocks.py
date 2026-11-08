@@ -70,14 +70,20 @@ ICONS = {
     'yes': '<circle cx="12" cy="12" r="7.5" fill="none" stroke="#14A36B" stroke-width="3.6"/>',
     'people': f'<circle cx="8.5" cy="8.5" r="3" {_P}/><circle cx="16.5" cy="9.5" r="2.5" {_P}/><path d="M2.5 19c.6-3.3 2.8-5 6-5s5.4 1.7 6 5M15 14.5c2.7-.2 4.7 1.2 5.5 4" {_P}/>',
 }
-ICON_LAV = '#C9B8FF'   # 모든 아이콘 배지의 기본색: 상자 색(노랑·초록·분홍·하늘)과 다른 하나의 색으로 통일
+import os as _os
+ICON_LAV = _os.environ.get('ICON_COLOR', '#C9B8FF')   # 모든 아이콘 배지의 기본색: 상자 색(노랑·초록·분홍·하늘)과 다른 하나의 색으로 통일
 ICON_BG = {'no': '#fff', 'yes': '#fff', 'warn': '#FC5424'}
+def _lum(c):
+    c = c.lstrip('#'); c = ''.join(x*2 for x in c) if len(c) == 3 else c; r, g, b = (int(c[i:i + 2], 16) / 255 for i in (0, 2, 4)); return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
 def icon(name, size=84, pos='', bg=None, t=None):
     if not name: return ''
     bg = bg or ICON_BG.get(name, ICON_LAV)
     anim = f' data-b="{t}" data-anim="pop" data-sfx="pop"' if t is not None else ''
+    svg_body = ICONS[name]
+    if _lum(bg) < 0.45: svg_body = svg_body.replace('#242424', '#ffffff')   # 어두운 배지에는 흰 선
     return (f'<span class="ico"{anim} style="width:{size}px;height:{size}px;background:{bg};{pos}">'
-            f'<svg viewBox="0 0 24 24" width="{int(size*0.7)}" height="{int(size*0.7)}">{ICONS[name]}</svg></span>')
+            f'<svg viewBox="0 0 24 24" width="{int(size*0.7)}" height="{int(size*0.7)}">{svg_body}</svg></span>')
 
 # ---------------- 블록 ----------------
 def b_title(cx, sc, bg):
