@@ -1,0 +1,6 @@
+{"id":"044-search-rag","tag":"13.1.1","name":"검색 붙이기","scenes":[
+{"type":"bigword","bg":"blue","lines":["검색을 붙이면","오픈북 시험이 돼요"],"fs":108,"sticker":{"t":"외워서 답하던 걸\n찾아보고 답해요","c":"yellow","y":1000,"size":72},"icon":"search","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"list","bg":"white","title":"이렇게 작동해요","items":[{"t":"1. 질문이 들어와요","c":"green","size":60},{"t":"2. 뜻이 가까운 글을 찾아요","c":"yellow","size":60},{"t":"3. 찾은 글을 함께 넣어요","c":"blue","size":60},{"t":"4. 그 글을 보고 답해요","c":"red","size":60}],"beats":12},
+{"type":"split","bg":"white","marks":false,"top":{"label":"좋아지는 것","t":"최신 정보,\n출처 보여 주기","c":"green","size":96,"icon":"check"},"bottom":{"label":"그대로인 것","t":"찾은 글이 틀리면\n답도 틀려요","c":"yellow","size":92,"icon":"warn","small":"잘못 요약할 수도 있어요"},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"검색할 때 붙일 말","t":"==출처와 날짜==를\n같이 알려 줘","size":76,"icon":"person"},{"who":"other","t":"확인할 길이 생겨요","size":66}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["출처는\n==열어서 확인==","검색어에\n==개인정보 넣지 않기==","==서로 다른 출처==\n둘 요청하기"],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

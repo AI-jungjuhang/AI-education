@@ -1,0 +1,120 @@
+{
+ "id": "045-files-code",
+ "tag": "13.1.2",
+ "name": "코드 실행",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "정확한 계산은",
+    "코드로 시켜요"
+   ],
+   "fs": 120,
+   "sticker": {
+    "t": "계산기와 연필을 쥔\n학생처럼요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "check",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "코드가\n실행되는 순서",
+   "items": [
+    {
+     "t": "1. 내가 부탁해요",
+     "c": "green",
+     "size": 62
+    },
+    {
+     "t": "2. 챗봇이 코드를 써요",
+     "c": "yellow",
+     "size": 62
+    },
+    {
+     "t": "3. 컴퓨터가 실행해요",
+     "c": "blue",
+     "size": 62
+    },
+    {
+     "t": "4. 결과를 설명해요",
+     "c": "red",
+     "size": 62
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "코드가\n잘하는 일",
+   "items": [
+    {
+     "head": "합계·평균\n퍼센트",
+     "icon": "sliders"
+    },
+    {
+     "head": "표 정리\n중복 제거",
+     "icon": "doc"
+    },
+    {
+     "head": "그래프\n그리기",
+     "icon": "target"
+    },
+    {
+     "head": "많은 파일\n한꺼번에",
+     "icon": "book"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "결과만 보면",
+    "t": "숫자가 정확하니\n맞겠지",
+    "c": "red",
+    "size": 92,
+    "small": "식이 틀리면 답도 틀려요"
+   },
+   "bottom": {
+    "label": "결과를 받으면",
+    "t": "==\"실행한 코드를\n보여 줘\"==",
+    "c": "green",
+    "size": 96
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "파일 속 개인정보는\n==지우고 올리기==",
+    "남이 준 파일은\n==숨은 지시== 조심||예: \"앞의 지시는 무시해\"",
+    "결과 몇 줄은\n==손으로 확인=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
