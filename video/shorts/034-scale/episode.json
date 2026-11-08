@@ -1,0 +1,122 @@
+{
+ "id": "034-scale",
+ "tag": "9.1.3",
+ "name": "파라미터",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "모델 크기가",
+    "전부는 아니에요"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "다이얼이 많아도\n잘 맞춰야 좋은 소리가 나죠",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "other",
+     "name": "예: 모델 이름의 70B",
+     "t": "공부하며 고쳐지는 숫자가\n==700억 개==라는 뜻",
+     "size": 62,
+     "icon": "question"
+    },
+    {
+     "who": "other",
+     "t": "개수는 크기일 뿐\n성능 점수가 아니에요",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "크기 말고도\n중요한 것",
+   "items": [
+    {
+     "head": "데이터 양",
+     "body": "크기와 함께",
+     "icon": "book"
+    },
+    {
+     "head": "다듬는 방법",
+     "body": "작은 모델이\n더 좋을 수도",
+     "icon": "sliders"
+    },
+    {
+     "head": "일에 맞는지",
+     "body": "쉬운 일엔 작게",
+     "icon": "target"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "큰 모델은",
+    "t": "어려운 일에",
+    "c": "yellow",
+    "size": 100,
+    "icon": "target",
+    "small": "무겁고 느리고 비싸요"
+   },
+   "bottom": {
+    "label": "작은 모델은",
+    "t": "==쉬운 일을\n빠르게==",
+    "c": "green",
+    "size": 104,
+    "icon": "clock"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "이름의 숫자를\n==성능 점수로== 읽지 않기",
+    "오래된 비교 기사는\n==조심하기==",
+    "큰 모델 답도\n==확인하기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

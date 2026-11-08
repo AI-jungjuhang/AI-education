@@ -1,0 +1,133 @@
+{
+ "id": "032-pretraining",
+ "tag": "9.1.1",
+ "name": "사전학습",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "챗봇의 첫 공부는",
+    "다음 말 맞히기"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "정답이 글 속에 있어서\n채점할 선생님이 없어도 돼요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 62
+   },
+   "icon": "book",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "한 번의 연습",
+   "items": [
+    {
+     "t": "1. 글을 토큰으로 쪼개기",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "2. 다음 토큰 맞혀 보기",
+     "c": "yellow",
+     "size": 60
+    },
+    {
+     "t": "3. 정답과 비교하기",
+     "c": "blue",
+     "size": 60
+    },
+    {
+     "t": "4. 안의 숫자를 조금 고치기",
+     "c": "red",
+     "size": 60
+    }
+   ],
+   "note": "이걸 수없이 반복해요",
+   "beats": 12
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "그래서\n생기는 한계",
+   "items": [
+    {
+     "head": "틀린 것도\n배워요",
+     "body": "편견까지",
+     "icon": "warn"
+    },
+    {
+     "head": "읽은 뒤의 일은\n몰라요",
+     "icon": "clock"
+    },
+    {
+     "head": "드문 건\n약해요",
+     "icon": "search"
+    },
+    {
+     "head": "아직\n도우미는 아니에요",
+     "body": "글을 이어 쓸 뿐",
+     "icon": "doc"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "이렇게 물어보기",
+     "t": "==언제까지의 정보==를\n알고 있어?",
+     "size": 72,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "정확하진 않아도\n감을 잡을 수 있어요",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "최신 소식은\n==검색되는 도구==로",
+    "드문 분야일수록\n==더 의심하기==",
+    "예시를 주는 요령은\n==계속 쓰기==||사전학습에서 생긴 능력이라 잘 통해요"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
