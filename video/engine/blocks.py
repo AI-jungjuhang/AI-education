@@ -196,14 +196,14 @@ def b_split(cx, sc, bg):
 def b_check(cx, sc, bg):
     """체크리스트 종이. 항목이 나타난 뒤 체크 표시가 톡 찍힌다."""
     items = sc['items']; top = sc.get('top', 400); rowh = int(sc.get('rowh', 159))
-    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", 0)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 150}px;font-size:68px;z-index:6" data-rot="-3">{esc(sc.get("label", "오늘의 써먹기"))}</div>']
+    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", 0)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 150}px;font-size:68px;z-index:6">{esc(sc.get("label", "오늘의 써먹기"))}</div>']
     rows = ''.join(f'<div class="row2" data-b="{cx.b(f"r{i}", 1.4 + 2.0 * i)}" data-anim="slideL" data-sfx="pop"><div class="bx"></div><div>{esc(t)}</div></div>' for i, t in enumerate(items))
     ex.append(f'<div class="check" style="top:{top}px">{rows}</div>')
     # 체크 표시: 각 줄 상자 위에 겹쳐 찍는다(줄 높이를 알 수 없어 고정 간격 사용)
     for i, _ in enumerate(items):
         ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:122px;top:{top + 20 + (rowh - 92) // 2 + i * rowh}px">✓</div>')
     if sc.get('note'):
-        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', -2, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 90 + len(items) * rowh + 60), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
+        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 90 + len(items) * rowh + 60), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
     return [], max(8, cx.last + 3.2), '\n'.join(ex)
 
 def b_bigword(cx, sc, bg):
