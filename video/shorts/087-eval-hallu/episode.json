@@ -1,0 +1,6 @@
+{"id":"087-eval-hallu","tag":"21.1.2","name":"환각 재기","scenes":[
+{"type":"bigword","bg":"blue","lines":["\"틀림\"과 \"모름\"은","따로 채점해요"],"fs":106,"sticker":{"t":"찍는 게 이득이면\n모두 찍잖아요","c":"yellow","y":1000,"size":72},"icon":"check","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"예: 이렇게 채점하면","t":"오답 0점,\n패스 0점","c":"yellow","size":100,"icon":"warn","small":"모르는 것도 일단 찍어요"},"bottom":{"label":"이렇게 채점하면","t":"==오답 −1점,\n패스 0점==","c":"green","size":100,"icon":"check","small":"모르면 모른다고 해요"},"beats":11},
+{"type":"list","bg":"blue","title":"세 가지 시험","items":[{"t":"SimpleQA → 짧은 사실 질문","c":"green","size":56},{"t":"TruthfulQA → 흔한 오해를 노린 질문","c":"yellow","size":50},{"t":"FActScore → 긴 글을 사실로 쪼개기","c":"green","size":50}],"beats":11},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"내 일로 재 보기","t":"내 분야 질문 ==10~20개==로\n오답과 모름을 따로 세기","size":60,"icon":"person"},{"who":"other","t":"오답이\n가장 위험한 값이에요","size":66}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["긴 글은\n==중요한 주장 5개== 확인","\"모르면 모른다고 해\"\n==효과를 재 보기==","모델이 바뀌면\n==같은 질문으로 다시=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

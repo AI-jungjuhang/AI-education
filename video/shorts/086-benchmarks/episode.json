@@ -1,0 +1,6 @@
+{"id":"086-benchmarks","tag":"21.1.1","name":"벤치마크","scenes":[
+{"type":"bigword","bg":"blue","lines":["시험 1등이","내 일 1등은 아니에요"],"fs":104,"sticker":{"t":"수학 100점이\n요리 실력은 아니잖아요","c":"yellow","y":1000,"size":70},"icon":"target","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"list","bg":"white","title":"대표 시험지","items":[{"t":"MMLU → 57개 과목 객관식","c":"green","size":58},{"t":"HELM → 7가지 지표로","c":"yellow","size":58},{"t":"Chatbot Arena → 사람이 골라요","c":"blue","size":54}],"beats":11},
+{"type":"notes","bg":"blue","title":"점수의\n함정","items":[{"head":"문제가\n새어 나갔다","icon":"warn"},{"head":"잣대가\n결론을 바꾼다","icon":"sliders"},{"head":"평균이\n숨긴다","icon":"search"},{"head":"좋아하는 답\n≠ 맞는 답","icon":"chat"}],"beats":13},
+{"type":"split","bg":"white","marks":true,"top":{"label":"새 모델 소식에","t":"\"1등\"만\n믿기","c":"red","size":110},"bottom":{"label":"새 모델 소식엔","t":"==시험 이름과\n잣대 보기==","c":"green","size":104,"small":"그리고 내 일로 시험해요"},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["회사가 낸 점수는\n==제3자 결과와 비교==","사람 선호 순위는\n==정확성과 따로 보기==","오래된 순위는\n==믿지 않기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
