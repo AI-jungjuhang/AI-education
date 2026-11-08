@@ -1,0 +1,126 @@
+{
+ "id": "014-privacy",
+ "tag": "3.2.1",
+ "name": "개인정보",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "개인정보는",
+    "가리고 물어요"
+   ],
+   "fs": 125,
+   "sticker": {
+    "t": "챗봇에 쓴 글은\n서비스 회사로 가요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "lock",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "그대로 쓰면",
+    "t": "김민수 씨가\n강남구 ○○동에서…",
+    "c": "red",
+    "size": 84,
+    "small": "이름과 사는 곳이 그대로 가요"
+   },
+   "bottom": {
+    "label": "가려서 쓰면",
+    "t": "==A씨가\n서울의 한 지역에서…==",
+    "c": "green",
+    "size": 74
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "이런 건\n가려요",
+   "items": [
+    {
+     "head": "나를 알아볼\n정보",
+     "ex": "이름, 연락처, 계좌",
+     "icon": "person"
+    },
+    {
+     "head": "민감한\n정보",
+     "ex": "건강, 병력",
+     "icon": "lock"
+    },
+    {
+     "head": "남의 정보",
+     "ex": "친구·고객의 사정",
+     "icon": "people"
+    },
+    {
+     "head": "로그인\n정보",
+     "ex": "비밀번호, 인증 번호",
+     "icon": "warn"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "가린 글로 묻고",
+     "t": "A씨에게 보낼\n사과 문구 써 줘",
+     "size": 76,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "답을 받은 뒤",
+     "t": "==A씨만 실제 이름으로==\n바꿔 쓰면 돼요",
+     "size": 62,
+     "icon": "check"
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "보내기 전에\n==한 번 멈추기==",
+    "회사 일은\n==회사 규정== 먼저",
+    "설정에서\n==대화 사용 여부== 보기||예: 학습에 쓰이는지, 끌 수 있는지"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
