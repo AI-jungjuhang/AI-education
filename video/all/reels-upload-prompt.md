@@ -6,7 +6,7 @@
 
 인스타그램 릴스 102편을 Meta Business Suite(business.facebook.com)에서 예약 게시해 줘.
 
-- 영상과 예약표는 GitHub 저장소 sehoon3554-ctrl/AI-education 의 브랜치 claude/korean-ai-textbook-site-kbmkii 에 있어. 먼저 이 브랜치를 내 컴퓨터로 내려받아 줘(git clone --branch claude/korean-ai-textbook-site-kbmkii --depth 1).
+- 영상과 예약표는 GitHub 저장소 AI-jungjuhang/AI-education 의 브랜치 claude/korean-ai-textbook-site-kbmkii 에 있어. 먼저 이 브랜치를 내 컴퓨터로 내려받아 줘(git clone --branch claude/korean-ai-textbook-site-kbmkii --depth 1).
 - 예약표: video/all/reels-schedule.csv (열: 편, 예약 날짜, 예약 시각, 영상 파일, 번호, 이름, 설명글)
 - 영상 파일: video/shorts/<편 폴더>/out/<영상 파일>. 예: 001-next-word.mp4 는 video/shorts/001-next-word/out/001-next-word.mp4. video/all 의 mp4는 바로가기라서 Windows에서는 열리지 않을 수 있으니 쓰지 마.
 - 순서: 표의 위에서부터 한 줄씩. 각 줄마다 "릴스 만들기" → 영상 파일 올리기 → 설명글 칸에 "설명글"을 그대로 붙여 넣기 → "예약"에서 날짜와 시각 넣기 → 예약 저장.
