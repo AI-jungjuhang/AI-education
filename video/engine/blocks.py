@@ -172,9 +172,9 @@ def b_speech(cx, sc, bg):
 
 def b_notes(cx, sc, bg):
     """메모지 흩어 붙이기(최대 4장). 제목은 왼쪽 위."""
-    slots = [(40, 520, -4), (560, 600, 3), (60, 1060, 2.5), (550, 1140, -3)]
+    slots = [(40, 580, -4), (560, 660, 3), (60, 1110, 2.5), (550, 1190, -3)]
     cols = ['#FFE680', '#9BE7C4', '#FFB3C1', '#A9D2FF']
-    ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:200px;font-size:112px">{esc(sc["title"])}</div>']
+    ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:270px;font-size:112px">{esc(sc["title"])}</div>']
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
         ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]}"><b>{esc(it["head"])}</b><span>{esc(it["body"])}</span></div>')
@@ -211,7 +211,7 @@ def b_bigword(cx, sc, bg):
     dark = ' dark' if bg in DARK_BG else ''
     ex = []
     for i, ln in enumerate(sc['lines']):
-        ex.append(f'<div class="tapeTitle st{dark} huge" data-b="{cx.b(f"line{i}", i * 1.0)}" data-anim="slam" data-sfx="slam" style="top:{sc.get("y", 250) + i * 205}px;font-size:{sc.get("fs", 170)}px">{esc(ln)}</div>')
+        ex.append(f'<div class="tapeTitle st{dark} huge" data-b="{cx.b(f"line{i}", i * 1.0)}" data-anim="slam" data-sfx="slam" style="top:{sc.get("y", 310) + i * 205}px;font-size:{sc.get("fs", 170)}px">{esc(ln)}</div>')
     if sc.get('sticker'):
         s = sc['sticker']; s = {'t': s} if isinstance(s, str) else s
         ex.append(f'<div class="sticker c-{s.get("c", "yellow")}" data-b="{cx.b("sticker", len(sc["lines"]) + 0.6)}" data-anim="{s.get("anim", "slideR")}" data-rot="{s.get("rot", -3)}" data-sfx="whoosh" style="position:absolute;right:70px;top:{s.get("y", 900)}px;font-size:{s.get("size", 64)}px;max-width:820px;text-align:left">{esc(s["t"])}</div>')
