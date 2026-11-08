@@ -246,6 +246,7 @@ def b_split(cx, sc, bg):
         ex.append(f'<div class="sticker c-yellow" data-b="{cx.b("vs", 3.4)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:440px;top:880px;font-size:76px;padding:6px 30px;z-index:5">VS</div>')
     return [], max(8, cx.last + 4.0), '\n'.join(ex)
 
+ICON_DY = 3
 def b_check(cx, sc, bg):
     """체크리스트 종이. 항목 뒤에 "||보조 설명"을 달면 작은 회색 글씨로 아래에 나온다. 줄 높이는 글자 수로 어림해서 체크 표시 위치를 맞춘다."""
     items = sc['items']; top = sc.get('top', 400); fs = int(sc.get('fs', 72)); d = sc.get('delay', 0)
@@ -258,7 +259,7 @@ def b_check(cx, sc, bg):
         h = len(main.split('\n')) * fs * 1.2 + 34 * 2 + 5
         if sub: h += len(sub.split('\n')) * SUBFS * 1.25 + 8
         rh.append(int(h))
-    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", d)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 150}px;font-size:68px;z-index:6">{esc(sc.get("label", "오늘의 써먹기"))}</div>'] + ([icon(sc['icon'], 132, f'position:absolute;right:100px;top:{top - 215}px;z-index:6', None, cx.b('icon', d + 0.6))] if sc.get('icon') else [])
+    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", d)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 195}px;font-size:68px;z-index:6">{esc(sc.get("label", "오늘의 써먹기"))}</div>'] + ([icon(sc['icon'], 132, f'position:absolute;right:100px;top:{top - 195 + ICON_DY}px;z-index:6', None, cx.b('icon', d + 0.6))] if sc.get('icon') else [])
     rows = ''
     for i, (main, sub) in enumerate(parsed):
         sb = f'<div class="sub">{esc(sub)}</div>' if sub else ''
