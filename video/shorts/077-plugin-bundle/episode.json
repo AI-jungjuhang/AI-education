@@ -1,0 +1,6 @@
+{"id":"077-plugin-bundle","tag":"18.2.1","name":"플러그인","scenes":[
+{"type":"bigword","bg":"blue","lines":["흩어진 도구는","플러그인 상자로"],"fs":115,"sticker":{"t":"이사할 때 물건을\n상자에 담듯이요","c":"yellow","y":1000,"size":70},"icon":"book","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"notes","bg":"white","title":"상자 안","items":[{"head":"이름표","body":".claude-plugin/\nplugin.json","icon":"pin"},{"head":"스킬","body":"skills/","icon":"book"},{"head":"조수","body":"agents/","icon":"people"},{"head":"훅","body":"hooks/","icon":"clock"}],"beats":12},
+{"type":"list","bg":"blue","title":"시험해 보기","items":[{"t":"claude --plugin-dir ./studio","c":"green","size":54},{"t":"claude plugin validate ./studio","c":"yellow","size":50},{"t":"부를 땐 /studio:episode","c":"green","size":54}],"beats":11},
+{"type":"split","bg":"white","marks":true,"top":{"label":"남의 플러그인을","t":"바로\n설치하기","c":"red","size":104,"small":"설치하면 내 권한으로 실행돼요"},"bottom":{"label":"남의 플러그인은","t":"==hooks, scripts부터\n읽어 보기==","c":"green","size":84},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["plugin.json 폴더엔\n==그 파일만==","나누기 전에\n==validate로 검사==","마켓 이름보다\n==내용을 읽기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

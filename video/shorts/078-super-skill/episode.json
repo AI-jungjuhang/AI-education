@@ -1,0 +1,128 @@
+{
+ "id": "078-super-skill",
+ "tag": "18.2.2",
+ "name": "슈퍼 스킬",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "슈퍼 스킬은",
+    "순서를 적은 안내문"
+   ],
+   "fs": 110,
+   "sticker": {
+    "t": "새 마법이 아니라\n앞의 도구를 차례로 불러요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "episode 스킬의\n순서",
+   "items": [
+    {
+     "t": "1. researcher → 핵심 정리",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "2. scriptwriter → 장면표",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "3. reviewer → 원본 대조",
+     "c": "blue",
+     "size": 56
+    },
+    {
+     "t": "4. 고칠 곳은 내가 결정",
+     "c": "red",
+     "size": 56
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "꼭 적을\n세 가지",
+   "items": [
+    {
+     "head": "순서",
+     "body": "누구를 언제",
+     "icon": "sliders"
+    },
+    {
+     "head": "멈출 곳",
+     "body": "문제가 보이면",
+     "icon": "warn"
+    },
+    {
+     "head": "내가\n결정할 곳",
+     "body": "고치기 전에",
+     "icon": "person"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "부를 때",
+     "t": "/studio:episode\ndocs/part1/ch01/tokens.md",
+     "size": 56,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "부작용이 있으니\n==내가 부를 때만== 실행돼요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "슈퍼 스킬은\n==순서와 연결만==",
+    "조수 지시문은\n==그대로 두기==",
+    "끝까지 달리지 않게\n==멈출 곳 적기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
