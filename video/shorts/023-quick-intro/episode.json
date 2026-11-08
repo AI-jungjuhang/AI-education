@@ -1,0 +1,130 @@
+{
+ "id": "023-quick-intro",
+ "tag": "6.1.1",
+ "name": "낯선 분야",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "낯선 분야는",
+    "지도부터 받아요"
+   ],
+   "fs": 115,
+   "sticker": {
+    "t": "AI 설명은 지도일 뿐,\n걸어 보며 확인해요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "다섯 단계로",
+   "items": [
+    {
+     "t": "1. 쉽게 한 단락",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "2. 용어 열 개",
+     "c": "yellow",
+     "size": 60
+    },
+    {
+     "t": "3. 분야 지도",
+     "c": "blue",
+     "size": 60
+    },
+    {
+     "t": "4. 오해와 논쟁",
+     "c": "red",
+     "size": 60
+    },
+    {
+     "t": "5. 더 물을 질문",
+     "c": "green",
+     "size": 60
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "꼭 붙일 한 줄",
+     "t": "확실하지 않은 건\n==그렇다고 표시해 줘==",
+     "size": 68,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "어디를 확인할지\n알려 줘요",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "모르는 분야니까",
+    "t": "AI 말을\n그대로 믿기",
+    "c": "red",
+    "size": 100
+   },
+   "bottom": {
+    "label": "모르는 분야일수록",
+    "t": "==기준이 될 자료를\n하나 정하기==",
+    "c": "green",
+    "size": 88,
+    "small": "예: 입문서, 공식 문서"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "처음 보는 용어는\n==하나씩 찾아보기==",
+    "AI가 말한 책·강의는\n==직접 검색하기==",
+    "==전문가에게 물을==\n질문 만들기"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
