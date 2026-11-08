@@ -270,7 +270,7 @@ def b_check(cx, sc, bg):
         ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", d + 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:122px;top:{y + (rh[i] - 92) // 2}px">✓</div>')
         y += rh[i]
     if sc.get('note'):
-        ex.append(sticker(cx, 'note', d + 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 110 + sum(rh) + 56), 1))
+        ex.append(sticker(cx, 'note', d + 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 110 + sum(rh) + 36), 1))
     return [], max(8, cx.last + 3.2), '\n'.join(ex)
 
 def b_bigword(cx, sc, bg):

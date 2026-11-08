@@ -137,7 +137,7 @@
    "type": "check",
    "bg": "white",
    "label": "오늘의 써먹기",
-   "top": 390,
+   "top": 450,
    "rowh": 246,
    "icon": "bulb",
    "items": [
@@ -150,7 +150,7 @@
     "face": "happy:grin",
     "side": "right",
     "at": 0.2,
-    "y": 1560
+    "y": 1585
    },
    "beats": 12,
    "delay": 1.0
