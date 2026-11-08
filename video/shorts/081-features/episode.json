@@ -1,0 +1,114 @@
+{
+ "id": "081-features",
+ "tag": "19.1.2",
+ "name": "특징",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "모델 안에도",
+    "개념 묶음이 있어요"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "글자로 단어를 만들듯\n뉴런으로 특징을 만들어요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "뉴런 하나는",
+    "t": "여러 개념에\n쓰여요",
+    "c": "yellow",
+    "size": 100,
+    "icon": "people"
+   },
+   "bottom": {
+    "label": "그래서 연구진은",
+    "t": "==같이 켜지는 패턴을\n\"특징\"으로 묶었어요==",
+    "c": "green",
+    "size": 80,
+    "icon": "search"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "2024년 연구 (Claude 3 Sonnet)",
+     "t": "==수백만 개==의\n특징을 찾았어요",
+     "size": 72,
+     "icon": "book"
+    },
+    {
+     "who": "other",
+     "t": "예: 다리 이름에 반응하는 특징은\n여러 언어와 사진에도 켜졌어요",
+     "size": 56
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "bigword",
+   "bg": "orange",
+   "lines": [
+    "특징을 세게 켜면",
+    "행동이 바뀌어요"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "실제로 행동에 영향을 주는\n부품이라는 증거예요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 62
+   },
+   "icon": "target",
+   "beats": 9
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "\"AI가 이해한다\"는\n==조심해서 쓰기==",
+    "\"AI의 마음을 읽었다\"\n==기사는 원문 확인==",
+    "==다른 언어==로도\n물어보기||같은 개념에 닿을 수 있어요"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+{"id":"080-interp-intro","tag":"19.1.1","name":"모델 속 보기","scenes":[
+{"type":"bigword","bg":"blue","lines":["만든 사람도","AI 속을 다 몰라요"],"fs":110,"sticker":{"t":"학습으로 스스로 자란\n시계 같아서요","c":"yellow","y":1000,"size":70},"icon":"search","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"notes","bg":"white","title":"연구진이\n궁금했던 것","items":[{"head":"머릿속에선\n어떤 언어로?","icon":"chat"},{"head":"앞을 내다보고\n계획할까?","icon":"target"},{"head":"설명한 단계를\n정말 거쳤을까?","icon":"question"}],"beats":12},
+{"type":"speech","bg":"blue","vpos":"top","gap":60,"items":[{"who":"me","name":"예: 연구에서","t":"36 + 59는\n어떻게 95야?","size":72,"icon":"person"},{"who":"other","name":"모델의 설명","t":"1을 올려서…","size":72},{"who":"other","name":"실제 안에서는","t":"==다른 방법==으로\n계산하고 있었어요","size":64,"icon":"search"}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1400},"beats":12,"delay":1.0},
+{"type":"split","bg":"white","marks":true,"top":{"label":"\"이렇게 생각했어요\"를","t":"증거로\n믿기","c":"red","size":110,"small":"그럴듯한 설명일 수 있어요"},"bottom":{"label":"정확한지는","t":"==결과를\n검증하기==","c":"green","size":110,"small":"계산은 계산기로, 사실은 자료로"},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["\"생각 과정\" 설명은\n==참고로만==","\"왜?\" 대신\n==\"어떤 자료를 근거로?\"==","AI 속 이야기는\n==아직 연구 중=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
