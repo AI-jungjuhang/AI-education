@@ -24,7 +24,8 @@ def build(ep_dir):
         style = f'gap:{gap}px' + {'top': ';justify-content:flex-start', 'bottom': ';justify-content:flex-end'}.get(sc.get('vpos'), '') + {'left': ';align-items:flex-start', 'right': ';align-items:flex-end'}.get(sc.get('align'), '') + (';bottom:520px' if typ == 'outro' else '') + (';top:250px' if typ == 'cards' else '')
         lift = ' data-lift="1"' if sc.get('lift') else ''
         body = '\n  '.join(parts)
-        secs.append(f'<!-- {i + 1}. {typ} {num(a)}~{num(a + dur)}박 -->\n<section class="scene" data-a="{num(a)}" data-e="{num(a + dur)}" data-bg="{BG[bg]}"{lift}><div class="in" style="{style}">\n  {body}\n</div>{extra}{m}</section>\n')
+        hl = f' style="--hlc:{sc["hl"]}"' if sc.get('hl') else ''
+        secs.append(f'<!-- {i + 1}. {typ} {num(a)}~{num(a + dur)}박 -->\n<section class="scene" data-a="{num(a)}" data-e="{num(a + dur)}" data-bg="{BG[bg]}"{lift}{hl}><div class="in" style="{style}">\n  {body}\n</div>{extra}{m}</section>\n')
         a += dur
     tpl = open(pathlib.Path(__file__).parent / 'template.html', encoding='utf-8').read()
     out = tpl.replace('{{SCENES}}', '\n'.join(secs)).replace('{{TOTAL}}', num(a)).replace('{{TAG}}', ep.get('tag', ''))

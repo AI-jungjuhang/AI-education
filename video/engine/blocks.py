@@ -6,7 +6,10 @@ BG = {'blue': '#2F7FD8', 'yellow': '#FFD93D', 'white': '#FCFCFC', 'orange': '#FC
 DARK_BG = ('yellow', 'white')          # 밝은 바탕에서는 글자를 먹색으로
 COLORS = ('red', 'yellow', 'green', 'blue', 'ink')
 
-def esc(t): return H.escape(str(t), quote=False).replace('\n', '<br>')
+import re as _re
+def esc(t):
+    x = H.escape(str(t), quote=False).replace('\n', '<br>')
+    return _re.sub(r'==(.+?)==', r'<mark class="hl">\1</mark>', x)   # ==핵심== 은 형광펜이 그어진다
 def num(x): return f'{x:g}'
 def cc(c): return f' c-{c}' if c else ''
 

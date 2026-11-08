@@ -70,7 +70,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(-
 .check .bx{flex:none;width:92px;height:92px;border:7px solid var(--ink);border-radius:16px;background:#fff}
 .tick{position:absolute;font-size:106px;color:var(--green);-webkit-text-stroke:5px var(--ink);paint-order:stroke fill;line-height:1}
 .ico{display:inline-flex;align-items:center;justify-content:center;border:6px solid var(--ink);border-radius:50%;box-shadow:5px 5px 0 var(--ink);z-index:7}
-.hl{background:linear-gradient(transparent 55%,var(--yellow) 55%);padding:0 6px}
+mark.hl{color:var(--ink);background:linear-gradient(transparent 50%,var(--hlc,#FFD93D) 50%) no-repeat 0 0;background-size:0% 100%;padding:0 6px;margin:0 -2px;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 </style></head><body>
 <div class="tag"><span class="pill k">AI 정주행</span><span class="pill">{{TAG}}</span></div>
 <div class="prog" id="prog"></div>
@@ -149,6 +149,7 @@ function anim(el,rel,b){
   else if(k==='confetti'){el.style.opacity=1;const ps=el.children;for(let i=0;i<ps.length;i++){const a=(i*137.5)*Math.PI/180,sp=500+(i%7)*130;const q=Math.max(rel,0);
       const px=540+Math.cos(a)*sp*q,py=1050+Math.sin(a)*sp*q*0.9+1500*q*q;ps[i].style.opacity=clamp(1-q/1.3,0,1);ps[i].style.transform=`translate(${px}px,${py}px) rotate(${q*700+i*40}deg)`;ps[i].style.left=0;ps[i].style.top=0;}
     return;}
+  el.querySelectorAll('mark.hl').forEach(m=>{const q=clamp((rel-0.5*BEAT)/(0.45*BEAT),0,1);m.style.backgroundSize=(outCubic(q)*100)+'% 100%';});
   el.style.opacity=op;
   el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s*beatPulse})`;
 }
