@@ -26,7 +26,7 @@ def build(ep_dir):
             foot = f'<div class="{fcls}" data-b="{num(a + sc.get("foot_at", 1.5))}" data-anim="pop">{__import__("blocks").esc(sc["foot"])}</div>'
         m = mascot_html(cx, sc.get('mascot'))
         gap = sc.get('gap', GAP.get(typ, 28))
-        style = f'gap:{gap}px' + {'top': ';justify-content:flex-start', 'bottom': ';justify-content:flex-end'}.get(sc.get('vpos'), '') + {'left': ';align-items:flex-start', 'right': ';align-items:flex-end'}.get(sc.get('align'), '') + (';bottom:520px' if typ == 'outro' else '') + (';top:250px' if typ == 'cards' else '') + (f";padding-top:{sc.get('pad_top', 70)}px" if sc.get('vpos') == 'top' else '')
+        style = f'gap:{gap}px' + {'top': ';justify-content:flex-start', 'bottom': ';justify-content:flex-end'}.get(sc.get('vpos'), '') + {'left': ';align-items:flex-start', 'right': ';align-items:flex-end'}.get(sc.get('align'), '') + (';bottom:520px' if typ == 'outro' else '') + (';top:250px' if typ == 'cards' else '')
         lift = ' data-lift="1"' if sc.get('lift') else ''
         body = '\n  '.join(parts)
         hl = f' style="--hlc:{sc["hl"]}"' if sc.get('hl') else ''

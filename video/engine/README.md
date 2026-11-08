@@ -42,7 +42,6 @@ MUSIC=loud bash video/engine/build.sh video/shorts/001-next-word   # 드럼 있�
 - 글 안의 `==핵심 말==`은 등장한 뒤 형광펜이 왼쪽에서 오른쪽으로 그어져요. 장면 바탕과 비슷한 색이면 장면에 `"hl": "#FF9EB1"`처럼 형광펜 색을 정해요. 한 장면에 두 군데 안팎으로만 써요.
 - 말풍선·메모지·분할·체크리스트·큰 글자 장면에는 `"icon": "bulb"`처럼 아이콘을 넣을 수 있어요(`blocks.py`의 `ICONS`: person, pin, book, target, sliders, doc, bulb, question, thought, lock, search, warn, chat, clock, check, people).
 - 모든 요소는 기울이지 않아요(`data-rot`은 자동으로 지워져요).
-- `vpos: top` 장면은 진행 바와 띄우려고 위 여백 70px를 자동으로 줘요(`pad_top`으로 바꿀 수 있어요, 2026-11-08 사용자 피드백).
 
 ## 규칙
 
