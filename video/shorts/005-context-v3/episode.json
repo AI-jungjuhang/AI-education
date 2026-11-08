@@ -64,23 +64,23 @@
    "items": [
     {
      "head": "==누가 읽어?==",
-     "body": "초등학교\n5학년",
-     "icon": "book"
+     "icon": "book",
+     "ex": "초등학교\n5학년"
     },
     {
      "head": "==어디에\n쓸 거야?==",
-     "body": "발표 첫 장",
-     "icon": "target"
+     "icon": "target",
+     "ex": "발표 첫 장"
     },
     {
      "head": "==조건은?==",
-     "body": "3문장,\n존댓말",
-     "icon": "sliders"
+     "icon": "sliders",
+     "ex": "3문장,\n존댓말"
     },
     {
      "head": "==참고할\n자료는?==",
-     "body": "아래에\n붙인 메모",
-     "icon": "doc"
+     "icon": "doc",
+     "ex": "아래에\n붙인 메모"
     }
    ],
    "beats": 12,
