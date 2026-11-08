@@ -1,6 +1,6 @@
 {
  "id": "002-tokens",
- "tag": "1.1.2",
+ "tag": "1.1.2 · 1/2",
  "scenes": [
   {
    "type": "title",
@@ -112,88 +112,6 @@
   },
   {
    "type": "list",
-   "bg": "yellow",
-   "title": "중요한 이유",
-   "items": [
-    {
-     "t": "한도: 한 번에 읽는 양",
-     "c": "blue",
-     "size": 58
-    },
-    {
-     "t": "속도·비용: 조각이 많으면 ↑",
-     "c": "green",
-     "size": 54
-    },
-    {
-     "t": "글자 세기: 틀리기 쉬워요",
-     "c": "red",
-     "size": 58
-    },
-    {
-     "t": "언어: 조각 수가 달라요",
-     "c": "ink",
-     "size": 58
-    }
-   ],
-   "beats": 12
-  },
-  {
-   "type": "vs",
-   "bg": "blue",
-   "title": "조각 수 비교!",
-   "left": {
-    "t": "영어는 조각이 적게",
-    "c": "green"
-   },
-   "right": {
-    "t": "다른 언어는 최대 15배!",
-    "c": "red"
-   },
-   "note": "한 연구의 보고예요",
-   "beats": 10
-  },
-  {
-   "type": "title",
-   "bg": "yellow",
-   "lines": [
-    "글자 세기는",
-    "틀리기 쉬워요!"
-   ],
-   "size": "big",
-   "sticker": {
-    "t": "요즘은 나아졌지만\n아직도 틀릴 수 있어요",
-    "c": "red",
-    "anim": "pop",
-    "rot": 4,
-    "size": 58
-   },
-   "mascot": {
-    "face": "wide:o",
-    "side": "right",
-    "at": 1.6
-   },
-   "beats": 5
-  },
-  {
-   "type": "vs",
-   "bg": "white",
-   "title": "직접 해 보기",
-   "left": {
-    "t": "바로 숫자만 답해 줘",
-    "c": "red",
-    "size": 70
-   },
-   "right": {
-    "t": "글자 하나씩 풀어 쓴 뒤 세어 줘",
-    "c": "green",
-    "size": 62
-   },
-   "note": "두 답을 비교해 보세요!",
-   "beats": 10
-  },
-  {
-   "type": "list",
    "bg": "blue",
    "title": "사전 만들기",
    "items": [
@@ -217,31 +135,26 @@
    "beats": 11
   },
   {
-   "type": "list",
-   "bg": "white",
-   "title": "써먹기 3개",
-   "items": [
-    {
-     "t": "센 숫자는 한 번 확인",
-     "c": "yellow",
-     "size": 58
-    },
-    {
-     "t": "챗봇이 세면 ‘풀어 쓰게’",
-     "c": "green",
-     "size": 56
-    },
-    {
-     "t": "긴 자료는 쪼개서, 조건은 끝에 한 번 더",
-     "c": "red",
-     "size": 48
-    }
+   "type": "title",
+   "bg": "yellow",
+   "lines": [
+    "챗봇은",
+    "블록을 읽어요"
    ],
-   "beats": 12
-  },
-  {
-   "type": "outro",
-   "beats": 8
+   "size": "big",
+   "sticker": {
+    "t": "\"다음 말\"은 사실 \"다음 블록\"!",
+    "c": "red",
+    "anim": "pop",
+    "rot": 4,
+    "size": 60
+   },
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 1.6
+   },
+   "beats": 6
   }
  ]
 }
