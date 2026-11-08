@@ -49,7 +49,7 @@ def b_title(cx, sc, bg):
     parts = [lines_html(cx, L, bg, sc.get('size', 'huge'))]
     if sc.get('sticker'):
         s = sc['sticker']; s = {'t': s} if isinstance(s, str) else s
-        parts.append(sticker(cx, 'sticker', n + 0.4, s['t'], s.get('c', 'yellow'), s.get('anim', 'pop'), s.get('rot', -3)))
+        parts.append(sticker(cx, 'sticker', n + 0.4, s['t'], s.get('c', 'yellow'), s.get('anim', 'pop'), s.get('rot', -3), size=s.get('size')))
     dur = max(4, cx.last + 2.6)
     return parts, dur, ''
 

@@ -89,28 +89,30 @@
    "bg": "yellow",
    "lines": [
     "글자 세기는",
-    "서툴러요!"
+    "틀리기 쉬워요!"
    ],
    "sticker": {
-    "t": "조각으로 읽으니까",
+    "t": "요즘은 나아졌지만\n아직도 틀릴 수 있어요",
     "c": "red",
     "anim": "pop",
-    "rot": 4
+    "rot": 4,
+    "size": 58
    },
    "mascot": {
     "face": "wide:o",
-    "side": "left",
+    "side": "right",
     "at": 1.6
    },
-   "beats": 5
+   "beats": 5,
+   "size": "big"
   },
   {
    "type": "tip",
    "bg": "white",
    "label": "오늘의 써먹기",
    "lines": [
-    "글자 수는",
-    "직접 세기!"
+    "센 숫자는",
+    "한 번 확인!"
    ],
    "sticker": "챗봇이 세면 ‘풀어 쓰게’ 하기",
    "at": {
