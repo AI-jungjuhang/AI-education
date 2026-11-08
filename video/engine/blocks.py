@@ -145,9 +145,9 @@ def b_list(cx, sc, bg):
 def b_vs(cx, sc, bg):
     L, R = sc['left'], sc['right']
     p = [lines_html(cx, [sc['title']], bg, 'big'),
-         sticker(cx, 'left', 1.8, L['t'], L.get('c', 'red'), 'slideL', 0, 'whoosh', 96),
+         sticker(cx, 'left', 1.8, L['t'], L.get('c', 'red'), 'slideL', 0, 'whoosh', L.get('size', 96)),
          f'<div class="st big" data-b="{cx.b("vs", 3.4)}" data-anim="slam" data-sfx="slam">VS</div>',
-         sticker(cx, 'right', 4.6, R['t'], R.get('c', 'green'), 'slideR', 0, 'whoosh', 96)]
+         sticker(cx, 'right', 4.6, R['t'], R.get('c', 'green'), 'slideR', 0, 'whoosh', R.get('size', 96))]
     if sc.get('note'): p.append(sticker(cx, 'note', 6.6, sc['note'], 'yellow', 'pop', -2, 'ding', 62))
     return p, max(8, cx.last + 2.8), ''
 
