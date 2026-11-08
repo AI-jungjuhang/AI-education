@@ -1,0 +1,124 @@
+{
+ "id": "071-subagent-team",
+ "tag": "17.4.2",
+ "name": "조수 셋",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "조사, 대본, 검토를",
+    "셋에게 나눠요"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "쓴 사람이 검토하면\n잘못을 못 보잖아요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "people",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "조수 셋",
+   "items": [
+    {
+     "t": "researcher → 읽고 핵심 3가지",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "scriptwriter → 장면표 쓰기",
+     "c": "yellow",
+     "size": 52
+    },
+    {
+     "t": "reviewer → 원본에 없는 말 찾기",
+     "c": "blue",
+     "size": 52
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "쓸 수 있는\n도구",
+   "items": [
+    {
+     "head": "조사 담당",
+     "body": "읽기, 웹 가져오기",
+     "icon": "search"
+    },
+    {
+     "head": "대본 담당",
+     "body": "읽기, 쓰기",
+     "icon": "doc"
+    },
+    {
+     "head": "검토 담당",
+     "body": "읽기, 찾기만",
+     "icon": "lock"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "메인 대화",
+     "t": "조사 → 대본 → 검토\n순서는 ==내가 이어 붙여요==",
+     "size": 64,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "검토자는 파일을\n고치지 않고 지적만 해요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "검토자에겐\n==읽기 도구만==",
+    "확인 못 한 건\n==\"확인 필요\"로==",
+    "조수를 쓰기 전엔\n==먼저 커밋=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

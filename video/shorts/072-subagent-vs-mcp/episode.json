@@ -1,0 +1,6 @@
+{"id":"072-subagent-vs-mcp","tag":"17.4.3","name":"골라 쓰기","scenes":[
+{"type":"bigword","bg":"blue","lines":["MCP는 갈 곳을,","서브에이전트는 일손을"],"fs":98,"sticker":{"t":"둘을 함께\n쓸 수도 있어요","c":"yellow","y":1000,"size":72},"icon":"sliders","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"list","bg":"white","title":"이럴 땐 이것","items":[{"t":"같은 절차 반복 → 스킬","c":"green","size":52},{"t":"AI 판단에 안 맡길 일 → 훅","c":"yellow","size":52},{"t":"다른 서비스 복사 → MCP","c":"blue","size":52},{"t":"긴 출력이 어지러움 → 서브에이전트","c":"red","size":48},{"t":"이것저것 다듬는 중 → 메인 대화","c":"green","size":50}],"beats":12},
+{"type":"notes","bg":"blue","title":"먼저\n물어볼 것","items":[{"head":"방법?","body":"스킬","icon":"book"},{"head":"약속?","body":"훅","icon":"clock"},{"head":"연결?","body":"MCP","icon":"pin"},{"head":"분업?","body":"서브에이전트","icon":"people"}],"beats":12},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"items":[{"who":"other","name":"예: 우리 채널이라면","t":"노션 아이디어 → ==MCP==\n대본 검사 → ==reviewer==","size":62,"icon":"doc"},{"who":"other","t":"순서와 기준은\n스킬에 적어요","size":66}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["고르기 전에\n==무엇이 필요한지== 묻기","처음엔\n==메인 대화로==","반복되면\n==도구로 옮기기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
