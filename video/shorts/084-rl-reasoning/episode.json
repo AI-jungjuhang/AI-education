@@ -1,0 +1,6 @@
+{"id":"084-rl-reasoning","tag":"20.1.2","name":"추론 모델","scenes":[
+{"type":"bigword","bg":"blue","lines":["풀이를 쓰며 풀면","어려운 문제도 잘 풀어요"],"fs":98,"sticker":{"t":"시험지의 풀이 공간처럼\n중간 생각을 써요","c":"yellow","y":1000,"size":66},"icon":"doc","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"list","bg":"white","title":"연구의 흐름","items":[{"t":"2022 생각의 사슬 → 단계를 쓰게","c":"green","size":50},{"t":"2024 생각 시간에 계산을 더","c":"yellow","size":52},{"t":"2025 강화학습으로 생각을 키우기","c":"blue","size":50}],"beats":11},
+{"type":"split","bg":"white","marks":false,"top":{"label":"생각하는 모델이 좋은 일","t":"수학, 코딩,\n다단계 계획","c":"green","size":96,"icon":"check","small":"정답을 확인할 수 있는 일"},"bottom":{"label":"덜 맞는 일","t":"간단한 질문,\n취향 문제","c":"yellow","size":96,"icon":"clock","small":"느리고 비싸기 쉬워요"},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"items":[{"who":"other","name":"그런데","t":"적어 보인 생각이\n==실제 계산과 같다는\n보장은 없어요==","size":64,"icon":"warn"},{"who":"other","t":"풀이는 증거가 아니라\n참고예요","size":66}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1320},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["어려운 문제엔\n==단계별 풀이 요청==","풀이를 읽으며\n==틀린 곳 찾기==","생각을 적었어도\n==결과는 확인=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

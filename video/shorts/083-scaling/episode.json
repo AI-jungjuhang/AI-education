@@ -1,0 +1,6 @@
+{"id":"083-scaling","tag":"20.1.1","name":"스케일링","scenes":[
+{"type":"bigword","bg":"blue","lines":["\"갑자기 생긴 능력\"은","잣대에 따라 달라요"],"fs":100,"sticker":{"t":"키우면 점수는\n꾸준히 오르는데도요","c":"yellow","y":1000,"size":70},"icon":"sliders","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"창발 주장 (2022)","t":"큰 모델에서\n새 능력이 나타나요","c":"yellow","size":88,"icon":"target"},"bottom":{"label":"신기루 주장 (2023)","t":"==잣대 때문에\n갑자기처럼 보여요==","c":"green","size":88,"icon":"search"},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"items":[{"who":"other","name":"예: 팔굽혀펴기로 치면","t":"\"10개 해야 1점\"이면\n어느 날 ==갑자기== 통과","size":66,"icon":"question"},{"who":"other","t":"\"한 개당 1점\"이면\n꾸준히 늘어요","size":66}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":11,"delay":1.0},
+{"type":"list","bg":"white","title":"뉴스를 읽을 때","items":[{"t":"어떤 시험으로 쟀나?","c":"green","size":64},{"t":"\"주장했다\"인가, \"밝혀졌다\"인가?","c":"yellow","size":56},{"t":"내 일로도 시험해 봤나?","c":"blue","size":62}],"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["\"갑자기 ○○\" 소식은\n==잣대 확인==","크기가 클수록 좋다고\n==단정하지 않기==","\"예측 불가능\"은\n==논쟁 중인 말=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
