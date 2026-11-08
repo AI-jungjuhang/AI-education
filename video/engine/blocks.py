@@ -71,7 +71,7 @@ ICONS = {
     'people': f'<circle cx="8.5" cy="8.5" r="3" {_P}/><circle cx="16.5" cy="9.5" r="2.5" {_P}/><path d="M2.5 19c.6-3.3 2.8-5 6-5s5.4 1.7 6 5M15 14.5c2.7-.2 4.7 1.2 5.5 4" {_P}/>',
 }
 import os as _os
-ICON_LAV = _os.environ.get('ICON_COLOR', '#C9B8FF')   # 모든 아이콘 배지의 기본색: 상자 색(노랑·초록·분홍·하늘)과 다른 하나의 색으로 통일
+ICON_LAV = _os.environ.get('ICON_COLOR', '#FFFFFF')   # 모든 아이콘 배지의 기본색: 상자 색(노랑·초록·분홍·하늘)과 다른 하나의 색으로 통일
 ICON_BG = {'no': '#fff', 'yes': '#fff', 'warn': '#FC5424'}
 def _lum(c):
     c = c.lstrip('#'); c = ''.join(x*2 for x in c) if len(c) == 3 else c; r, g, b = (int(c[i:i + 2], 16) / 255 for i in (0, 2, 4)); return 0.2126 * r + 0.7152 * g + 0.0722 * b
