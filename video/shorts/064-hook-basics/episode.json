@@ -1,0 +1,6 @@
+{"id":"064-hook-basics","tag":"17.2.1","name":"훅","scenes":[
+{"type":"bigword","bg":"blue","lines":["훅은","현관 센서등이에요"],"fs":118,"sticker":{"t":"부탁하지 않아도\n약속한 순간에 켜져요","c":"yellow","y":1000,"size":70},"icon":"clock","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"메모와 스킬","t":"AI가 따를지\n고르기도 해요","c":"yellow","size":96,"icon":"doc"},"bottom":{"label":"훅","t":"==약속한 순간에\nAI 판단 없이 실행==","c":"green","size":88,"icon":"check"},"beats":11},
+{"type":"notes","bg":"blue","title":"자주 쓰는\n네 순간","items":[{"head":"도구 쓰기\n직전","body":"PreToolUse","icon":"lock"},{"head":"도구 쓴\n직후","body":"PostToolUse","icon":"check"},{"head":"내 입력을\n기다릴 때","body":"Notification","icon":"chat"},{"head":"대화를\n열 때","body":"SessionStart","icon":"clock"}],"beats":13},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"items":[{"who":"me","name":"예: 알림 훅","t":"Claude가 내 입력을 기다리면\n알림 띄우기","size":60,"icon":"person"},{"who":"other","t":"처음엔 이렇게\n==해가 없는 훅==부터요","size":66}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["꼭 해야 하는 일은\n==메모 대신 훅==","처음엔\n==해가 없는 훅부터==","단 뒤엔\n==/hooks로 확인=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

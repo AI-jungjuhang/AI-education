@@ -1,0 +1,127 @@
+{
+ "id": "065-hook-checker",
+ "tag": "17.2.2",
+ "name": "자동 검사관",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "고칠 때마다",
+    "검사관이 확인해요"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "\"출처와 기준\" 절이\n있는지 자동으로요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "종료 코드 0",
+    "t": "문제없어요",
+    "c": "green",
+    "size": 110,
+    "icon": "check"
+   },
+   "bottom": {
+    "label": "종료 코드 2",
+    "t": "문제 있어요",
+    "c": "yellow",
+    "size": 110,
+    "icon": "warn",
+    "small": "오류 출력에 쓴 글이 Claude에게 가요"
+   },
+   "beats": 11
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "만드는 순서",
+   "items": [
+    {
+     "t": "1. check-page.sh 쓰기",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "2. chmod +x로 실행 권한",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "3. 가짜 입력으로 혼자 돌려 보기",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "4. settings.json에 등록",
+     "c": "yellow",
+     "size": 56
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "등록하기 전에 꼭",
+     "t": "가짜 입력을 넣어\n==혼자 먼저 돌려 보기==",
+     "size": 66,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "절이 없으면 2,\n있으면 0이 나와야 해요",
+     "size": 64
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "매번 부탁하던 점검은\n==훅으로 옮기기==",
+    "새 훅은\n==혼자 돌려 본 뒤 등록==",
+    "무거운 검사는\n==답을 마칠 때(Stop)로=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
