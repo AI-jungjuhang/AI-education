@@ -1,0 +1,124 @@
+{
+ "id": "017-kinds",
+ "tag": "4.1.1",
+ "name": "AI 종류",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "AI도 하는 일이",
+    "저마다 달라요"
+   ],
+   "fs": 115,
+   "sticker": {
+    "t": "망치와 드라이버가\n쓰임이 다르듯이요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "넣는 것과\n나오는 것이 달라요",
+   "items": [
+    {
+     "t": "텍스트 챗봇: 글 → 글",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "검색 챗봇: 질문 → 답과 출처",
+     "c": "yellow",
+     "size": 60
+    },
+    {
+     "t": "이미지 도구: 글 → 그림",
+     "c": "blue",
+     "size": 60
+    },
+    {
+     "t": "음성 도구: 말 → 말",
+     "c": "red",
+     "size": 60
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "종류마다\n조심할 점",
+   "items": [
+    {
+     "head": "텍스트 챗봇",
+     "body": "최신 소식을\n모를 수 있음",
+     "icon": "chat"
+    },
+    {
+     "head": "검색 챗봇",
+     "body": "출처를 잘못\n요약할 수 있음",
+     "icon": "search"
+    },
+    {
+     "head": "이미지 도구",
+     "body": "그림 속 글자가\n어색할 수 있음",
+     "icon": "doc"
+    },
+    {
+     "head": "코딩 도우미",
+     "body": "실행해 봐야\n알 수 있음",
+     "icon": "check"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "최근 소식을",
+    "t": "일반 챗봇에게\n물으면",
+    "c": "red",
+    "size": 96,
+    "small": "배운 뒤의 일은 모를 수 있어요"
+   },
+   "bottom": {
+    "label": "최근 소식은",
+    "t": "==검색이 되는\n도구로 물어요==",
+    "c": "green",
+    "size": 96
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "일마다 ==알맞은 도구==\n고르기",
+    "내 서비스의\n==기능 목록== 읽어 보기",
+    "그림 속 글자와 숫자는\n==직접 확인하기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
