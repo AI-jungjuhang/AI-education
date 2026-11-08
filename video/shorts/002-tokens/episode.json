@@ -3,158 +3,164 @@
  "tag": "1.1.2 · 1/2",
  "scenes": [
   {
-   "type": "title",
+   "type": "bigword",
    "bg": "blue",
    "lines": [
     "챗봇은 글자를",
-    "안 읽어요!"
+    "안 읽어요"
    ],
+   "fs": 150,
    "sticker": {
     "t": "그럼 뭘 읽을까?",
     "c": "yellow",
-    "anim": "slideR",
-    "rot": -3
+    "y": 1000,
+    "size": 76
    },
-   "at": {
-    "sticker": 3.4
-   },
+   "icon": "question",
+   "beats": 6,
    "mascot": {
     "face": "wide:o",
     "side": "right",
     "at": 4.4
-   },
-   "beats": 6
+   }
   },
   {
-   "type": "title",
+   "type": "bigword",
    "bg": "yellow",
    "lines": [
-    "레고 블록",
+    "레고 블록,",
     "토큰!"
    ],
+   "fs": 150,
    "sticker": {
-    "t": "조각으로 읽어요",
+    "t": "글을 조각으로\n잘라 읽어요",
     "c": "red",
-    "anim": "pop",
-    "rot": 4
+    "y": 1000,
+    "size": 72
    },
+   "icon": "doc",
+   "beats": 5,
    "mascot": {
     "face": "happy:grin",
     "side": "left",
-    "at": 1.6
-   },
-   "beats": 5
+    "at": 2.0
+   }
   },
   {
-   "type": "list",
+   "type": "notes",
    "bg": "white",
-   "title": "이렇게 쪼개요",
+   "title": "이렇게 쪼개져요\n(예시예요)",
    "items": [
     {
-     "t": "인공지능 → 인공 | 지능",
-     "c": "yellow",
-     "size": 58
+     "head": "인공지능",
+     "body": "인공 | 지능",
+     "icon": "doc"
     },
     {
-     "t": "감자튀김 → 감자 | 튀김",
-     "c": "green",
-     "size": 58
+     "head": "감자튀김",
+     "body": "감자 | 튀김",
+     "icon": "doc"
     },
     {
-     "t": "쿠쿠루삥뽕 → 쿠|쿠|루|삥|뽕",
-     "c": "red",
-     "size": 50
+     "head": "쿠쿠루삥뽕",
+     "body": "쿠|쿠|루|삥|뽕",
+     "icon": "doc"
     }
    ],
-   "note": "예시예요! 실제는 챗봇마다 달라요",
-   "beats": 10
+   "beats": 11
   },
   {
-   "type": "vs",
-   "bg": "blue",
-   "title": "왜 조각일까?",
-   "left": {
-    "t": "글자 하나씩 → 너무 길어져요",
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이러면 곤란해요",
+    "t": "글자 하나씩은\n너무 길고,\n단어 통째로는\n처음 본 말을\n못 읽어요",
     "c": "red",
-    "size": 64
+    "size": 72
    },
-   "right": {
-    "t": "단어 통째로 → 처음 본 말은 못 읽어요",
+   "bottom": {
+    "label": "그래서",
+    "t": "==중간 크기 조각==으로\n나눠요",
     "c": "green",
-    "size": 60
+    "size": 88
    },
-   "note": "그래서 중간 크기 조각!",
    "beats": 11
   },
   {
-   "type": "list",
+   "type": "speech",
    "bg": "white",
-   "title": "번호표예요!",
+   "vpos": "center",
+   "gap": 80,
    "items": [
     {
-     "t": "“감자튀김 먹고 싶다”",
-     "c": "yellow",
-     "size": 60
+     "who": "me",
+     "name": "내가 쓴 글",
+     "t": "감자튀김 먹고 싶다",
+     "size": 66,
+     "icon": "person"
     },
     {
+     "who": "other",
+     "name": "조각으로",
      "t": "[감자][튀김][ 먹고][ 싶다]",
-     "c": "green",
-     "size": 52
+     "size": 58,
+     "icon": "doc"
     },
     {
+     "who": "other",
+     "name": "챗봇이 받는 건 ==번호== (예시)",
      "t": "[48213][9071][3306][1457]",
-     "c": "red",
-     "size": 52
+     "size": 58,
+     "icon": "chat"
     }
    ],
-   "note": "번호는 예시예요!",
    "beats": 11
   },
   {
-   "type": "list",
-   "bg": "blue",
-   "title": "사전 만들기",
+   "type": "notes",
+   "bg": "white",
+   "title": "조각 사전은\n이렇게 만들어요 ★",
    "items": [
     {
-     "t": "아주 작은 단위로 시작",
-     "c": "yellow",
-     "size": 58
+     "head": "작게 시작",
+     "body": "아주 작은 단위부터",
+     "icon": "search"
     },
     {
-     "t": "자주 붙는 쌍은 하나로 합치기",
-     "c": "green",
-     "size": 52
+     "head": "합치기",
+     "body": "자주 붙는 쌍은\n하나로",
+     "icon": "sliders"
     },
     {
-     "t": "합친 조각이 사전에 쌓여요",
-     "c": "red",
-     "size": 54
+     "head": "쌓기",
+     "body": "합친 조각이\n사전에 쌓여요",
+     "icon": "book"
     }
    ],
-   "note": "★ 심화: BPE(바이트 쌍 인코딩)",
    "beats": 11
   },
   {
-   "type": "title",
+   "type": "bigword",
    "bg": "yellow",
    "lines": [
     "챗봇은",
     "블록을 읽어요"
    ],
-   "size": "big",
+   "fs": 150,
    "sticker": {
-    "t": "\"다음 말\"은 사실 \"다음 블록\"!",
+    "t": "\"다음 말\"은 사실\n\"다음 블록\"!",
     "c": "red",
-    "anim": "pop",
-    "rot": 4,
-    "size": 60
+    "y": 1000,
+    "size": 72
    },
+   "icon": "chat",
+   "beats": 6,
    "mascot": {
     "face": "happy:grin",
     "side": "right",
     "at": 1.6
-   },
-   "beats": 6
+   }
   }
  ]
 }

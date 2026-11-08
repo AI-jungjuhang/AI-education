@@ -3,131 +3,133 @@
  "tag": "2.1.3",
  "scenes": [
   {
-   "type": "title",
+   "type": "bigword",
    "bg": "blue",
    "lines": [
     "심부름은",
     "하나씩!"
    ],
-   "size": "huge",
-   "beats": 6,
+   "fs": 150,
    "sticker": {
-    "t": "마트·은행·택배·동생… 한꺼번에?",
+    "t": "마트, 은행, 택배, 동생…\n한꺼번에?",
     "c": "yellow",
-    "anim": "slideR",
-    "rot": -3,
-    "size": 54
+    "y": 1000,
+    "size": 64
    },
+   "icon": "doc",
+   "beats": 6,
    "mascot": {
     "face": "wide:o",
     "side": "right",
     "at": 4.4
-   },
-   "at": {
-    "sticker": 3.4
    }
   },
   {
-   "type": "vs",
+   "type": "split",
    "bg": "white",
-   "title": "흐릿 vs 구체",
-   "left": {
+   "marks": true,
+   "top": {
+    "label": "흐릿하게",
     "t": "보고서 써 줘",
     "c": "red",
-    "size": 80
+    "size": 100
    },
-   "right": {
-    "t": "팀원 5명용 A4 한 장, 한 일 3가지와 다음 주 계획 2가지",
+   "bottom": {
+    "label": "구체적으로",
+    "t": "팀원 5명이 볼\nA4 한 장,\n한 일 3가지와\n다음 주 계획 2가지",
     "c": "green",
-    "size": 52
+    "size": 76,
+    "small": "‘좋게·적당히·잘’은 숫자와 기준으로"
    },
-   "note": "‘좋게·적당히·잘’은 숫자와 기준으로",
    "beats": 10
   },
   {
-   "type": "list",
-   "bg": "yellow",
-   "title": "단계로 쪼개기",
+   "type": "notes",
+   "bg": "white",
+   "title": "큰 일은\n단계로 쪼개요",
    "items": [
     {
-     "t": "1. 후기를 칭찬·불만·질문으로",
-     "c": "blue",
-     "size": 52
+     "head": "==1. 나누기==",
+     "body": "후기를 칭찬·불만·질문으로",
+     "icon": "sliders"
     },
     {
-     "t": "2. 불만끼리 묶기",
-     "c": "green",
-     "size": 58
+     "head": "==2. 묶기==",
+     "body": "불만끼리 묶기",
+     "icon": "people"
     },
     {
-     "t": "3. 많은 불만 두 가지는 개선 아이디어",
-     "c": "red",
-     "size": 46
+     "head": "==3. 아이디어==",
+     "body": "많은 불만 두 가지는 개선 아이디어",
+     "icon": "bulb"
     }
    ],
-   "note": "번호를 붙이면 빠뜨릴 가능성이 줄어요",
    "beats": 12
   },
   {
-   "type": "vs",
-   "bg": "blue",
-   "title": "나눠서 묻기",
-   "left": {
-    "t": "카페 이름·로고·게시물·이벤트를 한 번에",
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "한꺼번에",
+    "t": "카페 이름·로고·\n게시물·이벤트를\n한 번에",
     "c": "red",
-    "size": 52
+    "size": 84
    },
-   "right": {
-    "t": "이름 후보 5개 먼저 → 고르고 → 다음",
+   "bottom": {
+    "label": "나눠서",
+    "t": "이름 후보 5개 먼저\n→ 고르고 → 다음",
     "c": "green",
-    "size": 56
+    "size": 80,
+    "small": "어디서 틀어졌는지 바로 알아요"
    },
-   "note": "어디서 틀어졌는지 바로 알아요",
    "beats": 10
   },
   {
-   "type": "title",
+   "type": "speech",
    "bg": "yellow",
-   "lines": [
-    "빈칸은",
-    "내가 정해요"
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "t": "작업 시작 전에,\n==꼭 필요한데 내가\n안 알려 준 게 있으면\n먼저 물어봐.==",
+     "size": 66,
+     "icon": "person"
+    },
+    {
+     "who": "me",
+     "t": "질문은 최대 3개까지만!",
+     "size": 66
+    }
    ],
-   "size": "huge",
-   "beats": 7,
-   "sticker": {
-    "t": "‘모르는 건 먼저 물어봐’\n(질문은 최대 3개까지만)",
-    "c": "red",
-    "anim": "pop",
-    "rot": 4,
-    "size": 54
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1180
    },
+   "beats": 9
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "rowh": 246,
+   "icon": "bulb",
+   "items": [
+    "\"좋게\"는\n==숫자와 기준==으로",
+    "순서가 중요하면\n==번호==를 붙이기",
+    "==작은 결과==\n(목차, 초안)부터 확인"
+   ],
    "mascot": {
     "face": "happy:grin",
     "side": "right",
-    "at": 1.6
-   }
-  },
-  {
-   "type": "list",
-   "bg": "white",
-   "title": "써먹기 3개",
-   "items": [
-    {
-     "t": "‘좋게’는 숫자·기준으로",
-     "c": "yellow",
-     "size": 56
-    },
-    {
-     "t": "순서가 중요하면 번호를",
-     "c": "green",
-     "size": 56
-    },
-    {
-     "t": "목차·초안 같은 작은 결과부터",
-     "c": "red",
-     "size": 52
-    }
-   ],
+    "at": 5,
+    "y": 1500
+   },
    "beats": 12
   }
  ]

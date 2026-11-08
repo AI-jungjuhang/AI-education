@@ -3,150 +3,154 @@
  "tag": "2.1.2",
  "scenes": [
   {
-   "type": "title",
+   "type": "bigword",
    "bg": "blue",
    "lines": [
     "옷, 그릇,",
     "견본!"
    ],
-   "size": "huge",
-   "beats": 6,
+   "fs": 150,
    "sticker": {
     "t": "챗봇에게 정해 주세요",
     "c": "yellow",
-    "anim": "slideR",
-    "rot": -3
+    "y": 1000,
+    "size": 72
    },
+   "icon": "chat",
+   "beats": 6,
    "mascot": {
     "face": "wide:o",
     "side": "right",
     "at": 4.4
-   },
-   "at": {
-    "sticker": 3.4
    }
   },
   {
-   "type": "list",
+   "type": "notes",
    "bg": "white",
-   "title": "세 가지",
+   "title": "세 가지를\n정해 주세요",
    "items": [
     {
-     "t": "역할 = 옷 · 말투와 관점",
-     "c": "yellow",
-     "size": 56
+     "head": "==역할 = 옷==",
+     "body": "말투와 관점",
+     "icon": "person"
     },
     {
-     "t": "형식 = 그릇 · 결과의 모양",
-     "c": "green",
-     "size": 56
+     "head": "==형식 = 그릇==",
+     "body": "결과의 모양",
+     "icon": "doc"
     },
     {
-     "t": "예시 = 견본 · 이런 느낌으로",
-     "c": "red",
-     "size": 56
+     "head": "==예시 = 견본==",
+     "body": "이런 느낌으로",
+     "icon": "target"
     }
    ],
+   "beats": 11
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "역할이 하는 일",
+    "t": "말투와 관점이\n달라져요",
+    "c": "green",
+    "size": 92,
+    "icon": "yes"
+   },
+   "bottom": {
+    "label": "역할이 못 하는 일",
+    "t": "모르는 사실을\n알게 해 주진 못해요",
+    "c": "red",
+    "size": 80,
+    "small": "환각 위험은 그대로예요",
+    "icon": "no"
+   },
    "beats": 10
   },
   {
-   "type": "list",
+   "type": "speech",
    "bg": "yellow",
-   "title": "역할",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
    "items": [
     {
-     "t": "“초등학교 선생님처럼 설명해 줘”",
-     "c": "blue",
-     "size": 50
+     "who": "me",
+     "t": "아래 회의 메모를\n정리해 줘.",
+     "size": 72,
+     "icon": "person"
     },
     {
-     "t": "말투와 관점이 달라져요",
-     "c": "green",
+     "who": "me",
+     "t": "결정된 것은 최대 3개,\n다음 할 일은 표로!",
+     "size": 66
+    },
+    {
+     "who": "other",
+     "t": "==바로 쓸 수 있는 모양==을 정해 두면\n고쳐 달라는 말이 줄어요",
      "size": 58
-    },
-    {
-     "t": "단, 모르는 사실이 생기진 않아요",
-     "c": "red",
-     "size": 52
     }
    ],
-   "note": "환각 위험은 그대로!",
-   "beats": 10
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1330
+   },
+   "beats": 11
   },
   {
-   "type": "list",
-   "bg": "blue",
-   "title": "형식",
-   "items": [
-    {
-     "t": "“표로”, “세 줄로”",
-     "c": "yellow",
-     "size": 60
-    },
-    {
-     "t": "“번호를 붙여서”",
-     "c": "green",
-     "size": 60
-    },
-    {
-     "t": "고쳐 달라는 말이 줄어요",
-     "c": "red",
-     "size": 56
-    }
-   ],
-   "beats": 9
-  },
-  {
-   "type": "list",
+   "type": "speech",
    "bg": "white",
-   "title": "견본 보여 주기",
+   "vpos": "top",
+   "gap": 80,
    "items": [
     {
-     "t": "감자 → 포슬포슬 감자샘",
-     "c": "yellow",
-     "size": 56
+     "who": "me",
+     "t": "상품 이름 지어 줘.\n이런 느낌으로!",
+     "size": 72,
+     "icon": "person"
     },
     {
-     "t": "우유 → 하얀 구름 한 컵",
-     "c": "green",
-     "size": 56
+     "who": "me",
+     "t": "감자 → ==포슬포슬 감자샘==\n우유 → ==하얀 구름 한 컵==",
+     "size": 60
     },
     {
-     "t": "그럼 ‘딸기’로 5개!",
-     "c": "red",
+     "who": "other",
+     "t": "예시는 3~5개,\n서로 조금씩 다르게 주세요",
      "size": 60
     }
    ],
-   "note": "예시는 3~5개, 서로 조금씩 다르게",
-   "beats": 10
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1330
+   },
+   "beats": 11
   },
   {
-   "type": "list",
-   "bg": "yellow",
-   "title": "써먹기 4개",
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "rowh": 246,
+   "icon": "bulb",
    "items": [
-    {
-     "t": "‘역할·형식·예시’ 틀 저장",
-     "c": "blue",
-     "size": 54
-    },
-    {
-     "t": "잘 나온 글을 견본으로",
-     "c": "green",
-     "size": 56
-    },
-    {
-     "t": "예시는 다양하게",
-     "c": "red",
-     "size": 60
-    },
-    {
-     "t": "사실 확인에 역할은 금물",
-     "c": "ink",
-     "size": 54
-    }
+    "역할·형식·예시를\n==한 줄씩== 적는 틀 만들기",
+    "잘 나온 글을\n==견본==으로 쓰기",
+    "사실 확인에는\n==역할을 쓰지 않기=="
    ],
-   "beats": 13
+   "note": "예시는 다양하게 고르세요",
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 5,
+    "y": 1500
+   },
+   "beats": 12
   }
  ]
 }

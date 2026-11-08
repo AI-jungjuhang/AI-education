@@ -11,7 +11,7 @@
 html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(--ink);
   font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all;letter-spacing:-.03em;font-weight:900}
 .scene{position:absolute;inset:0;overflow:hidden;display:none;transform-origin:50% 45%}
-.in{position:absolute;left:70px;right:70px;top:230px;bottom:400px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;text-align:center}
+.in{position:absolute;left:70px;right:70px;top:280px;bottom:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;text-align:center}
 [data-b]{will-change:transform,opacity}
 .st{color:#fff;-webkit-text-stroke:16px var(--ink);paint-order:stroke fill;line-height:1.08}
 .st.dark{color:var(--ink);-webkit-text-stroke:16px #fff}
@@ -47,6 +47,31 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(-
 .card .ln b{display:block;height:26px;border-radius:13px}
 .cf{position:absolute;width:26px;height:26px;border-radius:6px;opacity:0}
 .small{font-size:44px;color:#fff;-webkit-text-stroke:0}
+
+/* v3: 말풍선, 메모지, 분할 판, 체크리스트 (장면마다 모양을 다르게) */
+.bubble{position:relative;background:#fff;border:8px solid var(--ink);border-radius:50px;padding:36px 52px;font-size:78px;line-height:1.22;max-width:940px;box-shadow:10px 10px 0 var(--ink);text-align:left}
+.bubble.me{background:var(--yellow);align-self:flex-end}
+.bubble.other{align-self:flex-start}
+.bubble.other::after{content:"";position:absolute;left:54px;bottom:-44px;border:22px solid transparent;border-top:36px solid var(--ink);border-bottom:0}
+.bubble.me::after{content:"";position:absolute;right:54px;bottom:-44px;border:22px solid transparent;border-top:36px solid var(--ink);border-bottom:0}
+.bubble small{display:block;font-size:34px;opacity:.65;margin-bottom:6px}
+.tapeTitle{position:absolute;left:60px;right:60px;text-align:left}
+.note{position:absolute;width:480px;padding:64px 36px 52px;border:6px solid var(--ink);border-radius:10px;box-shadow:8px 8px 0 rgba(0,0,0,.28);text-align:left}
+.note::before{content:"";position:absolute;top:-22px;left:50%;margin-left:-60px;width:120px;height:40px;background:rgba(255,255,255,.7);border:4px solid var(--ink);transform:rotate(-3deg)}
+.note b{display:block;font-size:70px;line-height:1.1}
+.note .nbody{display:block;margin-top:20px;font-size:62px;font-weight:700;line-height:1.2}
+.panel{position:absolute;left:0;right:0;padding:90px 70px 400px;text-align:left;display:flex;flex-direction:column;justify-content:center}
+.panel.topp{padding:310px 70px 110px}
+.panel small{display:block;font-size:48px;opacity:.85;margin-bottom:18px}
+.panel .big2{font-size:104px;line-height:1.14}
+.check{position:absolute;left:70px;right:70px;background:#fff;border:8px solid var(--ink);border-radius:30px;box-shadow:12px 12px 0 var(--ink);padding:50px 44px 36px;text-align:left}
+.check .row2{display:flex;align-items:center;gap:34px;font-size:72px;line-height:1.2;padding:34px 0;border-bottom:5px dashed #cbd5e1}
+.check .row2:last-child{border-bottom:0}
+.check .bx{flex:none;width:92px;height:92px;border:7px solid var(--ink);border-radius:16px;background:#fff}
+.tick{position:absolute;font-size:106px;color:var(--green);-webkit-text-stroke:5px var(--ink);paint-order:stroke fill;line-height:1}
+.ico svg{display:block}
+.ico{display:inline-flex;align-items:center;justify-content:center;line-height:0;border:6px solid var(--ink);border-radius:50%;box-shadow:5px 5px 0 var(--ink);z-index:7}
+mark.hl{color:var(--ink);background:linear-gradient(transparent 50%,var(--hlc,#FFD93D) 50%) no-repeat 0 0;background-size:0% 100%;padding:0 6px;margin:0 -2px;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 </style></head><body>
 <div class="tag"><span class="pill k">AI 정주행</span><span class="pill">1.1.1</span></div>
 <div class="prog" id="prog"></div>
@@ -82,88 +107,79 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(-
   <g class="m-grin"><path d="M118 206 Q150 268 182 206Z" fill="#8a2f3a" stroke="#242424" stroke-width="9"/><path d="M134 242 Q150 226 166 242 Q150 258 134 242Z" fill="#FF8FA0"/></g>
 </svg></template>
 
-<!-- 1. title 0~6박 -->
-<section class="scene" data-a="0" data-e="6" data-bg="#2F7FD8"><div class="in" style="gap:34px">
-  <div class="st huge" data-b="0" data-anim="slam" data-sfx="slam">AI 챗봇</div>
-  <div class="st huge" data-b="1" data-anim="slam" data-sfx="slam">정체 공개!</div>
-  <div class="sticker c-yellow" data-b="3.4" data-anim="slideR" data-rot="-3" data-sfx="whoosh">하는 일은 딱 하나!</div>
-</div><div class="mas" data-face="wide:o" data-b="4.4" data-anim="pop" data-sfx="pop" style="right:50px;top:1250px"></div></section>
+<!-- 1. bigword 0~6박 -->
+<section class="scene" data-a="0" data-e="6" data-bg="#2F7FD8"><div class="in" style="gap:20px">
+  
+</div><div class="tapeTitle st huge" data-b="0" data-anim="slam" data-sfx="slam" style="top:310px;font-size:150px">챗봇이 하는 일,</div>
+<div class="tapeTitle st huge" data-b="1" data-anim="slam" data-sfx="slam" style="top:515px;font-size:150px">딱 하나예요</div>
+<div class="sticker c-yellow" data-b="2.6" data-anim="slideR" data-sfx="whoosh" style="position:absolute;right:70px;top:1000px;font-size:76px;max-width:820px;text-align:left">다음에 올 말 고르기</div>
+<span class="ico" data-b="2.2" data-anim="pop" data-sfx="pop" style="width:210px;height:210px;background:#A9D2FF;position:absolute;right:90px;top:760px;"><svg viewBox="0 0 24 24" width="147" height="147"><path d="M4 5h16v11H11l-5 4v-4H4z" fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 9.5h8M8 12.5h5" fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="mas" data-face="wide:o" data-b="4.4" data-anim="pop" data-sfx="pop" style="right:50px;top:1250px"></div></section>
 
-<!-- 2. title 6~10박 -->
-<section class="scene" data-a="6" data-e="10" data-bg="#FFD93D"><div class="in" style="gap:34px">
-  <div class="st dark huge" data-b="6" data-anim="slam" data-sfx="slam">다음 말</div>
-  <div class="st dark huge" data-b="7" data-anim="slam" data-sfx="slam">맞히기</div>
-  <div class="sticker c-red" data-b="8.4" data-anim="pop" data-rot="4" data-sfx="pop">이게 전부!</div>
-</div><div class="mas" data-face="happy:grin" data-b="7.6" data-anim="pop" data-sfx="pop" style="left:40px;top:1140px"></div></section>
+<!-- 2. speech 6~15박 -->
+<section class="scene" data-a="6" data-e="15" data-bg="#FCFCFC"><div class="in" style="gap:90px">
+  <div class="bubble me" data-b="6.4" data-anim="pop" data-sfx="pop" style="font-size:74px;padding-right:100px"><span class="ico" style="width:124px;height:124px;background:#FFD93D;position:absolute;top:-56px;right:-30px;"><svg viewBox="0 0 24 24" width="86" height="86"><circle cx="12" cy="8" r="3.6" fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 20c.8-4 3.6-6 7.5-6s6.7 2 7.5 6" fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><small>친구</small>오늘 점심은 라면이랑…</div>
+  <div class="bubble other" data-b="8.8" data-anim="pop" data-sfx="pop" style="font-size:68px;padding-right:100px"><span class="ico" style="width:124px;height:124px;background:#A9D2FF;position:absolute;top:-56px;right:-30px;"><svg viewBox="0 0 24 24" width="86" height="86"><path d="M4 5h16v11H11l-5 4v-4H4z" fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 9.5h8M8 12.5h5" fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><small>챗봇</small>김밥? 만두? 떡볶이?<br>우주선은 아니겠죠.</div>
+</div><div class="mas" data-face="happy:grin" data-b="10.6" data-anim="pop" data-sfx="pop" style="right:50px;top:1250px"></div></section>
 
-<!-- 3. choices 10~18박 -->
-<section class="scene" data-a="10" data-e="18" data-bg="#FCFCFC"><div class="in" style="gap:34px">
-  <div class="sticker" data-b="10" data-anim="slideL" data-sfx="pop" style="font-size:78px">친구: “오늘 점심은<br>라면이랑…”</div>
-  <div class="sticker c-yellow" data-b="12" data-anim="pop" data-rot="-2" data-sfx="pop">다음 말은?</div>
-  <div class="chips"><div class="chip c-red" data-b="13" data-anim="pop" data-sfx="pop">김밥</div>
-    <div class="chip c-yellow" data-b="14" data-anim="pop" data-sfx="pop">만두</div>
-    <div class="chip c-green" data-b="15" data-anim="pop" data-sfx="pop">떡볶이</div></div>
-  <div class="chip no" data-b="16.2" data-anim="shake" data-sfx="buzz">우주선</div>
+<!-- 3. bars 15~23박 -->
+<section class="scene" data-a="15" data-e="23" data-bg="#2F7FD8"><div class="in" style="gap:26px">
+  <div class="st big" data-b="15" data-anim="slam" data-sfx="slam">후보마다 점수!</div>
+  <div class="sticker row" data-b="16.5" data-anim="slideL" data-sfx="pop"><div class="l">김밥</div><div class="track"><div class="bar" data-b="16.5" data-anim="grow" data-v="100"></div></div><div class="v" data-b="16.5" data-anim="count" data-v="30" data-fmt="%">0%</div></div>
+  <div class="sticker row" data-b="17.5" data-anim="slideL" data-sfx="pop"><div class="l">만두</div><div class="track"><div class="bar" data-b="17.5" data-anim="grow" data-v="67"></div></div><div class="v" data-b="17.5" data-anim="count" data-v="20" data-fmt="%">0%</div></div>
+  <div class="sticker row" data-b="18.5" data-anim="slideL" data-sfx="pop"><div class="l">떡볶이</div><div class="track"><div class="bar" data-b="18.5" data-anim="grow" data-v="50"></div></div><div class="v" data-b="18.5" data-anim="count" data-v="15" data-fmt="%">0%</div></div>
+  <div class="sticker row dim" data-b="19.5" data-anim="slideL" data-sfx="pop"><div class="l">우주선</div><div class="track"><div class="bar" data-b="19.5" data-anim="grow" data-v="4"></div></div><div class="v" style="font-size:50px">거의 0</div></div>
+  <div class="sticker c-yellow" data-b="21" data-anim="pop" data-sfx="ding" style="font-size:64px">숫자는 예시예요!</div>
 </div></section>
 
-<!-- 4. bars 18~26박 -->
-<section class="scene" data-a="18" data-e="26" data-bg="#2F7FD8"><div class="in" style="gap:26px">
-  <div class="st big" data-b="18" data-anim="slam" data-sfx="slam">후보마다 점수!</div>
-  <div class="sticker row" data-b="19.5" data-anim="slideL" data-sfx="pop"><div class="l">김밥</div><div class="track"><div class="bar" data-b="19.5" data-anim="grow" data-v="100"></div></div><div class="v" data-b="19.5" data-anim="count" data-v="30" data-fmt="%">0%</div></div>
-  <div class="sticker row" data-b="20.5" data-anim="slideL" data-sfx="pop"><div class="l">만두</div><div class="track"><div class="bar" data-b="20.5" data-anim="grow" data-v="67"></div></div><div class="v" data-b="20.5" data-anim="count" data-v="20" data-fmt="%">0%</div></div>
-  <div class="sticker row" data-b="21.5" data-anim="slideL" data-sfx="pop"><div class="l">떡볶이</div><div class="track"><div class="bar" data-b="21.5" data-anim="grow" data-v="50"></div></div><div class="v" data-b="21.5" data-anim="count" data-v="15" data-fmt="%">0%</div></div>
-  <div class="sticker row dim" data-b="22.5" data-anim="slideL" data-sfx="pop"><div class="l">우주선</div><div class="track"><div class="bar" data-b="22.5" data-anim="grow" data-v="4"></div></div><div class="v" style="font-size:50px">거의 0</div></div>
-  <div class="sticker c-yellow" data-b="24" data-anim="pop" data-rot="-5" data-sfx="ding" style="font-size:64px">숫자는 예시예요!</div>
+<!-- 4. dice 23~31박 -->
+<section class="scene" data-a="23" data-e="31" data-bg="#FC5424"><div class="in" style="gap:30px">
+  <div class="st big" data-b="23" data-anim="slam" data-sfx="slam">주사위 뽑기!</div>
+  <div class="dieW" id="dieW" data-b="24" data-anim="dice" data-sfx="rattle" data-dur="2.5"><div class="die" id="die"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  <div class="sticker c-yellow" data-b="27" data-anim="slam" data-sfx="ding" style="font-size:120px">김밥!</div>
+  <div class="st sm" data-b="28.4" data-anim="slideL" data-sfx="pop">높은 말이 잘 뽑혀요</div>
+  <div class="st sm" data-b="29.6" data-anim="slideR" data-sfx="pop">낮은 말도 가끔!</div>
 </div></section>
 
-<!-- 5. dice 26~34박 -->
-<section class="scene" data-a="26" data-e="34" data-bg="#FC5424"><div class="in" style="gap:30px">
-  <div class="st big" data-b="26" data-anim="slam" data-sfx="slam">주사위 뽑기!</div>
-  <div class="dieW" id="dieW" data-b="27" data-anim="dice" data-sfx="rattle" data-dur="2.5"><div class="die" id="die"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-  <div class="sticker c-yellow" data-b="30" data-anim="slam" data-sfx="ding" style="font-size:120px">김밥!</div>
-  <div class="st sm" data-b="31.4" data-anim="slideL" data-sfx="pop">높은 말이 잘 뽑혀요</div>
-  <div class="st sm" data-b="32.6" data-anim="slideR" data-sfx="pop">낮은 말도 가끔!</div>
+<!-- 5. chain 31~43박 -->
+<section class="scene" data-a="31" data-e="43" data-bg="#FCFCFC"><div class="in" style="gap:30px">
+  <div class="sticker c-blue" data-b="31" data-anim="slideL" data-sfx="whoosh" style="font-size:78px">뽑은 말은 뒤에 붙여요</div>
+  <div class="wd" data-b="32.2" data-anim="pop" data-sfx="pop">하늘이 파란 이유는</div>
+  <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center;width:940px"><span class="arrow" data-b="34" data-anim="pop">→</span><span class="wd c-yellow" data-b="34" data-anim="slam" data-sfx="tick">햇빛이</span><span class="arrow" data-b="36" data-anim="pop">→</span><span class="wd c-yellow" data-b="36" data-anim="slam" data-sfx="tick">공기에</span><span class="arrow" data-b="38" data-anim="pop">→</span><span class="wd c-yellow" data-b="38" data-anim="slam" data-sfx="tick">부딪혀</span><span class="arrow" data-b="40" data-anim="pop">→</span><span class="wd" data-b="40" data-anim="slam" data-sfx="tick">…</span></div>
+  <div class="sticker c-red" data-b="41" data-anim="pop" data-sfx="ding" style="font-size:78px">또 뽑고, 또 뽑고!</div>
 </div></section>
 
-<!-- 6. chain 34~46박 -->
-<section class="scene" data-a="34" data-e="46" data-bg="#FCFCFC"><div class="in" style="gap:30px">
-  <div class="sticker c-blue" data-b="34" data-anim="slideL" data-sfx="whoosh" style="font-size:78px">뽑은 말은 뒤에 붙여요</div>
-  <div class="wd" data-b="35.2" data-anim="pop" data-sfx="pop">하늘이 파란 이유는</div>
-  <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center;width:940px"><span class="arrow" data-b="37" data-anim="pop">→</span><span class="wd c-yellow" data-b="37" data-anim="slam" data-sfx="tick">햇빛이</span><span class="arrow" data-b="39" data-anim="pop">→</span><span class="wd c-yellow" data-b="39" data-anim="slam" data-sfx="tick">공기에</span><span class="arrow" data-b="41" data-anim="pop">→</span><span class="wd c-yellow" data-b="41" data-anim="slam" data-sfx="tick">부딪혀</span><span class="arrow" data-b="43" data-anim="pop">→</span><span class="wd" data-b="43" data-anim="slam" data-sfx="tick">…</span></div>
-  <div class="sticker c-red" data-b="44" data-anim="pop" data-rot="3" data-sfx="ding" style="font-size:78px">또 뽑고, 또 뽑고!</div>
+<!-- 6. stack 43~51박 -->
+<section class="scene" data-a="43" data-e="51" data-bg="#FFD93D"><div class="in" style="gap:34px">
+  <div class="st dark big" data-b="43" data-anim="slam" data-sfx="slam">계속 반복하면?</div>
+  <div class="sticker" data-b="44.8" data-anim="slideL" data-sfx="pop" style="font-size:90px">문장</div>
+  <div class="sticker c-green" data-b="46.2" data-anim="slideR" data-sfx="pop" style="font-size:112px">문단</div>
+  <div class="sticker c-red" data-b="47.6" data-anim="slam" data-sfx="ding" style="font-size:136px">편지 한 통!</div>
+</div><div id="conf" data-b="47.6" data-anim="confetti"></div></section>
+
+<!-- 7. cards 51~63박 -->
+<section class="scene" data-a="51" data-e="63" data-bg="#2F7FD8"><div class="in" style="gap:20px;top:250px">
+  <div class="st big" data-b="51" data-anim="slam" data-sfx="slam" style="font-size:120px">같은 질문인데…</div>
+  <div class="st yel big" data-b="52.6" data-anim="slam" data-sfx="slam" style="font-size:120px">답은 매번 달라요!</div>
+  <div class="card" data-b="55" data-anim="slideR" data-sfx="pop"><div class="n">1번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:55%;background:var(--red)"></b></div></div>
+  <div class="card" data-b="56.2" data-anim="slideR" data-sfx="pop"><div class="n">2번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:80%;background:var(--red)"></b></div></div>
+  <div class="card" data-b="57.4" data-anim="slideR" data-sfx="pop"><div class="n">3번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:35%;background:var(--red)"></b></div></div>
+  <div style="display:flex;gap:22px;flex-wrap:wrap;justify-content:center"><div class="sticker c-green" data-b="59.4" data-anim="pop" data-sfx="ding" style="font-size:62px">겹치는 건 더 믿고</div><div class="sticker c-red" data-b="61" data-anim="pop" data-sfx="ding" style="font-size:62px">달라지는 건 의심!</div></div>
+  <div class="small" data-b="55" data-anim="pop">그림은 이해를 돕는 예시예요</div>
 </div></section>
 
-<!-- 7. stack 46~54박 -->
-<section class="scene" data-a="46" data-e="54" data-bg="#FFD93D"><div class="in" style="gap:34px">
-  <div class="st dark big" data-b="46" data-anim="slam" data-sfx="slam">계속 반복하면?</div>
-  <div class="sticker" data-b="47.8" data-anim="slideL" data-sfx="pop" style="font-size:90px">문장</div>
-  <div class="sticker c-green" data-b="49.2" data-anim="slideR" data-sfx="pop" style="font-size:112px">문단</div>
-  <div class="sticker c-red" data-b="50.6" data-anim="slam" data-sfx="ding" style="font-size:136px">편지 한 통!</div>
-</div><div id="conf" data-b="50.6" data-anim="confetti"></div></section>
-
-<!-- 8. cards 54~66박 -->
-<section class="scene" data-a="54" data-e="66" data-bg="#2F7FD8"><div class="in" style="gap:20px;top:250px">
-  <div class="st big" data-b="54" data-anim="slam" data-sfx="slam" style="font-size:120px">같은 질문인데…</div>
-  <div class="st yel big" data-b="55.6" data-anim="slam" data-sfx="slam" style="font-size:120px">답은 매번 달라요!</div>
-  <div class="card" data-b="58" data-anim="slideR" data-sfx="pop"><div class="n">1번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:55%;background:var(--red)"></b></div></div>
-  <div class="card" data-b="59.2" data-anim="slideR" data-sfx="pop"><div class="n">2번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:80%;background:var(--red)"></b></div></div>
-  <div class="card" data-b="60.4" data-anim="slideR" data-sfx="pop"><div class="n">3번</div><div class="ln"><b style="width:100%;background:var(--green)"></b><b style="width:35%;background:var(--red)"></b></div></div>
-  <div style="display:flex;gap:22px;flex-wrap:wrap;justify-content:center"><div class="sticker c-green" data-b="62.4" data-anim="pop" data-sfx="ding" style="font-size:62px">겹치는 건 믿고</div><div class="sticker c-red" data-b="64" data-anim="pop" data-sfx="ding" style="font-size:62px">달라지는 건 의심!</div></div>
-  <div class="small" data-b="58" data-anim="pop">그림은 이해를 돕는 예시예요</div>
-</div></section>
-
-<!-- 9. tip 66~78박 -->
-<section class="scene" data-a="66" data-e="78" data-bg="#FCFCFC"><div class="in" style="gap:32px">
-  <div class="sticker c-red" data-b="66" data-anim="slam" data-sfx="slam" style="font-size:78px">오늘의 써먹기</div>
-  <div class="st dark big" data-b="67.6" data-anim="slam" data-sfx="slam" style="-webkit-text-stroke:0">중요한 질문은</div>
-  <div class="st dark big" data-b="69" data-anim="slam" data-sfx="slam" style="-webkit-text-stroke:0;color:var(--red)">세 번 물어보기!</div>
-  <div style="display:flex;gap:28px"><div class="sticker c-blue" data-b="70.8" data-anim="pop" data-sfx="tick" style="font-size:96px;padding:10px 46px">1</div><div class="sticker c-blue" data-b="71.6" data-anim="pop" data-sfx="tick" style="font-size:96px;padding:10px 46px">2</div><div class="sticker c-blue" data-b="72.4" data-anim="pop" data-sfx="tick" style="font-size:96px;padding:10px 46px">3</div></div>
-  <div class="sticker c-yellow" data-b="74.4" data-anim="pop" data-rot="-2" data-sfx="ding" style="font-size:66px">달라지는 부분은 더 의심!</div>
-</div></section>
+<!-- 8. check 63~75박 -->
+<section class="scene" data-a="63" data-e="75" data-bg="#FCFCFC"><div class="in" style="gap:20px">
+  
+</div><div class="sticker c-red" data-b="63" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:300px;font-size:68px;z-index:6">오늘의 써먹기</div>
+<span class="ico" data-b="63.6" data-anim="pop" data-sfx="pop" style="width:132px;height:132px;background:#FFD93D;position:absolute;right:100px;top:235px;z-index:6"><svg viewBox="0 0 24 24" width="92" height="92"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="check" style="top:450px"><div class="row2" data-b="64.4" data-anim="slideL" data-sfx="pop"><div class="bx"></div><div>중요한 질문은<br><mark class="hl">세 번</mark> 물어보기</div></div><div class="row2" data-b="66.4" data-anim="slideL" data-sfx="pop"><div class="bx"></div><div>달라지는 부분은<br><mark class="hl">더 의심하기</mark></div></div><div class="row2" data-b="68.4" data-anim="slideL" data-sfx="pop"><div class="bx"></div><div>겹쳐도 틀릴 수 있어요<br><mark class="hl">출처</mark>로 확인</div></div></div>
+<div class="tick" data-b="65.2" data-anim="pop" data-sfx="tick" style="left:122px;top:547px">✓</div>
+<div class="tick" data-b="67.2" data-anim="pop" data-sfx="tick" style="left:122px;top:793px">✓</div>
+<div class="tick" data-b="69.2" data-anim="pop" data-sfx="tick" style="left:122px;top:1039px">✓</div><div class="mas" data-face="happy:grin" data-b="68" data-anim="pop" data-sfx="pop" style="right:50px;top:1500px"></div></section>
 
 
 <script>
-const BPM=128,BEAT=60/BPM,TOTAL=78;
+const BPM=128,BEAT=60/BPM,TOTAL=75;
 const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
 const outCubic=x=>1-Math.pow(1-x,3);
 const outBack=(x,c=2.2)=>1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);
@@ -203,6 +219,7 @@ function anim(el,rel,b){
   else if(k==='confetti'){el.style.opacity=1;const ps=el.children;for(let i=0;i<ps.length;i++){const a=(i*137.5)*Math.PI/180,sp=500+(i%7)*130;const q=Math.max(rel,0);
       const px=540+Math.cos(a)*sp*q,py=1050+Math.sin(a)*sp*q*0.9+1500*q*q;ps[i].style.opacity=clamp(1-q/1.3,0,1);ps[i].style.transform=`translate(${px}px,${py}px) rotate(${q*700+i*40}deg)`;ps[i].style.left=0;ps[i].style.top=0;}
     return;}
+  el.querySelectorAll('mark.hl').forEach(m=>{const q=clamp((rel-0.5*BEAT)/(0.45*BEAT),0,1);m.style.backgroundSize=(outCubic(q)*100)+'% 100%';});
   el.style.opacity=op;
   el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s*beatPulse})`;
 }

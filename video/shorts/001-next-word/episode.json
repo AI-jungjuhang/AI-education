@@ -3,71 +3,59 @@
  "tag": "1.1.1",
  "scenes": [
   {
-   "type": "title",
+   "type": "bigword",
    "bg": "blue",
    "lines": [
-    "AI 챗봇",
-    "정체 공개!"
+    "챗봇이 하는 일,",
+    "딱 하나예요"
    ],
+   "fs": 150,
    "sticker": {
-    "t": "하는 일은 딱 하나!",
+    "t": "다음에 올 말 고르기",
     "c": "yellow",
-    "anim": "slideR",
-    "rot": -3
+    "rot": 0,
+    "y": 1000,
+    "size": 76
    },
-   "at": {
-    "sticker": 3.4
-   },
+   "icon": "chat",
+   "beats": 6,
    "mascot": {
     "face": "wide:o",
     "side": "right",
     "at": 4.4
-   },
-   "beats": 6
+   }
   },
   {
-   "type": "title",
-   "bg": "yellow",
-   "lines": [
-    "다음 말",
-    "맞히기"
-   ],
-   "sticker": {
-    "t": "이게 전부!",
-    "c": "red",
-    "anim": "pop",
-    "rot": 4
-   },
-   "mascot": {
-    "face": "happy:grin",
-    "side": "left",
-    "at": 1.6
-   },
-   "beats": 4
-  },
-  {
-   "type": "choices",
-   "say": "친구: “오늘 점심은\n라면이랑…”",
-   "ask": "다음 말은?",
-   "chips": [
+   "type": "speech",
+   "bg": "white",
+   "vpos": "center",
+   "gap": 90,
+   "items": [
     {
-     "t": "김밥",
-     "c": "red"
+     "who": "me",
+     "name": "친구",
+     "t": "오늘 점심은 라면이랑…",
+     "size": 74,
+     "icon": "person"
     },
     {
-     "t": "만두",
-     "c": "yellow"
-    },
-    {
-     "t": "떡볶이",
-     "c": "green"
+     "who": "other",
+     "name": "챗봇",
+     "t": "김밥? 만두? 떡볶이?\n우주선은 아니겠죠.",
+     "size": 68,
+     "icon": "chat"
     }
    ],
-   "no": "우주선",
-   "beats": 8
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 4.6
+   },
+   "beats": 9
   },
   {
    "type": "bars",
+   "bg": "blue",
    "title": "후보마다 점수!",
    "rows": [
     {
@@ -97,6 +85,7 @@
   },
   {
    "type": "dice",
+   "bg": "orange",
    "title": "주사위 뽑기!",
    "result": "김밥!",
    "lines": [
@@ -107,6 +96,7 @@
   },
   {
    "type": "chain",
+   "bg": "white",
    "head": "뽑은 말은 뒤에 붙여요",
    "start": "하늘이 파란 이유는",
    "words": [
@@ -120,6 +110,7 @@
   },
   {
    "type": "stack",
+   "bg": "yellow",
    "title": "계속 반복하면?",
    "items": [
     {
@@ -141,6 +132,7 @@
   },
   {
    "type": "cards",
+   "bg": "blue",
    "lines": [
     "같은 질문인데…",
     "답은 매번 달라요!"
@@ -161,7 +153,7 @@
    ],
    "stickers": [
     {
-     "t": "겹치는 건 믿고",
+     "t": "겹치는 건 더 믿고",
      "c": "green"
     },
     {
@@ -173,18 +165,23 @@
    "beats": 12
   },
   {
-   "type": "tip",
+   "type": "check",
+   "bg": "white",
    "label": "오늘의 써먹기",
-   "lines": [
-    "중요한 질문은",
-    "세 번 물어보기!"
+   "top": 450,
+   "rowh": 246,
+   "icon": "bulb",
+   "items": [
+    "중요한 질문은\n==세 번== 물어보기",
+    "달라지는 부분은\n==더 의심하기==",
+    "겹쳐도 틀릴 수 있어요\n==출처==로 확인"
    ],
-   "badges": [
-    "1",
-    "2",
-    "3"
-   ],
-   "sticker": "달라지는 부분은 더 의심!",
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 5,
+    "y": 1500
+   },
    "beats": 12
   }
  ]

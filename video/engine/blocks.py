@@ -202,8 +202,8 @@ def b_speech(cx, sc, bg):
     p = []
     for i, it in enumerate(sc['items']):
         who = it.get('who', 'other'); nm = f'<small>{esc(it["name"])}</small>' if it.get('name') else ''
-        av = icon(it.get('icon'), 124, 'position:absolute;top:-56px;%s:-30px;' % ('left' if who == 'me' else 'right')) if it.get('icon') else ''
-        p.append(f'<div class="bubble {who}" data-b="{cx.b(f"b{i}", 0.4 + 2.4 * i)}" data-anim="pop" data-sfx="pop" style="font-size:{it.get("size", 64)}px">{av}{nm}{esc(it["t"])}</div>')
+        av = icon(it.get('icon'), 124, 'position:absolute;top:-56px;right:-30px;') if it.get('icon') else ''
+        p.append(f'<div class="bubble {who}" data-b="{cx.b(f"b{i}", 0.4 + 2.4 * i)}" data-anim="pop" data-sfx="pop" style="font-size:{it.get("size", 64)}px{';padding-right:100px' if av else ''}">{av}{nm}{esc(it["t"])}</div>')
     return p, max(5, cx.last + 3.0), ''
 
 def b_notes(cx, sc, bg):
@@ -211,6 +211,7 @@ def b_notes(cx, sc, bg):
     slots = [(40, 580, -4), (560, 660, 3), (60, 1110, 2.5), (550, 1190, -3)]
     cols = ['#FFE680', '#9BE7C4', '#FFB3C1', '#A9D2FF']; HLC = ['#FF9EB1', '#FFD93D', '#FFE680', '#FFE680']
     ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:270px;font-size:112px">{esc(sc["title"])}</div>']
+    if len(sc['items']) == 3: slots[2] = (275, 1090, 0)
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
         ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;")}<b>{esc(it["head"])}</b><span class="nbody">{esc(it["body"])}</span></div>')
@@ -219,7 +220,7 @@ def b_notes(cx, sc, bg):
 def b_split(cx, sc, bg):
     """위아래 두 판. top/bottom: {"label","t","c"(색),"small"(선택)}."""
     T, B = sc['top'], sc['bottom']
-    T.setdefault('icon', 'no'); B.setdefault('icon', 'yes')
+    if sc.get('marks', True): T.setdefault('icon', 'no'); B.setdefault('icon', 'yes')
     def panel(it, y, h, key, t0, anim):
         col = {'red': 'var(--red);color:#fff', 'green': 'var(--green);color:var(--ink)', 'yellow': 'var(--yellow);color:var(--ink)', 'blue': 'var(--blue);color:#fff', 'white': '#fff;color:var(--ink)'}[it.get('c', 'red')]
         sm = f'<div style="font-size:42px;margin-top:22px;opacity:.9">{esc(it["small"])}</div>' if it.get('small') else ''
@@ -253,7 +254,7 @@ def b_bigword(cx, sc, bg):
     if sc.get('sticker'):
         s = sc['sticker']; s = {'t': s} if isinstance(s, str) else s
         ex.append(f'<div class="sticker c-{s.get("c", "yellow")}" data-b="{cx.b("sticker", len(sc["lines"]) + 0.6)}" data-anim="{s.get("anim", "slideR")}" data-rot="{s.get("rot", -3)}" data-sfx="whoosh" style="position:absolute;right:70px;top:{s.get("y", 900)}px;font-size:{s.get("size", 64)}px;max-width:820px;text-align:left">{esc(s["t"])}</div>')
-    if sc.get('icon'): ex.append(icon(sc['icon'], sc.get('icon_size', 230), f'position:absolute;right:90px;top:{sc.get("icon_y", 330)}px;', None, cx.b('icon', len(sc['lines']) + 0.2)))
+    if sc.get('icon'): ex.append(icon(sc['icon'], sc.get('icon_size', 210), f'position:absolute;right:90px;top:{sc.get("icon_y", sc.get("y", 310) + len(sc["lines"]) * 205 + 40)}px;', None, cx.b('icon', len(sc['lines']) + 0.2)))
     return [], max(5, cx.last + 2.6), '\n'.join(ex)
 
 BLOCKS = {'title': (b_title, 'blue'), 'choices': (b_choices, 'white'), 'bars': (b_bars, 'blue'), 'dice': (b_dice, 'orange'),
