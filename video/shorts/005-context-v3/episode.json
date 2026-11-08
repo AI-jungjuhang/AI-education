@@ -93,8 +93,7 @@
     "t": "동아리 홍보\n문구 써 줘",
     "c": "red",
     "small": "뭘 쓰라는 거지?",
-    "icon": "question",
-    "icon_y": 330
+    "icon_y": 350
    },
    "bottom": {
     "label": "사정을 같이 말하면",
@@ -102,8 +101,7 @@
     "c": "green",
     "size": 76,
     "small": "이유도 말하면 더 잘 알아들어요\n(‘경쟁’은 빼 줘, 부담스러워 보여서)",
-    "icon": "bulb",
-    "icon_y": 110
+    "icon_y": 190
    },
    "beats": 12
   },

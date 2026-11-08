@@ -49,7 +49,7 @@ def mascot_html(cx, m):
 
 
 # ---------------- 아이콘 (의미를 돕는 그림, 24x24 선 그림) ----------------
-_P = 'fill="none" stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'
+_P = 'fill="none" stroke="#242424" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"'
 ICONS = {
     'person': f'<circle cx="12" cy="8" r="3.6" {_P}/><path d="M4.5 20c.8-4 3.6-6 7.5-6s6.7 2 7.5 6" {_P}/>',
     'pin': f'<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z" {_P}/><circle cx="12" cy="10" r="2.4" {_P}/>',
@@ -66,16 +66,18 @@ ICONS = {
     'chat': f'<path d="M4 5h16v11H11l-5 4v-4H4z" {_P}/><path d="M8 9.5h8M8 12.5h5" {_P}/>',
     'clock': f'<circle cx="12" cy="12" r="9" {_P}/><path d="M12 7v5l3 2" {_P}/>',
     'check': f'<path d="M5 12.5l4.5 4.5L19 7" {_P}/>',
+    'no': '<path d="M5.5 5.5l13 13M18.5 5.5l-13 13" fill="none" stroke="#E02424" stroke-width="3.6" stroke-linecap="round"/>',
+    'yes': '<circle cx="12" cy="12" r="7.5" fill="none" stroke="#14A36B" stroke-width="3.6"/>',
     'people': f'<circle cx="8.5" cy="8.5" r="3" {_P}/><circle cx="16.5" cy="9.5" r="2.5" {_P}/><path d="M2.5 19c.6-3.3 2.8-5 6-5s5.4 1.7 6 5M15 14.5c2.7-.2 4.7 1.2 5.5 4" {_P}/>',
 }
-ICON_BG = {'person': '#FFD93D', 'pin': '#FFB3C1', 'book': '#FFE680', 'target': '#FFB3C1', 'sliders': '#A9D2FF', 'doc': '#9BE7C4', 'bulb': '#FFD93D',
+ICON_BG = {'no': '#fff', 'yes': '#fff', 'person': '#FFD93D', 'pin': '#FFB3C1', 'book': '#FFE680', 'target': '#FFB3C1', 'sliders': '#A9D2FF', 'doc': '#9BE7C4', 'bulb': '#FFD93D',
            'question': '#fff', 'thought': '#fff', 'lock': '#FFD93D', 'search': '#A9D2FF', 'warn': '#FFD93D', 'chat': '#A9D2FF', 'clock': '#9BE7C4', 'check': '#9BE7C4', 'people': '#9BE7C4'}
 def icon(name, size=84, pos='', bg=None, t=None):
     if not name: return ''
     bg = bg or ICON_BG.get(name, '#fff')
     anim = f' data-b="{t}" data-anim="pop" data-sfx="pop"' if t is not None else ''
     return (f'<span class="ico"{anim} style="width:{size}px;height:{size}px;background:{bg};{pos}">'
-            f'<svg viewBox="0 0 24 24" width="{int(size*0.62)}" height="{int(size*0.62)}">{ICONS[name]}</svg></span>')
+            f'<svg viewBox="0 0 24 24" width="{int(size*0.7)}" height="{int(size*0.7)}">{ICONS[name]}</svg></span>')
 
 # ---------------- 블록 ----------------
 def b_title(cx, sc, bg):
@@ -211,19 +213,21 @@ def b_notes(cx, sc, bg):
     ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:270px;font-size:112px">{esc(sc["title"])}</div>']
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
-        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;")}<b>{esc(it["head"])}</b><span>{esc(it["body"])}</span></div>')
+        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;")}<b>{esc(it["head"])}</b><span class="nbody">{esc(it["body"])}</span></div>')
     return [], max(6, cx.last + 3.0), '\n'.join(ex)
 
 def b_split(cx, sc, bg):
     """위아래 두 판. top/bottom: {"label","t","c"(색),"small"(선택)}."""
     T, B = sc['top'], sc['bottom']
+    T.setdefault('icon', 'no'); B.setdefault('icon', 'yes')
     def panel(it, y, h, key, t0, anim):
         col = {'red': 'var(--red);color:#fff', 'green': 'var(--green);color:var(--ink)', 'yellow': 'var(--yellow);color:var(--ink)', 'blue': 'var(--blue);color:#fff', 'white': '#fff;color:var(--ink)'}[it.get('c', 'red')]
         sm = f'<div style="font-size:42px;margin-top:22px;opacity:.9">{esc(it["small"])}</div>' if it.get('small') else ''
-        return (f'<div class="panel" data-b="{cx.b(key, t0)}" data-anim="{anim}" data-sfx="whoosh" style="top:{y}px;height:{h}px;background:{col}">'
+        pr = 'padding-right:330px;' if it.get('icon') else ''
+        return (f'<div class="panel" data-b="{cx.b(key, t0)}" data-anim="{anim}" data-sfx="whoosh" style="top:{y}px;height:{h}px;background:{col};{pr}">'
                 f'{icon(it.get("icon"), 190, "position:absolute;top:%dpx;right:70px;" % (it.get("icon_y", 300)))}<small>{esc(it["label"])}</small><div class="big2" style="font-size:{it.get("size", 84)}px">{esc(it["t"])}</div>{sm}</div>')
     ex = [panel(T, 0, 940, 'top', 0.2, 'slideL').replace('class="panel"', 'class="panel topp"'), panel(B, 940, 980, 'bottom', 3.6, 'slideR')]
-    if sc.get('vs', True):
+    if sc.get('vs', False):
         ex.append(f'<div class="sticker c-yellow" data-b="{cx.b("vs", 3.4)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:440px;top:880px;font-size:76px;padding:6px 30px;z-index:5">VS</div>')
     return [], max(8, cx.last + 4.0), '\n'.join(ex)
 

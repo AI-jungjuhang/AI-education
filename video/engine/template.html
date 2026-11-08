@@ -59,7 +59,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(-
 .note{position:absolute;width:480px;padding:64px 36px 52px;border:6px solid var(--ink);border-radius:10px;box-shadow:8px 8px 0 rgba(0,0,0,.28);text-align:left}
 .note::before{content:"";position:absolute;top:-22px;left:50%;margin-left:-60px;width:120px;height:40px;background:rgba(255,255,255,.7);border:4px solid var(--ink);transform:rotate(-3deg)}
 .note b{display:block;font-size:70px;line-height:1.1}
-.note span{display:block;margin-top:20px;font-size:62px;font-weight:700;line-height:1.2}
+.note .nbody{display:block;margin-top:20px;font-size:62px;font-weight:700;line-height:1.2}
 .panel{position:absolute;left:0;right:0;padding:90px 70px 400px;text-align:left;display:flex;flex-direction:column;justify-content:center}
 .panel.topp{padding:310px 70px 110px}
 .panel small{display:block;font-size:48px;opacity:.85;margin-bottom:18px}
@@ -69,7 +69,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(-
 .check .row2:last-child{border-bottom:0}
 .check .bx{flex:none;width:92px;height:92px;border:7px solid var(--ink);border-radius:16px;background:#fff}
 .tick{position:absolute;font-size:106px;color:var(--green);-webkit-text-stroke:5px var(--ink);paint-order:stroke fill;line-height:1}
-.ico{display:inline-flex;align-items:center;justify-content:center;border:6px solid var(--ink);border-radius:50%;box-shadow:5px 5px 0 var(--ink);z-index:7}
+.ico svg{display:block}
+.ico{display:inline-flex;align-items:center;justify-content:center;line-height:0;border:6px solid var(--ink);border-radius:50%;box-shadow:5px 5px 0 var(--ink);z-index:7}
 mark.hl{color:var(--ink);background:linear-gradient(transparent 50%,var(--hlc,#FFD93D) 50%) no-repeat 0 0;background-size:0% 100%;padding:0 6px;margin:0 -2px;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 </style></head><body>
 <div class="tag"><span class="pill k">AI 정주행</span><span class="pill">{{TAG}}</span></div>
