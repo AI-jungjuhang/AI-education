@@ -1,0 +1,6 @@
+{"id":"091-hinton","tag":"22.1.3","name":"Hinton","scenes":[
+{"type":"bigword","bg":"blue","lines":["Hinton은","기회와 위험을 함께"],"fs":115,"sticker":{"t":"2024년 노벨상 연설과\n인터뷰에서 한 말이에요","c":"yellow","y":1000,"size":66},"icon":"person","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"이미 일어난다고 한 것","t":"에코 챔버,\n감시, 피싱","c":"yellow","size":96,"icon":"warn"},"bottom":{"label":"가능성으로 말한 것","t":"새 바이러스,\n자율 살상 무기","c":"green","size":92,"icon":"question","small":"\"가까운 미래에 쓰일 수 있다\""},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"items":[{"who":"other","name":"2024년 12월, 노벨상 만찬 연설","t":"우리보다 똑똑한 존재에 대한\n==장기적 위협==","size":58,"icon":"person"},{"who":"other","t":"\"통제를 유지할 수 ==있을지\n모른다==\"고도 했어요","size":60}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":11,"delay":1.0},
+{"type":"split","bg":"white","marks":true,"top":{"label":"그의 말을 전할 때","t":"\"AI가 인류를\n멸망시킨대\"","c":"red","size":88,"small":"불확실성을 지운 과장이에요"},"bottom":{"label":"그의 말을 전할 때","t":"==\"모른다\"고 한 부분도\n그대로 전하기==","c":"green","size":80},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["위험 기사는\n==원문 찾아보기==","지금 일과 가능성을\n==구분하기==","이름의 무게보다\n==근거로 평가=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
