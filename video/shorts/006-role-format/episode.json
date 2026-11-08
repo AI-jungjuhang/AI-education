@@ -137,7 +137,7 @@
    "type": "check",
    "bg": "white",
    "label": "오늘의 써먹기",
-   "top": 400,
+   "top": 450,
    "rowh": 246,
    "icon": "bulb",
    "items": [
@@ -145,7 +145,7 @@
     "잘 나온 글을\n==예시==로 쓰기",
     "사실 확인에는\n==역할을 쓰지 않기=="
    ],
-   "note": "예시는 다양하게 고르세요",
+   "note": "예시는 다양하게\n고르세요",
    "mascot": {
     "face": "happy:grin",
     "side": "right",
