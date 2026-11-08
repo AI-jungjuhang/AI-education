@@ -1,0 +1,6 @@
+{"id":"026-meeting-notes","tag":"7.1.1","name":"회의록","scenes":[
+{"type":"bigword","bg":"blue","lines":["회의 메모는","칸부터 정해요"],"fs":125,"sticker":{"t":"서랍도 칸막이가 있어야\n빨리 정리되죠","c":"yellow","y":1000,"size":66},"icon":"doc","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"notes","bg":"white","title":"세 칸으로\n나눠요","items":[{"head":"결정된 것","ex":"회의는 월요일로","icon":"check"},{"head":"안 정해진 것","ex":"장소","icon":"question"},{"head":"할 일","body":"담당자·기한까지","icon":"person"}],"beats":12},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"꼭 넣을 규칙","t":"메모에 없는\n담당자와 기한은\n==\"미정\"==으로 써 줘","size":68,"icon":"person"},{"who":"other","t":"지어낸 이름과 날짜를\n줄여 줘요","size":64}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1320},"beats":11,"delay":1.0},
+{"type":"split","bg":"white","marks":false,"top":{"label":"이건 제안이에요","t":"\"하자고\n했다\"","c":"yellow","size":110,"icon":"chat"},"bottom":{"label":"이건 결정이에요","t":"==\"하기로\n했다\"==","c":"green","size":110,"icon":"check","small":"AI가 둘을 섞지 않았는지 봐요"},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["공유 전에\n==담당자에게 확인==","날짜와 숫자는\n==메모와 대조==","회의록 틀을\n==저장해 두기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

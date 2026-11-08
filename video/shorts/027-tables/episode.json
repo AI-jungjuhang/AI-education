@@ -1,0 +1,124 @@
+{
+ "id": "027-tables",
+ "tag": "7.1.2",
+ "name": "엑셀 함수",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "함수를 물을 땐",
+    "내 표를 보여 줘요"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "재료를 알려 줘야\n레시피를 주죠",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이렇게 물으면",
+    "t": "합계 함수\n알려 줘",
+    "c": "red",
+    "size": 104
+   },
+   "bottom": {
+    "label": "이렇게 물으면",
+    "t": "==이런 표에서\n이런 결과가 필요해==",
+    "c": "green",
+    "size": 84
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "알려 줄\n네 가지",
+   "items": [
+    {
+     "head": "프로그램",
+     "ex": "구글 시트",
+     "icon": "doc"
+    },
+    {
+     "head": "열 이름",
+     "ex": "A열 이름, C열 매출",
+     "icon": "sliders"
+    },
+    {
+     "head": "예시 두세 줄",
+     "ex": "홍길동 / 영업 / 120",
+     "icon": "book"
+    },
+    {
+     "head": "원하는 결과",
+     "ex": "영업 매출 합계",
+     "icon": "target"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "함수가 안 될 때",
+     "t": "==오류 메시지를\n그대로== 붙여 넣기",
+     "size": 72,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "#NAME?, #VALUE! 같은\n메시지를 그대로요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "받은 함수는\n==작은 데이터로== 시험",
+    "==있는 함수인지==\n도움말로 확인||AI가 없는 함수를 지어낼 수 있어요",
+    "진짜 이름 대신\n==가짜 데이터== 쓰기"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
