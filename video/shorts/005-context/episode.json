@@ -1,0 +1,152 @@
+{
+ "id": "005-context",
+ "tag": "2.1.1",
+ "scenes": [
+  {
+   "type": "title",
+   "bg": "blue",
+   "lines": [
+    "맛집 알려 줘"
+   ],
+   "size": "big",
+   "beats": 6,
+   "sticker": {
+    "t": "처음 본 사람이라면 되물을걸요",
+    "c": "yellow",
+    "anim": "slideR",
+    "rot": -3,
+    "size": 58
+   },
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   },
+   "at": {
+    "sticker": 3.4
+   }
+  },
+  {
+   "type": "title",
+   "bg": "yellow",
+   "lines": [
+    "챗봇도",
+    "똑같아요"
+   ],
+   "size": "huge",
+   "beats": 5,
+   "sticker": {
+    "t": "내 머릿속은 못 봐요",
+    "c": "red",
+    "anim": "pop",
+    "rot": 4
+   },
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 1.6
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "맥락 네 가지",
+   "items": [
+    {
+     "t": "누가 읽나 · 초등 5학년",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "무엇을 위해 · 발표 첫 장",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "어떤 조건 · 3문장, 존댓말",
+     "c": "red",
+     "size": 56
+    },
+    {
+     "t": "가진 자료 · 아래에 붙인 메모",
+     "c": "yellow",
+     "size": 52
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "vs",
+   "bg": "blue",
+   "title": "달라지는 모습",
+   "left": {
+    "t": "동아리 홍보 문구 써 줘",
+    "c": "red",
+    "size": 62
+   },
+   "right": {
+    "t": "신입 1학년용, 인스타, 3문장, 부드러운 존댓말",
+    "c": "green",
+    "size": 54
+   },
+   "note": "이유도 적으면 목적을 더 잘 헤아려요",
+   "beats": 11
+  },
+  {
+   "type": "title",
+   "bg": "blue",
+   "lines": [
+    "많이가 아니라",
+    "관련 있게!"
+   ],
+   "size": "big",
+   "beats": 6,
+   "sticker": {
+    "t": "관련 없는 이야기는\n오히려 헷갈려요",
+    "c": "yellow",
+    "anim": "pop",
+    "rot": -2,
+    "size": 56
+   }
+  },
+  {
+   "type": "title",
+   "bg": "yellow",
+   "lines": [
+    "동료 테스트"
+   ],
+   "size": "big",
+   "beats": 7,
+   "sticker": {
+    "t": "모르는 동료가 헷갈릴 질문이면\n챗봇도 헷갈려요",
+    "c": "red",
+    "anim": "pop",
+    "rot": 4,
+    "size": 54
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "써먹기 3개",
+   "items": [
+    {
+     "t": "보내기 전에 네 칸 채우기",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "조건에는 이유 붙이기",
+     "c": "green",
+     "size": 58
+    },
+    {
+     "t": "내 자료는 질문 아래에, 개인정보는 지우고!",
+     "c": "red",
+     "size": 46
+    }
+   ],
+   "beats": 12
+  }
+ ]
+}

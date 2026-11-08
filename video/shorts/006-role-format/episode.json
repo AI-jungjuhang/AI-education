@@ -1,0 +1,152 @@
+{
+ "id": "006-role-format",
+ "tag": "2.1.2",
+ "scenes": [
+  {
+   "type": "title",
+   "bg": "blue",
+   "lines": [
+    "옷, 그릇,",
+    "견본!"
+   ],
+   "size": "huge",
+   "beats": 6,
+   "sticker": {
+    "t": "챗봇에게 정해 주세요",
+    "c": "yellow",
+    "anim": "slideR",
+    "rot": -3
+   },
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   },
+   "at": {
+    "sticker": 3.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "세 가지",
+   "items": [
+    {
+     "t": "역할 = 옷 · 말투와 관점",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "형식 = 그릇 · 결과의 모양",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "예시 = 견본 · 이런 느낌으로",
+     "c": "red",
+     "size": 56
+    }
+   ],
+   "beats": 10
+  },
+  {
+   "type": "list",
+   "bg": "yellow",
+   "title": "역할",
+   "items": [
+    {
+     "t": "“초등학교 선생님처럼 설명해 줘”",
+     "c": "blue",
+     "size": 50
+    },
+    {
+     "t": "말투와 관점이 달라져요",
+     "c": "green",
+     "size": 58
+    },
+    {
+     "t": "단, 모르는 사실이 생기진 않아요",
+     "c": "red",
+     "size": 52
+    }
+   ],
+   "note": "환각 위험은 그대로!",
+   "beats": 10
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "형식",
+   "items": [
+    {
+     "t": "“표로”, “세 줄로”",
+     "c": "yellow",
+     "size": 60
+    },
+    {
+     "t": "“번호를 붙여서”",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "고쳐 달라는 말이 줄어요",
+     "c": "red",
+     "size": 56
+    }
+   ],
+   "beats": 9
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "견본 보여 주기",
+   "items": [
+    {
+     "t": "감자 → 포슬포슬 감자샘",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "우유 → 하얀 구름 한 컵",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "그럼 ‘딸기’로 5개!",
+     "c": "red",
+     "size": 60
+    }
+   ],
+   "note": "예시는 3~5개, 서로 조금씩 다르게",
+   "beats": 10
+  },
+  {
+   "type": "list",
+   "bg": "yellow",
+   "title": "써먹기 4개",
+   "items": [
+    {
+     "t": "‘역할·형식·예시’ 틀 저장",
+     "c": "blue",
+     "size": 54
+    },
+    {
+     "t": "잘 나온 글을 견본으로",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "예시는 다양하게",
+     "c": "red",
+     "size": 60
+    },
+    {
+     "t": "사실 확인에 역할은 금물",
+     "c": "ink",
+     "size": 54
+    }
+   ],
+   "beats": 13
+  }
+ ]
+}
