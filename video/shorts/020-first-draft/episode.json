@@ -1,0 +1,6 @@
+{"id":"020-first-draft","tag":"5.1.1","name":"초안 만들기","scenes":[
+{"type":"bigword","bg":"blue","lines":["초안은 AI로 빨리,","마무리는 내가"],"fs":108,"sticker":{"t":"빵도 반죽부터\n만들잖아요","c":"yellow","y":1000,"size":72},"icon":"doc","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"list","bg":"white","title":"네 단계로 써요","items":[{"t":"1. 요점은 내가 정하기","c":"green","size":64},{"t":"2. 개요부터 받기","c":"yellow","size":64},{"t":"3. 문단별 초안 받기","c":"blue","size":64},{"t":"4. 내 손으로 고치기","c":"red","size":64}],"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"개요부터","t":"3문단 개요를 제안해 줘.\n==글은 아직 쓰지 마==","size":66,"icon":"person"},{"who":"other","t":"방향이 틀리면\n일찍 고칠 수 있어요","size":66}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":11,"delay":1.0},
+{"type":"split","bg":"white","marks":true,"top":{"label":"그냥 써 달라면","t":"누구나 쓸 법한\n글이 되기 쉬워요","c":"red","size":84},"bottom":{"label":"내가 쓴 글을 견본으로 주면","t":"==내 말투에\n가까워져요==","c":"green","size":100},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["모르는 숫자는\n==비워 두라고== 하기||예: [여기에 숫자]","==사실 확인==은\n내가 하기","보내기 전에\n==소리 내어 읽기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

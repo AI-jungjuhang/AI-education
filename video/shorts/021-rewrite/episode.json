@@ -1,0 +1,6 @@
+{"id":"021-rewrite","tag":"5.1.2","name":"고쳐 쓰기","scenes":[
+{"type":"bigword","bg":"blue","lines":["고쳐 쓸 땐","뜻은 그대로"],"fs":130,"sticker":{"t":"옷만 갈아입히고\n사람은 그대로예요","c":"yellow","y":1000,"size":72},"icon":"sliders","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":true,"top":{"label":"그냥 고치라면","t":"숫자나 뜻이\n슬쩍 바뀔 수 있어요","c":"red","size":80},"bottom":{"label":"이 한 줄을 붙이면","t":"==\"의미는 그대로,\n없는 사실은\n더하지 마\"==","c":"green","size":80},"beats":11},
+{"type":"notes","bg":"blue","title":"이렇게\n말해요","items":[{"head":"맞춤법만","ex":"문장은 바꾸지 마","icon":"check"},{"head":"읽기 쉽게","ex":"문장을 짧게","icon":"doc"},{"head":"말투 바꾸기","ex":"정중한 존댓말로","icon":"chat"},{"head":"길이 줄이기","ex":"뜻은 두고 절반으로","icon":"sliders"}],"beats":13},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"고친 다음","t":"바꾼 곳을\n==[원문 → 수정]==으로\n보여 줘","size":68,"icon":"person"},{"who":"other","t":"몰래 바뀐 곳을\n찾기 쉬워요","size":66}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":11,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["==숫자와 부정문==은\n따로 확인하기||예: ~하지 않았다, 거의, 반드시","말투는 설명보다\n==견본==으로","상대별로\n==여러 버전== 받기||예: 팀장님용, 친구용"],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
