@@ -45,8 +45,8 @@
 !!! note "★ 한 걸음 더 (심화)"
     - 이 방법은 InstructGPT 이전에도 연구됐어요. 2019년 *Fine-Tuning Language Models from Human Preferences* 논문이 사람의 선호로 언어 모델을 다듬는 방법을 다뤘어요(이 페이지에서는 제목과 연도만 확인했어요).
     - Andrej Karpathy, [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI), YouTube. 챕터 '01:01:06 post-training data (conversations)'와 '02:48:26 reinforcement learning from human feedback (RLHF)'는 더 깊이 보려는 분을 위한 추천이에요. 비공식 [챕터 목록](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt)만 확인했고 내용은 대조하지 않았어요.
-    - 2단계에서 사람의 순위로 "점수를 매기는 모델(보상 모델)"을 따로 만들고, 3단계에서 그 점수를 높이는 방향으로 강화학습을 하는 방식이 널리 알려져 있어요. 사람이 직접 평가하는 대신 AI가 평가를 돕는 방법 등도 연구되고 있어요(17장).
-    - 사람 피드백이 모델 안에서 정확히 어떻게 작동하는지는 아직 연구 중이에요. 16장의 해석 가능성 연구가 이런 질문과 닿아 있어요.
+    - 2단계에서 사람의 순위로 "점수를 매기는 모델(보상 모델)"을 따로 만들고, 3단계에서 그 점수를 높이는 방향으로 강화학습을 하는 방식이 널리 알려져 있어요. 사람이 직접 평가하는 대신 AI가 평가를 돕는 방법 등도 연구되고 있어요(20장).
+    - 사람 피드백이 모델 안에서 정확히 어떻게 작동하는지는 아직 연구 중이에요. 19장의 해석 가능성 연구가 이런 질문과 닿아 있어요.
 
 ## 직접 해보기
 

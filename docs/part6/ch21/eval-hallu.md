@@ -1,6 +1,6 @@
 # 환각은 어떻게 재나 ★
 
-<p class="ep-meta"><span>18장 · 18.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
+<p class="ep-meta"><span>21장 · 21.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
 
 !!! abstract "이 페이지에서 배우는 것"
     - 환각을 재는 가장 큰 어려움은 ==정답 맞히기와 "모르겠다"고 하기를 다르게 보아야 한다는 점==이다.

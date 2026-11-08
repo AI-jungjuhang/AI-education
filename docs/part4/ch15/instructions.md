@@ -85,7 +85,7 @@ Anthropic 문서는 챗봇을 **"똑똑하지만 우리 사정을 모르는 새 
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), Claude Platform Docs. 새 직원 비유, 구체적인 지시, 이유 설명, 순서 있는 단계를 참고했어요. 2026-11-07 열람.
-    - Anthropic, [Building effective AI agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 단순함, 계획 단계의 투명성, 종료 조건을 참고했어요.
+    - Anthropic, [Building effective agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 단순함, 계획 단계의 투명성, 종료 조건을 참고했어요.
     - Anthropic, [Project Vend: Can Claude run a small shop?](https://www.anthropic.com/research/project-vend-1), 2025-06-27. 14장에서 읽은 사례를 참고했어요.
 
 - **기준 날짜:** 2026-11-07

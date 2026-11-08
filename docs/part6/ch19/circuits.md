@@ -1,6 +1,6 @@
 # 회로: 생각의 길 따라가기 ★
 
-<p class="ep-meta"><span>16장 · 16.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
+<p class="ep-meta"><span>19장 · 19.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
 
 !!! abstract "이 페이지에서 배우는 것"
     - **회로(circuit)**는 특징들이 서로 이어져 하나의 계산을 이루는 경로다.

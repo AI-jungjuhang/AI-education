@@ -11,7 +11,7 @@
 
 새 직원에게 공구함을 주는데, 서랍마다 이름표가 없고 도구가 수백 개라면 어떨까요? 뭘 써야 할지 몰라 헤매겠죠. 반대로 서랍마다 "이럴 때 이걸 쓰세요"라고 적혀 있고 필요한 도구만 담겨 있으면 일이 빨라져요.
 
-에이전트에게 주는 도구도 마찬가지예요. Anthropic의 도구 설계 글(*Writing effective tools for AI agents*, 2025-09-11)은 이렇게 시작해요. MCP(13장)를 쓰면 에이전트가 수백 개의 도구를 가질 수도 있는데, 그 도구들이 **효과적**이려면 어떻게 만들어야 할까요?
+에이전트에게 주는 도구도 마찬가지예요. Anthropic의 도구 설계 글(*Writing effective tools for agents — with agents*, 2025-09-11)은 이렇게 시작해요. MCP(13장)를 쓰면 에이전트가 수백 개의 도구를 가질 수도 있는데, 그 도구들이 **효과적**이려면 어떻게 만들어야 할까요?
 
 !!! tip "10살 눈높이 한 줄 요약"
     도구함은 **서랍마다 이름표와 사용법**이 있어야 하고, **꼭 필요한 도구만** 있어야 해요.
@@ -50,7 +50,7 @@
 !!! note "★ 한 걸음 더 (심화)"
     - 글은 도구의 성능을 **평가를 만들어 측정**하라고 해요. 도구를 만들고, 평가를 돌리고, Claude Code 같은 에이전트와 협력해서 도구를 자동으로 개선하는 과정이에요. 평가는 다음 페이지에서 다뤄요.
     - 같은 글은 도구가 돌려주는 정보가 너무 많으면 컨텍스트를 낭비하고 너무 적으면 에이전트가 길을 잃는다는 균형을 말하는데, 이 페이지에서는 이 구체적 기법은 확인하지 못했어요.
-    - 이전 글(*Building effective AI agents*)은 에이전트와 도구 사이의 접점을 **ACI(agent-computer interface)**라고 부르고, 사람을 위한 인터페이스(HCI)처럼 정성을 들이라고 해요.
+    - 이전 글(*Building effective agents*)은 에이전트와 도구 사이의 접점을 **ACI(agent-computer interface)**라고 부르고, 사람을 위한 인터페이스(HCI)처럼 정성을 들이라고 해요.
 
 ## 직접 해보기
 
@@ -85,8 +85,8 @@ AI에게 자주 주는 자료(파일이나 폴더) 하나를 "도구함 점검"�
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Writing effective tools for AI agents](https://www.anthropic.com/research/writing-tools-for-agents), 2025-09-11. 본문 앞부분과 "도구 설명 프롬프트 엔지니어링" 부분을 읽고 확인했어요. 다섯 원칙의 목록, 결정적·비결정적 시스템 설명, 새 팀원 비유를 참고했어요. 각 원칙의 세부 기법은 읽지 못했어요.
-    - Anthropic, [Building effective AI agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. ACI를 참고했어요.
+    - Anthropic, [Writing effective tools for agents — with agents](https://www.anthropic.com/research/writing-tools-for-agents), 2025-09-11. 본문 앞부분과 "도구 설명 프롬프트 엔지니어링" 부분을 읽고 확인했어요. 다섯 원칙의 목록, 결정적·비결정적 시스템 설명, 새 팀원 비유를 참고했어요. 각 원칙의 세부 기법은 읽지 못했어요.
+    - Anthropic, [Building effective agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. ACI를 참고했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

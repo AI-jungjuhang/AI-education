@@ -86,7 +86,7 @@ Anthropic의 글은 이 과정에서 **중간 점검 지점이나 막혔을 때 
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Building effective AI agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 본문을 읽고 확인했어요. 점검 지점, 종료 조건, 프롬프트 체인, 라우팅, 병렬화(나눠 맡기기·투표), 지휘자-일꾼, 평가자-개선자 설명을 참고했어요. 2026-11-07 열람.
+    - Anthropic, [Building effective agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 본문을 읽고 확인했어요. 점검 지점, 종료 조건, 프롬프트 체인, 라우팅, 병렬화(나눠 맡기기·투표), 지휘자-일꾼, 평가자-개선자 설명을 참고했어요. 2026-11-07 열람.
     - Anthropic, [Effective context engineering for AI agents](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents), 2025-09-29. 제목과 날짜만 확인했어요.
 
 - **기준 날짜:** 2026-11-07

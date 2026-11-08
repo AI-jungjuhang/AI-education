@@ -26,7 +26,7 @@ Anthropic의 평가 문서는 프롬프트(질문 틀이나 지시문)를 다듬
 6. **따로 떼어 둔 시험(홀드아웃)으로 마지막 확인을 해요.**
 7. **다듬은 프롬프트를 내보내요.**
 
-좋은 성공 기준은 **구체적**이고 **측정 가능**해야 해요. "성능이 좋다"가 아니라 "감정 분류가 정확하다"처럼요. 숫자 기준이 가장 좋고, 숫자로 하기 어려우면 **일관되게 적용되는 평가 척도**를 써도 돼요. 윤리나 안전처럼 흐릿해 보이는 주제도 "만 번 중 0.1% 미만이 걸러진다"처럼 수치로 만들 수 있다고 문서는 말해요.
+좋은 성공 기준은 **구체적**이고 **측정 가능**해야 해요. "성능이 좋다"가 아니라 "감정 분류가 정확하다"처럼요. 숫자 기준이 가장 좋고, 숫자로 하기 어려우면 **일관되게 적용되는 평가 척도**를 써도 돼요. 윤리나 안전처럼 흐릿해 보이는 주제도 "출력 1만 개 중 유해성 필터에 걸리는 것이 0.1% 미만"처럼 수치로 만들 수 있다고 문서는 말해요(걸러 낸 비율이 아니라, 유해한 출력이 나오는 비율의 목표예요).
 
 ## 3. 내가 쓰는 가벼운 평가
 
@@ -53,7 +53,7 @@ Anthropic의 평가 문서는 프롬프트(질문 틀이나 지시문)를 다듬
 !!! note "★ 한 걸음 더 (심화)"
     - 에이전트 설계 글은 "**성능을 재고 구현을 개선하는 것이 핵심**이고, **복잡도는 결과가 눈에 띄게 나아질 때만 더하라**"고 반복해서 말해요(14장). 평가가 그 "눈에 띄게"를 판단하는 도구예요.
     - 도구 설계 글(15.1.2)은 도구의 성능을 평가로 측정하고 Claude Code 같은 에이전트와 함께 도구를 자동으로 개선하는 방법을 소개해요. 이 글과 같은 사이트의 *Demystifying evals for AI agents*(2026-01-09)는 에이전트 평가를 자세히 다루는 것으로 보여요. 이 책에서는 제목과 날짜만 확인했어요.
-    - 평가 점수가 곧 진짜 성능은 아니에요. 시험 문제가 실제 일과 다르면 점수만 오를 수 있어요(18장 벤치마크의 함정).
+    - 평가 점수가 곧 진짜 성능은 아니에요. 시험 문제가 실제 일과 다르면 점수만 오를 수 있어요(21장 벤치마크의 함정).
 
 ## 직접 해보기
 
@@ -90,8 +90,8 @@ Anthropic의 평가 문서는 프롬프트(질문 틀이나 지시문)를 다듬
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - Anthropic, [Define success criteria and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests), Claude Platform Docs. 순환 그림(시험 사례, 프롬프트, 시험, 고치기, 홀드아웃), 성공 기준의 조건, 수치화 예시, 측정 방법 소개를 읽고 확인했어요. 2026-11-07 열람.
-    - Anthropic, [Building effective AI agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 성능을 재고 개선하라는 권고와 복잡도 원칙을 참고했어요.
-    - Anthropic, [Writing effective tools for AI agents](https://www.anthropic.com/research/writing-tools-for-agents), 2025-09-11. 평가로 도구를 측정하라는 부분의 요약 문장을 참고했어요.
+    - Anthropic, [Building effective agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 성능을 재고 개선하라는 권고와 복잡도 원칙을 참고했어요.
+    - Anthropic, [Writing effective tools for agents — with agents](https://www.anthropic.com/research/writing-tools-for-agents), 2025-09-11. 평가로 도구를 측정하라는 부분의 요약 문장을 참고했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

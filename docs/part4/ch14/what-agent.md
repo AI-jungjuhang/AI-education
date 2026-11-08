@@ -18,7 +18,7 @@
 
 ## 2. Anthropic이 나눈 기준
 
-Anthropic이 2024년 12월에 낸 글 *Building effective AI agents*는 이렇게 구분해요.
+Anthropic이 2024년 12월에 낸 글 *Building effective agents*는 이렇게 구분해요.
 
 - **워크플로(workflows):** 언어 모델과 도구가 **미리 정해 둔 코드의 경로**를 따라 움직이는 시스템이에요.
 - **에이전트(agents):** 언어 모델이 **스스로 자기 과정과 도구 사용을 이끄는** 시스템이에요. 일을 어떻게 해낼지 통제권을 모델이 가져요.
@@ -76,7 +76,7 @@ Anthropic이 2024년 12월에 낸 글 *Building effective AI agents*는 이렇�
 ## 출처와 기준
 
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
-    - Anthropic, [Building effective AI agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 본문을 읽고 확인했어요. 워크플로와 에이전트의 구분, 에이전트의 작동 설명, 언제 쓸지에 대한 조언, 비용과 오류 누적 언급, 세 원칙, 주의 문구를 참고했어요. 2026-11-07 열람.
+    - Anthropic, [Building effective agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 본문을 읽고 확인했어요. 워크플로와 에이전트의 구분, 에이전트의 작동 설명, 언제 쓸지에 대한 조언, 비용과 오류 누적 언급, 세 원칙, 주의 문구를 참고했어요. 2026-11-07 열람.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

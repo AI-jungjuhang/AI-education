@@ -1,6 +1,6 @@
 # 벤치마크의 함정 ★
 
-<p class="ep-meta"><span>18장 · 18.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
+<p class="ep-meta"><span>21장 · 21.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
 
 !!! abstract "이 페이지에서 배우는 것"
     - **벤치마크**는 AI를 공통 시험지로 비교하는 점수표인데, ==점수가 곧 "내 일에서의 실력"은 아니다.==
@@ -28,7 +28,7 @@ AI 모델도 마찬가지예요. 새 모델이 나올 때마다 "○○ 시험�
 
 **① 시험 문제가 새어 나갔다 (오염/누출).** *Don't Make Your LLM an Evaluation Benchmark Cheater*(2023)는 평가용 데이터가 우연히 모델 학습에 쓰이는 **벤치마크 누출**을 다뤄요. 사전 학습 자료를 시험보다 먼저 준비하는 경우가 많아서 이 현상이 점점 흔해졌고, 실험해 보니 누출이 **평가 결과를 극적으로 높일 수 있어서** 모델 성능에 대한 믿을 수 없는 평가가 된다고 해요.
 
-**② 잣대가 결론을 바꾼다.** 17장에서 본 것처럼 측정 방법에 따라 "갑자기 생긴 능력"이 보이기도 사라지기도 해요.
+**② 잣대가 결론을 바꾼다.** 20장에서 본 것처럼 측정 방법에 따라 "갑자기 생긴 능력"이 보이기도 사라지기도 해요.
 
 **③ 평균이 숨기는 것.** MMLU에서도 모델 성능이 **들쭉날쭉**했어요. 평균 점수가 높아도 내가 필요한 분야에서 약할 수 있어요. 8장의 "들쭉날쭉한 기술 경계"와 같은 이야기예요.
 
@@ -79,7 +79,7 @@ AI 모델도 마찬가지예요. 새 모델이 나올 때마다 "○○ 시험�
     - Liang 외, [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110), arXiv, 2022-11-16. 초록을 읽었어요(끝부분은 잘려서 읽지 못했어요).
     - Chiang 외, [Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference](https://arxiv.org/abs/2403.04132), arXiv, 2024-03-07. 초록 전체를 읽었어요.
     - Zhou 외, [Don't Make Your LLM an Evaluation Benchmark Cheater](https://arxiv.org/abs/2311.01964), arXiv, 2023-11-03. 초록 전체를 읽었어요.
-    - 17장과 8장에서 읽은 Schaeffer 외(2023)와 Dell'Acqua 외(2023)를 참고했어요.
+    - 20장과 8장에서 읽은 Schaeffer 외(2023)와 Dell'Acqua 외(2023)를 참고했어요.
 
 - **기준 날짜:** 2026-11-07
 - **검토 상태:** 초안

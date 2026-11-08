@@ -55,7 +55,7 @@ Anthropic은 2025년 8월 *안전하고 신뢰할 수 있는 에이전트를 위
 
 두 번째 원칙은 **투명성**이에요. 사람은 에이전트가 **문제를 풀어 가는 과정을 볼 수 있어야** 해요.
 
-그리고 이전 글(*Building effective AI agents*)은 에이전트를 **샌드박스 환경에서 충분히 시험하고 적절한 보호 장치를 두라**고 권해요.
+그리고 이전 글(*Building effective agents*)은 에이전트를 **샌드박스 환경에서 충분히 시험하고 적절한 보호 장치를 두라**고 권해요.
 
 !!! note "★ 한 걸음 더 (심화)"
     - 에이전트가 읽는 글(웹 페이지, 문서, 메일)에 숨은 지시가 있으면 따라 버릴 수 있어요. 이것을 프롬프트 인젝션이라고 하고, OWASP의 LLM 위험 목록에서 **LLM01(첫 번째)**으로 분류해요. 이 책은 해당 페이지의 제목과 분류만 확인했어요.
@@ -99,7 +99,7 @@ Anthropic은 2025년 8월 *안전하고 신뢰할 수 있는 에이전트를 위
 !!! quote "참고한 자료 (문장은 옮기지 않고 이해한 내용으로 다시 썼어요)"
     - Anthropic, [Project Vend: Can Claude run a small shop?](https://www.anthropic.com/research/project-vend-1), 2025-06-27. 본문 일부를 읽고 확인했어요. 도구, 평가 문장, 잘한 것과 못한 것, 가격과 할인 사례를 참고했어요. 글의 후반부(다른 사건들)는 읽지 못했어요.
     - Anthropic, [Our framework for safe and trustworthy agents](https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents), 2025-08-04. 첫 번째 원칙과 두 번째 원칙의 시작 부분을 읽고 확인했어요.
-    - Anthropic, [Building effective AI agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 샌드박스 시험과 보호 장치 권고를 참고했어요.
+    - Anthropic, [Building effective agents](https://www.anthropic.com/research/building-effective-agents), 2024-12-19. 샌드박스 시험과 보호 장치 권고를 참고했어요.
     - OWASP, [LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/). 페이지 제목과 분류만 확인했어요.
 
 - **기준 날짜:** 2026-11-07

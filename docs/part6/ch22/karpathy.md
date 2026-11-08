@@ -1,6 +1,6 @@
 # Andrej Karpathy의 시선 ★
 
-<p class="ep-meta"><span>19장 · 19.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
+<p class="ep-meta"><span>22장 · 22.1 · 심화</span><span>읽는 시간 약 8분</span><span>2026-11-07</span></p>
 
 !!! warning "이 페이지를 읽는 법"
     이 페이지는 **한 사람의 글에서 읽은 견해와 예측**을 소개해요. 사실이 아니에요. 아래 내용은 본인 블로그에 직접 쓴 글이 중심이에요. **영상 강연은 YouTube 자막을 직접 가져올 수 없어서, 제3자 사이트(Rosetta)가 자동 생성한 비공식 자막과 챕터로만 일부 대조했어요(오류가 있을 수 있어요). 그 내용은 5번 섹션에 따로 모았어요.** 인용은 최소로 했고 나머지는 이해한 대로 다시 썼어요.
@@ -41,8 +41,8 @@ Karpathy는 Yann LeCun 외의 1989년 논문(손글씨 우편번호 인식)을 �
 |---|---|
 | 기초 모델 + 가벼운 조정/프롬프트가 주류 | 2장 질문 요령, 9장 사전학습과 미세조정 |
 | 영어(자연어)로 일을 시킨다 | 2장, 15장 지시문 |
-| 모델이 훨씬 커진다 | 9장 파라미터, 17장 스케일링과 그 논쟁 |
-| 쉬워 보여도 쉬운 추상화가 아니다 | 8장 일에 적용하기 전 점검, 18장 평가 |
+| 모델이 훨씬 커진다 | 9장 파라미터, 20장 스케일링과 그 논쟁 |
+| 쉬워 보여도 쉬운 추상화가 아니다 | 8장 일에 적용하기 전 점검, 21장 평가 |
 
 ## 5. 영상 강연에서 (비공식 자막으로 확인한 것)
 
@@ -52,7 +52,7 @@ Karpathy는 Yann LeCun 외의 1989년 논문(손글씨 우편번호 인식)을 �
 |---|---|---|
 | [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) ([자막](https://rosetta.to/u/andrejkarpathy/deep-dive-into-llms-like-chatgpt)) | 사전학습만 마친 모델은 **"아직 어시스턴트가 아니라 토큰 자동완성"**이고 **확률적(stochastic) 시스템**이라고 설명해요. 그런데도 다음 토큰을 맞히는 과정에서 세상에 대해 많이 배우고 그 지식을 파라미터에 저장한다고 해요. | [1장 다음 말](../../part1/ch01/next-word.md), [9장 사전학습](../../part3/ch09/pretraining.md) |
 | 같은 영상, 챕터 '01:20:32 hallucinations, tool use, knowledge/working memory' | 환각은 **모델이 정보를 지어내는 것**이고 큰 문제인데, 초기 모델부터 있었고 **완화책 덕분에 조금 나아졌다**고 해요. | [1장 환각](../../part1/ch01/hallucination.md) |
-| 같은 영상, 챕터 '01:46:56 models need tokens to think' | **계산을 여러 토큰에 나눠** 쓰고, 중간 결과를 만들게 하거나 **가능하면 도구를 쓰라**고 해요. 모델이 한 번에 다 하게 하면 **완전히 믿지 못한다**고 말해요. | [7장 계산](../../part2/ch07/math-caution.md), [17장 추론 모델](../ch20/rl-reasoning.md) |
+| 같은 영상, 챕터 '01:46:56 models need tokens to think' | **계산을 여러 토큰에 나눠** 쓰고, 중간 결과를 만들게 하거나 **가능하면 도구를 쓰라**고 해요. 모델이 한 번에 다 하게 하면 **완전히 믿지 못한다**고 말해요. | [7장 계산](../../part2/ch07/math-caution.md), [20장 추론 모델](../ch20/rl-reasoning.md) |
 | 같은 영상, 챕터 '02:01:11 tokenization revisited: models struggle with spelling' | **모델은 글자가 아니라 토큰을 봐서** 글자 세기에 서툴다고 해요. "strawberry에 R이 몇 개?"가 화제였는데, 오랫동안 최신 모델들이 둘이라고 우겼고 **지금은 맞힌다**고 말해요. | [1장 토큰](../../part1/ch01/tokens.md) |
 | [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) ([자막](https://rosetta.to/u/andrejkarpathy/let-s-build-the-gpt-tokenizer)) | 한국어 예시를 보여 주며 **영어 데이터가 훨씬 많아서** 모델과 토크나이저 모두 영어에 유리하고, 영어는 토큰이 길어지는 만큼 **비영어는 더 불리하다**고 설명해요. | [1장 토큰](../../part1/ch01/tokens.md) |
 | [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) ([챕터·자막](https://rosetta.to/u/andrejkarpathy/1hr-talk-intro-to-large-language-models)) | 챕터 '00:08:58 LLM dreams', '00:27:43 Tool Use', '00:33:32 Multimodality', '00:42:15 LLM OS', '00:46:14 Jailbreaks', '00:51:30 Prompt Injection'이 있어요. | [1장 환각](../../part1/ch01/hallucination.md), [4장 종류](../../part1/ch04/kinds.md), [2장 질문 틀](../../part1/ch02/templates.md) |
