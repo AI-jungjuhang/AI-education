@@ -106,4 +106,5 @@ echo '{"stop_hook_active": true}'  | .claude/hooks/check-build.sh; echo "종료 
 ## 출처와 기준
 
 - 기준: Claude Code 2.1.319, MkDocs 1.6.1, 확인일 2026-11-07. `check-build.sh`의 종료 코드(0과 2)는 연습용 사이트에서 직접 확인했고, `-q` 때문에 경고가 숨겨지는 현상(종료 코드 0과 1의 차이)도 직접 확인했어요. Claude가 실제로 되돌려 보내는 동작은 내 환경에서 확인해 보세요.
+- 이 페이지의 실습 파일은 저장소의 `examples/claude-code/`에 그대로 있어요(확인한 방법은 그 폴더의 README에 적었어요).
 - 사실 기준: [Claude Code 모범 사례: Stop 훅으로 검사 강제하기](https://code.claude.com/docs/en/best-practices.md), [훅 가이드: Stop 훅의 반복 제한](https://code.claude.com/docs/en/hooks-guide.md)

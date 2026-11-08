@@ -29,7 +29,7 @@ done
 한 줄씩 읽어요.
 
 - `set -euo pipefail`: 중간에 문제가 생기면 멈추게 하는 안전 스위치예요.
-- `--bare`: 자동으로 찾는 훅·MCP·메모 같은 것을 건너뛰고 같은 조건으로 돌려요(설정 파일의 환경 값 같은 예외는 있어요). 대신 구독 로그인이 아니라 `ANTHROPIC_API_KEY` 환경 변수가 필요해요.
+- `--bare`: 자동으로 찾는 훅·MCP·메모 같은 것을 건너뛰고 같은 조건으로 돌려요(설정 파일의 환경 값 같은 예외는 있어요). 대신 구독 로그인이 아니라 `ANTHROPIC_API_KEY` 환경 변수가 필요해요(Anthropic API를 쓸 때. 다른 공급자는 각자의 인증을 써요).
 - `--allowedTools "Read"`: 읽기 도구를 묻지 않고 쓰게 해요. 다른 도구는 허락하지 않았어요. 도구 자체를 없애려면 `--tools`를 써요.
 - `--max-turns 3`: 한 번에 최대 3번까지만 움직여요(한 줄 모드 전용 상한이에요).
 
@@ -80,5 +80,6 @@ claude --bare -p "이 글에서 확인이 필요한 주장 목록" \
 ## 출처와 기준
 
 - 기준: Claude Code 2.1.319, 확인일 2026-11-07. 스크립트의 반복 구조는 가짜 `claude` 명령으로 실행해 확인했고, 실제 모델 호출 결과는 확인하지 않았어요.
+- 이 페이지의 실습 파일은 저장소의 `examples/claude-code/`에 그대로 있어요(확인한 방법은 그 폴더의 README에 적었어요).
 - 사실 기준: [공식 문서: 프로그램에서 실행하기(headless)](https://code.claude.com/docs/en/headless.md), [CLI 레퍼런스](https://code.claude.com/docs/en/cli-reference.md), [권한 모드](https://code.claude.com/docs/en/permission-modes.md)
 - 학습 순서 참고: [claude-howto 10-cli](https://github.com/luongnv89/claude-howto/tree/main/10-cli) (MIT, 다시 씀)

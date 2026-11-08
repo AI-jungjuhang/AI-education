@@ -105,5 +105,6 @@ echo '{"tool_input":{"file_path":"/경로/docs/test.md"}}' | .claude/hooks/check
 ## 출처와 기준
 
 - 기준: Claude Code 2.1.319, 확인일 2026-11-07. 스크립트는 `jq`가 있는 리눅스·맥 환경에서 직접 돌려 확인했어요.
+- 이 페이지의 실습 파일은 저장소의 `examples/claude-code/`에 그대로 있어요(확인한 방법은 그 폴더의 README에 적었어요).
 - 사실 기준: [공식 문서: 훅 가이드](https://code.claude.com/docs/en/hooks-guide.md), [훅 레퍼런스](https://code.claude.com/docs/en/hooks.md)
 - 학습 순서 참고: [claude-howto 06-hooks](https://github.com/luongnv89/claude-howto/tree/main/06-hooks) (MIT, 다시 씀)

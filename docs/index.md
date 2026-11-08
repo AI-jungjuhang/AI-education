@@ -49,20 +49,20 @@ hide:
 | [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 완료 (9) |
 | [V Claude Code 실전](part5/index.md) | Claude Code로 직접 일을 시켜요 | 완료 (27) |
 | [VI 원리로 쓰기 ★](part6/index.md) | 심화예요 | 완료 (23) |
-| [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 완료 (4) |
+| [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 완료 (5) |
 
-전체 105페이지 중 105페이지를 썼어요.
+전체 106페이지 중 106페이지를 썼어요.
 <!-- /AUTO:progress -->
 
 ## 최근에 쓴 글
 
 <!-- AUTO:recent -->
 <div class="ep-list">
+<a href="appendix/review-log/"><span class="ep-no">새 글</span><span class="ep-title">검수 기록</span><span class="ep-time">읽기 4분</span></a>
 <a href="appendix/references/"><span class="ep-no">새 글</span><span class="ep-title">참고 자료 목록</span><span class="ep-time">읽기 4분</span></a>
 <a href="appendix/reading-order/"><span class="ep-no">새 글</span><span class="ep-title">읽는 순서 추천</span><span class="ep-time">읽기 3분</span></a>
 <a href="appendix/prompt-bank/"><span class="ep-no">새 글</span><span class="ep-title">질문 모음</span><span class="ep-time">읽기 5분</span></a>
 <a href="appendix/glossary/"><span class="ep-no">새 글</span><span class="ep-title">용어집</span><span class="ep-time">읽기 5분</span></a>
 <a href="part6/ch23/verify-build/"><span class="ep-no">새 글</span><span class="ep-title">실습: 우리 채널의 검증 루프</span><span class="ep-time">읽기 8분</span></a>
-<a href="part6/ch23/verify-loop/"><span class="ep-no">새 글</span><span class="ep-title">확인할 수 있는 검사를 쥐여 주기</span><span class="ep-time">읽기 7분</span></a>
 </div>
 <!-- /AUTO:recent -->

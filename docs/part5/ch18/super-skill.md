@@ -88,5 +88,6 @@ claude --plugin-dir ./studio
 ## 출처와 기준
 
 - 기준: Claude Code 2.1.319, 확인일 2026-11-07. `studio` 플러그인 구조는 `claude plugin validate`로 통과를 확인했고, 슈퍼 스킬을 실제 모델로 돌린 결과는 이 책에 싣지 않았어요.
+- 이 페이지의 실습 파일은 저장소의 `examples/claude-code/`에 그대로 있어요(확인한 방법은 그 폴더의 README에 적었어요).
 - 사실 기준: [공식 문서: 플러그인 만들기](https://code.claude.com/docs/en/plugins/create.md), [플러그인 구성요소](https://code.claude.com/docs/en/plugins/components.md), [스킬](https://code.claude.com/docs/en/skills.md), [서브에이전트](https://code.claude.com/docs/en/sub-agents.md)
 - 학습 순서 참고: [claude-howto 07-plugins](https://github.com/luongnv89/claude-howto/tree/main/07-plugins) (MIT, 다시 씀)

@@ -57,7 +57,7 @@ claude --plugin-dir ./studio
 claude plugin validate ./studio
 ```
 
-이 책의 `studio` 예시 플러그인으로 이 검사를 실제로 돌렸고 통과했어요. README, 라이선스, 아이콘이 없다는 안내는 나왔는데, 이것은 공식 디렉터리에 올릴 때 필요한 것이라 내 컴퓨터에서 쓰는 데는 상관없어요.
+이 책의 `studio` 예시 플러그인으로 이 검사를 실제로 돌렸고 통과했어요. README, 라이선스, 아이콘이 없다는 안내는 나왔는데, 이것은 공식 디렉터리에 올릴 때 확인하는 항목이라, 내 컴퓨터에서 쓰는 데는 필수가 아니에요.
 
 ## 4. 설치와 믿음
 
@@ -94,5 +94,6 @@ claude plugin validate ./studio
 ## 출처와 기준
 
 - 기준: Claude Code 2.1.319, 확인일 2026-11-07. 예시 플러그인은 이 책용으로 만들어 `claude plugin validate`로 검증했어요(실제 설치·실행 결과는 싣지 않았어요).
+- 이 페이지의 실습 파일은 저장소의 `examples/claude-code/`에 그대로 있어요(확인한 방법은 그 폴더의 README에 적었어요).
 - 사실 기준: [공식 문서: 플러그인 개요](https://code.claude.com/docs/en/plugins.md), [플러그인 만들기](https://code.claude.com/docs/en/plugins/create.md), [플러그인 보안과 신뢰](https://code.claude.com/docs/en/plugins/security.md)
 - 학습 순서 참고: [claude-howto 07-plugins](https://github.com/luongnv89/claude-howto/tree/main/07-plugins) (MIT, 다시 씀)
