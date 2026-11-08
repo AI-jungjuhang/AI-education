@@ -146,7 +146,7 @@
    "type": "check",
    "bg": "white",
    "label": "오늘의 써먹기",
-   "top": 450,
+   "top": 380,
    "rowh": 246,
    "icon": "bulb",
    "items": [
