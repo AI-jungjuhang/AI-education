@@ -19,6 +19,10 @@ description: 「AI 정주행」(부제: 열 살도 이해하는 AI 교과서) �
 8. `## 자주 하는 오해`
 9. `## 출처와 기준`: 아래 규칙.
 
+## 한국어 다듬기 (2026-11-08)
+
+문장을 쓴 뒤 `natural-writing-kr` 스킬(`.claude/skills/natural-writing-kr`)의 기준으로 한 번 훑는다. 번역투와 겹말은 줄이되, 이미 자연스러운 문장과 사실·숫자·인용은 건드리지 않는다. 영상 문구는 `video-script` 스킬의 "AI 티 점검표"도 따른다.
+
 ## 출처 규칙
 
 - 영어 원전(Karpathy, 3Blue1Brown, Anthropic 등)을 읽고 **이해한 내용을 다시 쓴다.** 문장을 옮기지 않는다.
