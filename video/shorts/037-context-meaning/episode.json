@@ -1,0 +1,119 @@
+{
+ "id": "037-context-meaning",
+ "tag": "10.1.3",
+ "name": "문맥과 뜻",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "같은 말도",
+    "문맥으로 뜻이 정해져요"
+   ],
+   "fs": 100,
+   "sticker": {
+    "t": "\"배\"는 먹는 배?\n타는 배? 사람 배?",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "question",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "\"배\"의 뜻\n세 가지",
+   "items": [
+    {
+     "t": "배가 아파 → 몸",
+     "c": "green",
+     "size": 66
+    },
+    {
+     "t": "배를 타고 갔어 → 탈것",
+     "c": "yellow",
+     "size": 66
+    },
+    {
+     "t": "배를 먹었어 → 과일",
+     "c": "red",
+     "size": 66
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "챗봇 안에서는",
+     "t": "처음 좌표는 하나지만\n==옆 말을 보고 고쳐요==",
+     "size": 64,
+     "icon": "sliders"
+    },
+    {
+     "who": "other",
+     "t": "그래서 끝에서는\n문맥이 반영된 좌표를 써요",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이렇게 물으면",
+    "t": "배\n얼마예요?",
+    "c": "red",
+    "size": 110,
+    "small": "흔한 뜻으로 가기 쉬워요"
+   },
+   "bottom": {
+    "label": "이렇게 물으면",
+    "t": "==과일 배==\n한 상자 얼마예요?",
+    "c": "green",
+    "size": 90
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "==분야와 상황==을\n먼저 말하기||예: 법률 문서에서 ○○는",
+    "전문 용어엔\n==정의 붙이기==",
+    "답이 엉뚱하면\n\"==어떤 뜻으로 이해했어?==\""
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

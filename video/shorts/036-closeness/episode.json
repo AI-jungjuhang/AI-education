@@ -1,0 +1,6 @@
+{"id":"036-closeness","tag":"10.1.2","name":"가까운 뜻","scenes":[
+{"type":"bigword","bg":"blue","lines":["비슷한 뜻은","가까이 있어요"],"fs":125,"sticker":{"t":"친한 친구끼리\n가까이 앉듯이요","c":"yellow","y":1000,"size":72},"icon":"people","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"items":[{"who":"me","name":"예: 의미로 찾는 검색","t":"감기에 좋은 음식","size":76,"icon":"search"},{"who":"other","t":"\"몸살 났을 때 먹을 것\"\n글도 ==찾아 줘요==","size":64}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"notes","bg":"blue","title":"가까움의\n한계","items":[{"head":"비슷해도\n같진 않아요","body":"말맛이 달라요","icon":"chat"},{"head":"반대말도\n가까울 수 있어요","icon":"sliders"},{"head":"편견도\n거리에 담겨요","icon":"warn"}],"beats":12},
+{"type":"split","bg":"white","marks":true,"top":{"label":"검색할 때","t":"감기 음식","c":"red","size":110,"small":"단어 몇 개만 넣으면"},"bottom":{"label":"검색할 때","t":"==어떤 상황인지\n문장으로 설명==","c":"green","size":92,"small":"의미 검색이 되는 서비스에서 잘 통해요"},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["==비슷한 사례==\n여러 개 요청하기","==비슷하지만 다른 점==도\n물어보기","사람에 대한 판단은\n==거리에 맡기지 않기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
