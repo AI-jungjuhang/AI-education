@@ -28,6 +28,8 @@ def build(ep_dir):
         a += dur
     tpl = open(pathlib.Path(__file__).parent / 'template.html', encoding='utf-8').read()
     out = tpl.replace('{{SCENES}}', '\n'.join(secs)).replace('{{TOTAL}}', num(a)).replace('{{TAG}}', ep.get('tag', ''))
+    import re
+    out = re.sub(r' data-rot="[^"]*"', '', out)   # 정지 상태에서 기울어지는 요소는 쓰지 않는다(사용자 요청 2026-11-08)
     (ep_dir / 'scene.html').write_text(out, encoding='utf-8')
     print(f'scene.html 생성: 장면 {len(secs)}개, {num(a)}박 ({a * 60 / 128:.1f}초)')
 

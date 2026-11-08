@@ -203,7 +203,7 @@ def b_check(cx, sc, bg):
     for i, _ in enumerate(items):
         ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:122px;top:{top + 20 + (rowh - 92) // 2 + i * rowh}px">✓</div>')
     if sc.get('note'):
-        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 90 + len(items) * rowh + 60), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
+        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 90 + len(items) * rowh + 30), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
     return [], max(8, cx.last + 3.2), '\n'.join(ex)
 
 def b_bigword(cx, sc, bg):
