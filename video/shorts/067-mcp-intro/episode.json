@@ -1,0 +1,121 @@
+{
+ "id": "067-mcp-intro",
+ "tag": "17.3.1",
+ "name": "MCP 연결",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "복사해 붙이기가 잦으면",
+    "MCP로 연결해요"
+   ],
+   "fs": 94,
+   "sticker": {
+    "t": "다른 서비스 내용을\n자꾸 옮기고 있다면요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "pin",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "네 가지 비교",
+   "items": [
+    {
+     "t": "스킬 → 일하는 방법 (레시피)",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "훅 → 정한 순간 자동 실행 (센서등)",
+     "c": "yellow",
+     "size": 50
+    },
+    {
+     "t": "MCP → 바깥 서비스 연결 (콘센트)",
+     "c": "blue",
+     "size": 50
+    },
+    {
+     "t": "서브에이전트 → 나눠 맡기기 (조수)",
+     "c": "red",
+     "size": 50
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "연결 정보를\n둘 곳",
+   "items": [
+    {
+     "head": "로컬",
+     "body": "이 프로젝트, 나만",
+     "icon": "person"
+    },
+    {
+     "head": "프로젝트",
+     "body": ".mcp.json으로\n팀과 함께",
+     "icon": "people"
+    },
+    {
+     "head": "사용자",
+     "body": "내 모든 프로젝트",
+     "icon": "pin"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "읽기만",
+    "t": "내용 보기",
+    "c": "green",
+    "size": 110,
+    "icon": "search"
+   },
+   "bottom": {
+    "label": "쓰기도",
+    "t": "고치기·지우기까지",
+    "c": "yellow",
+    "size": 92,
+    "icon": "warn",
+    "small": "연결 전에 어느 쪽인지 먼저 정해요"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "세 번 넘게 복사하면\n==연결 후보로==",
+    "연결 전에\n==읽기만인지 정하기==",
+    "가끔 ==/mcp==로\n점검하고 끊기"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
