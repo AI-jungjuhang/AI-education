@@ -5,7 +5,7 @@
 예약 작업 자료가 바뀌었어. 시작(또는 계속)하기 전에 아래대로 반영해 줘.
 
 1. 저장소를 최신으로 받아 줘: 내려받은 폴더에서 `git pull origin claude/korean-ai-textbook-site-kbmkii`
-   (아직 안 받았다면 `git clone --branch claude/korean-ai-textbook-site-kbmkii --depth 1 https://github.com/sehoon3554-ctrl/AI-education`)
+   (아직 안 받았다면 `git clone --branch claude/korean-ai-textbook-site-kbmkii --depth 1 https://github.com/AI-jungjuhang/AI-education`)
 2. 예약표 `video/all/reels-schedule.csv`의 "설명글"이 전부 바뀌었어. 예전에 복사해 둔 설명글은 쓰지 말고 새 파일에서 다시 읽어.
    - 첫 줄에 이모지, "📌 오늘의 써먹기", "👉 더 자세한 내용은…", "📖 부 › 장 › 절 › 페이지" 줄이 들어 있어.
    - 설명글은 줄바꿈과 이모지를 그대로 붙여 넣어. 고치거나 줄이지 마.
