@@ -228,7 +228,7 @@ def b_notes(cx, sc, bg):
     if len(sc['items']) == 3: slots[2] = (275, 1090, 0)
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
-        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;", it.get("icon_bg") or ICON_LAV)}<b>{esc(it["head"])}</b><span class="nbody">{esc(it["body"])}</span></div>')
+        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;", it.get("icon_bg") or ICON_LAV)}<b>{esc(it["head"])}</b>{("<span class=\"nbody\">" + esc(it["body"]) + "</span>") if it.get("body") else ""}{("<span class=\"nex\">예: " + esc(it["ex"]) + "</span>") if it.get("ex") else ""}</div>')
     return [], max(6, cx.last + 3.0), '\n'.join(ex)
 
 def b_split(cx, sc, bg):
