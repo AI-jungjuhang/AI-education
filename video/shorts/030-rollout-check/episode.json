@@ -1,0 +1,6 @@
+{"id":"030-rollout-check","tag":"8.1.2","name":"적용 전 점검","scenes":[
+{"type":"bigword","bg":"blue","lines":["AI가 오히려","방해되는 일도 있어요"],"fs":104,"sticker":{"t":"평지에선 자전거가 빠르지만\n계단 앞에선 방해죠","c":"yellow","y":1000,"size":62},"icon":"warn","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"list","bg":"white","title":"붙이기 전에 물어요","items":[{"t":"① 해 본 적 있는 일인가?","c":"green","size":56},{"t":"② 내가 확인할 수 있나?","c":"yellow","size":56},{"t":"③ 틀리면 큰일인가?","c":"red","size":56},{"t":"④ 민감한 정보가 있나?","c":"blue","size":56},{"t":"⑤ 규칙에 맞나?","c":"green","size":56}],"beats":12},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"하나라도 걸리면","t":"==그 칸부터 해결==하고\n시작하기","size":70,"icon":"person"},{"who":"other","t":"예: 확인 단계 넣기,\n가리기, 승인받기","size":64}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"split","bg":"white","marks":true,"top":{"label":"써 보니 좋더라","t":"느낌으로\n정하기","c":"red","size":104,"small":"시간은 줄어도 오류가 늘 수 있어요"},"bottom":{"label":"작게 시험하고","t":"==전과 후를\n재서 정하기==","c":"green","size":100,"small":"예: 걸린 시간, 오류 수"},"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["위험이 작은 일\n==하나부터==","==내가 확인 못 하는==\n일은 맡기지 않기","두 달에 한 번\n==다시 점검=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

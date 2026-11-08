@@ -1,0 +1,6 @@
+{"id":"029-prompt-library","tag":"8.1.1","name":"질문 모음","scenes":[
+{"type":"bigword","bg":"blue","lines":["잘 통한 질문은","모아 두세요"],"fs":115,"sticker":{"t":"맛있게 된 요리는\n레시피를 적어 두잖아요","c":"yellow","y":1000,"size":66},"icon":"book","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"notes","bg":"white","title":"한 항목에\n적을 것","items":[{"head":"이름","ex":"주간보고 초안 틀","icon":"pin"},{"head":"언제 쓰나","ex":"매주 금요일 보고","icon":"clock"},{"head":"틀","body":"빈칸 있는 질문","icon":"doc"},{"head":"주의할 점","ex":"숫자가 바뀌는지","icon":"warn"}],"beats":13},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"고치기 전에","t":"==성공 기준 한 줄==\n정해 두기","size":76,"icon":"person"},{"who":"other","t":"예: 숫자는 그대로,\n5문장 이내","size":66}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"list","bg":"white","title":"가볍게 시험하기","items":[{"t":"시험 입력 3개 준비","c":"green","size":62},{"t":"고칠 때마다 3개로 다시","c":"yellow","size":62},{"t":"다른 곳이 나빠졌는지 보기","c":"blue","size":62}],"note":"평범한 것 2개, 까다로운 것 1개","beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["==주의할 점== 칸\n꼭 채우기||예: 실수했던 경험","한 달에 한 번\n==정리하기==","공유할 땐\n==개인정보 지우기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
