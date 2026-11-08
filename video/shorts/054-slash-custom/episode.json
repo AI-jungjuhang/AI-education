@@ -1,0 +1,129 @@
+{
+ "id": "054-slash-custom",
+ "tag": "16.1.2",
+ "name": "단축 명령",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "자주 하는 부탁은",
+    "/이름으로 불러요"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "같은 말을 세 번 쳤다면\n버튼으로 만들 때예요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 66
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "/easy 만들기",
+   "items": [
+    {
+     "t": "1. ~/.claude/skills/easy 폴더",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "2. 그 안에 SKILL.md",
+     "c": "yellow",
+     "size": 52
+    },
+    {
+     "t": "3. 위엔 설명, 아래엔 지시문",
+     "c": "blue",
+     "size": 52
+    },
+    {
+     "t": "4. /easy로 부르기",
+     "c": "red",
+     "size": 52
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "SKILL.md\n속 칸",
+   "items": [
+    {
+     "head": "설명 칸",
+     "body": "description",
+     "icon": "doc"
+    },
+    {
+     "head": "받는 말",
+     "body": "$ARGUMENTS",
+     "icon": "chat"
+    },
+    {
+     "head": "부를 때만",
+     "body": "disable-model-\ninvocation",
+     "icon": "lock"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "부를 때",
+     "t": "/easy ==토큰이 뭔지\n설명한 글==",
+     "size": 72,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "뒤에 적은 말이\n$ARGUMENTS 자리에 들어가요",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "이름은 짧게\n==영어 소문자==로||예: /easy, /check",
+    "지시문엔\n==무엇을·모양·하지 말 것==",
+    "같은 부탁 세 번이면\n==파일로 만들기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

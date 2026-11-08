@@ -1,0 +1,124 @@
+{
+ "id": "055-claudemd-intro",
+ "tag": "16.2.1",
+ "name": "CLAUDE.md",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Claude가 매번",
+    "먼저 읽는 메모"
+   ],
+   "fs": 115,
+   "sticker": {
+    "t": "기억을 잃는 친구의\n침대 옆 메모처럼요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "pin",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "예: 어제 한 말",
+     "t": "보고서는\n존댓말로 써 줘",
+     "size": 74,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "오늘 새 대화",
+     "t": "==처음 듣는\n이야기예요==",
+     "size": 72,
+     "icon": "question"
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "어디에\n두나요",
+   "items": [
+    {
+     "head": "내 컴퓨터\n전체",
+     "body": "~/.claude/\nCLAUDE.md",
+     "icon": "person"
+    },
+    {
+     "head": "이 프로젝트\n(팀과 함께)",
+     "body": "./CLAUDE.md",
+     "icon": "people"
+    },
+    {
+     "head": "나만,\n이 프로젝트만",
+     "body": "./CLAUDE\n.local.md",
+     "icon": "lock"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "처음 만들 때",
+    "t": "/init",
+    "c": "yellow",
+    "size": 120,
+    "icon": "doc",
+    "small": "폴더를 보고 첫 메모를 써 줘요"
+   },
+   "bottom": {
+    "label": "내가 고칠 때",
+    "t": "==/memory==",
+    "c": "green",
+    "size": 120,
+    "icon": "sliders",
+    "small": "메모 파일을 열어요"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "같은 설명을 두 번 쓸 때\n==메모 만들기==",
+    "한 번 틀린 건\n==그날 한 줄 추가==",
+    "쓴 뒤엔\n==/context로 확인=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
