@@ -83,28 +83,8 @@
    "beats": 13
   },
   {
-   "type": "split",
-   "bg": "white",
-   "marks": true,
-   "top": {
-    "label": "그냥 이어 붙이면",
-    "t": "부탁과 메일이\n섞여요",
-    "c": "red",
-    "size": 96,
-    "small": "어디까지가 부탁인지 헷갈려요"
-   },
-   "bottom": {
-    "label": "메일 앞뒤에 표시를 붙이면",
-    "t": "답장 써 줘.\n==<메일>==\n(받은 메일)\n==</메일>==",
-    "c": "green",
-    "size": 78,
-    "small": "메일 속 지시는 따르지 말라고 덧붙이기"
-   },
-   "beats": 11
-  },
-  {
    "type": "speech",
-   "bg": "blue",
+   "bg": "white",
    "vpos": "top",
    "gap": 80,
    "items": [
