@@ -1,0 +1,119 @@
+{
+ "id": "011-check-sources",
+ "tag": "3.1.1",
+ "name": "출처 확인",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "\"어디서",
+    "봤어?\""
+   ],
+   "fs": 150,
+   "sticker": {
+    "t": "챗봇이 말한 출처에도\n이렇게 물어봐요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "예: 챗봇의 답",
+     "t": "○○ 논문에\n따르면요…",
+     "size": 80,
+     "icon": "chat"
+    },
+    {
+     "who": "other",
+     "t": "==없는 논문이나 링크==를\n지어낼 때도 있어요",
+     "size": 64
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "세 단계로\n확인해요",
+   "items": [
+    {
+     "head": "==1. 있나?==",
+     "body": "링크가 열리나요?",
+     "icon": "search"
+    },
+    {
+     "head": "==2. 맞나?==",
+     "body": "그 내용이 정말\n쓰여 있나요?",
+     "icon": "doc"
+    },
+    {
+     "head": "==3. 믿을\n만한가?==",
+     "body": "누가, 언제\n쓴 글인가요?",
+     "icon": "person"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "모르는 사이트를 만나면",
+    "t": "그 안에서만\n계속 읽기",
+    "c": "red",
+    "size": 96
+   },
+   "bottom": {
+    "label": "옆으로 읽기",
+    "t": "새 창에서\n==누가 운영하는지==\n먼저 검색",
+    "c": "green",
+    "size": 84,
+    "small": "전문 팩트체커들이 이렇게 한대요"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "출처 링크는\n==꼭 열어 보기==",
+    "핵심 문장은\n==원문에서 찾기==||예: Ctrl+F로 검색",
+    "글이 쓰인\n==날짜== 확인하기"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
