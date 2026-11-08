@@ -1,0 +1,126 @@
+{
+ "id": "018-free-paid",
+ "tag": "4.1.2",
+ "name": "무료와 유료",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "유료라고",
+    "더 정확하진 않아요"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "차이는 얼마나 많이,\n얼마나 큰 일을 하느냐예요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "무료로 충분할 때",
+    "t": "가끔 묻고\n글 다듬기",
+    "c": "yellow",
+    "size": 100,
+    "icon": "check"
+   },
+   "bottom": {
+    "label": "유료를 생각할 때",
+    "t": "==매일 한도에\n자주 걸릴 때==",
+    "c": "green",
+    "size": 96,
+    "icon": "clock"
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "이걸\n비교해요",
+   "items": [
+    {
+     "head": "사용량",
+     "body": "몇 번까지?",
+     "icon": "clock"
+    },
+    {
+     "head": "모델",
+     "body": "더 큰 모델?",
+     "icon": "sliders"
+    },
+    {
+     "head": "기능",
+     "body": "검색·파일·음성",
+     "icon": "search"
+    },
+    {
+     "head": "데이터 설정",
+     "body": "학습에 쓰이나?",
+     "icon": "lock"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "정하기 전에",
+     "t": "무료로 일주일 쓰며\n==한도 걸린 날== 적기",
+     "size": 70,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "중요한 일이 막혔다면\n그때 유료를 생각해요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "유료 결정은\n==기록을 보고==",
+    "같은 질문으로\n==비교해 보기==",
+    "가격은 직접\n==공식 페이지==에서 확인"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
