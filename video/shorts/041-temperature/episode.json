@@ -1,0 +1,6 @@
+{"id":"041-temperature","tag":"12.1.1","name":"온도","scenes":[
+{"type":"bigword","bg":"blue","lines":["온도는","모험 다이얼이에요"],"fs":115,"sticker":{"t":"낮추면 늘 안전한 말,\n높이면 가끔 엉뚱한 말","c":"yellow","y":1000,"size":68},"icon":"sliders","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"낮은 온도","t":"1등 후보가\n거의 매번","c":"yellow","size":100,"icon":"target","small":"예: 요약, 분류처럼 답이 정해진 일"},"bottom":{"label":"높은 온도","t":"==여러 후보가\n고르게==","c":"green","size":100,"icon":"people","small":"예: 아이디어, 이름 짓기"},"beats":11},
+{"type":"speech","bg":"blue","vpos":"top","gap":80,"items":[{"who":"other","name":"온도를 0으로 해도","t":"1등 후보가 틀린 말이면\n==더 일관되게 틀려요==","size":62,"icon":"warn"},{"who":"other","t":"온도로 환각을\n없앨 순 없어요","size":66}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"list","bg":"white","title":"질문으로 조절하기","items":[{"t":"다양하게: \"10개 줘\"","c":"green","size":64},{"t":"독특하게: \"더 독특하게\"","c":"yellow","size":64},{"t":"정확하게: 따로 확인하기","c":"red","size":64}],"beats":11},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["정확성은\n==확인으로== 해결","중요한 답은\n==여러 번 받아 비교==","온도 설정이 보이면\n==직접 시험해 보기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
