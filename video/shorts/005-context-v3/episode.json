@@ -12,13 +12,15 @@
      "who": "me",
      "name": "나",
      "t": "맛집 알려 줘!",
-     "size": 96
+     "size": 96,
+     "icon": "person"
     },
     {
      "who": "other",
      "name": "처음 본 사람",
      "t": "음… 뭐 드시고 싶어요?\n누구랑 가세요?\n예산은요?",
-     "size": 70
+     "size": 70,
+     "icon": "question"
     }
    ],
    "mascot": {
@@ -49,7 +51,10 @@
     "side": "left",
     "at": 2.0
    },
-   "beats": 6
+   "beats": 6,
+   "icon": "thought",
+   "icon_y": 640,
+   "icon_size": 240
   },
   {
    "type": "notes",
@@ -58,19 +63,23 @@
    "items": [
     {
      "head": "누가 읽어?",
-     "body": "초등학교\n5학년"
+     "body": "초등학교\n5학년",
+     "icon": "book"
     },
     {
      "head": "어디에\n쓸 거야?",
-     "body": "발표 첫 장"
+     "body": "발표 첫 장",
+     "icon": "target"
     },
     {
      "head": "조건은?",
-     "body": "3문장,\n존댓말"
+     "body": "3문장,\n존댓말",
+     "icon": "sliders"
     },
     {
      "head": "참고할\n자료는?",
-     "body": "아래에\n붙인 메모"
+     "body": "아래에\n붙인 메모",
+     "icon": "doc"
     }
    ],
    "beats": 12
@@ -81,14 +90,18 @@
     "label": "그냥 부탁하면",
     "t": "동아리 홍보\n문구 써 줘",
     "c": "red",
-    "small": "뭘 쓰라는 거지?"
+    "small": "뭘 쓰라는 거지?",
+    "icon": "question",
+    "icon_y": 330
    },
    "bottom": {
     "label": "사정을 같이 말하면",
     "t": "신입 1학년이 볼\n인스타 글,\n3문장, 부드러운\n존댓말로",
     "c": "green",
     "size": 76,
-    "small": "이유도 말하면 더 잘 알아들어요\n(‘경쟁’은 빼 줘, 부담스러워 보여서)"
+    "small": "이유도 말하면 더 잘 알아들어요\n(‘경쟁’은 빼 줘, 부담스러워 보여서)",
+    "icon": "bulb",
+    "icon_y": 110
    },
    "beats": 12
   },
@@ -140,7 +153,8 @@
     "y": 1500
    },
    "beats": 12,
-   "rowh": 246
+   "rowh": 246,
+   "icon": "bulb"
   }
  ]
 }
