@@ -1,0 +1,127 @@
+{
+ "id": "012-check-numbers",
+ "tag": "3.1.2",
+ "name": "숫자와 인용",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "틀린 그림",
+    "찾기"
+   ],
+   "fs": 150,
+   "sticker": {
+    "t": "숫자와 따옴표도\n이렇게 비교해요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 76
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "여기서\n잘 틀려요",
+   "items": [
+    {
+     "head": "숫자",
+     "body": "단위가 바뀜\n(만 ↔ 억)",
+     "icon": "sliders"
+    },
+    {
+     "head": "날짜",
+     "body": "하루 이틀\n어긋남",
+     "icon": "clock"
+    },
+    {
+     "head": "이름",
+     "body": "비슷한 사람과\n섞임",
+     "icon": "people"
+    },
+    {
+     "head": "인용문",
+     "body": "뜻은 비슷한데\n문장이 다름",
+     "icon": "chat"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "예: 챗봇의 답",
+     "t": "5천만 명의 20%는\n2천만 명이에요",
+     "size": 72,
+     "icon": "chat"
+    },
+    {
+     "who": "me",
+     "name": "어림 계산",
+     "t": "==대충 천만 명쯤==인데?\n크기부터 이상해",
+     "size": 66,
+     "icon": "person"
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "챗봇에게 다 맡기면",
+    "t": "계산 값까지\n구해 줘",
+    "c": "red",
+    "size": 96,
+    "small": "긴 계산은 중간에 틀릴 수 있어요"
+   },
+   "bottom": {
+    "label": "나눠서 맡기면",
+    "t": "==식은 챗봇,\n값은 계산기==",
+    "c": "green",
+    "size": 100
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "숫자 옆에 ==근거 문장==도\n달라고 하기",
+    "따옴표 문장은\n==원문에서 찾기==",
+    "==단위와 기준 연도==\n확인하기||예: 만 원인지 억 원인지"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
