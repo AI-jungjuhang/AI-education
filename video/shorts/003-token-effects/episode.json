@@ -17,7 +17,7 @@
     "size": 76
    },
    "icon": "question",
-   "beats": 6,
+   "beats": 9,
    "mascot": {
     "face": "wide:o",
     "side": "right",
@@ -42,7 +42,8 @@
     {
      "head": "==글자 세기==",
      "body": "틀리기 쉬워요",
-     "icon": "warn"
+     "icon": "warn",
+     "icon_bg": "#C9B8FF"
     },
     {
      "head": "==언어==",
@@ -60,14 +61,16 @@
     "label": "영어",
     "t": "조각이 적게\n나와요",
     "c": "blue",
-    "size": 96
+    "size": 96,
+    "icon": "chat"
    },
    "bottom": {
     "label": "다른 언어",
     "t": "최대 15배까지\n차이 나요",
     "c": "red",
     "size": 96,
-    "small": "한 연구의 보고예요"
+    "small": "한 연구의 보고예요",
+    "icon": "people"
    },
    "beats": 10
   },
@@ -101,14 +104,16 @@
     "label": "1번",
     "t": "바로 숫자만\n답해 줘",
     "c": "yellow",
-    "size": 96
+    "size": 96,
+    "icon": "clock"
    },
    "bottom": {
     "label": "2번",
-    "t": "글자 하나씩 풀어 쓴 뒤\n세어 줘",
+    "t": "글자 하나씩\n풀어 쓴 뒤\n세어 줘",
     "c": "green",
-    "size": 88,
-    "small": "두 답을 비교해 보세요"
+    "size": 84,
+    "small": "두 답을 비교해 보세요",
+    "icon": "search"
    },
    "beats": 10
   },
@@ -132,21 +137,23 @@
    "type": "check",
    "bg": "white",
    "label": "오늘의 써먹기",
-   "top": 450,
+   "top": 470,
    "rowh": 246,
    "icon": "bulb",
    "items": [
     "센 숫자는\n==한 번 확인==",
-    "챗봇이 세면\n==풀어 쓰게== 하기",
-    "긴 참고 자료는 쪼개서,\n조건은 ==끝에 한 번 더=="
+    "챗봇이 세면\n==풀어 쓰게== 하기||예: 감자튀김에 ㅁ이 들어가는 횟수를\n글자 하나씩 풀어서 세 줘",
+    "긴 참고 자료는 ==나눠서== 주고,\n꼭 지킬 조건은\n==맨 끝에 다시== 말하기"
    ],
    "mascot": {
     "face": "happy:grin",
     "side": "right",
-    "at": 5,
+    "at": 0.2,
     "y": 1500
    },
-   "beats": 12
+   "beats": 12,
+   "fs": 62,
+   "delay": 1.0
   }
  ]
 }

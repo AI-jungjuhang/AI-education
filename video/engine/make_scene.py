@@ -19,13 +19,18 @@ def build(ep_dir):
         cx = Ctx(a, sc)
         parts, dur, extra = fn(cx, sc, bg)
         dur = sc.get('beats', dur)
+        if i == len(ep['scenes']) - 1 and not sc.get('nohold'): dur += 3   # 마지막 글자까지 다 읽고 처음으로 돌아가도록 끝에 여유
+        foot = ''
+        if sc.get('foot'):
+            fcls = 'foot dk' if bg in ('blue', 'orange') else 'foot'
+            foot = f'<div class="{fcls}" data-b="{num(a + sc.get("foot_at", 1.5))}" data-anim="pop">{__import__("blocks").esc(sc["foot"])}</div>'
         m = mascot_html(cx, sc.get('mascot'))
         gap = sc.get('gap', GAP.get(typ, 28))
         style = f'gap:{gap}px' + {'top': ';justify-content:flex-start', 'bottom': ';justify-content:flex-end'}.get(sc.get('vpos'), '') + {'left': ';align-items:flex-start', 'right': ';align-items:flex-end'}.get(sc.get('align'), '') + (';bottom:520px' if typ == 'outro' else '') + (';top:250px' if typ == 'cards' else '')
         lift = ' data-lift="1"' if sc.get('lift') else ''
         body = '\n  '.join(parts)
         hl = f' style="--hlc:{sc["hl"]}"' if sc.get('hl') else ''
-        secs.append(f'<!-- {i + 1}. {typ} {num(a)}~{num(a + dur)}박 -->\n<section class="scene" data-a="{num(a)}" data-e="{num(a + dur)}" data-bg="{BG[bg]}"{lift}{hl}><div class="in" style="{style}">\n  {body}\n</div>{extra}{m}</section>\n')
+        secs.append(f'<!-- {i + 1}. {typ} {num(a)}~{num(a + dur)}박 -->\n<section class="scene" data-a="{num(a)}" data-e="{num(a + dur)}" data-bg="{BG[bg]}"{lift}{hl}><div class="in" style="{style}">\n  {body}\n</div>{extra}{foot}{m}</section>\n')
         a += dur
     tpl = open(pathlib.Path(__file__).parent / 'template.html', encoding='utf-8').read()
     out = tpl.replace('{{SCENES}}', '\n'.join(secs)).replace('{{TOTAL}}', num(a)).replace('{{TAG}}', ep.get('tag', ''))

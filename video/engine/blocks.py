@@ -62,7 +62,7 @@ ICONS = {
     'thought': f'<path d="M7 17a4 4 0 0 1-.5-7.9 5 5 0 0 1 9.6-1A4.2 4.2 0 0 1 17 17z" {_P}/><circle cx="7" cy="20" r="1.2" fill="#242424"/><circle cx="4.5" cy="22" r=".8" fill="#242424"/>',
     'lock': f'<rect x="5" y="11" width="14" height="10" rx="2" {_P}/><path d="M8 11V8a4 4 0 0 1 8 0v3" {_P}/>',
     'search': f'<circle cx="10.5" cy="10.5" r="6" {_P}/><path d="M15 15l5.5 5.5" {_P}/>',
-    'warn': f'<path d="M12 3l10 18H2z" {_P}/><path d="M12 10v5" {_P}/><circle cx="12" cy="18" r="1" fill="#242424"/>',
+    'warn': f'<g transform="translate(0,-1.8)"><path d="M12 3.5l9.5 16.5H2.5z" {_P}/><path d="M12 10v4.5" {_P}/><circle cx="12" cy="17.2" r="1" fill="#242424"/></g>',
     'chat': f'<path d="M4 5h16v11H11l-5 4v-4H4z" {_P}/><path d="M8 9.5h8M8 12.5h5" {_P}/>',
     'clock': f'<circle cx="12" cy="12" r="9" {_P}/><path d="M12 7v5l3 2" {_P}/>',
     'check': f'<path d="M5 12.5l4.5 4.5L19 7" {_P}/>',
@@ -70,11 +70,11 @@ ICONS = {
     'yes': '<circle cx="12" cy="12" r="7.5" fill="none" stroke="#14A36B" stroke-width="3.6"/>',
     'people': f'<circle cx="8.5" cy="8.5" r="3" {_P}/><circle cx="16.5" cy="9.5" r="2.5" {_P}/><path d="M2.5 19c.6-3.3 2.8-5 6-5s5.4 1.7 6 5M15 14.5c2.7-.2 4.7 1.2 5.5 4" {_P}/>',
 }
-ICON_BG = {'no': '#fff', 'yes': '#fff', 'person': '#FFD93D', 'pin': '#FFB3C1', 'book': '#FFE680', 'target': '#FFB3C1', 'sliders': '#A9D2FF', 'doc': '#9BE7C4', 'bulb': '#FFD93D',
-           'question': '#fff', 'thought': '#fff', 'lock': '#FFD93D', 'search': '#A9D2FF', 'warn': '#FFD93D', 'chat': '#A9D2FF', 'clock': '#9BE7C4', 'check': '#9BE7C4', 'people': '#9BE7C4'}
+ICON_LAV = '#C9B8FF'   # 모든 아이콘 배지의 기본색: 상자 색(노랑·초록·분홍·하늘)과 다른 하나의 색으로 통일
+ICON_BG = {'no': '#fff', 'yes': '#fff', 'warn': '#FC5424'}
 def icon(name, size=84, pos='', bg=None, t=None):
     if not name: return ''
-    bg = bg or ICON_BG.get(name, '#fff')
+    bg = bg or ICON_BG.get(name, ICON_LAV)
     anim = f' data-b="{t}" data-anim="pop" data-sfx="pop"' if t is not None else ''
     return (f'<span class="ico"{anim} style="width:{size}px;height:{size}px;background:{bg};{pos}">'
             f'<svg viewBox="0 0 24 24" width="{int(size*0.7)}" height="{int(size*0.7)}">{ICONS[name]}</svg></span>')
@@ -203,7 +203,7 @@ def b_speech(cx, sc, bg):
     for i, it in enumerate(sc['items']):
         who = it.get('who', 'other'); nm = f'<small>{esc(it["name"])}</small>' if it.get('name') else ''
         av = icon(it.get('icon'), 124, 'position:absolute;top:-56px;right:-30px;') if it.get('icon') else ''
-        p.append(f'<div class="bubble {who}" data-b="{cx.b(f"b{i}", 0.4 + 2.4 * i)}" data-anim="pop" data-sfx="pop" style="font-size:{it.get("size", 64)}px{';padding-right:100px' if av else ''}">{av}{nm}{esc(it["t"])}</div>')
+        p.append(f'<div class="bubble {who}" data-b="{cx.b(f"b{i}", sc.get('delay', 0) + 0.4 + 2.4 * i)}" data-anim="pop" data-sfx="pop" style="font-size:{it.get("size", 64)}px{';padding-right:100px' if av else ''}">{av}{nm}{esc(it["t"])}</div>')
     return p, max(5, cx.last + 3.0), ''
 
 def b_notes(cx, sc, bg):
@@ -214,7 +214,7 @@ def b_notes(cx, sc, bg):
     if len(sc['items']) == 3: slots[2] = (275, 1090, 0)
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
-        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;")}<b>{esc(it["head"])}</b><span class="nbody">{esc(it["body"])}</span></div>')
+        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;", it.get("icon_bg") or ICON_LAV)}<b>{esc(it["head"])}</b><span class="nbody">{esc(it["body"])}</span></div>')
     return [], max(6, cx.last + 3.0), '\n'.join(ex)
 
 def b_split(cx, sc, bg):
@@ -226,23 +226,36 @@ def b_split(cx, sc, bg):
         sm = f'<div style="font-size:42px;margin-top:22px;opacity:.9">{esc(it["small"])}</div>' if it.get('small') else ''
         pr = 'padding-right:330px;' if it.get('icon') else ''
         return (f'<div class="panel" data-b="{cx.b(key, t0)}" data-anim="{anim}" data-sfx="whoosh" style="top:{y}px;height:{h}px;background:{col};{pr}">'
-                f'{icon(it.get("icon"), 190, "position:absolute;top:%dpx;right:70px;" % (it.get("icon_y", 300)))}<small>{esc(it["label"])}</small><div class="big2" style="font-size:{it.get("size", 84)}px">{esc(it["t"])}</div>{sm}</div>')
+                f'{icon(it.get("icon"), 190, "position:absolute;top:%dpx;right:70px;" % (it.get("icon_y", 545 if key == "top" else 205)))}<small>{esc(it["label"])}</small><div class="big2" style="font-size:{it.get("size", 84)}px">{esc(it["t"])}</div>{sm}</div>')
     ex = [panel(T, 0, 940, 'top', 0.2, 'slideL').replace('class="panel"', 'class="panel topp"'), panel(B, 940, 980, 'bottom', 3.6, 'slideR')]
     if sc.get('vs', False):
         ex.append(f'<div class="sticker c-yellow" data-b="{cx.b("vs", 3.4)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:440px;top:880px;font-size:76px;padding:6px 30px;z-index:5">VS</div>')
     return [], max(8, cx.last + 4.0), '\n'.join(ex)
 
 def b_check(cx, sc, bg):
-    """체크리스트 종이. 항목이 나타난 뒤 체크 표시가 톡 찍힌다."""
-    items = sc['items']; top = sc.get('top', 400); rowh = int(sc.get('rowh', 159))
-    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", 0)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 150}px;font-size:68px;z-index:6">{esc(sc.get("label", "오늘의 써먹기"))}</div>'] + ([icon(sc['icon'], 132, f'position:absolute;right:100px;top:{top - 215}px;z-index:6', None, cx.b('icon', 0.6))] if sc.get('icon') else [])
-    rows = ''.join(f'<div class="row2" data-b="{cx.b(f"r{i}", 1.4 + 2.0 * i)}" data-anim="slideL" data-sfx="pop"><div class="bx"></div><div>{esc(t)}</div></div>' for i, t in enumerate(items))
+    """체크리스트 종이. 항목 뒤에 "||보조 설명"을 달면 작은 회색 글씨로 아래에 나온다. 줄 높이는 글자 수로 어림해서 체크 표시 위치를 맞춘다."""
+    items = sc['items']; top = sc.get('top', 400); fs = int(sc.get('fs', 72)); d = sc.get('delay', 0)
+    SUBFS = 40
+    parsed = []
+    for t in items:
+        main, _, sub = t.partition('||'); parsed.append((main, sub))
+    rh = []
+    for main, sub in parsed:
+        h = len(main.split('\n')) * fs * 1.2 + 34 * 2 + 5
+        if sub: h += len(sub.split('\n')) * SUBFS * 1.25 + 8
+        rh.append(int(h))
+    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", d)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 150}px;font-size:68px;z-index:6">{esc(sc.get("label", "오늘의 써먹기"))}</div>'] + ([icon(sc['icon'], 132, f'position:absolute;right:100px;top:{top - 215}px;z-index:6', None, cx.b('icon', d + 0.6))] if sc.get('icon') else [])
+    rows = ''
+    for i, (main, sub) in enumerate(parsed):
+        sb = f'<div class="sub">{esc(sub)}</div>' if sub else ''
+        rows += f'<div class="row2" data-b="{cx.b(f"r{i}", d + 1.4 + 2.0 * i)}" data-anim="slideL" data-sfx="pop" style="font-size:{fs}px"><div class="bx"></div><div>{esc(main)}{sb}</div></div>'
     ex.append(f'<div class="check" style="top:{top}px">{rows}</div>')
-    # 체크 표시: 각 줄 상자 위에 겹쳐 찍는다(줄 높이를 알 수 없어 고정 간격 사용)
-    for i, _ in enumerate(items):
-        ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:122px;top:{top + 20 + (rowh - 92) // 2 + i * rowh}px">✓</div>')
+    y = top + 20
+    for i in range(len(parsed)):
+        ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", d + 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:122px;top:{y + (rh[i] - 92) // 2}px">✓</div>')
+        y += rh[i]
     if sc.get('note'):
-        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 90 + len(items) * rowh + 30), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
+        ex.append(sticker(cx, 'note', d + 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', 0, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 110 + sum(rh) + 20), 1))
     return [], max(8, cx.last + 3.2), '\n'.join(ex)
 
 def b_bigword(cx, sc, bg):

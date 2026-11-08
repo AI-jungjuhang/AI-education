@@ -18,7 +18,7 @@
     "size": 76
    },
    "icon": "chat",
-   "beats": 6,
+   "beats": 9,
    "mascot": {
     "face": "wide:o",
     "side": "right",
@@ -80,8 +80,8 @@
      "dim": true
     }
    ],
-   "note": "숫자는 예시예요!",
-   "beats": 8
+   "beats": 8,
+   "foot": "숫자는 예시예요"
   },
   {
    "type": "dice",
@@ -161,8 +161,8 @@
      "c": "red"
     }
    ],
-   "note": "그림은 이해를 돕는 예시예요",
-   "beats": 12
+   "beats": 12,
+   "foot": "그림은 이해를 돕는 예시예요"
   },
   {
    "type": "check",
@@ -172,17 +172,18 @@
    "rowh": 246,
    "icon": "bulb",
    "items": [
-    "중요한 질문은\n==세 번== 물어보기",
+    "중요한 질문은\n==여러 번== 물어보기",
     "달라지는 부분은\n==더 의심하기==",
     "겹쳐도 틀릴 수 있어요\n==출처==로 확인"
    ],
    "mascot": {
     "face": "happy:grin",
     "side": "right",
-    "at": 5,
+    "at": 0.2,
     "y": 1500
    },
-   "beats": 12
+   "beats": 12,
+   "delay": 1.0
   }
  ]
 }
