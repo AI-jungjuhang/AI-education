@@ -1,0 +1,6 @@
+{"id":"039-transformer-layer","tag":"11.1.2","name":"트랜스포머","scenes":[
+{"type":"bigword","bg":"blue","lines":["트랜스포머는","같은 층을 여러 번"],"fs":110,"sticker":{"t":"컨베이어 벨트 위\n작업장을 차례로 지나듯이요","c":"yellow","y":1000,"size":64},"icon":"sliders","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"어텐션 블록","t":"토큰끼리\n정보 주고받기","c":"yellow","size":96,"icon":"people","small":"모둠 활동처럼"},"bottom":{"label":"MLP 블록","t":"==토큰마다\n혼자 다듬기==","c":"green","size":96,"icon":"doc","small":"각자 공책 정리처럼"},"beats":11},
+{"type":"list","bg":"blue","title":"토큰 하나가 나오기까지","items":[{"t":"1. 토큰으로 쪼개기","c":"green","size":60},{"t":"2. 숫자 묶음 붙이기","c":"yellow","size":60},{"t":"3. 어텐션 ↔ MLP 여러 번","c":"red","size":60},{"t":"4. 마지막에 점수표","c":"green","size":60}],"beats":12},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"items":[{"who":"other","name":"그래서","t":"이 전체를 돌려서\n==토큰 하나==를 뽑아요","size":68,"icon":"sliders"},{"who":"other","t":"긴 답이 시간이\n걸리는 이유예요","size":66}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["구조가 복잡해도\n==답은 확인하기==","답이 매번 다른 건\n==마지막 뽑기== 때문||12장에서 다뤄요","어려우면\n==건너뛰어도 돼요==||질문 요령엔 문맥 이해면 충분해요"],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

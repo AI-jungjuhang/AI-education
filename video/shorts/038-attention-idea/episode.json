@@ -1,0 +1,127 @@
+{
+ "id": "038-attention-idea",
+ "tag": "11.1.1",
+ "name": "어텐션",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "어텐션은",
+    "어디를 볼지 골라요"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "\"그것\"을 만나면\n앞으로 돌아가 찾듯이요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 60,
+   "items": [
+    {
+     "who": "me",
+     "name": "예문",
+     "t": "푹신한 파란 ==생물==이\n숲을 돌아다녔다",
+     "size": 64,
+     "icon": "doc"
+    },
+    {
+     "who": "other",
+     "name": "\"생물\"의 질문",
+     "t": "내 앞에\n꾸며 주는 말 있나요?",
+     "size": 60,
+     "icon": "question"
+    },
+    {
+     "who": "other",
+     "t": "\"푹신한\", \"파란\"의 뜻을\n가져와 더해요",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1380
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "세 가지 이름",
+   "items": [
+    {
+     "t": "질문(query): 뭘 찾지?",
+     "c": "green",
+     "size": 62
+    },
+    {
+     "t": "열쇠(key): 나 여기 있어",
+     "c": "yellow",
+     "size": 62
+    },
+    {
+     "t": "값(value): 내 내용을 줄게",
+     "c": "red",
+     "size": 62
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이렇게 쓰면",
+    "t": "그거\n고쳐 줘",
+    "c": "red",
+    "size": 104,
+    "small": "무엇을 가리키는지 헷갈려요"
+   },
+   "bottom": {
+    "label": "이렇게 쓰면",
+    "t": "==둘째 문단의\n첫 문장== 고쳐 줘",
+    "c": "green",
+    "size": 88
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "\"그것\" 대신\n==이름 쓰기==",
+    "중요한 조건은\n==질문 가까이==",
+    "헷갈리는 자료엔\n==이름표 붙이기==||예: A 문서, B 문서"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
