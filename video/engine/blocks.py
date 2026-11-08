@@ -159,6 +159,64 @@ def b_outro(cx, sc, bg):
     sc.setdefault('mascot', {'face': 'happy:grin', 'side': 'center', 'at': 1})
     return p, 8, ''
 
+
+# ---------------- v3 블록: 흩어 놓는 배치와 다른 모양 ----------------
+def b_speech(cx, sc, bg):
+    """말풍선 대화. items: [{"who":"me|other","t":"글","name":"이름(선택)"}], 선택 mascot(표정 목록은 faces)."""
+    p = []
+    for i, it in enumerate(sc['items']):
+        who = it.get('who', 'other'); nm = f'<small>{esc(it["name"])}</small>' if it.get('name') else ''
+        p.append(f'<div class="bubble {who}" data-b="{cx.b(f"b{i}", 0.4 + 2.4 * i)}" data-anim="pop" data-sfx="pop" style="font-size:{it.get("size", 64)}px">{nm}{esc(it["t"])}</div>')
+    return p, max(5, cx.last + 3.0), ''
+
+def b_notes(cx, sc, bg):
+    """메모지 흩어 붙이기(최대 4장). 제목은 왼쪽 위."""
+    slots = [(40, 470, -4), (570, 560, 3), (60, 1010, 2.5), (560, 1100, -3)]
+    cols = ['#FFE680', '#9BE7C4', '#FFB3C1', '#A9D2FF']
+    ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:190px;font-size:104px">{esc(sc["title"])}</div>']
+    for i, it in enumerate(sc['items']):
+        x, y, r = slots[i]
+        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]}"><b>{esc(it["head"])}</b><span>{esc(it["body"])}</span></div>')
+    return [], max(6, cx.last + 3.0), '\n'.join(ex)
+
+def b_split(cx, sc, bg):
+    """위아래 두 판. top/bottom: {"label","t","c"(색),"small"(선택)}."""
+    T, B = sc['top'], sc['bottom']
+    def panel(it, y, h, key, t0, anim):
+        col = {'red': 'var(--red);color:#fff', 'green': 'var(--green);color:var(--ink)', 'yellow': 'var(--yellow);color:var(--ink)', 'blue': 'var(--blue);color:#fff', 'white': '#fff;color:var(--ink)'}[it.get('c', 'red')]
+        sm = f'<div style="font-size:42px;margin-top:22px;opacity:.9">{esc(it["small"])}</div>' if it.get('small') else ''
+        return (f'<div class="panel" data-b="{cx.b(key, t0)}" data-anim="{anim}" data-sfx="whoosh" style="top:{y}px;height:{h}px;background:{col}">'
+                f'<small>{esc(it["label"])}</small><div class="big2" style="font-size:{it.get("size", 84)}px">{esc(it["t"])}</div>{sm}</div>')
+    ex = [panel(T, 0, 940, 'top', 0.2, 'slideL').replace('class="panel"', 'class="panel topp"'), panel(B, 940, 980, 'bottom', 3.6, 'slideR')]
+    if sc.get('vs', True):
+        ex.append(f'<div class="sticker c-yellow" data-b="{cx.b("vs", 3.4)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:440px;top:880px;font-size:76px;padding:6px 30px;z-index:5">VS</div>')
+    return [], max(8, cx.last + 4.0), '\n'.join(ex)
+
+def b_check(cx, sc, bg):
+    """체크리스트 종이. 항목이 나타난 뒤 체크 표시가 톡 찍힌다."""
+    items = sc['items']; top = sc.get('top', 430)
+    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", 0)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 150}px;font-size:68px;z-index:6" data-rot="-3">{esc(sc.get("label", "오늘의 써먹기"))}</div>']
+    rows = ''.join(f'<div class="row2" data-b="{cx.b(f"r{i}", 1.4 + 2.0 * i)}" data-anim="slideL" data-sfx="pop"><div class="bx"></div><div>{esc(t)}</div></div>' for i, t in enumerate(items))
+    ex.append(f'<div class="check" style="top:{top}px">{rows}</div>')
+    # 체크 표시: 각 줄 상자 위에 겹쳐 찍는다(줄 높이를 알 수 없어 고정 간격 사용)
+    for i, _ in enumerate(items):
+        ex.append(f'<div class="tick" data-b="{cx.b(f"t{i}", 2.2 + 2.0 * i)}" data-anim="pop" data-sfx="tick" style="left:{122}px;top:{top + 52 + i * int(sc.get("step", 135))}px">✓</div>')
+    if sc.get('note'):
+        ex.append(sticker(cx, 'note', 2.0 + 2.0 * len(items) + 0.4, sc['note'], 'yellow', 'pop', -2, 'ding', 54).replace('class="sticker', 'style="position:absolute;left:110px;top:%dpx" class="sticker' % (top + 150 + len(items) * int(sc.get('step', 135))), 1).replace('style="font-size', 'data-x="1" style="font-size',1))
+    return [], max(8, cx.last + 3.2), '\n'.join(ex)
+
+def b_bigword(cx, sc, bg):
+    """한 마디를 크게, 왼쪽 위에. 아래쪽에 작은 설명 스티커."""
+    dark = ' dark' if bg in DARK_BG else ''
+    ex = []
+    for i, ln in enumerate(sc['lines']):
+        ex.append(f'<div class="tapeTitle st{dark} huge" data-b="{cx.b(f"line{i}", i * 1.0)}" data-anim="slam" data-sfx="slam" style="top:{sc.get("y", 250) + i * 205}px;font-size:{sc.get("fs", 170)}px">{esc(ln)}</div>')
+    if sc.get('sticker'):
+        s = sc['sticker']; s = {'t': s} if isinstance(s, str) else s
+        ex.append(f'<div class="sticker c-{s.get("c", "yellow")}" data-b="{cx.b("sticker", len(sc["lines"]) + 0.6)}" data-anim="{s.get("anim", "slideR")}" data-rot="{s.get("rot", -3)}" data-sfx="whoosh" style="position:absolute;right:70px;top:{s.get("y", 900)}px;font-size:{s.get("size", 64)}px;max-width:820px;text-align:left">{esc(s["t"])}</div>')
+    return [], max(5, cx.last + 2.6), '\n'.join(ex)
+
 BLOCKS = {'title': (b_title, 'blue'), 'choices': (b_choices, 'white'), 'bars': (b_bars, 'blue'), 'dice': (b_dice, 'orange'),
           'chain': (b_chain, 'white'), 'stack': (b_stack, 'yellow'), 'cards': (b_cards, 'blue'), 'tip': (b_tip, 'white'),
-          'list': (b_list, 'yellow'), 'vs': (b_vs, 'blue'), 'outro': (b_outro, 'blue')}
+          'list': (b_list, 'yellow'), 'vs': (b_vs, 'blue'), 'outro': (b_outro, 'blue'),
+          'speech': (b_speech, 'white'), 'notes': (b_notes, 'blue'), 'split': (b_split, 'white'), 'check': (b_check, 'white'), 'bigword': (b_bigword, 'blue')}

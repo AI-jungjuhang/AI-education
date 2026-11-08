@@ -5,7 +5,7 @@ import json, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from blocks import BLOCKS, BG, mascot_html, Ctx, num
 
-GAP = {'title': 34, 'choices': 34, 'bars': 26, 'dice': 30, 'chain': 30, 'stack': 34, 'cards': 20, 'tip': 32, 'outro': 34, 'list': 30, 'vs': 30}
+GAP = {'speech': 70, 'notes': 20, 'split': 20, 'check': 20, 'bigword': 20, 'title': 34, 'choices': 34, 'bars': 26, 'dice': 30, 'chain': 30, 'stack': 34, 'cards': 20, 'tip': 32, 'outro': 34, 'list': 30, 'vs': 30}
 
 def build(ep_dir):
     ep_dir = pathlib.Path(ep_dir); ep = json.load(open(ep_dir / 'episode.json', encoding='utf-8'))
@@ -21,7 +21,7 @@ def build(ep_dir):
         dur = sc.get('beats', dur)
         m = mascot_html(cx, sc.get('mascot'))
         gap = sc.get('gap', GAP.get(typ, 28))
-        style = f'gap:{gap}px' + (';bottom:520px' if typ == 'outro' else '') + (';top:250px' if typ == 'cards' else '')
+        style = f'gap:{gap}px' + {'top': ';justify-content:flex-start', 'bottom': ';justify-content:flex-end'}.get(sc.get('vpos'), '') + {'left': ';align-items:flex-start', 'right': ';align-items:flex-end'}.get(sc.get('align'), '') + (';bottom:520px' if typ == 'outro' else '') + (';top:250px' if typ == 'cards' else '')
         lift = ' data-lift="1"' if sc.get('lift') else ''
         body = '\n  '.join(parts)
         secs.append(f'<!-- {i + 1}. {typ} {num(a)}~{num(a + dur)}박 -->\n<section class="scene" data-a="{num(a)}" data-e="{num(a + dur)}" data-bg="{BG[bg]}"{lift}><div class="in" style="{style}">\n  {body}\n</div>{extra}{m}</section>\n')

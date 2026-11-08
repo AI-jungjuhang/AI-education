@@ -1,0 +1,134 @@
+{
+ "id": "005-context-v3",
+ "tag": "2.1.1",
+ "scenes": [
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "center",
+   "items": [
+    {
+     "who": "me",
+     "name": "나",
+     "t": "맛집 알려 줘!",
+     "size": 84
+    },
+    {
+     "who": "other",
+     "name": "처음 본 사람",
+     "t": "음… 뭐 드시고 싶어요? 누구랑요? 예산은요?",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   },
+   "beats": 8,
+   "gap": 100
+  },
+  {
+   "type": "bigword",
+   "bg": "yellow",
+   "lines": [
+    "챗봇한테도",
+    "똑같아요"
+   ],
+   "sticker": {
+    "t": "내 머릿속은 못 보니까\n말해 줘야 알아요",
+    "c": "red",
+    "rot": 3,
+    "y": 1000,
+    "size": 62
+   },
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 2.0
+   },
+   "beats": 6
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "이 네 가지만\n알려 줘요",
+   "items": [
+    {
+     "head": "누가 읽어?",
+     "body": "초등학교 5학년"
+    },
+    {
+     "head": "어디에 쓸 거야?",
+     "body": "발표 첫 장"
+    },
+    {
+     "head": "조건은?",
+     "body": "3문장, 존댓말"
+    },
+    {
+     "head": "참고할 자료는?",
+     "body": "아래에 붙인 메모"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "top": {
+    "label": "이렇게 부탁하면",
+    "t": "동아리 홍보 문구 써 줘",
+    "c": "red",
+    "small": "뭘, 누구한테, 어떻게?"
+   },
+   "bottom": {
+    "label": "이렇게 부탁하면!",
+    "t": "신입 1학년이 볼 인스타 글, 3문장, 부드러운 존댓말로",
+    "c": "green",
+    "size": 64,
+    "small": "이유도 말하면 더 잘 알아들어요 (‘경쟁’은 빼 줘, 부담스러워 보여서)"
+   },
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "yellow",
+   "vpos": "top",
+   "items": [
+    {
+     "who": "other",
+     "t": "길게 많이 쓰면 좋을까요? 아니에요!",
+     "size": 66
+    },
+    {
+     "who": "other",
+     "t": "답에 필요한 사정만 쓰세요. 관련 없는 얘기는 오히려 헷갈려요",
+     "size": 60
+    },
+    {
+     "who": "other",
+     "t": "다 쓰고 나서 물어보세요. \"아무것도 모르는 동료가 읽어도 알까?\"",
+     "size": 58
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2
+   },
+   "beats": 10
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "items": [
+    "보내기 전에 네 칸 채우기",
+    "‘왜 필요한지’ 한 줄 붙이기",
+    "자료는 질문 아래에 붙이기"
+   ],
+   "note": "개인정보는 지우고 붙여요",
+   "beats": 12
+  }
+ ]
+}
