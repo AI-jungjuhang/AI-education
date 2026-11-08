@@ -1,0 +1,135 @@
+{
+ "id": "074-permissions",
+ "tag": "18.1.2",
+ "name": "권한 모드",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "권한 모드는",
+    "운전 보조 장치"
+   ],
+   "fs": 120,
+   "sticker": {
+    "t": "익숙한 길에서만\n하나씩 켜요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "lock",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "묻지 않고\n하는 범위",
+   "items": [
+    {
+     "t": "default → 읽기만",
+     "c": "green",
+     "size": 48
+    },
+    {
+     "t": "acceptEdits → 파일 고치기까지",
+     "c": "yellow",
+     "size": 48
+    },
+    {
+     "t": "plan → 읽기만 (계획)",
+     "c": "green",
+     "size": 48
+    },
+    {
+     "t": "auto → 거의 모두, 안전 점검",
+     "c": "blue",
+     "size": 48
+    },
+    {
+     "t": "dontAsk → 허락한 도구만",
+     "c": "yellow",
+     "size": 48
+    },
+    {
+     "t": "bypassPermissions → 모두",
+     "c": "red",
+     "size": 48
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "내 컴퓨터에서",
+    "t": "bypass\nPermissions",
+    "c": "red",
+    "size": 92,
+    "small": "모든 일을 묻지 않고 해요"
+   },
+   "bottom": {
+    "label": "bypassPermissions는",
+    "t": "==컨테이너나\n가상 머신 안에서만==",
+    "c": "green",
+    "size": 84
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "남의 저장소를 열 땐",
+     "t": "claude --permission-mode\ndefault",
+     "size": 58,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "기본으로 시작해서\n==계획 모드로만== 살펴봐요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "처음엔\n==기본과 계획 모드==면 충분",
+    "acceptEdits는\n==결과를 볼 일에만==",
+    "내 설정에\n==bypass가 없는지 확인=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "id": "073-plan-mode",
+ "tag": "18.1.1",
+ "name": "계획 모드",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "짓기 전에",
+    "설계도부터 봐요"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "계획 모드에선\n파일을 건드리지 않아요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "계획 모드 켜기",
+   "items": [
+    {
+     "t": "Shift+Tab → plan mode on",
+     "c": "green",
+     "size": 54
+    },
+    {
+     "t": "질문 앞에 /plan",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "claude --permission-mode plan",
+     "c": "blue",
+     "size": 50
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "계획이 좋으면",
+    "t": "승인하고 진행",
+    "c": "green",
+    "size": 100,
+    "icon": "check",
+    "small": "고칠 때마다 확인하기도 고를 수 있어요"
+   },
+   "bottom": {
+    "label": "계획이 모호하면",
+    "t": "승인하지 말고\n질문하기",
+    "c": "yellow",
+    "size": 96,
+    "icon": "question"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "예: 영상 만들기 전",
+     "t": "/plan 토큰 페이지를\n쇼츠로 만들 계획을 세워 줘",
+     "size": 60,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "장면 수, 근거, 만들 파일을\n==먼저 볼 수 있어요==",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "파일 3개 넘게 건드리면\n==계획 먼저==",
+    "계획에서\n==더하는 게 있나== 보기",
+    "원본에 없는 장면은\n==빼고 다시 계획=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

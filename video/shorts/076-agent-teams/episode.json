@@ -1,0 +1,6 @@
+{"id":"076-agent-teams","tag":"18.1.4","name":"에이전트 팀","scenes":[
+{"type":"bigword","bg":"blue","lines":["에이전트 팀은","함께 일하는 동료"],"fs":115,"sticker":{"t":"서로 이야기하는 동료는\n월급이 비싸요","c":"yellow","y":1000,"size":66},"icon":"people","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":false,"top":{"label":"서브에이전트","t":"부른 쪽에만\n보고해요","c":"yellow","size":100,"icon":"person","small":"심부름꾼처럼"},"bottom":{"label":"에이전트 팀","t":"==팀원끼리\n직접 대화해요==","c":"green","size":100,"icon":"people","small":"공유 할 일 목록으로 조율해요"},"beats":11},
+{"type":"notes","bg":"blue","title":"켜기 전에","items":[{"head":"실험 기능","body":"기본은 꺼져 있어요","icon":"warn"},{"head":"토큰을\n훨씬 많이","body":"혼자보다 비싸요","icon":"sliders"},{"head":"제한이\n있어요","body":"문서 목록 읽기","icon":"book"}],"beats":12},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"items":[{"who":"other","name":"예: 우리 채널이라면","t":"장면 세 개의 화면을\n==동시에== 만들 때","size":66,"icon":"doc"},{"who":"other","t":"같은 파일을 두 팀원이\n만지지 않게 나눠요","size":62}],"mascot":{"face":"wide:o","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["팀 전에\n==서브에이전트로 먼저==","작은 일로 시험하고\n==사용량 확인==","같은 파일은\n==한 팀원만=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}
