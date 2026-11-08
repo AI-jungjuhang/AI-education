@@ -1,0 +1,6 @@
+{"id":"098-prompt-agent","tag":"23.2.2","name":"일 맡기는 말","scenes":[
+{"type":"bigword","bg":"blue","lines":["일을 맡길 땐","끝의 모양을 말해요"],"fs":110,"sticker":{"t":"AI는 폴더는 읽어도\n내 머릿속은 못 봐요","c":"yellow","y":1000,"size":68},"icon":"target","beats":9,"mascot":{"face":"wide:o","side":"right","at":4.4}},
+{"type":"split","bg":"white","marks":true,"top":{"label":"흐릿한 부탁","t":"영상 대본\n만들어 줘","c":"red","size":104},"bottom":{"label":"분명한 부탁","t":"==tokens.md를 근거로\n60초 대본, 원본에\n없는 말은 빼고==","c":"green","size":76},"beats":11},
+{"type":"notes","bg":"blue","title":"세 줄로\n맡기기","items":[{"head":"어디를","body":"파일, 폴더","icon":"pin"},{"head":"어떤 모양으로","body":"끝났다의 기준","icon":"target"},{"head":"하지 말 것","body":"건드리면 안 되는 것","icon":"lock"}],"beats":12},
+{"type":"speech","bg":"white","vpos":"top","gap":80,"hl":"#FF9EB1","items":[{"who":"me","name":"조사를 맡길 때","t":"답하기 전에\n==파일을 먼저 열어서 읽어==","size":64,"icon":"person"},{"who":"other","t":"열어 보지 않은 건\n모른다고 말하게 해요","size":64}],"mascot":{"face":"happy:grin","side":"left","at":0.2,"y":1300},"beats":10,"delay":1.0},
+{"type":"check","bg":"white","label":"오늘의 써먹기","top":450,"icon":"bulb","items":["설명 대신\n==@파일·스크린샷 건네기==","범위는\n==숫자로 말하기==||예: 도움말 3군데","\"어디를·모양·하지 말 것\"\n==세 줄 쓰기=="],"mascot":{"face":"happy:grin","side":"right","at":0.2,"y":1440},"beats":12,"delay":1.0}]}

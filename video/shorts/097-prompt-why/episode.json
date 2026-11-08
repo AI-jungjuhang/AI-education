@@ -1,0 +1,119 @@
+{
+ "id": "097-prompt-why",
+ "tag": "23.2.1",
+ "name": "요령의 원리",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "앞에 놓인 글이",
+    "답을 정해요"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "그래서 맥락·예시·형식이\n먹혀요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "bulb",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "먹히는\n이유 넷",
+   "items": [
+    {
+     "head": "분명하게",
+     "body": "새 직원에게\n말하듯",
+     "icon": "person"
+    },
+    {
+     "head": "이유와 함께",
+     "body": "비슷한 상황에도",
+     "icon": "chat"
+    },
+    {
+     "head": "예시 보여 주기",
+     "body": "형식·말투를 정확히",
+     "icon": "doc"
+    },
+    {
+     "head": "구조 표시",
+     "body": "<지시> <자료>",
+     "icon": "sliders"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이유 없이",
+    "t": "줄임표(…)를\n쓰지 마",
+    "c": "red",
+    "size": 96
+   },
+   "bottom": {
+    "label": "이유와 함께",
+    "t": "==음성으로 읽히니\n줄임표는 빼 줘==",
+    "c": "green",
+    "size": 92
+   },
+   "beats": 11
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "이제는\n필요 없는 요령",
+   "items": [
+    {
+     "t": "\"중요!!\" 잔뜩 붙이기",
+     "c": "red",
+     "size": 60
+    },
+    {
+     "t": "\"깊이 생각해\" 주문",
+     "c": "red",
+     "size": 60
+    },
+    {
+     "t": "\"포기하지 마\" 다그치기",
+     "c": "red",
+     "size": 60
+    }
+   ],
+   "note": "대신 끝났는지 확인할 방법을 줘요",
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "부탁에\n==이유 한 문장==",
+    "형식이 중요하면\n==예시 2~3개==",
+    "강조 대신\n==한 줄을 분명히=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

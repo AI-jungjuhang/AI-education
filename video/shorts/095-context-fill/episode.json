@@ -1,0 +1,124 @@
+{
+ "id": "095-context-fill",
+ "tag": "23.1.1",
+ "name": "기억 공간",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "말하기도 전에",
+    "책상이 차 있어요"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "AI는 책상 위에\n올라온 것만 봐요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "book",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "책상에\n올라오는 것",
+   "items": [
+    {
+     "t": "시작 전: CLAUDE.md, 스킬 설명",
+     "c": "green",
+     "size": 54
+    },
+    {
+     "t": "시작 전: MCP 도구 이름",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "일하는 동안: 읽은 파일",
+     "c": "blue",
+     "size": 54
+    },
+    {
+     "t": "일하는 동안: 훅 결과",
+     "c": "red",
+     "size": 54
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "책상 들여다보기",
+     "t": "/context",
+     "size": 96,
+     "icon": "search"
+    },
+    {
+     "who": "other",
+     "t": "무엇이 얼마나 차지하는지\n==색칠된 칸==으로 보여 줘요",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "책상이 커졌으니",
+    "t": "다 올려 두기",
+    "c": "red",
+    "size": 104,
+    "small": "어질러지면 못 찾아요"
+   },
+   "bottom": {
+    "label": "책상이 커도",
+    "t": "==지금 일에\n필요한 것만==",
+    "c": "green",
+    "size": 100
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "답이 흐려지면\n==/context부터==",
+    "안 쓰는 스킬·MCP는\n==끄거나 지우기==",
+    "긴 읽기는\n==서브에이전트에게=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

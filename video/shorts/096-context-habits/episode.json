@@ -1,0 +1,126 @@
+{
+ "id": "096-context-habits",
+ "tag": "23.1.2",
+ "name": "책상 정리",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "꼭 지킬 규칙은",
+    "CLAUDE.md에"
+   ],
+   "fs": 115,
+   "sticker": {
+    "t": "대화로만 한 말은\n요약에 묻힐 수 있어요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "pin",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "정리 도구\n네 가지",
+   "items": [
+    {
+     "t": "/clear → 일이 바뀔 때",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "/compact → 같은 일이 길어질 때",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "/rewind → 한쪽만 요약",
+     "c": "blue",
+     "size": 58
+    },
+    {
+     "t": "서브에이전트 → 많이 읽을 때",
+     "c": "red",
+     "size": 54
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "요약 뒤에도 살아남아요",
+    "t": "CLAUDE.md,\n스킬 설명",
+    "c": "green",
+    "size": 96,
+    "icon": "check",
+    "small": "파일에서 다시 읽어 와요"
+   },
+   "bottom": {
+    "label": "사라질 수 있어요",
+    "t": "대화로만\n한 지시",
+    "c": "yellow",
+    "size": 100,
+    "icon": "warn"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "요약에 방향 주기",
+     "t": "/compact 결정 사항과\n==확인 못 한 링크만== 남겨 줘",
+     "size": 58,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "정리의 목적은\n아끼기보다 집중하기예요",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "일이 바뀌면\n==/clear==",
+    "길어지면\n==/compact 남길 것==",
+    "스킬 맨 위에\n==가장 중요한 지시=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
