@@ -1,6 +1,7 @@
 {
  "id": "008-iterate",
  "tag": "2.2.1",
+ "name": "다시 부탁하기",
  "scenes": [
   {
    "type": "bigword",

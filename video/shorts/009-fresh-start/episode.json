@@ -1,16 +1,29 @@
 {
  "id": "009-fresh-start",
  "tag": "2.2.2",
+ "name": "새 대화",
  "scenes": [
   {
    "type": "bigword",
    "bg": "blue",
-   "lines": ["낙서가 가득한", "칠판"],
+   "lines": [
+    "낙서가 가득한",
+    "칠판"
+   ],
    "fs": 150,
-   "sticker": {"t": "긴 대화창이\n바로 이 칠판이에요", "c": "yellow", "y": 1000, "size": 76},
+   "sticker": {
+    "t": "긴 대화창이\n바로 이 칠판이에요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 76
+   },
    "icon": "chat",
    "beats": 9,
-   "mascot": {"face": "wide:o", "side": "right", "at": 4.4}
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
   },
   {
    "type": "speech",
@@ -18,11 +31,32 @@
    "vpos": "top",
    "gap": 80,
    "items": [
-    {"who": "me", "name": "예: 긴 대화 끝에", "t": "아까 정한 조건\n어디 갔어?", "size": 78, "icon": "person"},
-    {"who": "other", "name": "챗봇 입장", "t": "앞의 조건이\n대화 속에 묻혀요", "size": 66, "icon": "question"},
-    {"who": "other", "t": "엇나간 답도\n==계속 영향을 줘요==", "size": 66}
+    {
+     "who": "me",
+     "name": "예: 긴 대화 끝에",
+     "t": "아까 정한 조건\n어디 갔어?",
+     "size": 78,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "챗봇 입장",
+     "t": "앞의 조건이\n대화 속에 묻혀요",
+     "size": 66,
+     "icon": "question"
+    },
+    {
+     "who": "other",
+     "t": "엇나간 답도\n==계속 영향을 줘요==",
+     "size": 66
+    }
    ],
-   "mascot": {"face": "wide:o", "side": "left", "at": 0.2, "y": 1340},
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1340
+   },
    "beats": 11,
    "delay": 1.0
   },
@@ -31,9 +65,19 @@
    "bg": "blue",
    "title": "새 대화가\n나은 때",
    "items": [
-    {"head": "==고쳐도 계속\n엇나갈 때==", "icon": "sliders"},
-    {"head": "==대화가 아주\n길어졌을 때==", "icon": "clock"},
-    {"head": "==주제가\n바뀔 때==", "ex": "여행 계획 → 보고서", "icon": "chat"}
+    {
+     "head": "==고쳐도 계속\n엇나갈 때==",
+     "icon": "sliders"
+    },
+    {
+     "head": "==대화가 아주\n길어졌을 때==",
+     "icon": "clock"
+    },
+    {
+     "head": "==주제가\n바뀔 때==",
+     "ex": "여행 계획 → 보고서",
+     "icon": "chat"
+    }
    ],
    "beats": 12
   },
@@ -41,8 +85,21 @@
    "type": "split",
    "bg": "white",
    "marks": false,
-   "top": {"label": "1. 지금 대화에서", "t": "정해진 것을\n정리해 줘", "c": "blue", "size": 96, "icon": "doc"},
-   "bottom": {"label": "2. 새 대화에서", "t": "==정리한 걸\n첫 메시지로==", "c": "green", "size": 96, "icon": "chat", "small": "틀린 곳은 고쳐서 붙여 넣기"},
+   "top": {
+    "label": "1. 지금 대화에서",
+    "t": "정해진 것을\n정리해 줘",
+    "c": "blue",
+    "size": 96,
+    "icon": "doc"
+   },
+   "bottom": {
+    "label": "2. 새 대화에서",
+    "t": "==정리한 걸\n첫 메시지로==",
+    "c": "green",
+    "size": 96,
+    "icon": "chat",
+    "small": "틀린 곳은 고쳐서 붙여 넣기"
+   },
    "beats": 11
   },
   {
@@ -51,10 +108,25 @@
    "vpos": "top",
    "gap": 80,
    "items": [
-    {"who": "me", "name": "정리해 달라고 할 때", "t": "==안 된 이유==도\n적어 줘", "size": 80, "icon": "person"},
-    {"who": "other", "t": "같은 실수를\n피하기 쉬워요", "size": 70}
+    {
+     "who": "me",
+     "name": "정리해 달라고 할 때",
+     "t": "==안 된 이유==도\n적어 줘",
+     "size": 80,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "같은 실수를\n피하기 쉬워요",
+     "size": 70
+    }
    ],
-   "mascot": {"face": "happy:grin", "side": "left", "at": 0.2, "y": 1300},
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
    "beats": 10,
    "delay": 1.0
   },
@@ -69,7 +141,12 @@
     "주제가 바뀌면\n==새 대화 열기==",
     "중요한 조건은\n==첫머리에== 적기"
    ],
-   "mascot": {"face": "happy:grin", "side": "right", "at": 0.2, "y": 1440},
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
    "beats": 12,
    "delay": 1.0
   }

@@ -1,6 +1,7 @@
 {
  "id": "002-tokens",
- "tag": "1.1.2 · 1/2",
+ "tag": "1.1.2",
+ "name": "토큰 1/2",
  "scenes": [
   {
    "type": "bigword",

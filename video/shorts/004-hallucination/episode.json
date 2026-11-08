@@ -1,6 +1,7 @@
 {
  "id": "004-hallucination",
  "tag": "1.1.3",
+ "name": "환각",
  "scenes": [
   {
    "type": "bigword",

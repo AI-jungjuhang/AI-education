@@ -1,6 +1,7 @@
 {
  "id": "001-next-word",
  "tag": "1.1.1",
+ "name": "다음 말 맞히기",
  "scenes": [
   {
    "type": "bigword",

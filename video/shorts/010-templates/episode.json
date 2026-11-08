@@ -1,6 +1,7 @@
 {
  "id": "010-templates",
  "tag": "2.2.3",
+ "name": "질문 틀",
  "scenes": [
   {
    "type": "bigword",

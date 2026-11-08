@@ -1,6 +1,7 @@
 {
  "id": "007-specific",
  "tag": "2.1.3",
+ "name": "구체적으로",
  "scenes": [
   {
    "type": "bigword",

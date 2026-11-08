@@ -33,7 +33,7 @@ def build(ep_dir):
         secs.append(f'<!-- {i + 1}. {typ} {num(a)}~{num(a + dur)}박 -->\n<section class="scene" data-a="{num(a)}" data-e="{num(a + dur)}" data-bg="{BG[bg]}"{lift}{hl}><div class="in" style="{style}">\n  {body}\n</div>{extra}{foot}{m}</section>\n')
         a += dur
     tpl = open(pathlib.Path(__file__).parent / 'template.html', encoding='utf-8').read()
-    out = tpl.replace('{{SCENES}}', '\n'.join(secs)).replace('{{TOTAL}}', num(a)).replace('{{TAG}}', ep.get('tag', ''))
+    out = tpl.replace('{{SCENES}}', '\n'.join(secs)).replace('{{TOTAL}}', num(a)).replace('{{TAG}}', __import__('blocks').esc((ep.get('tag', '') + ' ' + ep.get('name', '')).strip()))
     import re
     out = re.sub(r' data-rot="[^"]*"', '', out)   # 정지 상태에서 기울어지는 요소는 쓰지 않는다(사용자 요청 2026-11-08)
     (ep_dir / 'scene.html').write_text(out, encoding='utf-8')
