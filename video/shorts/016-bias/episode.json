@@ -1,0 +1,126 @@
+{
+ "id": "016-bias",
+ "tag": "3.2.3",
+ "name": "편향",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "챗봇에도 편견이",
+    "섞일 수 있어요"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "사람이 쓴 글을 읽고\n배웠으니까요",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "people",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "예: 이렇게 부탁하면",
+     "t": "간호사에게\n감사 편지 써 줘",
+     "size": 76,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "성별을 말하지 않았는데",
+     "t": "==한쪽 성별로==\n정해서 쓸 수 있어요",
+     "size": 66,
+     "icon": "question"
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "편향이\n생기는 곳",
+   "items": [
+    {
+     "head": "배운 글",
+     "body": "한쪽으로\n쏠린 말",
+     "icon": "book"
+    },
+    {
+     "head": "만든 사람",
+     "body": "어떤 글을\n넣을지",
+     "icon": "sliders"
+    },
+    {
+     "head": "내 질문",
+     "body": "한쪽을\n미리 정함",
+     "icon": "question"
+    },
+    {
+     "head": "사람의 평가",
+     "body": "좋아하는\n답에 맞춤",
+     "icon": "people"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "이렇게 물으면",
+    "t": "왜 ○○는\n~할까?",
+    "c": "red",
+    "size": 104,
+    "small": "이미 한쪽을 정해 두고 물어요"
+   },
+   "bottom": {
+    "label": "이렇게 물으면",
+    "t": "\"~라는 말,\n==사실인지부터==\n알려 줘\"",
+    "c": "green",
+    "size": 84
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "label": "오늘의 써먹기",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "사람에 대한 결정은\n==맡기지 않기==||예: 채용, 평가, 대출",
+    "==서로 다른 입장==으로\n설명해 달라고 하기",
+    "낯선 주제는\n==더 확인하기=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
