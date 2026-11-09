@@ -19,7 +19,7 @@ A chatbot learned "the next word" from a huge amount of human writing. That writ
 ## Cases researchers have found
 
 - **Word meanings (2016).** Tolga Bolukbasi and others studied word representations learned from news articles. They found gender stereotypes built in. For example, job words were linked to genders in biased ways. The researchers also suggested a way to reduce this. Note that this study looked at the word representations that models are built on, not at chatbots.
-- **Decisions (2023).** Anthropic researchers, led by Alex Tamkin, proposed a way to test for unfair treatment before people use a language model for big decisions, like who gets a loan or housing. They wrote 70 decision scenarios and changed the person's background details, such as age, gender, or race, to see whether the answers changed. With the Claude 2.0 model, they found it favored some groups or disfavored others in some of the scenarios. They showed that carefully written prompts cut this down a lot. They also said they do not support letting a language model make high-risk decisions like these on its own.
+- **Decisions (2023).** Anthropic researchers, led by Alex Tamkin, proposed a way to test for unfair treatment ahead of time. They had in mind big decisions, like who gets a loan or housing. They wrote 70 decision scenarios and changed the person's background details, such as age, gender, or race, to see whether the answers changed. With the Claude 2.0 model, they found it favored some groups or disfavored others in some of the scenarios. They showed that carefully written prompts cut this down a lot. They also said they do not support letting a language model make high-risk decisions like these on its own.
 
 ## Where bias comes from
 
