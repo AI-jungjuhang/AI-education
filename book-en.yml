@@ -205,7 +205,7 @@ parts:
       title: Slash commands
       pages:
       - {slug: slash-basics, title: Slash commands you'll use often, min: 6, done: true}
-      - {slug: slash-custom, title: Make your own shortcut commands, min: 7, done: false}
+      - {slug: slash-custom, title: Make your own shortcut commands, min: 7, done: true}
     - num: '16.2'
       title: CLAUDE.md
       pages:

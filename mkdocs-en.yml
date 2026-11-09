@@ -156,6 +156,7 @@ nav:
       - part5/ch16/index.md
       - "16.1 Slash commands":
         - "Slash commands you'll use often": part5/ch16/slash-basics.md
+        - "Make your own shortcut commands": part5/ch16/slash-custom.md
     - "Ch. 17 5B Automate and Connect":
       - part5/ch17/index.md
     - "Ch. 18 5C Advanced ★":
