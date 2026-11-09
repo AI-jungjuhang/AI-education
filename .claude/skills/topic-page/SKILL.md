@@ -47,3 +47,23 @@ description: 「AI 정주행」(부제: 열 살도 이해하는 AI 교과서) �
 - 사용자가 "그만"이라고 할 때까지 페이지를 이어서 쓴다(2026-11-07 승인). 사용자 평가가 들어오면 이어 쓰던 페이지 전에 먼저 반영한다.
 - 스타일이 필요하면 `mkdocs.yml`의 nav에 먼저 추가하고 `mkdocs build`가 경고 없이 통과하는지 확인한다.
 - 디자인을 건드릴 때는 `.claude/skills/frontend-design`을 따른다.
+
+## 영어판 페이지 (2026-11-09 추가)
+
+영어판(`docs-en/`, 이름 **AI, Start to Finish**, 부제 **The AI textbook a 10-year-old can follow**)은 한국어 페이지를 번역하지 않는다. 같은 slug의 한국어 페이지는 구조와 수준만 참고하고, 영어 원전을 다시 읽고 영어 독자를 위해 새로 쓴다.
+
+- **페이지 틀 제목**(순서는 위와 같다): `What you'll learn on this page` / `In 10-year-old words`(이 말이 있어야 감자가 상자 옆에 선다) / `★ Going deeper` / `## Try it yourself` / `## Use it today` / `## Common mix-ups` / `## Sources and date checked`. 머리 줄은 `<p class="ep-meta"><span>Ch. 1 · 1.1</span><span>About 5 min read</span><span>2026-11-09</span></p>`.
+- **예시는 영어권 것으로**: 음식·학교 학년(US grade)·돈(달러)·서비스·법을 영어권 독자에게 맞춘다. 특정 나라 법은 나라를 밝힌다. 지어낸 예시는 "example"이라고 밝힌다.
+- **쉬운 글(10살 눈높이)**: 미국 연방 쉬운 글 지침(Federal Plain Language Guidelines, 2011년 3월판 Rev. 1, Center for Plain Language가 다시 올린 PDF https://centerforplainlanguage.org/wp-content/uploads/2025/12/FederalPLGuidelines.pdf)에서 뽑은 점검표.
+    1. 독자에게 "you"로 직접 말한다. 능동태로 쓴다(누가 하는지 보이게).
+    2. 한 문장에 생각 하나. 문장은 짧게(25단어를 넘으면 나눈다). 주어와 동사를 가깝게 둔다.
+    3. 짧고 흔한 단어를 쓴다. 동사를 명사로 바꾸지 않는다("make a decision"보다 "decide").
+    4. 용어는 처음 나올 때 쉬운 말로 풀고, 같은 것은 끝까지 같은 말로 부른다. 약어는 줄인다.
+    5. 핵심을 먼저, 조건과 예외는 나중에. 이중 부정은 쓰지 않는다.
+    6. 문단은 주제 문장으로 시작하고 한 문단에 주제 하나. 짧게.
+    7. 예시, 목록, 표로 어려운 내용을 나눈다. 강조는 꼭 기억할 개념에만.
+    8. 쉬운 글은 내용을 깎는 것이 아니다. 내용 수준은 그대로 두고 말만 쉽게 한다.
+- **학년 점수 자동 검사**: `python3 tools/readability.py docs-en/<경로>.md`. 본문 Flesch-Kincaid 6.0 이하(사용자 결정). 심화 상자와 출처 절은 재지 않는다. 걸리면 긴 문장부터 나누고, 꼭 필요한 용어 때문에 높으면 용어는 두고 둘레 문장을 줄인다. 점수가 통과해도 사람이 읽는 점검을 대신하지 않는다.
+- **AI 티 줄이기**: 쓴 뒤 `humanizer` 스킬(`.claude/skills/humanizer`, blader/humanizer, MIT, 변경 없이 복사)로 훑는다. 사실·숫자·인용·출처는 건드리지 않는다. 특히 "not X but Y" 대비, 한 줄 마무리, 습관적인 셋 나열, 대시(—), 꾸밈용 굵은 글씨를 본다. 대시는 쓰지 않는다.
+- **순서**: 원전 확인 → 작성 → humanizer 점검 → readability 검사 → `mkdocs build --strict -f mkdocs-en.yml`(종료 코드) → `book-en.yml`의 done 갱신과 `python3 tools/build_book.py --book book-en.yml --config mkdocs-en.yml --docs docs-en` → design-check → 커밋·푸시.
+- V부(Claude Code)는 쓸 때 최신 버전(`npm view @anthropic-ai/claude-code version`)과 공식 문서를 다시 확인해 적는다. 한국어판의 기준 버전을 그대로 옮기지 않는다.

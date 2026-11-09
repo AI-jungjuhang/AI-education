@@ -46,5 +46,6 @@ AI를 기초부터 심화까지 다루는 한국어 웹 교과서(MkDocs Materia
 - 목차 반영: `python3 tools/build_book.py --book book-en.yml --config mkdocs-en.yml --docs docs-en`. 옵션 없이 돌리면 한국어판 그대로다.
 - 빌드 확인: `mkdocs build --strict -f mkdocs-en.yml`(종료 코드 확인).
 - 작업 브랜치: `claude/keen-planck-pyt819`(사용자 결정 A: 여기서 쓰고, 다 되면 한국어 브랜치에 합친다). 이 브랜치는 배포되지 않는다.
-- 배포는 아직 바꾸지 않았다. 바꿀 때 계획: 한국어 빌드 → 영어를 `site/en/`에 빌드 → `ghp-import`로 함께 올림. `deploy.yml`·`mkdocs.yml`은 사용자 승인 뒤에만 바꾼다.
+- 배포(2026-11-09 사용자 승인): `deploy.yml`을 한국어 빌드 → 영어를 `site/en/`에 빌드 → `ghp-import`로 함께 올리기로 바꿨다. 이 브랜치는 배포되지 않으므로 한국어 브랜치에 합칠 때 적용된다.
+- 영어 문장 기준(2026-11-09 사용자 승인): AI 티는 `.claude/skills/humanizer`(blader/humanizer, MIT), 쉬운 글은 Federal Plain Language Guidelines 점검표, 학년 점수는 `tools/readability.py`(Flesch-Kincaid 6.0 이하, `pip install textstat==0.7.8`). 자세한 규칙은 `topic-page` 스킬의 "영어판 페이지" 절.
 - 영어 홈의 첫 화면 오른쪽(페이지 미리보기 카드 + 감자)은 첫 페이지를 쓴 뒤 넣는다. 감자 위치가 카드를 기준으로 잡혀 있어 카드 없이 넣으면 모바일에서 글을 덮는다.
