@@ -18,7 +18,7 @@
     img.className = 'page-potato';
     var tip = Array.prototype.find.call(content.querySelectorAll('.admonition.tip'), function (a) {
       var t = a.querySelector('.admonition-title');
-      return t && t.textContent.indexOf('10살') !== -1;
+      return t && /10살|10-year-old/.test(t.textContent);
     });
     if (tip) { tip.classList.add('has-potato'); tip.appendChild(img); return; }
     var h1 = content.querySelector('h1');

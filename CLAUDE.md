@@ -38,3 +38,13 @@ AI를 기초부터 심화까지 다루는 한국어 웹 교과서(MkDocs Materia
 - `.claude/skills/unslop`(heydamir/unslop, CC BY 4.0, 출처는 SOURCE.md)으로 점검했다. 방향: 다정하고 또박또박하고 조금 장난스러운, 공책과 형광펜. 바탕은 따뜻한 종이색 단계, 포인트는 쇼츠 파랑 하나, 서명 디테일은 형광펜 밑줄.
 - 굵기는 400~600, 상자 아이콘은 글자 색 하나, 로고는 감자(`docs/assets/potato-logo.svg`). 홈 첫 화면은 글 왼쪽, 감자와 페이지 미리보기 오른쪽.
 - 사이트 주소는 `https://ai-jungjuhang.github.io/AI-education/`(GitHub 조직 AI-jungjuhang). 머리 부분 GitHub 표시는 뺐다(repo_url 없음).
+
+## 영어판 (2026-11-09 시작)
+- 이름(사용자 결정): 채널·시리즈 **AI, Start to Finish**, 책 부제 **The AI textbook a 10-year-old can follow**.
+- 한국어판을 번역하지 않고 영어 원전에서 새로 쓴다. 사용자와는 한국어로 소통한다.
+- 폴더: `docs-en/`(assets·stylesheets·javascripts는 `docs/`를 가리키는 심볼릭 링크), `book-en.yml`(목차, slug와 장·절 번호는 한국어판과 같음), `mkdocs-en.yml`, `video/shorts-en/`.
+- 목차 반영: `python3 tools/build_book.py --book book-en.yml --config mkdocs-en.yml --docs docs-en`. 옵션 없이 돌리면 한국어판 그대로다.
+- 빌드 확인: `mkdocs build --strict -f mkdocs-en.yml`(종료 코드 확인).
+- 작업 브랜치: `claude/keen-planck-pyt819`(사용자 결정 A: 여기서 쓰고, 다 되면 한국어 브랜치에 합친다). 이 브랜치는 배포되지 않는다.
+- 배포는 아직 바꾸지 않았다. 바꿀 때 계획: 한국어 빌드 → 영어를 `site/en/`에 빌드 → `ghp-import`로 함께 올림. `deploy.yml`·`mkdocs.yml`은 사용자 승인 뒤에만 바꾼다.
+- 영어 홈의 첫 화면 오른쪽(페이지 미리보기 카드 + 감자)은 첫 페이지를 쓴 뒤 넣는다. 감자 위치가 카드를 기준으로 잡혀 있어 카드 없이 넣으면 모바일에서 글을 덮는다.

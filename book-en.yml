@@ -1,0 +1,348 @@
+# English edition: single source of truth for the table of contents and progress.
+# Same structure and slugs as book.yml (Korean). Written fresh in English, not translated.
+# After writing a page, set done: true and run:
+#   python3 tools/build_book.py --book book-en.yml --config mkdocs-en.yml --docs docs-en
+labels:
+  home: Home
+  chapter: Ch. {n}
+  chapter_title: Ch. {n} {t}
+  written: '{k}/{n} written'
+  read: '{m} min read'
+  soon: Coming soon
+  new: New
+  th: '| Part | What you get | Progress |'
+  done_all: Done ({n})
+  wrote: '**{k}/{n} written**'
+  total: '{done} of {total} pages written so far.'
+parts:
+- id: 1
+  title: I Your First AI
+  blurb: For people using an AI chatbot for the first time. Learn what a chatbot actually does, how to ask, and when to trust it.
+  chapters:
+  - num: 1
+    title: What Does a Chatbot Actually Do?
+    blurb: Three steps to see how a chatbot builds an answer, and why it is sometimes wrong.
+    sections:
+    - num: '1.1'
+      title: What a chatbot does
+      pages:
+      - {slug: next-word, title: A chatbot guesses the next word, min: 5, done: false}
+      - {slug: tokens, title: It reads text in small pieces called tokens, min: 5, done: false}
+      - {slug: hallucination, title: 'Sounds right, can be wrong: hallucination', min: 6, done: false}
+  - num: 2
+    title: How to Ask Well
+    blurb: The same chatbot gives different answers to different questions. Learn asking tips that come straight from how it works.
+    sections:
+    - num: '2.1'
+      title: The basics of asking
+      pages:
+      - {slug: context, title: Give it context and the answer changes, min: 5, done: false}
+      - {slug: role-format, title: 'Set the role, the format, and an example', min: 5, done: false}
+      - {slug: specific, title: 'Be specific, one thing at a time', min: 5, done: false}
+    - num: '2.2'
+      title: Improving it as you talk
+      pages:
+      - {slug: iterate, title: How to ask for changes, min: 5, done: false}
+      - {slug: fresh-start, title: When a new chat works better, min: 4, done: false}
+      - {slug: templates, title: Make your own question templates, min: 5, done: false}
+  - num: 3
+    title: When to Trust It, When Not To
+    blurb: Now you know it can be wrong. Build the habit of checking, and learn to use it safely.
+    sections:
+    - num: '3.1'
+      title: The checking habit
+      pages:
+      - {slug: check-sources, title: How to check sources, min: 5, done: false}
+      - {slug: check-numbers, title: Check numbers and quotes, min: 5, done: false}
+      - {slug: second-opinion, title: Get a second opinion, min: 5, done: false}
+    - num: '3.2'
+      title: Using it safely
+      pages:
+      - {slug: privacy, title: Personal and sensitive information, min: 5, done: false}
+      - {slug: copyright, title: Copyright and plagiarism, min: 5, done: false}
+      - {slug: bias, title: Spotting bias and limits, min: 5, done: false}
+  - num: 4
+    title: Which AI Should You Pick?
+    blurb: There are so many AI tools it gets confusing. Sort them into kinds and pick the right one for your job.
+    sections:
+    - num: '4.1'
+      title: Kinds and how to choose
+      pages:
+      - {slug: kinds, title: 'Chat, search, image, voice: the kinds of AI', min: 5, done: false}
+      - {slug: free-paid, title: 'What changes between free and paid?', min: 5, done: false}
+      - {slug: choose, title: Pick the AI that fits your work, min: 5, done: false}
+- id: 2
+  title: II Put AI to Work
+  blurb: How to use AI for writing, research, and getting organized. Practical tips you can use right away.
+  chapters:
+  - num: 5
+    title: AI for Writing
+    blurb: Using AI for first drafts, rewrites, and summaries.
+    sections:
+    - num: '5.1'
+      title: Your writing helper
+      pages:
+      - {slug: first-draft, title: Get a first draft, min: 5, done: false}
+      - {slug: rewrite, title: Rewrite and change the tone, min: 5, done: false}
+      - {slug: summarize, title: Summarize, min: 5, done: false}
+  - num: 6
+    title: AI for Research and Study
+    blurb: Using AI to get your bearings in a new field, read long documents, and study.
+    sections:
+    - num: '6.1'
+      title: Look things up and learn
+      pages:
+      - {slug: quick-intro, title: Get to know a new field fast, min: 5, done: false}
+      - {slug: long-docs, title: Read and sort out long documents, min: 5, done: false}
+      - {slug: tutor, title: Use it as a study buddy, min: 5, done: false}
+  - num: 7
+    title: AI for Notes and Numbers
+    blurb: Using AI for meeting notes, tables, and calculations.
+    sections:
+    - num: '7.1'
+      title: Documents and tables
+      pages:
+      - {slug: meeting-notes, title: Meeting notes and emails, min: 5, done: false}
+      - {slug: tables, title: Help with tables and spreadsheet formulas, min: 5, done: false}
+      - {slug: math-caution, title: Be careful when it does math, min: 5, done: false}
+  - num: 8
+    title: Make It Part of How You Work
+    blurb: Don't use it once and stop. Turn it into a way of working for you and your team.
+    sections:
+    - num: '8.1'
+      title: Your own routine
+      pages:
+      - {slug: prompt-library, title: Keep your favorite prompts, min: 5, done: false}
+      - {slug: rollout-check, title: A checklist before using it at work, min: 5, done: false}
+      - {slug: team-rules, title: Rules your team agrees on, min: 5, done: false}
+- id: 3
+  title: III A Spoonful of How It Works
+  blurb: No hard math. Take a spoonful at a time of what happens inside a chatbot.
+  chapters:
+  - num: 9
+    title: How Does AI Learn?
+    blurb: Reading and copying, learning from people, and why size matters.
+    sections:
+    - num: '9.1'
+      title: Three stages of learning
+      pages:
+      - {slug: pretraining, title: 'Read and imitate: pretraining', min: 6, done: false}
+      - {slug: tuning, title: 'Learn from people: fine-tuning and feedback', min: 6, done: false}
+      - {slug: scale, title: 'Why size matters: parameters', min: 5, done: false}
+  - num: 10
+    title: How Words Become Numbers
+    blurb: How tokens become lists of numbers, and how meaning becomes distance.
+    sections:
+    - num: '10.1'
+      title: Embeddings
+      pages:
+      - {slug: tokens-to-vectors, title: Tokens become lists of numbers, min: 6, done: false}
+      - {slug: closeness, title: Similar meanings sit close together, min: 5, done: false}
+      - {slug: context-meaning, title: Meaning changes with context, min: 5, done: false}
+  - num: 11
+    title: Attention
+    blurb: How a chatbot decides which parts of the text to look at.
+    sections:
+    - num: '11.1'
+      title: Where to look
+      pages:
+      - {slug: attention-idea, title: 'Attention: picking out what matters', min: 6, done: false}
+      - {slug: transformer-layer, title: What one transformer layer looks like, min: 6, done: false}
+      - {slug: context-window, title: 'The context window: how much it sees at once', min: 5, done: false}
+  - num: 12
+    title: Building Sentences with Probability
+    blurb: How the next word is drawn from a score sheet, and why answers change every time.
+    sections:
+    - num: '12.1'
+      title: How it chooses
+      pages:
+      - {slug: temperature, title: 'Temperature: how adventurous to be', min: 5, done: false}
+      - {slug: sampling, title: 'Sampling: how it draws', min: 5, done: false}
+      - {slug: long-answer, title: How a long answer keeps going, min: 5, done: false}
+- id: 4
+  title: IV Tools and Agents
+  blurb: AI that searches, reads files, uses tools, and works on its own.
+  chapters:
+  - num: 13
+    title: AI That Uses Tools
+    blurb: What changes when you connect a chatbot to search, files, and tools.
+    sections:
+    - num: '13.1'
+      title: Search, files, connections
+      pages:
+      - {slug: search-rag, title: What changes when you add search, min: 6, done: false}
+      - {slug: files-code, title: AI that reads files and runs code, min: 5, done: false}
+      - {slug: connectors, title: 'The standard for connecting tools: MCP', min: 5, done: false}
+  - num: 14
+    title: Agents
+    blurb: What AI that plans and acts on its own is, and how it fails.
+    sections:
+    - num: '14.1'
+      title: AI that works on its own
+      pages:
+      - {slug: what-agent, title: 'What is an agent?', min: 6, done: false}
+      - {slug: loop, title: 'Plan, act, check', min: 6, done: false}
+      - {slug: failures, title: How agents fail, and the guardrails, min: 6, done: false}
+  - num: 15
+    title: Try Building an Agent
+    blurb: A taste of agent design, focused on instructions, tools, and evaluation.
+    sections:
+    - num: '15.1'
+      title: A taste of design
+      pages:
+      - {slug: instructions, title: Write good instructions, min: 6, done: false}
+      - {slug: tool-design, title: Design good tools, min: 6, done: false}
+      - {slug: evaluate, title: Test it and fix it, min: 6, done: false}
+- id: 5
+  title: V Claude Code in Practice
+  blurb: Put Claude Code to work. From slash commands to skills, hooks, MCP, subagents, and plugins, learn by automating how this channel makes its videos.
+  chapters:
+  - num: 16
+    title: 5A First Steps
+    blurb: Start Claude Code, talk to it, write down rules, undo mistakes, and give it a job in one line.
+    sections:
+    - num: '16.1'
+      title: Slash commands
+      pages:
+      - {slug: slash-basics, title: Slash commands you'll use often, min: 6, done: false}
+      - {slug: slash-custom, title: Make your own shortcut commands, min: 7, done: false}
+    - num: '16.2'
+      title: CLAUDE.md
+      pages:
+      - {slug: claudemd-intro, title: The note Claude reads every time, min: 6, done: false}
+      - {slug: claudemd-write, title: How to write a good CLAUDE.md, min: 7, done: false}
+    - num: '16.3'
+      title: Checkpoints
+      pages:
+      - {slug: checkpoint-rewind, title: Experiment freely with rewind, min: 6, done: false}
+      - {slug: checkpoint-vs-git, title: 'How are checkpoints different from git?', min: 6, done: false}
+    - num: '16.4'
+      title: Command line basics
+      pages:
+      - {slug: cli-modes, title: Chat mode and one-line mode, min: 6, done: false}
+      - {slug: cli-pipe, title: Hand it a file and give it a job in one line, min: 6, done: false}
+  - num: 17
+    title: 5B Automate and Connect
+    blurb: Bundle repeated work into skills, run automatic checks with hooks, connect outside services with MCP, and share work with subagents.
+    sections:
+    - num: '17.1'
+      title: Skills
+      pages:
+      - {slug: skill-anatomy, title: 'What does a SKILL.md look like?', min: 7, done: false}
+      - {slug: skill-video, title: 'Hands-on: a skill that makes one video', min: 8, done: false}
+      - {slug: skill-safety, title: Before you open someone else's skills and settings, min: 6, done: false}
+    - num: '17.2'
+      title: Hooks
+      pages:
+      - {slug: hook-basics, title: Run something automatically at the right moment, min: 7, done: false}
+      - {slug: hook-checker, title: 'Hands-on: add an automatic checker', min: 7, done: false}
+      - {slug: hook-safety, title: Hooks run with your permissions, min: 6, done: false}
+    - num: '17.3'
+      title: MCP
+      pages:
+      - {slug: mcp-intro, title: MCP is Claude's plug socket, min: 6, done: false}
+      - {slug: mcp-connect, title: 'Hands-on: connect an outside service', min: 7, done: false}
+      - {slug: mcp-token-safety, title: 'Tokens: read-only, and delete when done', min: 6, done: false}
+    - num: '17.4'
+      title: Subagents
+      pages:
+      - {slug: subagent-intro, title: Subagents share out the work, min: 7, done: false}
+      - {slug: subagent-team, title: 'Hands-on: research, script, and review agents', min: 8, done: false}
+      - {slug: subagent-vs-mcp, title: 'How are subagents different from MCP?', min: 5, done: false}
+  - num: 18
+    title: 5C Advanced ★
+    blurb: Going deeper. Plan before you hand off work, set permissions, run background jobs, and bundle everything you've built to share.
+    sections:
+    - num: '18.1'
+      title: Advanced features
+      pages:
+      - {slug: plan-mode, title: Make a plan first, then hand it off, min: 7, done: false}
+      - {slug: permissions, title: Permission modes and safety, min: 7, done: false}
+      - {slug: background-tasks, title: Background and scheduled tasks, min: 7, done: false}
+      - {slug: agent-teams, title: Agent teams, min: 7, done: false}
+    - num: '18.2'
+      title: Plugins and command line skills
+      pages:
+      - {slug: plugin-bundle, title: Bundle and share with plugins, min: 8, done: false}
+      - {slug: super-skill, title: 'Hands-on: a super skill for making videos', min: 9, done: false}
+      - {slug: cli-automation, title: Build an automation pipeline on the command line, min: 8, done: false}
+- id: 6
+  title: VI Using AI from First Principles ★
+  blurb: Going deeper. Look inside the model, read the deeper story of training and testing, and follow the thinking of the people who built this field.
+  chapters:
+  - num: 19
+    title: Looking Inside the Model ★
+    blurb: What interpretability research has found.
+    sections:
+    - num: '19.1'
+      title: Interpretability
+      pages:
+      - {slug: interp-intro, title: 'Why look inside a model?', min: 7, done: false}
+      - {slug: features, title: 'Features: the ideas inside a model', min: 7, done: false}
+      - {slug: circuits, title: 'Circuits: tracing a path of thought', min: 7, done: false}
+  - num: 20
+    title: Training, Deeper ★
+    blurb: Scaling, reinforcement learning and reasoning models, and alignment.
+    sections:
+    - num: '20.1'
+      title: Deeper learning
+      pages:
+      - {slug: scaling, title: 'Scaling: does bigger mean better?', min: 7, done: false}
+      - {slug: rl-reasoning, title: Reinforcement learning and reasoning models, min: 7, done: false}
+      - {slug: alignment, title: 'Alignment: matching what people want', min: 7, done: false}
+  - num: 21
+    title: Testing and Limits ★
+    blurb: How we measure how good AI is, and where those measurements fall short.
+    sections:
+    - num: '21.1'
+      title: How good is it?
+      pages:
+      - {slug: benchmarks, title: The traps in benchmarks, min: 7, done: false}
+      - {slug: eval-hallu, title: 'How do you measure hallucination?', min: 7, done: false}
+      - {slug: risks, title: How to think about safety and risk, min: 7, done: false}
+  - num: 22
+    title: Where Are the Pioneers Looking? ★
+    blurb: Read the direction of AI in interviews and talks by the people who built the field. What they say is opinion, not fact.
+    sections:
+    - num: '22.1'
+      title: Reading the direction through interviews
+      pages:
+      - {slug: karpathy, title: How Andrej Karpathy sees it, min: 8, done: false}
+      - {slug: altman, title: How Sam Altman sees it, min: 8, done: false}
+      - {slug: hinton, title: How Geoffrey Hinton sees it, min: 8, done: false}
+      - {slug: amodei, title: How Dario Amodei sees it, min: 8, done: false}
+      - {slug: hassabis, title: How Demis Hassabis sees it, min: 8, done: false}
+      - {slug: views-compare, title: 'Comparing views: where they differ', min: 8, done: false}
+  - num: 23
+    title: Using AI from First Principles
+    blurb: Where the principles you learned turn into everyday habits. Four reasons why "it works like this, so use it like this."
+    sections:
+    - num: '23.1'
+      title: Managing context
+      pages:
+      - {slug: context-fill, title: 'What fills up its memory space?', min: 7, done: false}
+      - {slug: context-habits, title: Habits that save memory space, min: 7, done: false}
+    - num: '23.2'
+      title: Prompts from first principles
+      pages:
+      - {slug: prompt-why, title: 'Why do context, examples, and format work?', min: 7, done: false}
+      - {slug: prompt-agent, title: 'How is handing off a job different?', min: 7, done: false}
+    - num: '23.3'
+      title: Choosing a model
+      pages:
+      - {slug: model-choice, title: 'How do you choose a model?', min: 7, done: false}
+      - {slug: model-effort, title: Adjust its thinking time (effort level), min: 6, done: false}
+    - num: '23.4'
+      title: Building a checking loop
+      pages:
+      - {slug: verify-loop, title: Give it a test it can check itself against, min: 7, done: false}
+      - {slug: verify-build, title: "Hands-on: this channel's checking loop", min: 8, done: false}
+- id: A
+  title: Appendix
+  blurb: Glossary, prompt collection, reading order, and references.
+  flat:
+  - {slug: glossary, title: Glossary, min: 5, done: false}
+  - {slug: prompt-bank, title: Prompt collection, min: 5, done: false}
+  - {slug: reading-order, title: Suggested reading order, min: 3, done: false}
+  - {slug: references, title: References, min: 4, done: false}
+  - {slug: review-log, title: Review log, min: 4, done: false}

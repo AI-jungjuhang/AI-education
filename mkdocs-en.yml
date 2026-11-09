@@ -1,0 +1,106 @@
+# English edition. nav is generated from book-en.yml by tools/build_book.py (see book-en.yml).
+site_name: AI, Start to Finish
+site_description: The AI textbook a 10-year-old can follow. From your first chat to using AI from first principles, written in plain English.
+site_url: https://ai-jungjuhang.github.io/AI-education/en/
+docs_dir: docs-en
+theme:
+  name: material
+  logo: assets/potato-logo.svg
+  favicon: assets/potato-logo.svg
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+  font: false
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-night, name: Dark mode}
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-sunny, name: Light mode}
+extra_css:
+  - https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css
+  - https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/potato.js
+  - javascripts/reveal.js
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed: {alternate_style: true}
+  - attr_list
+  - pymdownx.mark: {smart_mark: false}
+  - md_in_html
+  - toc: {permalink: true}
+nav:
+  - Home: index.md
+  - "I Your First AI":
+    - part1/index.md
+    - "Ch. 1 What Does a Chatbot Actually Do?":
+      - part1/ch01/index.md
+    - "Ch. 2 How to Ask Well":
+      - part1/ch02/index.md
+    - "Ch. 3 When to Trust It, When Not To":
+      - part1/ch03/index.md
+    - "Ch. 4 Which AI Should You Pick?":
+      - part1/ch04/index.md
+  - "II Put AI to Work":
+    - part2/index.md
+    - "Ch. 5 AI for Writing":
+      - part2/ch05/index.md
+    - "Ch. 6 AI for Research and Study":
+      - part2/ch06/index.md
+    - "Ch. 7 AI for Notes and Numbers":
+      - part2/ch07/index.md
+    - "Ch. 8 Make It Part of How You Work":
+      - part2/ch08/index.md
+  - "III A Spoonful of How It Works":
+    - part3/index.md
+    - "Ch. 9 How Does AI Learn?":
+      - part3/ch09/index.md
+    - "Ch. 10 How Words Become Numbers":
+      - part3/ch10/index.md
+    - "Ch. 11 Attention":
+      - part3/ch11/index.md
+    - "Ch. 12 Building Sentences with Probability":
+      - part3/ch12/index.md
+  - "IV Tools and Agents":
+    - part4/index.md
+    - "Ch. 13 AI That Uses Tools":
+      - part4/ch13/index.md
+    - "Ch. 14 Agents":
+      - part4/ch14/index.md
+    - "Ch. 15 Try Building an Agent":
+      - part4/ch15/index.md
+  - "V Claude Code in Practice":
+    - part5/index.md
+    - "Ch. 16 5A First Steps":
+      - part5/ch16/index.md
+    - "Ch. 17 5B Automate and Connect":
+      - part5/ch17/index.md
+    - "Ch. 18 5C Advanced ★":
+      - part5/ch18/index.md
+  - "VI Using AI from First Principles ★":
+    - part6/index.md
+    - "Ch. 19 Looking Inside the Model ★":
+      - part6/ch19/index.md
+    - "Ch. 20 Training, Deeper ★":
+      - part6/ch20/index.md
+    - "Ch. 21 Testing and Limits ★":
+      - part6/ch21/index.md
+    - "Ch. 22 Where Are the Pioneers Looking? ★":
+      - part6/ch22/index.md
+    - "Ch. 23 Using AI from First Principles":
+      - part6/ch23/index.md
+  - "Appendix":
+    - appendix/index.md
