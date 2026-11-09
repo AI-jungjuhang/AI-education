@@ -309,7 +309,7 @@ parts:
       pages:
       - {slug: karpathy, title: How Andrej Karpathy sees it, min: 8, done: true}
       - {slug: altman, title: How Sam Altman sees it, min: 8, done: true}
-      - {slug: hinton, title: How Geoffrey Hinton sees it, min: 8, done: false}
+      - {slug: hinton, title: How Geoffrey Hinton sees it, min: 8, done: true}
       - {slug: amodei, title: How Dario Amodei sees it, min: 8, done: false}
       - {slug: hassabis, title: How Demis Hassabis sees it, min: 8, done: false}
       - {slug: views-compare, title: 'Comparing views: where they differ', min: 8, done: false}

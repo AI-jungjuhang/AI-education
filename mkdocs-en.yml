@@ -202,12 +202,25 @@ nav:
       - "19.1 Interpretability":
         - "Why look inside a model?": part6/ch19/interp-intro.md
         - "Features: the ideas inside a model": part6/ch19/features.md
+        - "Circuits: tracing a path of thought": part6/ch19/circuits.md
     - "Ch. 20 Training, Deeper ★":
       - part6/ch20/index.md
+      - "20.1 Deeper learning":
+        - "Scaling: does bigger mean better?": part6/ch20/scaling.md
+        - "Reinforcement learning and reasoning models": part6/ch20/rl-reasoning.md
+        - "Alignment: matching what people want": part6/ch20/alignment.md
     - "Ch. 21 Testing and Limits ★":
       - part6/ch21/index.md
+      - "21.1 How good is it?":
+        - "The traps in benchmarks": part6/ch21/benchmarks.md
+        - "How do you measure hallucination?": part6/ch21/eval-hallu.md
+        - "How to think about safety and risk": part6/ch21/risks.md
     - "Ch. 22 Where Are the Pioneers Looking? ★":
       - part6/ch22/index.md
+      - "22.1 Reading the direction through interviews":
+        - "How Andrej Karpathy sees it": part6/ch22/karpathy.md
+        - "How Sam Altman sees it": part6/ch22/altman.md
+        - "How Geoffrey Hinton sees it": part6/ch22/hinton.md
     - "Ch. 23 Using AI from First Principles":
       - part6/ch23/index.md
   - "Appendix":
