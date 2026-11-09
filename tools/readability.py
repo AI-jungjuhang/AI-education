@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """영어판 페이지가 쉬운지 학년 점수로 잰다 (2026-11-09 사용자 결정: 본문 6학년 이하).
 
-사용: python3 tools/readability.py [파일...]      (파일을 안 주면 docs-en/ 아래 index.md가 아닌 페이지 전부)
+사용: python3 tools/readability.py [--hard] [파일...]   (--hard: 학년 8을 넘는 줄을 따로 보여 줌)      (파일을 안 주면 docs-en/ 아래 index.md가 아닌 페이지 전부)
 필요: pip install textstat==0.7.8   (0.7.9 이후는 음절 사전을 실행 중에 인터넷에서 받는데, 작업 환경에서 막힌다.
       0.7.8은 사전을 패키지로 함께 설치한다. 사이트 배포에는 필요 없어서 requirements.txt에 넣지 않았다)
 
@@ -50,7 +50,9 @@ def prose(md: str) -> str:
     return '\n'.join(out)
 
 def main():
-    files = [pathlib.Path(a) for a in sys.argv[1:]] or sorted(
+    hard = '--hard' in sys.argv
+    args = [a for a in sys.argv[1:] if a != '--hard']
+    files = [pathlib.Path(a) for a in args] or sorted(
         p for p in (root / 'docs-en').rglob('*.md') if p.name != 'index.md' and not p.is_symlink())
     files = [f for f in files if not any(part in ('assets', 'stylesheets', 'javascripts') for part in f.parts)]
     if not files:
@@ -67,6 +69,10 @@ def main():
         print(f"{'통과' if ok else '실패'}  FK {fk:4.1f}  평균 {avg:4.1f}단어/문장  {f}")
         for x in sents:
             if len(x.split()) > LONG: print(f'      긴 문장({len(x.split())}단어): {x[:110]}')
+        if hard:  # 점수를 끌어올리는 줄(학년 8 초과)만 보여 준다
+            for line in text.split('\n'):
+                if len(line.split()) > 6 and textstat.flesch_kincaid_grade(line) > 8:
+                    print(f'      어려운 줄(FK {textstat.flesch_kincaid_grade(line):.1f}): {line[:110]}')
     print(f'기준: FK {LIMIT} 이하. 실패 {bad}개.')
     return 1 if bad else 0
 

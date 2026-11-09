@@ -201,6 +201,7 @@ nav:
       - part6/ch19/index.md
       - "19.1 Interpretability":
         - "Why look inside a model?": part6/ch19/interp-intro.md
+        - "Features: the ideas inside a model": part6/ch19/features.md
     - "Ch. 20 Training, Deeper ★":
       - part6/ch20/index.md
     - "Ch. 21 Testing and Limits ★":
