@@ -90,6 +90,7 @@ nav:
       - part2/ch06/index.md
       - "6.1 Look things up and learn":
         - "Get to know a new field fast": part2/ch06/quick-intro.md
+        - "Read and sort out long documents": part2/ch06/long-docs.md
     - "Ch. 7 AI for Notes and Numbers":
       - part2/ch07/index.md
     - "Ch. 8 Make It Part of How You Work":
