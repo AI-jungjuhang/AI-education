@@ -17,6 +17,7 @@
 |---|---|---|
 | `check-page-en.sh` | 17.2.2 Hands-on: add an automatic checker | 가짜 입력으로 `docs-en` 페이지에 "Sources and date checked" 절이 없을 때 2, 있을 때 0, `docs-en` 밖 파일은 0 |
 | `check-hard-words-en.sh` | 18.2.3 command line automation | 가짜 `claude` 명령으로 반복 구조, 공백이 든 파일 이름, 결과 파일 저장을 확인. 실제 모델 호출 결과는 확인하지 않았어요 |
+| `check-build-en.sh` | 23.4.2 Hands-on: this channel's checking loop | 연습용 사이트(깨진 링크 하나)에서 `stop_hook_active`가 false면 2, true면 0, 링크를 고친 뒤 0. 같은 사이트에서 `mkdocs build --strict -q`는 0, `-q` 없이는 1이 나오는 것도 확인(2026-11-09) |
 | `studio-en/` | 18.2 plugins, super skill | `claude plugin validate ./studio-en`가 통과(`Validation passed`, 아이콘 없음 안내만). 실제 설치와 `/studio:episode` 실행은 확인하지 않았어요 |
 
 확인한 날짜: 2026-11-09, Claude Code 2.1.319.

@@ -335,8 +335,8 @@ parts:
     - num: '23.4'
       title: Building a checking loop
       pages:
-      - {slug: verify-loop, title: Give it a test it can check itself against, min: 7, done: false}
-      - {slug: verify-build, title: "Hands-on: this channel's checking loop", min: 8, done: false}
+      - {slug: verify-loop, title: Give it a test it can check itself against, min: 7, done: true}
+      - {slug: verify-build, title: "Hands-on: this channel's checking loop", min: 8, done: true}
 - id: A
   title: Appendix
   blurb: Glossary, prompt collection, reading order, and references.

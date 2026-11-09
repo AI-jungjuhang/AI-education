@@ -235,5 +235,8 @@ nav:
       - "23.3 Choosing a model":
         - "How do you choose a model?": part6/ch23/model-choice.md
         - "Adjust its thinking time (effort level)": part6/ch23/model-effort.md
+      - "23.4 Building a checking loop":
+        - "Give it a test it can check itself against": part6/ch23/verify-loop.md
+        - "Hands-on: this channel's checking loop": part6/ch23/verify-build.md
   - "Appendix":
     - appendix/index.md
