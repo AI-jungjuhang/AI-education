@@ -159,6 +159,7 @@ nav:
         - "Make your own shortcut commands": part5/ch16/slash-custom.md
       - "16.2 CLAUDE.md":
         - "The note Claude reads every time": part5/ch16/claudemd-intro.md
+        - "How to write a good CLAUDE.md": part5/ch16/claudemd-write.md
     - "Ch. 17 5B Automate and Connect":
       - part5/ch17/index.md
     - "Ch. 18 5C Advanced ★":

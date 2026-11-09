@@ -210,7 +210,7 @@ parts:
       title: CLAUDE.md
       pages:
       - {slug: claudemd-intro, title: The note Claude reads every time, min: 6, done: true}
-      - {slug: claudemd-write, title: How to write a good CLAUDE.md, min: 7, done: false}
+      - {slug: claudemd-write, title: How to write a good CLAUDE.md, min: 7, done: true}
     - num: '16.3'
       title: Checkpoints
       pages:
