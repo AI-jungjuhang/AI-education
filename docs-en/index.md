@@ -45,11 +45,11 @@ The English edition is being written now, one page at a time.
 | [II Put AI to Work](part2/index.md) | How to use AI for writing, research, and getting organized | Done (12) |
 | [III A Spoonful of How It Works](part3/index.md) | No hard math | Done (12) |
 | [IV Tools and Agents](part4/index.md) | AI that searches, reads files, uses tools, and works on its own | Done (9) |
-| [V Claude Code in Practice](part5/index.md) | Put Claude Code to work | **2/27 written** |
+| [V Claude Code in Practice](part5/index.md) | Put Claude Code to work | **3/27 written** |
 | [VI Using AI from First Principles ★](part6/index.md) | Going deeper | Coming soon |
 | [Appendix](appendix/index.md) | Glossary, prompt collection, reading order, and references | Coming soon |
 
-53 of 106 pages written so far.
+54 of 106 pages written so far.
 <!-- /AUTO:progress -->
 
 </div>
