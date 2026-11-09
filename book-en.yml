@@ -192,7 +192,7 @@ parts:
       pages:
       - {slug: instructions, title: Write good instructions, min: 6, done: true}
       - {slug: tool-design, title: Design good tools, min: 6, done: true}
-      - {slug: evaluate, title: Test it and fix it, min: 6, done: false}
+      - {slug: evaluate, title: Test it and fix it, min: 6, done: true}
 - id: 5
   title: V Claude Code in Practice
   blurb: Put Claude Code to work. From slash commands to skills, hooks, MCP, subagents, and plugins, learn by automating how this channel makes its videos.

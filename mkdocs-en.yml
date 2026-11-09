@@ -149,6 +149,7 @@ nav:
       - "15.1 A taste of design":
         - "Write good instructions": part4/ch15/instructions.md
         - "Design good tools": part4/ch15/tool-design.md
+        - "Test it and fix it": part4/ch15/evaluate.md
   - "V Claude Code in Practice":
     - part5/index.md
     - "Ch. 16 5A First Steps":
