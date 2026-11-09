@@ -114,7 +114,7 @@ parts:
       pages:
       - {slug: prompt-library, title: Keep your favorite prompts, min: 5, done: true}
       - {slug: rollout-check, title: A checklist before using it at work, min: 5, done: true}
-      - {slug: team-rules, title: Rules your team agrees on, min: 5, done: false}
+      - {slug: team-rules, title: Rules your team agrees on, min: 5, done: true}
 - id: 3
   title: III A Spoonful of How It Works
   blurb: No hard math. Take a spoonful at a time of what happens inside a chatbot.

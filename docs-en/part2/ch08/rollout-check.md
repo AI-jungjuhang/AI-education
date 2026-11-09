@@ -11,7 +11,7 @@
 
 A bike is fast on a flat road. In front of a staircase, it just gets in the way. You need to know which paths you can ride on.
 
-A large experiment in 2023 showed this. 758 consultants at the Boston Consulting Group worked on 18 realistic work tasks, some with AI (GPT-4) and some without. On tasks **inside what AI could do**, the AI users finished 12.2% more tasks on average, worked 25.1% faster, and turned in work rated more than 40% higher in quality than a control group. But the researchers also picked a complex business task that they expected to be **outside what AI could do**. On that task, the AI users were 19 percentage points less likely to get the right answer. The researchers called this the **jagged technological frontier**. Two jobs that look about equally hard can fall on opposite sides: AI helps with one and hurts the other.
+A large experiment in 2023 showed this. 758 consultants at the Boston Consulting Group worked on 18 realistic work tasks, some with AI (GPT-4) and some without. On tasks **inside what AI could do**, the AI users finished 12.2% more tasks on average and worked 25.1% faster. Their work was also rated more than 40% higher in quality than a control group's. But the researchers also picked a complex business task that they expected to be **outside what AI could do**. On that task, the AI users were 19 percentage points less likely to get the right answer. The researchers called this the **jagged technological frontier**. Two jobs that look about equally hard can fall on opposite sides: AI helps with one and hurts the other.
 
 !!! tip "In 10-year-old words"
     On some paths AI is a bike. On others, it's a bike in front of a staircase. Find out which path you're on first.
