@@ -102,6 +102,7 @@ nav:
       - part2/ch08/index.md
       - "8.1 Your own routine":
         - "Keep your favorite prompts": part2/ch08/prompt-library.md
+        - "A checklist before using it at work": part2/ch08/rollout-check.md
   - "III A Spoonful of How It Works":
     - part3/index.md
     - "Ch. 9 How Does AI Learn?":

@@ -113,7 +113,7 @@ parts:
       title: Your own routine
       pages:
       - {slug: prompt-library, title: Keep your favorite prompts, min: 5, done: true}
-      - {slug: rollout-check, title: A checklist before using it at work, min: 5, done: false}
+      - {slug: rollout-check, title: A checklist before using it at work, min: 5, done: true}
       - {slug: team-rules, title: Rules your team agrees on, min: 5, done: false}
 - id: 3
   title: III A Spoonful of How It Works
