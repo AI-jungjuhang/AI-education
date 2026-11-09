@@ -223,6 +223,7 @@ nav:
         - "How Geoffrey Hinton sees it": part6/ch22/hinton.md
         - "How Dario Amodei sees it": part6/ch22/amodei.md
         - "How Demis Hassabis sees it": part6/ch22/hassabis.md
+        - "Comparing views: where they differ": part6/ch22/views-compare.md
     - "Ch. 23 Using AI from First Principles":
       - part6/ch23/index.md
   - "Appendix":

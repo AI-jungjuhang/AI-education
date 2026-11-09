@@ -312,7 +312,7 @@ parts:
       - {slug: hinton, title: How Geoffrey Hinton sees it, min: 8, done: true}
       - {slug: amodei, title: How Dario Amodei sees it, min: 8, done: true}
       - {slug: hassabis, title: How Demis Hassabis sees it, min: 8, done: true}
-      - {slug: views-compare, title: 'Comparing views: where they differ', min: 8, done: false}
+      - {slug: views-compare, title: 'Comparing views: where they differ', min: 8, done: true}
   - num: 23
     title: Using AI from First Principles
     blurb: Where the principles you learned turn into everyday habits. Four reasons why "it works like this, so use it like this."
