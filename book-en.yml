@@ -44,7 +44,7 @@ parts:
       pages:
       - {slug: iterate, title: How to ask for changes, min: 5, done: true}
       - {slug: fresh-start, title: When a new chat works better, min: 4, done: true}
-      - {slug: templates, title: Make your own question templates, min: 5, done: false}
+      - {slug: templates, title: Make your own question templates, min: 5, done: true}
   - num: 3
     title: When to Trust It, When Not To
     blurb: Now you know it can be wrong. Build the habit of checking, and learn to use it safely.
