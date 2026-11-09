@@ -289,7 +289,7 @@ parts:
       pages:
       - {slug: scaling, title: 'Scaling: does bigger mean better?', min: 7, done: true}
       - {slug: rl-reasoning, title: Reinforcement learning and reasoning models, min: 7, done: true}
-      - {slug: alignment, title: 'Alignment: matching what people want', min: 7, done: false}
+      - {slug: alignment, title: 'Alignment: matching what people want', min: 7, done: true}
   - num: 21
     title: Testing and Limits ★
     blurb: How we measure how good AI is, and where those measurements fall short.
