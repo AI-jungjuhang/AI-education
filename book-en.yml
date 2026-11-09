@@ -236,7 +236,7 @@ parts:
       pages:
       - {slug: hook-basics, title: Run something automatically at the right moment, min: 7, done: true}
       - {slug: hook-checker, title: 'Hands-on: add an automatic checker', min: 7, done: true}
-      - {slug: hook-safety, title: Hooks run with your permissions, min: 6, done: false}
+      - {slug: hook-safety, title: Hooks run with your permissions, min: 6, done: true}
     - num: '17.3'
       title: MCP
       pages:
