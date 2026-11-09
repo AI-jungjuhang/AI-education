@@ -126,7 +126,7 @@ parts:
     - num: '9.1'
       title: Three stages of learning
       pages:
-      - {slug: pretraining, title: 'Read and imitate: pretraining', min: 6, done: false}
+      - {slug: pretraining, title: 'Read and imitate: pretraining', min: 6, done: true}
       - {slug: tuning, title: 'Learn from people: fine-tuning and feedback', min: 6, done: false}
       - {slug: scale, title: 'Why size matters: parameters', min: 5, done: false}
   - num: 10
