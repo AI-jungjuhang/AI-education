@@ -256,7 +256,7 @@ parts:
     - num: '18.1'
       title: Advanced features
       pages:
-      - {slug: plan-mode, title: Make a plan first, then hand it off, min: 7, done: false}
+      - {slug: plan-mode, title: Make a plan first, then hand it off, min: 7, done: true}
       - {slug: permissions, title: Permission modes and safety, min: 7, done: false}
       - {slug: background-tasks, title: Background and scheduled tasks, min: 7, done: false}
       - {slug: agent-teams, title: Agent teams, min: 7, done: false}
