@@ -193,7 +193,7 @@ def b_tip(cx, sc, bg):
     return p, max(8, cx.last + 3.6), ''
 
 def b_list(cx, sc, bg):
-    p = [lines_html(cx, [sc['title']], bg, 'big')]
+    p = [lines_html(cx, [sc['title']], bg, 'big', fs=sc.get('title_fs'))]
     for i, it in enumerate(sc['items']):
         it = {'t': it} if isinstance(it, str) else it
         p.append(sticker(cx, f'item{i}', 1.8 + 1.4 * i, it['t'], it.get('c', COLORS[i % 3]), 'slideL' if i % 2 == 0 else 'slideR', 0, 'pop', it.get('size', 80)))
@@ -232,11 +232,11 @@ def b_notes(cx, sc, bg):
     """메모지 흩어 붙이기(최대 4장). 제목은 왼쪽 위."""
     slots = [(40, 580, -4), (560, 660, 3), (60, 1110, 2.5), (550, 1190, -3)]
     cols = ['#FFE680', '#9BE7C4', '#FFB3C1', '#A9D2FF']; HLC = ['#FF9EB1', '#FFD93D', '#FFE680', '#FFE680']
-    ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:270px;font-size:112px">{esc(sc["title"])}</div>']
+    ex = [f'<div class="tapeTitle st dark big" data-b="{cx.b("title", 0)}" data-anim="slam" data-sfx="slam" style="top:270px;font-size:{sc.get('title_fs', 112)}px">{esc(sc["title"])}</div>']
     if len(sc['items']) == 3: slots[2] = (275, 1090, 0)
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
-        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;", it.get("icon_bg") or ICON_LAV)}<b>{esc(it["head"])}</b>{("<span class=\"nbody\">" + esc(it["body"]) + "</span>") if it.get("body") else ""}{("<span class=\"nex\">" + S("eg") + esc(it["ex"]) + "</span>") if it.get("ex") else ""}</div>')
+        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;", it.get("icon_bg") or ICON_LAV)}<b{(' style="font-size:%spx"' % it['fs']) if it.get('fs') else ''}>{esc(it["head"])}</b>{("<span class=\"nbody\">" + esc(it["body"]) + "</span>") if it.get("body") else ""}{("<span class=\"nex\">" + S("eg") + esc(it["ex"]) + "</span>") if it.get("ex") else ""}</div>')
     return [], max(6, cx.last + 3.0), '\n'.join(ex)
 
 def b_split(cx, sc, bg):

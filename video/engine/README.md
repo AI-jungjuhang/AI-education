@@ -55,5 +55,5 @@ MUSIC=loud bash video/engine/build.sh video/shorts/001-next-word   # 드럼 있�
 - `episode.json`에 `"lang": "en"`을 넣으면 영어판으로 만들어져요. 한국어 영상(`lang` 없음)의 `scene.html`은 바뀌지 않아요(001, 005-context-v3, 102로 바이트 단위 비교).
 - 바뀌는 것: 글꼴 Nunito Black(fontsource, jsdelivr), `<html lang="en">`, 위쪽 칸의 채널 이름 "AI, Start to Finish", `check`·`tip` 기본 이름 "Use it today", 메모지 예시 앞 글자 "e.g. ", `outro` 문구(채널 이름, 부제, "Full page: link in profile").
 - 영어 줄 길이: 한 줄 약 18~20자, 글 덩어리당 2줄, 장면당 약 45자. 체크리스트는 `fs` 66 정도가 안전해요.
-- 영어 단어가 길어서 더한 선택 칸: `cards`의 `fs`(기본 120), `bars` 행의 `fs`(이름 글자 크기).
+- 영어 단어가 길어서 더한 선택 칸: `cards`의 `fs`(기본 120), `bars` 행의 `fs`(이름 글자 크기), `list`의 `title_fs`(제목 글자 크기, 기본 150), `notes`의 `title_fs`(기본 112)와 메모지 항목의 `fs`(머리글 글자 크기, 기본 70). 넣지 않으면 예전과 똑같이 나와요(한국어 영상 전체를 `scene.html` 바이트 비교로 확인, 2026-11-09).
 - 영어판 폴더는 `video/shorts-en/`, id는 `en-NNN-슬러그`예요.
