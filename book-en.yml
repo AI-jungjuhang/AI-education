@@ -54,7 +54,7 @@ parts:
       pages:
       - {slug: check-sources, title: How to check sources, min: 5, done: true}
       - {slug: check-numbers, title: Check numbers and quotes, min: 5, done: true}
-      - {slug: second-opinion, title: Get a second opinion, min: 5, done: false}
+      - {slug: second-opinion, title: Get a second opinion, min: 5, done: true}
     - num: '3.2'
       title: Using it safely
       pages:
