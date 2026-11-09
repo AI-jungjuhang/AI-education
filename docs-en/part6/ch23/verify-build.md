@@ -1,6 +1,6 @@
-# Hands-on: this channel's checking loop ★
+# Hands-on: this channel's checking loop
 
-<p class="ep-meta"><span>Ch. 23 · 23.4 · Deeper</span><span>About 8 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.4</span><span>About 8 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - You'll put **three layers of checks** on the flow for making a video script: a format check (hook), a build check (Stop hook), and a content review (reviewer helper).

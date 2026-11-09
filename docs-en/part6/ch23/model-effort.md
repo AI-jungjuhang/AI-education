@@ -1,6 +1,6 @@
-# Adjust its thinking time (effort level) ★
+# Adjust its thinking time (effort level)
 
-<p class="ep-meta"><span>Ch. 23 · 23.3 · Deeper</span><span>About 6 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.3</span><span>About 6 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - The effort level is ==the main dial for how long Claude thinks==. It replaces "think hard" in your prompt.

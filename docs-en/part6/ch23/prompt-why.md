@@ -1,6 +1,6 @@
-# Why do context, examples, and format work? ★
+# Why do context, examples, and format work?
 
-<p class="ep-meta"><span>Ch. 23 · 23.2 · Deeper</span><span>About 7 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.2</span><span>About 7 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - The asking tips from Part I (context, examples, format) ==come from how AI works==. It **guesses the next words from the text in front of it**.

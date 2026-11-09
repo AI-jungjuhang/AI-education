@@ -1,6 +1,6 @@
-# How is handing off a job different? ★
+# How is handing off a job different?
 
-<p class="ep-meta"><span>Ch. 23 · 23.2 · Deeper</span><span>About 7 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.2</span><span>About 7 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - Asking a question and **handing off a job** are different. You need to tell Claude what it can't learn from the files.

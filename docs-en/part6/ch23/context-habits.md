@@ -1,6 +1,6 @@
-# Habits that save memory space ★
+# Habits that save memory space
 
-<p class="ep-meta"><span>Ch. 23 · 23.1 · Deeper</span><span>About 7 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.1</span><span>About 7 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - There are four tools for tidying the desk: ==`/clear` (start fresh), `/compact` (summarize), partial summaries, and helpers (read elsewhere)==.

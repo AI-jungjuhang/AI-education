@@ -1,6 +1,6 @@
-# How do you choose a model? ★
+# How do you choose a model?
 
-<p class="ep-meta"><span>Ch. 23 · 23.3 · Deeper</span><span>About 7 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.3</span><span>About 7 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - Choosing a model is ==a trade between power, speed, and cost==. The default is enough for most work.

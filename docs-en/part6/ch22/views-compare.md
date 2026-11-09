@@ -1,4 +1,4 @@
-# Comparing views: where they split ★
+# Comparing views: where they differ ★
 
 <p class="ep-meta"><span>Ch. 22 · 22.1 · Deeper</span><span>About 9 min read</span><span>2026-11-09</span></p>
 

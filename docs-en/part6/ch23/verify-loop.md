@@ -1,6 +1,6 @@
-# Give it a test it can check itself against ★
+# Give it a test it can check itself against
 
-<p class="ep-meta"><span>Ch. 23 · 23.4 · Deeper</span><span>About 7 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.4</span><span>About 7 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - Claude ==stops when the job looks done==. Without a way to check, "looks done" is all it has to go on.

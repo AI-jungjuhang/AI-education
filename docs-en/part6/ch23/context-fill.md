@@ -1,6 +1,6 @@
-# What fills up its memory space? ★
+# What fills up its memory space?
 
-<p class="ep-meta"><span>Ch. 23 · 23.1 · Deeper</span><span>About 7 min read</span><span>2026-11-09</span></p>
+<p class="ep-meta"><span>Ch. 23 · 23.1</span><span>About 7 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
     - The **context window** from Part III is Claude's working memory. It holds ==everything Claude can see in this conversation==.
