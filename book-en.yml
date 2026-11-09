@@ -148,7 +148,7 @@ parts:
       pages:
       - {slug: attention-idea, title: 'Attention: picking out what matters', min: 6, done: true}
       - {slug: transformer-layer, title: What one transformer layer looks like, min: 6, done: true}
-      - {slug: context-window, title: 'The context window: how much it sees at once', min: 5, done: false}
+      - {slug: context-window, title: 'The context window: how much it sees at once', min: 5, done: true}
   - num: 12
     title: Building Sentences with Probability
     blurb: How the next word is drawn from a score sheet, and why answers change every time.
