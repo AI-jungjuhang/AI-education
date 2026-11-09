@@ -1,7 +1,7 @@
 # Short en-012 · Check numbers and quotes
 
 - **Source page:** 3.1.2 [Check numbers and quotes](../../../docs-en/part1/ch03/check-numbers.md)
-- **Format:** vertical 9:16, 30fps, about 30 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** numbers and quotes go wrong in ways that look right. Make a rough estimate, leave math to a calculator, and find quotes in the original.
 - **Status:** first draft, waiting for review
 

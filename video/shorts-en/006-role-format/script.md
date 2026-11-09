@@ -1,7 +1,7 @@
 # Short en-006 · Set the role, the format, and an example
 
 - **Source page:** 2.1.2 [Set the role, the format, and an example](../../../docs-en/part1/ch02/role-format.md)
-- **Format:** vertical 9:16, 30fps, about 32 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 31 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** tell the chatbot a role (voice), a format (shape), and an example (sample). A role changes the voice, not what it knows.
 - **Status:** first draft, waiting for review
 

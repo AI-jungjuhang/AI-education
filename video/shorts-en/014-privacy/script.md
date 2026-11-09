@@ -1,7 +1,7 @@
 # Short en-014 · Personal and sensitive information
 
 - **Source page:** 3.2.1 [Personal and sensitive information](../../../docs-en/part1/ch03/privacy.md)
-- **Format:** vertical 9:16, 30fps, about 31 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** what you type into an online chatbot goes to the company. Blank out personal details first, then fill in the real ones yourself.
 - **Status:** first draft, waiting for review
 

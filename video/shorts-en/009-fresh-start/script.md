@@ -1,7 +1,7 @@
 # Short en-009 · When a new chat works better
 
 - **Source page:** 2.2.2 [When a new chat works better](../../../docs-en/part1/ch02/fresh-start.md)
-- **Format:** vertical 9:16, 30fps, about 33 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 32 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** in a long chat, early rules get buried and wrong answers keep pulling. Sum up, then move to a new chat.
 - **Status:** first draft, waiting for review
 

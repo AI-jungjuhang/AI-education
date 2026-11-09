@@ -1,7 +1,7 @@
 # Short en-016 · Spotting bias and limits
 
 - **Source page:** 3.2.3 [Spotting bias and limits](../../../docs-en/part1/ch03/bias.md)
-- **Format:** vertical 9:16, 30fps, about 30 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a chatbot learned from human writing, so it can carry human bias. Don't let it decide about people, and check the assumptions in your question.
 - **Status:** first draft, waiting for review
 

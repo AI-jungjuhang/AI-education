@@ -1,7 +1,7 @@
 # Short en-015 · Copyright and plagiarism
 
 - **Source page:** 3.2.2 [Copyright and plagiarism](../../../docs-en/part1/ch03/copyright.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a chatbot's writing can look like someone else's work. Ask for explanations, not copies, search a line before you use it, and follow your school's or workplace's rules.
 - **Status:** first draft, waiting for review
 

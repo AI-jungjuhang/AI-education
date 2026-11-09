@@ -1,7 +1,7 @@
 # Short en-011 · How to check sources
 
 - **Source page:** 3.1.1 [How to check sources](../../../docs-en/part1/ch03/check-sources.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a chatbot can make up sources too. Check each one in three steps: is it real, does it say that, can you trust it.
 - **Status:** first draft, waiting for review
 

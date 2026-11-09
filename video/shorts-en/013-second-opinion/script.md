@@ -1,7 +1,7 @@
 # Short en-013 · Get a second opinion
 
 - **Source page:** 3.1.3 [Get a second opinion](../../../docs-en/part1/ch03/second-opinion.md)
-- **Format:** vertical 9:16, 30fps, about 30 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** for answers that matter, get a second opinion, and check more as the job gets bigger.
 - **Status:** first draft, waiting for review
 

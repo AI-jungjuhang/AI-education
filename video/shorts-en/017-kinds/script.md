@@ -1,7 +1,7 @@
 # Short en-017 · Chat, search, image, voice: the kinds of AI
 
 - **Source page:** 4.1.1 [Chat, search, image, voice: the kinds of AI](../../../docs-en/part1/ch04/kinds.md)
-- **Format:** vertical 9:16, 30fps, about 30 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** sort AI tools by what goes in and what comes out, and pick the right one for each job.
 - **Status:** first draft, waiting for review
 

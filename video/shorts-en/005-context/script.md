@@ -1,7 +1,7 @@
 # Short en-005 · Give it context and the answer changes
 
 - **Source page:** 2.1.1 [Give it context and the answer changes](../../../docs-en/part1/ch02/context.md)
-- **Format:** vertical 9:16, 30fps, about 36 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 34 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a chatbot can't know what you don't tell it. Tell it who reads it, what it's for, the rules, and your material.
 - **Status:** first draft, waiting for review
 

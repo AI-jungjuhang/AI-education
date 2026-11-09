@@ -1,7 +1,7 @@
 # Short en-008 · How to ask for changes
 
 - **Source page:** 2.2.1 [How to ask for changes](../../../docs-en/part1/ch02/iterate.md)
-- **Format:** vertical 9:16, 30fps, about 35 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 32 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** "try again" gives no clue. Say where and how to change it, and say what to keep.
 - **Status:** first draft, waiting for review
 

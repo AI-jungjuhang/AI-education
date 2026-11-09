@@ -1,7 +1,7 @@
 # Short en-010 · Make your own question templates
 
 - **Source page:** 2.2.3 [Make your own question templates](../../../docs-en/part1/ch02/templates.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** save requests you make often as templates with blanks, and keep your material wrapped apart from your instructions.
 - **Status:** first draft, waiting for review
 

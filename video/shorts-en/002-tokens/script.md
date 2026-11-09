@@ -1,7 +1,7 @@
 # Short en-002 · It reads text in small pieces called tokens (part 1 of 2)
 
 - **Source page:** 1.1.2 [It reads text in small pieces called tokens](../../../docs-en/part1/ch01/tokens.md)
-- **Format:** vertical 9:16, 30fps, about 35 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 33 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a chatbot doesn't read letters. It reads text as blocks called tokens, and the "next word" is really the "next block."
 - **Split:** this is part 1 (what a token is). Part 2 (en-003) covers why the number of tokens matters.
 - **Status:** first draft, waiting for review

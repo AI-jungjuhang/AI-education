@@ -1,7 +1,7 @@
 # Short en-003 · It reads text in small pieces called tokens (part 2 of 2)
 
 - **Source page:** 1.1.2 [It reads text in small pieces called tokens](../../../docs-en/part1/ch01/tokens.md)
-- **Format:** vertical 9:16, 30fps, about 38 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 32 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** the number of tokens changes limits, speed and cost, letter counting, and how languages compare. When a chatbot must count, make it spell things out.
 - **Split:** part 2 of the tokens page. Part 1 (en-002) covers what a token is.
 - **Status:** first draft, waiting for review

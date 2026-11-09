@@ -1,7 +1,7 @@
 # Short en-004 · Sounds right, can be wrong: hallucination
 
 - **Source page:** 1.1.3 [Sounds right, can be wrong: hallucination](../../../docs-en/part1/ch01/hallucination.md)
-- **Format:** vertical 9:16, 30fps, about 36 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 33 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a chatbot can make things up and sound sure. Give it permission to say "I don't know," and check the risky parts.
 - **Status:** first draft, waiting for review
 
