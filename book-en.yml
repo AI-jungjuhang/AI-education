@@ -146,7 +146,7 @@ parts:
     - num: '11.1'
       title: Where to look
       pages:
-      - {slug: attention-idea, title: 'Attention: picking out what matters', min: 6, done: false}
+      - {slug: attention-idea, title: 'Attention: picking out what matters', min: 6, done: true}
       - {slug: transformer-layer, title: What one transformer layer looks like, min: 6, done: false}
       - {slug: context-window, title: 'The context window: how much it sees at once', min: 5, done: false}
   - num: 12
