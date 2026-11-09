@@ -169,7 +169,7 @@ body{overflow-x:clip}
 .md-typeset .band{position:relative;isolation:isolate;padding:2.8rem 0 3rem;margin:2.4rem 0 0}
 .md-typeset .band::before{content:"";position:absolute;inset:0 -100vmax;z-index:-1;background:var(--band-bg)}
 .md-typeset .band>h2:first-child{margin-top:0}
-.md-typeset .band-orange{--band-bg:#fc5424;color:#1f1b16}
+.md-typeset .band-orange{--band-bg:#ff8a50;color:#1f1b16}
 .md-typeset .band-orange h2{color:#1f1b16}
 .md-typeset .band-orange .headerlink{color:rgba(31,27,22,.5)}
 .md-typeset .band-orange ul.gains{gap:.6rem}
@@ -184,3 +184,27 @@ body{overflow-x:clip}
 .md-typeset .band-ink .band-sub{color:#aaa398;margin:0 0 1.4rem}
 .md-typeset .band-ink .md-button--primary{background:#efe9de;border-color:#efe9de;color:#1f1b16}
 .md-typeset .band-ink .md-button--primary:hover{background:#2f7be0;border-color:#2f7be0;color:#fff}
+/* 감자: 페이지마다 한 마리, 홈은 구역마다 한 마리 */
+.md-typeset .admonition.has-potato{position:relative;padding-right:5.2rem;min-height:5.6rem}
+.md-typeset .page-potato{position:absolute;width:4.4rem;height:auto;right:.6rem;bottom:.4rem;pointer-events:none}
+.md-typeset .title-potato{position:static;float:right;width:4rem;margin:0 0 .4rem 1rem}
+.md-typeset .band .sec-potato{position:absolute;right:0;top:1.6rem;width:5rem;height:auto;margin:0;pointer-events:none;transform:translateY(10px) scale(.7);opacity:0;transition:opacity 400ms var(--ease) 250ms,transform 500ms cubic-bezier(.34,1.56,.64,1) 250ms}
+.md-typeset .band.is-in .sec-potato,html:not(.reveal-on) .md-typeset .band .sec-potato{transform:none;opacity:1}
+.md-typeset .band>h2{padding-right:5.6rem}
+@media (max-width:30em){
+  .md-typeset .admonition.has-potato{padding-right:4.2rem}
+  .md-typeset .page-potato{width:3.4rem}
+  .md-typeset .title-potato{width:3.2rem}
+  .md-typeset .band .sec-potato{width:3.8rem;top:2rem}
+}
+@media (prefers-reduced-motion:reduce){.md-typeset .band .sec-potato{transform:none;opacity:1}}
+.md-typeset .band-ink>p{padding-right:5.6rem}
+@media (max-width:30em){.md-typeset .band>h2,.md-typeset .band-ink>p{padding-right:4.4rem}}
+/* 다크 모드: 감자의 검은 윤곽선이 어두운 바탕에 묻히지 않게 밝은 테두리를 두른다 */
+[data-md-color-scheme="slate"] .md-typeset .page-potato,
+[data-md-color-scheme="slate"] .md-typeset .hero-potato img,
+[data-md-color-scheme="slate"] .md-typeset .band-paper .sec-potato,
+[data-md-color-scheme="slate"] .md-header__button.md-logo img,
+.md-typeset .band-ink .sec-potato{filter:drop-shadow(0 0 1.5px #efe9de) drop-shadow(0 0 1.5px #efe9de)}
+/* 머리 부분의 "AI 정주행" 글자를 누르면 홈으로 */
+.md-header__title{cursor:pointer}

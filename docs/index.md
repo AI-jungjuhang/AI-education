@@ -33,6 +33,7 @@ hide:
 </div>
 
 <div class="band band-orange" markdown>
+<img class="sec-potato" src="assets/potato-grin.svg" alt="">
 
 ## 이 책으로 할 수 있는 것
 
@@ -46,6 +47,7 @@ hide:
 </div>
 
 <div class="band band-paper" markdown>
+<img class="sec-potato" src="assets/potato-smile.svg" alt="">
 
 ## 차례 { #길 }
 
@@ -62,6 +64,7 @@ hide:
 </div>
 
 <div class="band band-ink" markdown>
+<img class="sec-potato" src="assets/potato-wow.svg" alt="">
 <p class="band-kicker">오늘 바로 시작</p>
 <p class="band-title">첫 페이지는 5분이면 읽어요</p>
 <p class="band-sub">챗봇이 하는 일 딱 하나부터 알고 가요</p>
