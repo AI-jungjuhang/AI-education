@@ -181,7 +181,7 @@ parts:
       title: AI that works on its own
       pages:
       - {slug: what-agent, title: 'What is an agent?', min: 6, done: true}
-      - {slug: loop, title: 'Plan, act, check', min: 6, done: false}
+      - {slug: loop, title: 'Plan, act, check', min: 6, done: true}
       - {slug: failures, title: How agents fail, and the guardrails, min: 6, done: false}
   - num: 15
     title: Try Building an Agent
