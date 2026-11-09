@@ -122,6 +122,7 @@ nav:
       - part3/ch11/index.md
       - "11.1 Where to look":
         - "Attention: picking out what matters": part3/ch11/attention-idea.md
+        - "What one transformer layer looks like": part3/ch11/transformer-layer.md
     - "Ch. 12 Building Sentences with Probability":
       - part3/ch12/index.md
   - "IV Tools and Agents":
