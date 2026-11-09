@@ -24,7 +24,7 @@ That's how an agent works. As on the last page, it **repeats while watching the 
 4. **Look at the result.** Read what the tool returned and judge the progress.
 5. **Decide whether to keep going.** If there's more to do, go back to step 2. If it's done, stop.
 
-Anthropic's post on agents says two things are commonly used to stay in control: **checkpoints or moments when it's stuck where it asks a person**, and **stopping conditions such as a maximum number of steps**.
+Anthropic's post on agents names two common ways to stay in control. One is **pausing to ask a person**, at checkpoints or when it's stuck. The other is **stopping conditions**, like a maximum number of steps.
 
 ## Five ways to build the loop
 
