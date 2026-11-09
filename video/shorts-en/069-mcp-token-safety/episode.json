@@ -1,0 +1,127 @@
+{
+ "id": "en-069-mcp-token-safety",
+ "lang": "en",
+ "tag": "17.3.3",
+ "name": "Token safety",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Tokens: read-only,",
+    "cancel when done"
+   ],
+   "fs": 94,
+   "sticker": {
+    "t": "A leaked token lets\nothers act as you",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "lock",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "4 things",
+   "items": [
+    {
+     "t": "1. Make it read-only",
+     "c": "green",
+     "size": 58
+    },
+    {
+     "t": "2. Keep it out of your repo",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "3. Don't type it in commands",
+     "c": "blue",
+     "size": 56
+    },
+    {
+     "t": "4. Cancel it when done",
+     "c": "red",
+     "size": 58
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "In .mcp.json",
+    "t": "The token\nitself",
+    "c": "red",
+    "size": 100,
+    "small": "Push it to git and it leaks"
+   },
+   "bottom": {
+    "label": "In .mcp.json",
+    "t": "==Just a name,==\n==like ${API_KEY}==",
+    "c": "green",
+    "size": 84,
+    "small": "The value stays on\nyour computer"
+   },
+   "hl": "#FFD93D",
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "Text from a connected service",
+     "t": "may hide a line like\n\"Ignore your earlier\ninstructions…\"",
+     "size": 60,
+     "icon": "warn"
+    },
+    {
+     "who": "other",
+     "t": "A strange write request?\n==Say no.==",
+     "size": 64
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 64,
+   "items": [
+    "Before connecting,\n==ask for the least==",
+    "When done: ==remove,==\n==cancel, then check==",
+    "Tokens in commands?\n==Don't type them==||They can stay in terminal history"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

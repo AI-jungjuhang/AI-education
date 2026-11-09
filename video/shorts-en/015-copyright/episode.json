@@ -1,0 +1,121 @@
+{
+ "id": "en-015-copyright",
+ "lang": "en",
+ "tag": "3.2.2",
+ "name": "Copyright",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Its writing can",
+    "look like others'"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "It learned from huge\namounts of text",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "book",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "If you ask",
+    "t": "Write it\njust like\nthis article",
+    "c": "red",
+    "size": 84,
+    "small": "It may end up too close"
+   },
+   "bottom": {
+    "label": "If you ask",
+    "t": "==Sum up the\nmain idea in\nyour own words==",
+    "c": "green",
+    "size": 78
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Watch out\nhere",
+   "items": [
+    {
+     "head": "Pasting in",
+     "ex": "only the part\nyou need",
+     "icon": "doc"
+    },
+    {
+     "head": "Using it",
+     "ex": "too close to a\nknown work?",
+     "icon": "search"
+    },
+    {
+     "head": "Your name\non it",
+     "ex": "school or\nwork rules",
+     "icon": "person"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "Before you use it",
+     "t": "Search the line in\n==\"quotation marks\"==",
+     "size": 70,
+     "icon": "search"
+    },
+    {
+     "who": "other",
+     "t": "The easiest way to\nspot a look-alike",
+     "size": 64
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Check the ==AI rules==\nat school or work",
+    "==Say you used AI==||e.g. \"AI was used to help draft this.\"",
+    "Making money?\n==Read the terms=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}
