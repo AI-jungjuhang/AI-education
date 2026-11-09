@@ -143,6 +143,7 @@ nav:
       - "14.1 AI that works on its own":
         - "What is an agent?": part4/ch14/what-agent.md
         - "Plan, act, check": part4/ch14/loop.md
+        - "How agents fail": part4/ch14/failures.md
     - "Ch. 15 Try Building an Agent":
       - part4/ch15/index.md
   - "V Claude Code in Practice":
