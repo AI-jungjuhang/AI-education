@@ -16,6 +16,7 @@
 | 파일 | 쓰인 페이지 | 확인한 방법 |
 |---|---|---|
 | `check-page-en.sh` | 17.2.2 Hands-on: add an automatic checker | 가짜 입력으로 `docs-en` 페이지에 "Sources and date checked" 절이 없을 때 2, 있을 때 0, `docs-en` 밖 파일은 0 |
+| `check-hard-words-en.sh` | 18.2.3 command line automation | 가짜 `claude` 명령으로 반복 구조, 공백이 든 파일 이름, 결과 파일 저장을 확인. 실제 모델 호출 결과는 확인하지 않았어요 |
 | `studio-en/` | 18.2 plugins, super skill | `claude plugin validate ./studio-en`가 통과(`Validation passed`, 아이콘 없음 안내만). 실제 설치와 `/studio:episode` 실행은 확인하지 않았어요 |
 
 확인한 날짜: 2026-11-09, Claude Code 2.1.319.
