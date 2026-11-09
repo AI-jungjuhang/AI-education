@@ -12,7 +12,8 @@
 3. `.claude/skills/topic-page/SKILL.md`: 페이지 틀, 10살 눈높이, 출처와 기준 날짜.
 4. `.claude/skills/video-script/SKILL.md`: 영상 순서, 디자인 규칙, 사용자 피드백 규칙, 보내기 전 필수 확인.
 5. `video/engine/README.md`, `video/engine/blocks.py`, `video/HANDOFF_시작프롬프트.md`: 영상 엔진과 한국어 영상에서 쌓인 규칙.
-6. 참고용 완성본은 `docs/part1/ch01/next-word.md`(한국어 쪽)와 `video/shorts/008-iterate`(한국어 영상, 최신 형식)이다. 구조와 수준만 참고하고 문장은 가져오지 않는다.
+6. `CLAUDE.md`의 "사이트 디자인" 절과 `.claude/skills/unslop`: 사이트 디자인 방향(공책과 형광펜, 감자 로고). 영어판 사이트도 같은 디자인을 쓴다.
+7. 참고용 완성본은 `docs/part1/ch01/next-word.md`(한국어 쪽)와 `video/shorts/008-iterate`(한국어 영상, 최신 형식)이다. 구조와 수준만 참고하고 문장은 가져오지 않는다.
 
 ## 정해진 것 (사용자 결정)
 - 같은 저장소에 영어 폴더를 둔다. 예: `docs-en/`, `book-en.yml`, `mkdocs-en.yml`, `video/shorts-en/`. 영상 엔진과 스킬은 함께 쓴다.
@@ -22,7 +23,7 @@
 ## 먼저 할 일 (만들기 전에 나에게 확인받기)
 1. 영어 이름 후보를 제안한다.
 2. 폴더 구조와 배포 계획을 보여 준다.
-   - 지금 사이트는 `.github/workflows/deploy.yml`이 `mkdocs gh-deploy --force`로 한국어판만 배포한다. 주소는 https://sehoon3554-ctrl.github.io/AI-education/ 이다.
+   - 지금 사이트는 `.github/workflows/deploy.yml`이 `mkdocs gh-deploy --force`로 한국어판만 배포한다. 주소는 https://ai-jungjuhang.github.io/AI-education/ 이다(GitHub 조직 AI-jungjuhang).
    - 영어판(예: `/en/`)을 더해도 **한국어 사이트가 깨지거나 사라지면 안 된다.** `deploy.yml`과 `mkdocs.yml`은 내가 승인한 뒤에만 바꾼다.
 3. 영어판에서 달라지는 점을 정리해 보여 준다.
    - 원전은 영어 원문을 그대로 쓰고, 문장은 옮기지 않고 다시 쓴다.
