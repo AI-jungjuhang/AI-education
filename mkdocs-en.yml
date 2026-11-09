@@ -84,6 +84,7 @@ nav:
       - part2/ch05/index.md
       - "5.1 Your writing helper":
         - "Get a first draft": part2/ch05/first-draft.md
+        - "Rewrite and change the tone": part2/ch05/rewrite.md
     - "Ch. 6 AI for Research and Study":
       - part2/ch06/index.md
     - "Ch. 7 AI for Notes and Numbers":
