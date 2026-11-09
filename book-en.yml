@@ -170,7 +170,7 @@ parts:
     - num: '13.1'
       title: Search, files, connections
       pages:
-      - {slug: search-rag, title: What changes when you add search, min: 6, done: false}
+      - {slug: search-rag, title: What changes when you add search, min: 6, done: true}
       - {slug: files-code, title: AI that reads files and runs code, min: 5, done: false}
       - {slug: connectors, title: 'The standard for connecting tools: MCP', min: 5, done: false}
   - num: 14

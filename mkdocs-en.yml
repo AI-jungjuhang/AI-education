@@ -134,6 +134,8 @@ nav:
     - part4/index.md
     - "Ch. 13 AI That Uses Tools":
       - part4/ch13/index.md
+      - "13.1 Search, files, connections":
+        - "What changes when you add search": part4/ch13/search-rag.md
     - "Ch. 14 Agents":
       - part4/ch14/index.md
     - "Ch. 15 Try Building an Agent":
