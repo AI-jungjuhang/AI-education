@@ -220,7 +220,7 @@ parts:
       title: Command line basics
       pages:
       - {slug: cli-modes, title: Chat mode and one-line mode, min: 6, done: true}
-      - {slug: cli-pipe, title: Hand it a file and give it a job in one line, min: 6, done: false}
+      - {slug: cli-pipe, title: Hand it a file and give it a job in one line, min: 6, done: true}
   - num: 17
     title: 5B Automate and Connect
     blurb: Bundle repeated work into skills, run automatic checks with hooks, connect outside services with MCP, and share work with subagents.
