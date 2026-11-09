@@ -341,8 +341,8 @@ parts:
   title: Appendix
   blurb: Glossary, prompt collection, reading order, and references.
   flat:
-  - {slug: glossary, title: Glossary, min: 5, done: false}
-  - {slug: prompt-bank, title: Prompt collection, min: 5, done: false}
+  - {slug: glossary, title: Glossary, min: 5, done: true}
+  - {slug: prompt-bank, title: Prompt collection, min: 5, done: true}
   - {slug: reading-order, title: Suggested reading order, min: 3, done: false}
   - {slug: references, title: References, min: 4, done: false}
   - {slug: review-log, title: Review log, min: 4, done: false}

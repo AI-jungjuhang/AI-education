@@ -240,3 +240,5 @@ nav:
         - "Hands-on: this channel's checking loop": part6/ch23/verify-build.md
   - "Appendix":
     - appendix/index.md
+    - "Glossary": appendix/glossary.md
+    - "Prompt collection": appendix/prompt-bank.md
