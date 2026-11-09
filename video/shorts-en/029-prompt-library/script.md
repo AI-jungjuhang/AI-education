@@ -1,7 +1,7 @@
 # Short en-029 · Keep your favorite prompts
 
 - **Source page:** 8.1.1 [Keep your favorite prompts](../../../docs-en/part2/ch08/prompt-library.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** save prompts that worked, with notes on when to use them and what to watch for, and test them when you fix them.
 - **Status:** first draft, waiting for review
 

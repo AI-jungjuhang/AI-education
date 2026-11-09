@@ -1,7 +1,7 @@
 # Short en-024 · Read and sort out long documents
 
 - **Source page:** 6.1.2 [Read and sort out long documents](../../../docs-en/part2/ch06/long-docs.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** with a long document, decide your question first and have it pull out supporting quotes before it answers.
 - **Status:** first draft, waiting for review
 

@@ -1,7 +1,7 @@
 # Short en-033 · Learn from people: fine-tuning and feedback
 
 - **Source page:** 9.1.2 [Learn from people: fine-tuning and feedback](../../../docs-en/part3/ch09/tuning.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 26 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a pretrained model becomes a helper by learning from people's good answers and rankings, so it also picks up their tastes.
 - **Status:** first draft, waiting for review
 

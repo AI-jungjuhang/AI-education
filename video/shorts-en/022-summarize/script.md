@@ -1,7 +1,7 @@
 # Short en-022 · Summarize
 
 - **Source page:** 5.1.3 [Summarize](../../../docs-en/part2/ch05/summarize.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a summary can slip in things that aren't in the original, so set what you want and check it against the original.
 - **Status:** first draft, waiting for review
 

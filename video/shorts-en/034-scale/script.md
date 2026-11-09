@@ -1,7 +1,7 @@
 # Short en-034 · Why size matters: parameters
 
 - **Source page:** 9.1.3 [Why size matters: parameters](../../../docs-en/part3/ch09/scale.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** the number in a model's name is its size, and size is only one factor.
 - **Status:** first draft, waiting for review
 

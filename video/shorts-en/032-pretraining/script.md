@@ -1,7 +1,7 @@
 # Short en-032 · Read and imitate: pretraining
 
 - **Source page:** 9.1.1 [Read and imitate: pretraining](../../../docs-en/part3/ch09/pretraining.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a chatbot's first school is guessing the next token in huge amounts of text, and that leaves some limits.
 - **Status:** first draft, waiting for review
 

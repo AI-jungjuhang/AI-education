@@ -1,7 +1,7 @@
 # Short en-020 · Get a first draft
 
 - **Source page:** 5.1.1 [Get a first draft](../../../docs-en/part2/ch05/first-draft.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** let AI make a rough draft fast, then you fix and finish it.
 - **Status:** first draft, waiting for review
 

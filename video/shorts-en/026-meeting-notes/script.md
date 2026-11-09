@@ -1,7 +1,7 @@
 # Short en-026 · Meeting notes and emails
 
 - **Source page:** 7.1.1 [Meeting notes and emails](../../../docs-en/part2/ch07/meeting-notes.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** set the slots first (decided, still open, to do), and have AI write "TBD" instead of guessing.
 - **Status:** first draft, waiting for review
 

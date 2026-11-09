@@ -1,7 +1,7 @@
 # Short en-023 · Get to know a new field fast
 
 - **Source page:** 6.1.1 [Get to know a new field fast](../../../docs-en/part2/ch06/quick-intro.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** in a new field, ask AI for a map first, then check the map against a source you trust.
 - **Status:** first draft, waiting for review
 

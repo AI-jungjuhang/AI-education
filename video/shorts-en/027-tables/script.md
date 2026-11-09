@@ -1,7 +1,7 @@
 # Short en-027 · Help with tables and spreadsheet formulas
 
 - **Source page:** 7.1.2 [Help with tables and spreadsheet formulas](../../../docs-en/part2/ch07/tables.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** when you ask for a formula, show what your table has and the result you want.
 - **Status:** first draft, waiting for review
 

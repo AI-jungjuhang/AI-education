@@ -1,7 +1,7 @@
 # Short en-019 · Pick the AI that fits your work
 
 - **Source page:** 4.1.3 [Pick the AI that fits your work](../../../docs-en/part1/ch04/choose.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** start with the job you want done, then pick the tool.
 - **Status:** first draft, waiting for review
 

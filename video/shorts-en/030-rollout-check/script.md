@@ -1,7 +1,7 @@
 # Short en-030 · A checklist before using it at work
 
 - **Source page:** 8.1.2 [A checklist before using it at work](../../../docs-en/part2/ch08/rollout-check.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** AI helps with some jobs and hurts others, so check first and measure a small trial.
 - **Status:** first draft, waiting for review
 

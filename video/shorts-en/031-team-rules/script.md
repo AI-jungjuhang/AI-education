@@ -1,7 +1,7 @@
 # Short en-031 · Rules your team agrees on
 
 - **Source page:** 8.1.3 [Rules your team agrees on](../../../docs-en/part2/ch08/team-rules.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a team's AI rules fit on one page: what can go in, who checks, and how to say AI was used.
 - **Status:** first draft, waiting for review
 

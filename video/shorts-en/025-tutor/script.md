@@ -1,7 +1,7 @@
 # Short en-025 · Use it as a study buddy
 
 - **Source page:** 6.1.3 [Use it as a study buddy](../../../docs-en/part2/ch06/tutor.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** to learn, have AI quiz you instead of explaining again and again.
 - **Status:** first draft, waiting for review
 

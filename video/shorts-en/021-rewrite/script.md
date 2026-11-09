@@ -1,7 +1,7 @@
 # Short en-021 · Rewrite and change the tone
 
 - **Source page:** 5.1.2 [Rewrite and change the tone](../../../docs-en/part2/ch05/rewrite.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** when AI rewrites, the meaning must stay the same, so say so and check what changed.
 - **Status:** first draft, waiting for review
 

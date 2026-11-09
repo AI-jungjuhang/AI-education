@@ -1,0 +1,128 @@
+{
+ "id": "en-016-bias",
+ "lang": "en",
+ "tag": "3.2.3",
+ "name": "Bias",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Chatbots can",
+    "be biased too"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "They learned from\ntext people wrote",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "people",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "e.g. if you ask",
+     "t": "Write a thank-you\nletter to a nurse.",
+     "size": 72,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "You never said a gender, but",
+     "t": "It may still\n==assume one==",
+     "size": 70,
+     "icon": "question"
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 0.2,
+    "y": 1090
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "foot": "Just a quick test. One try can't show\nhow a whole model behaves"
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Where bias\ncomes from",
+   "items": [
+    {
+     "head": "What it\nread",
+     "body": "leans\none way",
+     "icon": "book"
+    },
+    {
+     "head": "The makers",
+     "body": "what goes in",
+     "icon": "sliders"
+    },
+    {
+     "head": "Your\nquestion",
+     "body": "assumes\none side",
+     "icon": "question"
+    },
+    {
+     "head": "Ratings",
+     "body": "it learns\nto agree",
+     "icon": "people"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "If you ask",
+    "t": "Why are [group]\nalways so…?",
+    "c": "red",
+    "size": 72,
+    "small": "It already assumes one side"
+   },
+   "bottom": {
+    "label": "If you ask",
+    "t": "==Is it actually\ntrue that…?==",
+    "c": "green",
+    "size": 76
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Don't let it ==decide==\n==about people==||e.g. hiring, grades, loans",
+    "Ask for ==other==\n==points of view==",
+    "==Double-check==\nrare topics"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

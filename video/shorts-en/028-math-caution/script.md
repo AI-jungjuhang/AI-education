@@ -1,7 +1,7 @@
 # Short en-028 · Be careful when it does math
 
 - **Source page:** 7.1.3 [Be careful when it does math](../../../docs-en/part2/ch07/math-caution.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** in long math, one wrong step carries forward, so let AI write the formula and let a calculator find the value.
 - **Status:** first draft, waiting for review
 
