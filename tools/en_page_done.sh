@@ -4,7 +4,16 @@
 set -e
 f="$1"; slug=$(basename "$f" .md)
 python3 tools/readability.py "$f"
-if grep -n "—\|–" "$f"; then echo "대시(—, –)가 있어요. 고쳐 주세요."; exit 1; fi
+# 대시 검사: 인용한 제목(*...* 또는 [...] 안)의 대시는 원문 그대로 두므로 넘어간다
+python3 - "$f" <<'PY'
+import re, sys
+bad = []
+for i, line in enumerate(open(sys.argv[1], encoding='utf-8'), 1):
+    t = re.sub(r'\*[^*]+\*|\[[^\]]+\]', '', line)
+    if '—' in t or '–' in t: bad.append(f'{i}: {line.strip()[:100]}')
+if bad:
+    print('\n'.join(bad)); print('대시(—, –)가 있어요. 고쳐 주세요.'); sys.exit(1)
+PY
 python3 - "$slug" <<'PY'
 import re, sys, pathlib
 p = pathlib.Path('book-en.yml'); s = p.read_text(encoding='utf-8'); slug = sys.argv[1]
