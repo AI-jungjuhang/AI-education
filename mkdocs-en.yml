@@ -199,6 +199,8 @@ nav:
     - part6/index.md
     - "Ch. 19 Looking Inside the Model ★":
       - part6/ch19/index.md
+      - "19.1 Interpretability":
+        - "Why look inside a model?": part6/ch19/interp-intro.md
     - "Ch. 20 Training, Deeper ★":
       - part6/ch20/index.md
     - "Ch. 21 Testing and Limits ★":

@@ -277,7 +277,7 @@ parts:
     - num: '19.1'
       title: Interpretability
       pages:
-      - {slug: interp-intro, title: 'Why look inside a model?', min: 7, done: false}
+      - {slug: interp-intro, title: 'Why look inside a model?', min: 7, done: true}
       - {slug: features, title: 'Features: the ideas inside a model', min: 7, done: false}
       - {slug: circuits, title: 'Circuits: tracing a path of thought', min: 7, done: false}
   - num: 20
