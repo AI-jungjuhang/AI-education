@@ -219,7 +219,7 @@ parts:
     - num: '16.4'
       title: Command line basics
       pages:
-      - {slug: cli-modes, title: Chat mode and one-line mode, min: 6, done: false}
+      - {slug: cli-modes, title: Chat mode and one-line mode, min: 6, done: true}
       - {slug: cli-pipe, title: Hand it a file and give it a job in one line, min: 6, done: false}
   - num: 17
     title: 5B Automate and Connect

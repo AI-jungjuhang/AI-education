@@ -163,6 +163,8 @@ nav:
       - "16.3 Checkpoints":
         - "Experiment freely with rewind": part5/ch16/checkpoint-rewind.md
         - "How are checkpoints different from git?": part5/ch16/checkpoint-vs-git.md
+      - "16.4 Command line basics":
+        - "Chat mode and one-line mode": part5/ch16/cli-modes.md
     - "Ch. 17 5B Automate and Connect":
       - part5/ch17/index.md
     - "Ch. 18 5C Advanced ★":
