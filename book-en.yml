@@ -42,7 +42,7 @@ parts:
     - num: '2.2'
       title: Improving it as you talk
       pages:
-      - {slug: iterate, title: How to ask for changes, min: 5, done: false}
+      - {slug: iterate, title: How to ask for changes, min: 5, done: true}
       - {slug: fresh-start, title: When a new chat works better, min: 4, done: false}
       - {slug: templates, title: Make your own question templates, min: 5, done: false}
   - num: 3
