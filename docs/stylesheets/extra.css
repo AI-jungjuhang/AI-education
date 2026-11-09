@@ -157,3 +157,6 @@ body,.md-typeset{font-family:var(--font)}
 .md-typeset ul.parts span{color:var(--ink-faint);font-size:.72rem;text-align:right}
 @media (max-width:30em){.md-typeset ul.parts a{flex-direction:column;gap:.1rem}.md-typeset ul.parts span{text-align:left}}
 .md-copyright,.md-copyright__highlight,.md-footer-meta a{color:var(--ink-faint)!important}
+.md-typeset .after-hero{display:flex;gap:.6rem;flex-wrap:wrap;margin:-.8rem 0 2.4rem}
+.md-typeset .after-hero p{display:flex;gap:.6rem;flex-wrap:wrap;margin:0}
+.md-typeset .after-hero .md-button{margin:0}

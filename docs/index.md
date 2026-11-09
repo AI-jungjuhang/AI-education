@@ -14,10 +14,6 @@ hide:
 챗봇을 매일 쓰는데도 "왜 이렇게 답하지?" 싶었다면, 이 책이 그 이유를 알려 줘요.
 어려운 말은 빼고, 내용 수준은 낮추지 않았어요.
 
-<div class="hero-actions" markdown>
-[첫 페이지 읽기](part1/ch01/next-word.md){ .md-button .md-button--primary }
-[전체 차례 보기](#길){ .md-button }
-</div>
 
 </div>
 <div class="hero-visual">
@@ -29,6 +25,11 @@ hide:
 </div>
 <div class="hero-potato"><img src="assets/potato.svg" alt=""></div>
 </div>
+</div>
+
+<div class="hero-actions after-hero" markdown>
+[첫 페이지 읽기](part1/ch01/next-word.md){ .md-button .md-button--primary }
+[전체 차례 보기](#길){ .md-button }
 </div>
 
 ## 이 책으로 할 수 있는 것
