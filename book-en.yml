@@ -325,8 +325,8 @@ parts:
     - num: '23.2'
       title: Prompts from first principles
       pages:
-      - {slug: prompt-why, title: 'Why do context, examples, and format work?', min: 7, done: false}
-      - {slug: prompt-agent, title: 'How is handing off a job different?', min: 7, done: false}
+      - {slug: prompt-why, title: 'Why do context, examples, and format work?', min: 7, done: true}
+      - {slug: prompt-agent, title: 'How is handing off a job different?', min: 7, done: true}
     - num: '23.3'
       title: Choosing a model
       pages:

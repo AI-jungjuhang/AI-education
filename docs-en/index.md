@@ -46,10 +46,10 @@ The English edition is being written now, one page at a time.
 | [III A Spoonful of How It Works](part3/index.md) | No hard math | Done (12) |
 | [IV Tools and Agents](part4/index.md) | AI that searches, reads files, uses tools, and works on its own | Done (9) |
 | [V Claude Code in Practice](part5/index.md) | Put Claude Code to work | Done (27) |
-| [VI Using AI from First Principles ★](part6/index.md) | Going deeper | **17/23 written** |
+| [VI Using AI from First Principles ★](part6/index.md) | Going deeper | **19/23 written** |
 | [Appendix](appendix/index.md) | Glossary, prompt collection, reading order, and references | Coming soon |
 
-95 of 106 pages written so far.
+97 of 106 pages written so far.
 <!-- /AUTO:progress -->
 
 </div>

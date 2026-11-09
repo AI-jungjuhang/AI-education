@@ -229,5 +229,8 @@ nav:
       - "23.1 Managing context":
         - "What fills up its memory space?": part6/ch23/context-fill.md
         - "Habits that save memory space": part6/ch23/context-habits.md
+      - "23.2 Prompts from first principles":
+        - "Why do context, examples, and format work?": part6/ch23/prompt-why.md
+        - "How is handing off a job different?": part6/ch23/prompt-agent.md
   - "Appendix":
     - appendix/index.md
