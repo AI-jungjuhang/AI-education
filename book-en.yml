@@ -60,7 +60,7 @@ parts:
       pages:
       - {slug: privacy, title: Personal and sensitive information, min: 5, done: true}
       - {slug: copyright, title: Copyright and plagiarism, min: 5, done: true}
-      - {slug: bias, title: Spotting bias and limits, min: 5, done: false}
+      - {slug: bias, title: Spotting bias and limits, min: 5, done: true}
   - num: 4
     title: Which AI Should You Pick?
     blurb: There are so many AI tools it gets confusing. Sort them into kinds and pick the right one for your job.

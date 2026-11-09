@@ -71,6 +71,7 @@ nav:
       - "3.2 Using it safely":
         - "Personal and sensitive information": part1/ch03/privacy.md
         - "Copyright and plagiarism": part1/ch03/copyright.md
+        - "Spotting bias and limits": part1/ch03/bias.md
     - "Ch. 4 Which AI Should You Pick?":
       - part1/ch04/index.md
   - "II Put AI to Work":

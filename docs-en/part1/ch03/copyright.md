@@ -42,7 +42,7 @@ In January 2025, the US Copyright Office released Part 2 of its report on copyri
 
 - AI output can be protected only where a **human author** decided enough of the creative parts.
 - That can include human work you can see in the output, or creative choices a human made in arranging or changing it. Just typing a prompt is not enough.
-- Using AI to help you create, or adding AI-made parts into a larger work you wrote, does not on its own stop your work from being protected.
+- Using AI as a helper doesn't, on its own, stop your work from being protected. Neither does adding AI-made parts to a larger work you wrote.
 
 This is the view of one US office. Other countries may see it differently.
 
