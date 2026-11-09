@@ -3,7 +3,7 @@
 Start Claude Code, talk to it, write down rules, undo mistakes, and give it a job in one line.
 
 <div class="ep-list">
-<div class="soon"><span class="ep-no">16.1.1</span><span class="ep-title">Slash commands you'll use often</span><span class="ep-time">Coming soon</span></div>
+<a href="slash-basics/"><span class="ep-no">16.1.1</span><span class="ep-title">Slash commands you'll use often</span><span class="ep-time">6 min read</span></a>
 <div class="soon"><span class="ep-no">16.1.2</span><span class="ep-title">Make your own shortcut commands</span><span class="ep-time">Coming soon</span></div>
 <div class="soon"><span class="ep-no">16.2.1</span><span class="ep-title">The note Claude reads every time</span><span class="ep-time">Coming soon</span></div>
 <div class="soon"><span class="ep-no">16.2.2</span><span class="ep-title">How to write a good CLAUDE.md</span><span class="ep-time">Coming soon</span></div>

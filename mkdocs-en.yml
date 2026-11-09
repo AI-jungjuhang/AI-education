@@ -154,6 +154,8 @@ nav:
     - part5/index.md
     - "Ch. 16 5A First Steps":
       - part5/ch16/index.md
+      - "16.1 Slash commands":
+        - "Slash commands you'll use often": part5/ch16/slash-basics.md
     - "Ch. 17 5B Automate and Connect":
       - part5/ch17/index.md
     - "Ch. 18 5C Advanced ★":
