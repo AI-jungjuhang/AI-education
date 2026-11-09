@@ -41,7 +41,7 @@ The English edition is being written now, one page at a time.
 <!-- AUTO:progress -->
 | Part | What you get | Progress |
 |---|---|---|
-| [I Your First AI](part1/index.md) | For people using an AI chatbot for the first time | **2/18 written** |
+| [I Your First AI](part1/index.md) | For people using an AI chatbot for the first time | **3/18 written** |
 | [II Put AI to Work](part2/index.md) | How to use AI for writing, research, and getting organized | Coming soon |
 | [III A Spoonful of How It Works](part3/index.md) | No hard math | Coming soon |
 | [IV Tools and Agents](part4/index.md) | AI that searches, reads files, uses tools, and works on its own | Coming soon |
@@ -49,7 +49,7 @@ The English edition is being written now, one page at a time.
 | [VI Using AI from First Principles ★](part6/index.md) | Going deeper | Coming soon |
 | [Appendix](appendix/index.md) | Glossary, prompt collection, reading order, and references | Coming soon |
 
-2 of 106 pages written so far.
+3 of 106 pages written so far.
 <!-- /AUTO:progress -->
 
 </div>
