@@ -15,7 +15,20 @@ If you use a chatbot every day and still wonder "why did it say that?", this boo
 We left out the jargon, not the ideas.
 
 </div>
-<!-- TODO: add hero-visual (page preview card + potato) once part1/ch01/next-word.md is written. The potato is positioned against the card. -->
+<div class="hero-visual">
+<div class="page-card">
+<p class="pc-meta">Ch. 1 · 1.1 · About 5 min read</p>
+<p class="pc-title">A chatbot guesses the next word</p>
+<p>A chatbot's one job is to <mark>pick the next word</mark>. It does that again and again, and the words pile up into an answer.</p>
+<p class="pc-box">Try it · Ask three times and look at what repeats</p>
+</div>
+<div class="hero-potato"><img src="assets/potato.svg" alt=""></div>
+</div>
+</div>
+
+<div class="hero-actions after-hero" markdown>
+[Read the first page](part1/ch01/next-word.md){ .md-button .md-button--primary }
+[See all chapters](#contents){ .md-button }
 </div>
 
 <div class="band band-paper" markdown>
@@ -28,7 +41,7 @@ The English edition is being written now, one page at a time.
 <!-- AUTO:progress -->
 | Part | What you get | Progress |
 |---|---|---|
-| [I Your First AI](part1/index.md) | For people using an AI chatbot for the first time | Coming soon |
+| [I Your First AI](part1/index.md) | For people using an AI chatbot for the first time | **1/18 written** |
 | [II Put AI to Work](part2/index.md) | How to use AI for writing, research, and getting organized | Coming soon |
 | [III A Spoonful of How It Works](part3/index.md) | No hard math | Coming soon |
 | [IV Tools and Agents](part4/index.md) | AI that searches, reads files, uses tools, and works on its own | Coming soon |
@@ -36,7 +49,7 @@ The English edition is being written now, one page at a time.
 | [VI Using AI from First Principles ★](part6/index.md) | Going deeper | Coming soon |
 | [Appendix](appendix/index.md) | Glossary, prompt collection, reading order, and references | Coming soon |
 
-0 of 106 pages written so far.
+1 of 106 pages written so far.
 <!-- /AUTO:progress -->
 
 </div>

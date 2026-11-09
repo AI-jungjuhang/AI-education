@@ -48,6 +48,8 @@ nav:
     - part1/index.md
     - "Ch. 1 What Does a Chatbot Actually Do?":
       - part1/ch01/index.md
+      - "1.1 What a chatbot does":
+        - "A chatbot guesses the next word": part1/ch01/next-word.md
     - "Ch. 2 How to Ask Well":
       - part1/ch02/index.md
     - "Ch. 3 When to Trust It, When Not To":

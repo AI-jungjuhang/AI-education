@@ -60,7 +60,7 @@ def main():
         text = prose(f.read_text(encoding='utf-8'))
         if not text.strip(): continue
         fk = textstat.flesch_kincaid_grade(text)
-        sents = [x for x in re.split(r'(?<=[.!?])\s+', text.replace('\n', ' ')) if x.strip()]
+        sents = [x for x in re.split(r'(?<=[.!?])["\')]*\s+', text.replace('\n', ' ')) if x.strip()]
         avg = sum(len(x.split()) for x in sents) / max(len(sents), 1)
         ok = fk <= LIMIT
         bad += not ok
