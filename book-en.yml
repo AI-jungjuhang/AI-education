@@ -263,7 +263,7 @@ parts:
     - num: '18.2'
       title: Plugins and command line skills
       pages:
-      - {slug: plugin-bundle, title: Bundle and share with plugins, min: 8, done: false}
+      - {slug: plugin-bundle, title: Bundle and share with plugins, min: 8, done: true}
       - {slug: super-skill, title: 'Hands-on: a super skill for making videos', min: 9, done: false}
       - {slug: cli-automation, title: Build an automation pipeline on the command line, min: 8, done: false}
 - id: 6
