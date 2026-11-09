@@ -69,7 +69,7 @@ parts:
       title: Kinds and how to choose
       pages:
       - {slug: kinds, title: 'Chat, search, image, voice: the kinds of AI', min: 5, done: true}
-      - {slug: free-paid, title: 'What changes between free and paid?', min: 5, done: false}
+      - {slug: free-paid, title: 'What changes between free and paid?', min: 5, done: true}
       - {slug: choose, title: Pick the AI that fits your work, min: 5, done: false}
 - id: 2
   title: II Put AI to Work
