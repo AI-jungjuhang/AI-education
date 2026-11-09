@@ -193,6 +193,7 @@ nav:
         - "Agent teams": part5/ch18/agent-teams.md
       - "18.2 Plugins and command line skills":
         - "Bundle and share with plugins": part5/ch18/plugin-bundle.md
+        - "Hands-on: a super skill for making videos": part5/ch18/super-skill.md
   - "VI Using AI from First Principles ★":
     - part6/index.md
     - "Ch. 19 Looking Inside the Model ★":
