@@ -103,7 +103,7 @@ parts:
       title: Documents and tables
       pages:
       - {slug: meeting-notes, title: Meeting notes and emails, min: 5, done: true}
-      - {slug: tables, title: Help with tables and spreadsheet formulas, min: 5, done: false}
+      - {slug: tables, title: Help with tables and spreadsheet formulas, min: 5, done: true}
       - {slug: math-caution, title: Be careful when it does math, min: 5, done: false}
   - num: 8
     title: Make It Part of How You Work
