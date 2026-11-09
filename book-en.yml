@@ -104,7 +104,7 @@ parts:
       pages:
       - {slug: meeting-notes, title: Meeting notes and emails, min: 5, done: true}
       - {slug: tables, title: Help with tables and spreadsheet formulas, min: 5, done: true}
-      - {slug: math-caution, title: Be careful when it does math, min: 5, done: false}
+      - {slug: math-caution, title: Be careful when it does math, min: 5, done: true}
   - num: 8
     title: Make It Part of How You Work
     blurb: Don't use it once and stop. Turn it into a way of working for you and your team.
