@@ -242,7 +242,7 @@ parts:
       pages:
       - {slug: mcp-intro, title: MCP is Claude's plug socket, min: 6, done: true}
       - {slug: mcp-connect, title: 'Hands-on: connect an outside service', min: 7, done: true}
-      - {slug: mcp-token-safety, title: 'Tokens: read-only, and delete when done', min: 6, done: false}
+      - {slug: mcp-token-safety, title: 'Tokens: read-only, and delete when done', min: 6, done: true}
     - num: '17.4'
       title: Subagents
       pages:
