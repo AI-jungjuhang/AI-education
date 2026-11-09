@@ -13,4 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      # 한국어판 → site/, 영어판 → site/en/ 을 만든 뒤 gh-pages에 함께 올린다 (2026-11-09 사용자 승인)
+      # 예전 gh-deploy --force와 같은 브랜치(gh-pages)·같은 도구(ghp-import)를 쓴다.
+      - run: mkdocs build --strict
+      - run: mkdocs build --strict -f mkdocs-en.yml -d site/en
+      - run: ghp-import --no-jekyll --push --force --message "Deploy Korean and English sites" site
