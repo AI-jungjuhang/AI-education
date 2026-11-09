@@ -1,0 +1,122 @@
+{
+ "id": "en-081-features",
+ "lang": "en",
+ "tag": "19.1.2",
+ "name": "Features",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Inside a model,",
+    "each idea is spread",
+    "over many parts"
+   ],
+   "fs": 92,
+   "y": 290,
+   "icon_y": 850,
+   "sticker": {
+    "t": "Parts that switch on\ntogether: a feature",
+    "c": "yellow",
+    "y": 1090,
+    "size": 62
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4,
+    "y": 1320
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "One neuron",
+    "t": "Helps with\nmany ideas",
+    "c": "yellow",
+    "size": 100,
+    "icon": "people",
+    "small": "No single \"potato neuron\""
+   },
+   "bottom": {
+    "label": "So researchers",
+    "t": "==Grouped patterns\ninto \"features\"==",
+    "c": "green",
+    "size": 74,
+    "icon": "search",
+    "small": "Like letters that make words"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "Anthropic, May 2024 (Claude 3.0 Sonnet)",
+     "t": "Found ==millions==\nof features",
+     "size": 72,
+     "icon": "book"
+    },
+    {
+     "who": "other",
+     "t": "A bridge feature fired in\nmany languages and pictures",
+     "size": 52
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "bigword",
+   "bg": "orange",
+   "lines": [
+    "Turn a feature up,",
+    "behavior changes"
+   ],
+   "fs": 94,
+   "sticker": {
+    "t": "Claude kept bringing up\nthe Golden Gate Bridge",
+    "c": "yellow",
+    "y": 1000,
+    "size": 60
+   },
+   "icon": "target",
+   "beats": 9,
+   "foot": "A short research demo, no longer available"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Be careful saying\n==\"AI understands\"==",
+    "News about this?\n==Read the original==",
+    "Try ==another language==\nfor the same idea"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

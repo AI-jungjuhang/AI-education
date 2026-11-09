@@ -1,0 +1,125 @@
+{
+ "id": "en-031-team-rules",
+ "lang": "en",
+ "tag": "8.1.3",
+ "name": "Team rules",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Team AI rules",
+    "fit on one page"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "Short class rules are\nthe ones people keep",
+    "c": "yellow",
+    "y": 1000,
+    "size": 66
+   },
+   "icon": "people",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "Agree on\nthree things",
+   "items": [
+    {
+     "head": "What can\ngo in?",
+     "body": "data levels",
+     "icon": "lock"
+    },
+    {
+     "head": "Reviewer",
+     "ex": "the manager,\nfor outside docs",
+     "icon": "check"
+    },
+    {
+     "head": "Saying so",
+     "ex": "\"AI helped\ndraft this\"",
+     "icon": "doc"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "Data levels",
+   "items": [
+    {
+     "t": "Public → usually OK",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "Internal → approved tools",
+     "c": "yellow",
+     "size": 60
+    },
+    {
+     "t": "Sensitive → keep it out",
+     "c": "red",
+     "size": 60
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "When you share the rules",
+     "t": "==Add examples==",
+     "size": 76,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "\"This is fine, this isn't\"\nclicks faster than rules",
+     "size": 58
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Start with\n==three data levels==",
+    "Name ==one person==\nto ask when unsure",
+    "A person checks\n==what goes outside=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

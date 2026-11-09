@@ -1,0 +1,140 @@
+{
+ "id": "en-074-permissions",
+ "lang": "en",
+ "tag": "18.1.2",
+ "name": "Permission modes",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A mode sets what",
+    "Claude may do",
+    "without asking"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "A trade between\nease and safety",
+    "c": "yellow",
+    "y": 1090,
+    "size": 68
+   },
+   "icon": "lock",
+   "icon_y": 850,
+   "y": 290,
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4,
+    "y": 1320
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "Runs freely",
+   "items": [
+    {
+     "t": "Manual (default) → reads only",
+     "c": "green",
+     "size": 46
+    },
+    {
+     "t": "acceptEdits → reads, file edits",
+     "c": "yellow",
+     "size": 46
+    },
+    {
+     "t": "plan → reads",
+     "c": "green",
+     "size": 46
+    },
+    {
+     "t": "auto → nearly everything,\nwith safety checks",
+     "c": "blue",
+     "size": 46
+    },
+    {
+     "t": "dontAsk → pre-approved tools only",
+     "c": "yellow",
+     "size": 46
+    },
+    {
+     "t": "bypassPermissions → everything",
+     "c": "red",
+     "size": 46
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "On your own computer",
+    "t": "bypass\nPermissions",
+    "c": "red",
+    "size": 92,
+    "small": "Everything runs without asking"
+   },
+   "bottom": {
+    "label": "bypassPermissions is",
+    "t": "==Only for\ncontainers or\nvirtual machines==",
+    "c": "green",
+    "size": 76
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "Someone else's repository?",
+     "t": "claude --permission-mode\ndefault",
+     "size": 56,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "Then just look around\n==in plan mode==",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Start with ==Manual\nand plan mode==",
+    "acceptEdits only if\nyou'll ==check results==",
+    "Keep out of settings:\n==bypassPermissions=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

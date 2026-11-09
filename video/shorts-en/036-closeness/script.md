@@ -1,7 +1,7 @@
 # Short en-036 · Similar meanings sit close together
 
 - **Source page:** 10.1.2 [Similar meanings sit close together](../../../docs-en/part3/ch10/closeness.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** words with similar meanings sit close together, and that closeness has limits.
 - **Status:** first draft, waiting for review
 

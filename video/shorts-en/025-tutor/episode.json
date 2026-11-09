@@ -1,0 +1,122 @@
+{
+ "id": "en-025-tutor",
+ "lang": "en",
+ "tag": "6.1.3",
+ "name": "Study buddy",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Don't just read.",
+    "Get quizzed."
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "Copying the answer key\ndoesn't help on the test",
+    "c": "yellow",
+    "y": 1000,
+    "size": 62
+   },
+   "icon": "question",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "If you study like this",
+    "t": "Just explain\nit again",
+    "c": "red",
+    "size": 100,
+    "small": "You only feel you get it"
+   },
+   "bottom": {
+    "label": "If you study like this",
+    "t": "==Quiz me==",
+    "c": "green",
+    "size": 104,
+    "small": "Recalling beats rereading"
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Three\nways",
+   "items": [
+    {
+     "head": "Explain,\nthen quiz",
+     "body": "right away",
+     "icon": "question"
+    },
+    {
+     "head": "Quiz me",
+     "body": "one at a time",
+     "icon": "doc"
+    },
+    {
+     "head": "Check my\nexplanation",
+     "body": "find errors",
+     "icon": "check"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "When it quizzes you",
+     "t": "Don't give the answer\n==until I've answered==",
+     "size": 64,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "That's what turns it\ninto recall practice",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "After \"explain this,\"\nadd ==\"now quiz me\"==",
+    "==Space it out==||e.g. today, in two days, in a week",
+    "Compare with\n==your textbook=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

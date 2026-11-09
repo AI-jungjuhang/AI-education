@@ -1,0 +1,129 @@
+{
+ "id": "en-078-super-skill",
+ "lang": "en",
+ "tag": "18.2.2",
+ "name": "Super skill",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A super skill is",
+    "a list of steps"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "It calls the tools\nyou already made",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "The steps",
+   "items": [
+    {
+     "t": "1. researcher → key points",
+     "c": "green",
+     "size": 54
+    },
+    {
+     "t": "2. scriptwriter → scenes",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "3. reviewer → check the page",
+     "c": "blue",
+     "size": 54
+    },
+    {
+     "t": "4. You decide the fixes",
+     "c": "red",
+     "size": 54
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Always write",
+   "items": [
+    {
+     "head": "The order",
+     "body": "Who, when",
+     "icon": "sliders"
+    },
+    {
+     "head": "Where\nto stop",
+     "body": "On problems",
+     "icon": "warn"
+    },
+    {
+     "head": "Where\nyou decide",
+     "body": "Before fixes",
+     "icon": "person"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "Call it",
+     "t": "/studio:episode\ndocs-en/part1/ch01/tokens.md",
+     "size": 50,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "It makes files, so it runs\n==only when you call it==",
+     "size": 56
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "It handles ==the order\nand hand-offs==",
+    "Test on ==one short\npage== first",
+    "Save results where\nyou ==can check them=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

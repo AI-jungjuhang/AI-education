@@ -1,0 +1,125 @@
+{
+ "id": "en-083-scaling",
+ "lang": "en",
+ "tag": "20.1.1",
+ "name": "Scaling",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "\"Sudden\" AI skills",
+    "may come from",
+    "how we score"
+   ],
+   "fs": 98,
+   "y": 290,
+   "icon_y": 850,
+   "sticker": {
+    "t": "Scores rise steadily\nas models grow",
+    "c": "yellow",
+    "y": 1090,
+    "size": 64
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4,
+    "y": 1320
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Wei and others, 2022",
+    "t": "Big models gain\nnew abilities",
+    "c": "yellow",
+    "size": 80,
+    "icon": "target"
+   },
+   "bottom": {
+    "label": "Schaeffer and others, 2023",
+    "t": "==Scoring makes it\nlook sudden==",
+    "c": "green",
+    "size": 76,
+    "icon": "search"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "Think of push-ups",
+     "t": "Score only full push-ups:\nit looks ==sudden==",
+     "size": 60,
+     "icon": "question"
+    },
+    {
+     "who": "other",
+     "t": "Count how close you get:\nit grows bit by bit",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "In the news",
+   "items": [
+    {
+     "t": "Which test? How scored?",
+     "c": "green",
+     "size": 62
+    },
+    {
+     "t": "\"Argued\" or \"proven\"?",
+     "c": "yellow",
+     "size": 62
+    },
+    {
+     "t": "Tried on your own work?",
+     "c": "blue",
+     "size": 62
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "\"Suddenly does X\"?\n==Check the yardstick==",
+    "Don't assume ==bigger\nis always better==",
+    "\"Unpredictable\" is\n==still argued=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

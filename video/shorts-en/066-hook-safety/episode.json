@@ -1,0 +1,133 @@
+{
+ "id": "en-066-hook-safety",
+ "lang": "en",
+ "tag": "17.2.3",
+ "name": "Hook safety",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Hooks run with",
+    "your permissions"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "They can delete files,\nand read them too",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "lock",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "Someone else's repo",
+    "t": "Run claude -p\nright away",
+    "c": "red",
+    "size": 96,
+    "small": "No trust prompt, so its hooks run"
+   },
+   "bottom": {
+    "label": "Someone else's repo",
+    "t": "==First, read==\n==its hooks==",
+    "c": "green",
+    "size": 100
+   },
+   "beats": 11
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "5 rules",
+   "items": [
+    {
+     "t": "1. Read before you add",
+     "c": "green",
+     "size": 54
+    },
+    {
+     "t": "2. Run it alone first",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "3. Start small",
+     "c": "green",
+     "size": 54
+    },
+    {
+     "t": "4. Put \"$VAR\" in quotes",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "5. Know how to turn it off",
+     "c": "red",
+     "size": 54
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "In hook scripts",
+     "t": "Don't use rm,\nthe delete command",
+     "size": 68,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "If you really need to",
+     "t": "First make a test that\n==only prints what==\n==it would delete==",
+     "size": 62,
+     "icon": "warn"
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "New repo?\n==Read its hooks first==",
+    "claude -p for jobs?\n==Add --bare==",
+    "Something odd?\n==Check /hooks=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

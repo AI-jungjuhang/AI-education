@@ -1,0 +1,135 @@
+{
+ "id": "en-010-templates",
+ "lang": "en",
+ "tag": "2.2.3",
+ "name": "Templates",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Save repeat asks",
+    "as templates"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "Then just change\nthe blanks",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "e.g. an email template",
+     "t": "Write an email to\n[recipient].\nThe goal is [goal].",
+     "size": 70,
+     "icon": "doc"
+    },
+    {
+     "who": "other",
+     "t": "==Change the blanks==\nand use it again",
+     "size": 70
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Slots in\na template",
+   "items": [
+    {
+     "head": "Goal",
+     "body": "what it's for",
+     "icon": "target"
+    },
+    {
+     "head": "Reader",
+     "body": "who reads it",
+     "icon": "people"
+    },
+    {
+     "head": "Rules",
+     "body": "length, tone,\nwhat to skip",
+     "icon": "sliders"
+    },
+    {
+     "head": "Material",
+     "body": "your text,\nin markers",
+     "icon": "doc"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "One line for every template",
+     "t": "==If you don't know,\nsay so.==",
+     "size": 78,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "It helps cut down\non made-up answers",
+     "size": 70
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Ask for it often?\n==Save a template==",
+    "Wrap your material\n==in markers==||e.g. <email> ... </email>",
+    "Keep ==personal info==\nout of templates||e.g. names, contact info"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "id": "en-009-fresh-start",
+ "lang": "en",
+ "tag": "2.2.2",
+ "name": "New chat",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Long chat?",
+    "Start a new one"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "Key rules get buried\nin a long chat",
+    "c": "yellow",
+    "y": 1000,
+    "size": 66
+   },
+   "icon": "chat",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "Late in a long chat",
+     "t": "Where did my\nfirst rules go?",
+     "size": 76,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "The chatbot",
+     "t": "They're buried\ndeep in the chat",
+     "size": 66,
+     "icon": "question"
+    },
+    {
+     "who": "other",
+     "t": "And a wrong answer\n==keeps pulling==\non the rest",
+     "size": 64
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1450
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Time for\na new chat",
+   "items": [
+    {
+     "head": "Fixes keep\nmissing",
+     "icon": "sliders"
+    },
+    {
+     "head": "The chat is\nvery long",
+     "icon": "clock"
+    },
+    {
+     "head": "New topic",
+     "body": "the old one\ncan leak in",
+     "icon": "chat"
+    },
+    {
+     "head": "It forgets\nyour rules",
+     "icon": "warn"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "1. In the old chat",
+    "t": "Sum up what\nwe decided",
+    "c": "blue",
+    "size": 92,
+    "icon": "doc"
+   },
+   "bottom": {
+    "label": "2. In a new chat",
+    "t": "==Paste the\nsummary first==",
+    "c": "green",
+    "size": 80,
+    "icon": "chat",
+    "small": "Fix anything wrong first"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "When you ask for the summary",
+     "t": "Add ==what didn't\nwork, and why==",
+     "size": 76,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "It helps it avoid\nthe same mistake",
+     "size": 68
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Fixes keep missing?\n==Try a new chat==",
+    "New topic,\n==new chat==",
+    "Put key rules\n==at the top=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

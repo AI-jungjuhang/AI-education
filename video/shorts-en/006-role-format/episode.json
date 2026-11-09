@@ -1,0 +1,161 @@
+{
+ "id": "en-006-role-format",
+ "lang": "en",
+ "tag": "2.1.2",
+ "name": "Role, format, example",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Role, format,",
+    "example!"
+   ],
+   "fs": 130,
+   "sticker": {
+    "t": "Set these for\nthe chatbot",
+    "c": "yellow",
+    "y": 1000,
+    "size": 76
+   },
+   "icon": "chat",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "What each\none sets",
+   "items": [
+    {
+     "head": "Role",
+     "body": "the voice and\npoint of view",
+     "icon": "person"
+    },
+    {
+     "head": "Format",
+     "body": "the shape of\nthe result",
+     "icon": "doc"
+    },
+    {
+     "head": "Example",
+     "body": "a sample:\n\"like this\"",
+     "icon": "target"
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "What a role does",
+    "t": "==Changes the\nvoice and the\npoint of view==",
+    "c": "green",
+    "size": 84,
+    "icon": "yes"
+   },
+   "bottom": {
+    "label": "What it can't do",
+    "t": "Teach it facts\nit doesn't know",
+    "c": "red",
+    "size": 80,
+    "small": "The risk of hallucination stays",
+    "icon": "no"
+   },
+   "beats": 10
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "t": "Sort out the\nmeeting notes below.",
+     "size": 70,
+     "icon": "person"
+    },
+    {
+     "who": "me",
+     "t": "Decided: up to 3 items.\nNext steps: a table.",
+     "size": 62
+    },
+    {
+     "who": "other",
+     "t": "Set ==a shape you can use==\nand you ask for fewer fixes",
+     "size": 56
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1330
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "t": "I'm naming products.\nUse this style:",
+     "size": 70,
+     "icon": "person"
+    },
+    {
+     "who": "me",
+     "t": "Potato → ==Fluffy Spud Buddy==\nMilk → ==A Cup of White Cloud==",
+     "size": 54
+    },
+    {
+     "who": "other",
+     "t": "Give 3 to 5 examples,\na bit different each",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1330
+   },
+   "beats": 11,
+   "delay": 1.0,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Keep a ==three-line==\n==template==||Role: / Format: / Example:",
+    "Use writing you like\n==as the sample==",
+    "Use roles for tone,\n==not for facts=="
+   ],
+   "note": "Vary your\nexamples",
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

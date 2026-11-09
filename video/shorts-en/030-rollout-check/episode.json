@@ -1,0 +1,132 @@
+{
+ "id": "en-030-rollout-check",
+ "lang": "en",
+ "tag": "8.1.2",
+ "name": "Before you roll out",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "AI can make",
+    "some jobs worse"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "Like a bike in\nfront of stairs",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "warn",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "Ask first",
+   "items": [
+    {
+     "t": "1. Tried it with AI before?",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "2. Can I check the result?",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "3. Is a mistake costly?",
+     "c": "red",
+     "size": 56
+    },
+    {
+     "t": "4. Any sensitive info?",
+     "c": "blue",
+     "size": 56
+    },
+    {
+     "t": "5. Does it follow the rules?",
+     "c": "green",
+     "size": 56
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "Any warning sign?",
+     "t": "==Handle that one first==,\nthen start",
+     "size": 66,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "e.g. add a check,\nblank things out,\nget approval",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "\"It felt better\"",
+    "t": "Decide by\ngut feeling",
+    "c": "red",
+    "size": 100,
+    "small": "Faster, more mistakes: no win"
+   },
+   "bottom": {
+    "label": "Try it small",
+    "t": "==Measure before\nand after==",
+    "c": "green",
+    "size": 84,
+    "small": "e.g. minutes taken, mistakes"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Start with ==one\nlow-risk job==",
+    "Don't hand off jobs\n==you can't check==",
+    "==Review== every\ncouple of months"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

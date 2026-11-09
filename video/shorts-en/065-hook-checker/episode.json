@@ -1,0 +1,129 @@
+{
+ "id": "en-065-hook-checker",
+ "lang": "en",
+ "tag": "17.2.2",
+ "name": "A checker hook",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A hook checks",
+    "every edit"
+   ],
+   "fs": 115,
+   "sticker": {
+    "t": "Is the sources\nsection there?",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Exit code 0",
+    "t": "All good",
+    "c": "green",
+    "size": 110,
+    "icon": "check"
+   },
+   "bottom": {
+    "label": "Exit code 2",
+    "t": "==There's==\n==a problem==",
+    "c": "yellow",
+    "size": 100,
+    "icon": "warn",
+    "small": "The message goes to Claude"
+   },
+   "beats": 11,
+   "hl": "#FF9EB1"
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "4 steps",
+   "items": [
+    {
+     "t": "1. Write check-page-en.sh",
+     "c": "green",
+     "size": 54
+    },
+    {
+     "t": "2. chmod +x so it can run",
+     "c": "yellow",
+     "size": 54
+    },
+    {
+     "t": "3. Run it alone with fake input",
+     "c": "green",
+     "size": 50
+    },
+    {
+     "t": "4. Add it to settings.json",
+     "c": "yellow",
+     "size": 54
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "Before you register it",
+     "t": "Run it alone with\n==fake input first==",
+     "size": 70,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "No section: 2.\nSection there: 0.",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Same check often?\n==Move it to a hook==",
+    "New hook?\n==Run it alone first==",
+    "Heavy check?\n==Save it for Stop=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

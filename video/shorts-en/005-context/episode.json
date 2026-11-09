@@ -1,0 +1,181 @@
+{
+ "id": "en-005-context",
+ "lang": "en",
+ "tag": "2.1.1",
+ "name": "Context",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "It can't know",
+    "what you don't say"
+   ],
+   "fs": 100,
+   "sticker": {
+    "t": "Tell it more and\nthe answer changes",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "thought",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "center",
+   "gap": 110,
+   "items": [
+    {
+     "who": "me",
+     "name": "Me",
+     "t": "Where's a good\nplace to eat?",
+     "size": 86,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "A stranger",
+     "t": "What kind of food?\nWho's coming?\nHow much to spend?",
+     "size": 70,
+     "icon": "question"
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 4.6,
+    "y": 1430
+   },
+   "beats": 9
+  },
+  {
+   "type": "bigword",
+   "bg": "yellow",
+   "lines": [
+    "Chatbots are",
+    "the same"
+   ],
+   "fs": 130,
+   "sticker": {
+    "t": "It can't see inside\nyour head, so ==tell it==",
+    "c": "red",
+    "y": 950,
+    "size": 70
+   },
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 2.0,
+    "y": 1250
+   },
+   "beats": 6,
+   "icon": "thought",
+   "hl": "#FFD93D"
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "Tell it\nthese four",
+   "items": [
+    {
+     "head": "Who will\nread it?",
+     "icon": "book",
+     "ex": "a 5th grader"
+    },
+    {
+     "head": "What's it\nfor?",
+     "icon": "target",
+     "ex": "first slide\nof a talk"
+    },
+    {
+     "head": "The rules",
+     "icon": "sliders",
+     "ex": "3 sentences,\nfriendly"
+    },
+    {
+     "head": "Your\nmaterial",
+     "icon": "doc",
+     "ex": "notes pasted\nbelow"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "top": {
+    "label": "Just asking",
+    "t": "Write a post\nfor our club.",
+    "c": "red",
+    "small": "Lots of answers fit"
+   },
+   "bottom": {
+    "label": "With context",
+    "t": "==For first-years,\nfor Instagram,\n3 warm sentences==",
+    "c": "green",
+    "size": 72,
+    "small": "Add a reason: \"No 'competitive.'\nIt might scare people off.\""
+   },
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "yellow",
+   "vpos": "top",
+   "gap": 70,
+   "items": [
+    {
+     "who": "other",
+     "t": "It doesn't need\nto be long.",
+     "size": 78
+    },
+    {
+     "who": "other",
+     "t": "Write what would\n==change the answer==.\nExtra stories confuse it.",
+     "size": 62
+    },
+    {
+     "who": "other",
+     "t": "Then ask: \"Would a\n==new coworker== get it?\"",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1340
+   },
+   "beats": 10,
+   "hl": "#FF9EB1",
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "items": [
+    "Check ==the four==\nbefore you send||reader, purpose, rules, material",
+    "==Give a reason==\nwith each rule",
+    "Paste your notes\n==under the question=="
+   ],
+   "note": "Blank out\nnames first",
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "icon": "bulb",
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

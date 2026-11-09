@@ -1,7 +1,7 @@
 # Short en-038 · Attention: picking out what matters
 
 - **Source page:** 11.1.1 [Attention: picking out what matters](../../../docs-en/part3/ch11/attention-idea.md)
-- **Format:** vertical 9:16, 30fps, about 29 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** attention lets each word pick where to look and pull in what it finds there.
 - **Status:** first draft, waiting for review
 

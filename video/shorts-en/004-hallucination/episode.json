@@ -1,0 +1,170 @@
+{
+ "id": "en-004-hallucination",
+ "lang": "en",
+ "tag": "1.1.3",
+ "name": "Hallucination",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Chatbots can",
+    "make things up"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "Ask about a book\nthat doesn't exist",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "book",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "A good answer",
+    "t": "\"I can't find\na book with\nthat title.\"",
+    "c": "green",
+    "size": 86,
+    "icon": "yes"
+   },
+   "bottom": {
+    "label": "A ==hallucination==",
+    "t": "It invents an\nauthor, a year,\nand a whole plot",
+    "c": "red",
+    "size": 80,
+    "small": "Both can happen",
+    "icon": "no"
+   },
+   "beats": 10
+  },
+  {
+   "type": "bigword",
+   "bg": "yellow",
+   "lines": [
+    "Made up, but",
+    "it sounds sure"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "That's called a\n==hallucination==",
+    "c": "red",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "warn",
+   "beats": 5,
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 1.6,
+    "y": 1270
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "t": "Like a student who\n==guesses== on a test",
+     "size": 70
+    },
+    {
+     "who": "other",
+     "name": "A 2025 paper by an OpenAI team argues",
+     "t": "Tests give more points\nto a sure guess than\nto \"I don't know\"",
+     "size": 60
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1280
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "Easier to\nget wrong",
+   "items": [
+    {
+     "head": "Rare topics",
+     "body": "names, dates,\nnumbers",
+     "icon": "search"
+    },
+    {
+     "head": "Quotes",
+     "body": "from books,\npapers, cases",
+     "icon": "book"
+    },
+    {
+     "head": "Recent\nevents",
+     "icon": "clock"
+    },
+    {
+     "head": "Wrong idea",
+     "body": "hidden in\nthe question",
+     "icon": "warn"
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Ask 1",
+    "t": "Tell me\nthe plot",
+    "c": "yellow",
+    "size": 96,
+    "icon": "question"
+   },
+   "bottom": {
+    "label": "Ask 2",
+    "t": "==First, check\nit exists.\nNot sure? Say\n\"I don't know.\"==",
+    "c": "green",
+    "size": 76,
+    "small": "Compare the two answers",
+    "icon": "search"
+   },
+   "beats": 10
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Let it say\n==\"I don't know\"==",
+    "==\"Answer only==\n==from this\"==||Paste the text in first",
+    "==Double-check==\nnumbers and names"
+   ],
+   "note": "Open the\nsources too",
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

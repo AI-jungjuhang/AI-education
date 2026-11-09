@@ -1,0 +1,28 @@
+{
+ "id": "en-079-cli-automation",
+ "lang": "en",
+ "tag": "18.2.3",
+ "name": "Automation",
+ "scenes": [
+  {"type": "bigword", "bg": "blue", "lines": ["Put claude -p", "in a loop"], "fs": 118,
+   "sticker": {"t": "It checks many\nfiles at once", "c": "yellow", "y": 1000, "size": 72},
+   "icon": "sliders", "beats": 9, "mascot": {"face": "wide:o", "side": "right", "at": 4.4}},
+  {"type": "list", "bg": "white", "title": "Safety switches", "items": [
+    {"t": "--bare → same setup every run", "c": "green", "size": 46},
+    {"t": "--allowedTools \"Read\" → read only", "c": "yellow", "size": 46},
+    {"t": "--max-turns 3 → at most 3 rounds", "c": "blue", "size": 46},
+    {"t": "set -euo pipefail → stop on errors", "c": "red", "size": 46}], "beats": 13},
+  {"type": "notes", "bg": "blue", "title": "Three rules", "items": [
+    {"head": "Allow\nnarrowly", "body": "Only Read", "icon": "lock"},
+    {"head": "Set caps", "body": "Rounds, cost", "icon": "clock"},
+    {"head": "Unfamiliar\nfolders?", "body": "Don't read", "icon": "warn"}], "beats": 11},
+  {"type": "split", "bg": "white", "marks": false,
+   "top": {"label": "For people to read", "t": "Text files\nin out/", "c": "yellow", "size": 104, "icon": "doc"},
+   "bottom": {"label": "For programs to read", "t": "==--output-format\njson==", "c": "green", "size": 80, "icon": "sliders"}, "beats": 11},
+  {"type": "check", "bg": "white", "top": 450, "icon": "bulb", "fs": 66, "items": [
+    "Ten or more files?\n==Use a loop==",
+    "Put the ==original path==\nin result names",
+    "Check for ==secret files==\nbefore running"],
+   "mascot": {"face": "happy:grin", "side": "right", "at": 0.2, "y": 1440}, "beats": 12, "delay": 1.0}
+ ]
+}

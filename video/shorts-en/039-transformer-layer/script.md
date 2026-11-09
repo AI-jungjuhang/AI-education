@@ -1,7 +1,7 @@
 # Short en-039 · What one transformer layer looks like
 
 - **Source page:** 11.1.2 [What one transformer layer looks like](../../../docs-en/part3/ch11/transformer-layer.md)
-- **Format:** vertical 9:16, 30fps, about 28 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a transformer repeats two blocks (attention and MLP) many times, and the whole thing runs to pick one token.
 - **Status:** first draft, waiting for review
 

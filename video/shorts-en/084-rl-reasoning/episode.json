@@ -1,0 +1,128 @@
+{
+ "id": "en-084-rl-reasoning",
+ "lang": "en",
+ "tag": "20.1.2",
+ "name": "Reasoning models",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Writing steps first",
+    "helps with",
+    "hard problems"
+   ],
+   "fs": 96,
+   "y": 290,
+   "icon_y": 850,
+   "sticker": {
+    "t": "Like showing your\nwork on a test",
+    "c": "yellow",
+    "y": 1090,
+    "size": 66
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4,
+    "y": 1320
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "The research",
+   "items": [
+    {
+     "t": "2022: chain of thought",
+     "c": "green",
+     "size": 58
+    },
+    {
+     "t": "2024: more thinking time",
+     "c": "yellow",
+     "size": 58
+    },
+    {
+     "t": "2025: rewards grow reasoning",
+     "c": "blue",
+     "size": 54
+    }
+   ],
+   "beats": 11,
+   "foot": "Papers by Wei and others, Snell and others, DeepSeek-AI"
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Thinking models help with",
+    "t": "Math, code,\nmulti-step plans",
+    "c": "green",
+    "size": 76,
+    "icon": "check",
+    "small": "Answers you can check"
+   },
+   "bottom": {
+    "label": "Less helpful for",
+    "t": "Simple questions,\ntaste, judgment",
+    "c": "yellow",
+    "size": 76,
+    "icon": "clock",
+    "small": "Slower and costlier"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "But",
+     "t": "The steps it writes\n==may not be what\ngoes on inside==",
+     "size": 62,
+     "icon": "warn"
+    },
+    {
+     "who": "other",
+     "t": "Treat its steps\nas a reference",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1320
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Hard problem?\n==Ask for the steps==",
+    "Read the steps and\n==find where they slip==",
+    "Steps shown? ==Still\ncheck the result=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "id": "en-032-pretraining",
+ "lang": "en",
+ "tag": "9.1.1",
+ "name": "Pretraining",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "First lesson:",
+    "guess what's next"
+   ],
+   "fs": 100,
+   "sticker": {
+    "t": "Text holds the answers,\nso no teacher grades it",
+    "c": "yellow",
+    "y": 1000,
+    "size": 58
+   },
+   "icon": "book",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "One round",
+   "items": [
+    {
+     "t": "1. Cut text into tokens",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "2. Guess the next token",
+     "c": "yellow",
+     "size": 60
+    },
+    {
+     "t": "3. Compare with the answer",
+     "c": "blue",
+     "size": 60
+    },
+    {
+     "t": "4. Nudge the numbers inside",
+     "c": "red",
+     "size": 60
+    }
+   ],
+   "note": "Then repeat. A lot.",
+   "beats": 12
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Limits of\nthis stage",
+   "items": [
+    {
+     "head": "Learns\nerrors too",
+     "body": "and prejudice",
+     "icon": "warn"
+    },
+    {
+     "head": "Stops at\na date",
+     "icon": "clock"
+    },
+    {
+     "head": "Weak on\nrare things",
+     "icon": "search"
+    },
+    {
+     "head": "Not a\nhelper yet",
+     "icon": "doc"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "Try asking",
+     "t": "==Up to what date==\ndo you know about?",
+     "size": 70,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "Maybe not exact,\nbut a rough idea",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Recent news? Use\n==a search tool==",
+    "Rare topics?\n==Be extra careful==",
+    "==Keep giving examples==||That skill grew out of pretraining"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

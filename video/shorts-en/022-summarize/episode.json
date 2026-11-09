@@ -1,0 +1,126 @@
+{
+ "id": "en-022-summarize",
+ "lang": "en",
+ "tag": "5.1.3",
+ "name": "Summarize",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Summaries can",
+    "add extra bits"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "Like a book blurb, it\nmust match the book",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "doc",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "Set four\nthings",
+   "items": [
+    {
+     "head": "Reader",
+     "ex": "my manager",
+     "icon": "person"
+    },
+    {
+     "head": "Goal",
+     "ex": "what to decide",
+     "icon": "target"
+    },
+    {
+     "head": "Length",
+     "ex": "5 sentences\nor fewer",
+     "icon": "sliders"
+    },
+    {
+     "head": "Keep",
+     "ex": "numbers, dates, names",
+     "icon": "pin"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "After the summary",
+     "t": "Back each sentence\nwith ==a quote==",
+     "size": 66,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "No support?\nBe suspicious.",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "Very long text",
+    "t": "Sum it all\nup at once",
+    "c": "red",
+    "size": 96,
+    "small": "Accuracy can drop as text grows"
+   },
+   "bottom": {
+    "label": "Very long text",
+    "t": "==Sum up parts,\nthen combine==",
+    "c": "green",
+    "size": 80
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Add: ==\"Don't add what\nisn't in the original\"==",
+    "Check ==numbers, dates==\nin the original",
+    "See if ==the tone\nshifted==||e.g. \"might be\" → \"is\""
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

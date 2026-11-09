@@ -1,0 +1,138 @@
+{
+ "id": "en-057-checkpoint-rewind",
+ "lang": "en",
+ "tag": "16.3.1",
+ "name": "Rewind",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Each message",
+    "saves your files"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "Like a save point\nin a game",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "clock",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "To go back",
+    "t": "/rewind",
+    "c": "yellow",
+    "size": 120,
+    "icon": "sliders",
+    "small": "Or press Esc twice\nin an empty prompt"
+   },
+   "bottom": {
+    "label": "You choose",
+    "t": "==Code, chat,==\n==or both==",
+    "c": "green",
+    "size": 100,
+    "icon": "check"
+   },
+   "beats": 11
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "Six choices",
+   "items": [
+    {
+     "t": "Restore code and conversation",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "Restore conversation",
+     "c": "yellow",
+     "size": 52
+    },
+    {
+     "t": "Restore code",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "Summarize from here",
+     "c": "yellow",
+     "size": 52
+    },
+    {
+     "t": "Summarize up to here",
+     "c": "green",
+     "size": 52
+    },
+    {
+     "t": "Never mind",
+     "c": "red",
+     "size": 52
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "Can't pick between two ways?",
+     "t": "Try one. Don't like it?\n==Restore just the code.==",
+     "size": 62,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "Then try\nthe other one",
+     "size": 68
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 64,
+   "items": [
+    "Big change? Go ahead.\n==It's a save point.==",
+    "Text in the prompt?\n==Use /rewind==||Esc twice clears the text instead",
+    "Long chat? Sum up\n==from the middle=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

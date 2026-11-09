@@ -1,0 +1,127 @@
+{
+ "id": "en-064-hook-basics",
+ "lang": "en",
+ "tag": "17.2.1",
+ "name": "Hooks",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A hook runs",
+    "at a set moment"
+   ],
+   "fs": 110,
+   "sticker": {
+    "t": "It runs without\nthe AI deciding",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "clock",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Notes and skills",
+    "t": "The AI chooses\nto follow or not",
+    "c": "yellow",
+    "size": 76,
+    "icon": "doc"
+   },
+   "bottom": {
+    "label": "Hooks",
+    "t": "==Always run==\n==at the moment==",
+    "c": "green",
+    "size": 84,
+    "icon": "check"
+   },
+   "beats": 11
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "4 moments",
+   "items": [
+    {
+     "t": "PreToolUse → just before a tool",
+     "c": "green",
+     "size": 50
+    },
+    {
+     "t": "PostToolUse → just after a tool",
+     "c": "yellow",
+     "size": 50
+    },
+    {
+     "t": "Notification → waiting for you",
+     "c": "green",
+     "size": 50
+    },
+    {
+     "t": "SessionStart → a session starts",
+     "c": "red",
+     "size": 50
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "Example: an alert hook",
+     "t": "When Claude waits\nfor my input,\nshow an alert",
+     "size": 68,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "Put it in",
+     "t": "==~/.claude/settings.json==",
+     "size": 58
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Must always happen?\n==A hook, not a note==",
+    "Start with\n==harmless hooks==",
+    "Added one?\n==Check with /hooks=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

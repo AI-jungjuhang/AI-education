@@ -1,0 +1,129 @@
+{
+ "id": "en-012-check-numbers",
+ "lang": "en",
+ "tag": "3.1.2",
+ "name": "Numbers and quotes",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Numbers, quotes:",
+    "easy to get wrong"
+   ],
+   "fs": 100,
+   "sticker": {
+    "t": "They look right,\nso we miss them",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "Where it\ngoes wrong",
+   "items": [
+    {
+     "head": "Numbers",
+     "body": "units get\nmixed up",
+     "icon": "sliders"
+    },
+    {
+     "head": "Dates",
+     "body": "off by\na little",
+     "icon": "clock"
+    },
+    {
+     "head": "Names",
+     "body": "mixed with a\nsimilar one",
+     "icon": "people"
+    },
+    {
+     "head": "Quotes",
+     "body": "not the\nexact words",
+     "icon": "chat"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "e.g. a chatbot's answer",
+     "t": "20% of 330 million\nis 6 million.",
+     "size": 70,
+     "icon": "chat"
+    },
+    {
+     "who": "me",
+     "name": "Rough estimate",
+     "t": "That should be\n==around 66 million==.\nThe size is off!",
+     "size": 66,
+     "icon": "person"
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1070
+   },
+   "beats": 11,
+   "delay": 1.0,
+   "hl": "#FF9EB1",
+   "foot": "A made-up answer, just to show the idea"
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "Leave it all to the chatbot",
+    "t": "Work out\nthe value too",
+    "c": "red",
+    "size": 92,
+    "small": "A middle step can go wrong"
+   },
+   "bottom": {
+    "label": "Split the job",
+    "t": "==Formula from\nthe chatbot,\nvalue from a\ncalculator==",
+    "c": "green",
+    "size": 80
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Ask for the source\n==sentence too==",
+    "Find quotes\n==in the original==",
+    "Check ==units and==\n==the year==||e.g. millions or billions?"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

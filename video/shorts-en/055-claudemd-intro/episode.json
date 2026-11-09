@@ -1,0 +1,125 @@
+{
+ "id": "en-055-claudemd-intro",
+ "lang": "en",
+ "tag": "16.2.1",
+ "name": "CLAUDE.md",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A note Claude",
+    "reads first"
+   ],
+   "fs": 115,
+   "sticker": {
+    "t": "New sessions start\nwith no memory",
+    "c": "yellow",
+    "y": 1000,
+    "size": 70
+   },
+   "icon": "pin",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "Yesterday (example)",
+     "t": "Always answer\npolitely, please",
+     "size": 72,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "Today, new session",
+     "t": "==First time I've\nheard that!==",
+     "size": 72,
+     "icon": "question"
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Where it goes",
+   "items": [
+    {
+     "head": "Your whole\ncomputer",
+     "body": "~/.claude/\nCLAUDE.md",
+     "icon": "person"
+    },
+    {
+     "head": "The project\n(team too)",
+     "body": "./CLAUDE.md",
+     "icon": "people"
+    },
+    {
+     "head": "Just you,\nthis project",
+     "body": "./CLAUDE\n.local.md",
+     "icon": "lock"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "To make the first one",
+    "t": "/init",
+    "c": "yellow",
+    "size": 120,
+    "icon": "doc",
+    "small": "Claude writes a first note"
+   },
+   "bottom": {
+    "label": "To edit it yourself",
+    "t": "==/memory==",
+    "c": "green",
+    "size": 120,
+    "icon": "sliders",
+    "small": "Opens your note files"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Explaining it twice?\n==Make a note==",
+    "Got it wrong once?\n==Add a line that day==",
+    "Then check it loaded\nwith ==/context all=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 # Short en-037 · Meaning changes with context
 
 - **Source page:** 10.1.3 [Meaning changes with context](../../../docs-en/part3/ch10/context-meaning.md)
-- **Format:** vertical 9:16, 30fps, about 27 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
+- **Format:** vertical 9:16, 30fps, about 26 seconds, no voice. Built from `episode.json` with `"lang": "en"`.
 - **One idea:** a word starts with one location, and the words around it move it to the right meaning.
 - **Status:** first draft, waiting for review
 

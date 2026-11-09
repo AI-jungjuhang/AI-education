@@ -1,0 +1,131 @@
+{
+ "id": "en-023-quick-intro",
+ "lang": "en",
+ "tag": "6.1.1",
+ "name": "New field",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "New field?",
+    "Get a map first"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "AI draws the map.\nYou walk and check it.",
+    "c": "yellow",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "Five steps",
+   "items": [
+    {
+     "t": "1. One easy paragraph",
+     "c": "green",
+     "size": 58
+    },
+    {
+     "t": "2. Ten key words",
+     "c": "yellow",
+     "size": 58
+    },
+    {
+     "t": "3. A map of the field",
+     "c": "blue",
+     "size": 58
+    },
+    {
+     "t": "4. Mix-ups and debates",
+     "c": "red",
+     "size": 58
+    },
+    {
+     "t": "5. Questions to ask next",
+     "c": "green",
+     "size": 58
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "Always add",
+     "t": "Mark anything you're\nunsure of ==\"not sure\"==",
+     "size": 62,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "Now you know\nwhere to check",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "I don't know this field",
+    "t": "So I just\ntrust the AI",
+    "c": "red",
+    "size": 96
+   },
+   "bottom": {
+    "label": "I don't know this field",
+    "t": "==So I pick one\nanchor source==",
+    "c": "green",
+    "size": 80,
+    "small": "e.g. a beginner book"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Look up ==new terms==\none at a time",
+    "Check that ==books it\nnames== really exist",
+    "List ==questions\nfor an expert=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

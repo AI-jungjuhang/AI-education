@@ -1,0 +1,120 @@
+{
+ "id": "en-011-check-sources",
+ "lang": "en",
+ "tag": "3.1.1",
+ "name": "Check sources",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Check sources",
+    "in three steps"
+   ],
+   "fs": 116,
+   "sticker": {
+    "t": "A chatbot can make\nup sources too",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "search",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "other",
+     "name": "e.g. a chatbot's answer",
+     "t": "According to\na study…",
+     "size": 80,
+     "icon": "chat"
+    },
+    {
+     "who": "other",
+     "t": "It can make up a study\nor a link ==that looks real==",
+     "size": 62
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Three steps\nto check",
+   "items": [
+    {
+     "head": "1. Real?",
+     "body": "Does the\nlink open?",
+     "icon": "search"
+    },
+    {
+     "head": "2. Says it?",
+     "body": "Is the claim\nreally there?",
+     "icon": "doc"
+    },
+    {
+     "head": "3. Trust it?",
+     "body": "Who wrote\nit? When?",
+     "icon": "person"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "On a site you don't know",
+    "t": "Read only\nthat site",
+    "c": "red",
+    "size": 96
+   },
+   "bottom": {
+    "label": "Read sideways",
+    "t": "==New tab:\nwho runs\nthis site?==",
+    "c": "green",
+    "size": 88,
+    "small": "From a Stanford study\nof fact checkers"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "==Always open==\nthe source",
+    "==Find the key line==\nin the original||e.g. search it with Ctrl+F",
+    "Check ==the date==\nit was written"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}
