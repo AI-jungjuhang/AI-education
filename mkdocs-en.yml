@@ -168,6 +168,8 @@ nav:
         - "Hand it a file and give it a job in one line": part5/ch16/cli-pipe.md
     - "Ch. 17 5B Automate and Connect":
       - part5/ch17/index.md
+      - "17.1 Skills":
+        - "What does a SKILL.md look like?": part5/ch17/skill-anatomy.md
     - "Ch. 18 5C Advanced ★":
       - part5/ch18/index.md
   - "VI Using AI from First Principles ★":
