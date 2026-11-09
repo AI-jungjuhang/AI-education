@@ -190,7 +190,7 @@ parts:
     - num: '15.1'
       title: A taste of design
       pages:
-      - {slug: instructions, title: Write good instructions, min: 6, done: false}
+      - {slug: instructions, title: Write good instructions, min: 6, done: true}
       - {slug: tool-design, title: Design good tools, min: 6, done: false}
       - {slug: evaluate, title: Test it and fix it, min: 6, done: false}
 - id: 5

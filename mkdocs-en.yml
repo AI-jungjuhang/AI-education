@@ -146,6 +146,8 @@ nav:
         - "How agents fail": part4/ch14/failures.md
     - "Ch. 15 Try Building an Agent":
       - part4/ch15/index.md
+      - "15.1 A taste of design":
+        - "Write good instructions": part4/ch15/instructions.md
   - "V Claude Code in Practice":
     - part5/index.md
     - "Ch. 16 5A First Steps":
