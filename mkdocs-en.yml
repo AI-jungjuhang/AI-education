@@ -94,6 +94,8 @@ nav:
         - "Use it as a study buddy": part2/ch06/tutor.md
     - "Ch. 7 AI for Notes and Numbers":
       - part2/ch07/index.md
+      - "7.1 Documents and tables":
+        - "Meeting notes and emails": part2/ch07/meeting-notes.md
     - "Ch. 8 Make It Part of How You Work":
       - part2/ch08/index.md
   - "III A Spoonful of How It Works":

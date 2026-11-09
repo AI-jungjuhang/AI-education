@@ -3,7 +3,7 @@
 <p class="ep-meta"><span>Ch. 6 · 6.1</span><span>About 6 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
-    - For studying, AI sticks better when you use it as ==a practice partner that quizzes you and hears your explanations, not as someone who hands you answers==.
+    - For studying, use AI as ==a practice partner that quizzes you==, not as an answer machine. What you learn sticks better.
     - Research shows that trying to recall what you read sticks longer than reading it again.
     - Use three methods: ask for an explanation, get quizzed, and have your own explanation checked.
 
