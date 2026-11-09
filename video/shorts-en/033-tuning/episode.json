@@ -1,0 +1,110 @@
+{
+ "id": "en-033-tuning",
+ "lang": "en",
+ "tag": "9.1.2",
+ "name": "Fine-tuning",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "It learns to help",
+    "from people"
+   ],
+   "fs": 100,
+   "sticker": {
+    "t": "A well-read student still\npractices for interviews",
+    "c": "yellow",
+    "y": 1000,
+    "size": 58
+   },
+   "icon": "people",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "blue",
+   "title": "Three steps",
+   "items": [
+    {
+     "t": "1. Copy good answers\npeople wrote",
+     "c": "green",
+     "size": 56
+    },
+    {
+     "t": "2. People rank its answers",
+     "c": "yellow",
+     "size": 56
+    },
+    {
+     "t": "3. Tune toward the ones\npeople liked",
+     "c": "red",
+     "size": 56
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "bigword",
+   "bg": "white",
+   "lines": [
+    "100 times smaller,",
+    "rated higher"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "People liked the small,\ntuned model better",
+    "c": "yellow",
+    "y": 1000,
+    "size": 58
+   },
+   "icon": "target",
+   "beats": 10,
+   "foot": "InstructGPT paper, OpenAI, 2022"
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "It sounds polite and sure",
+    "t": "So it must\nbe right?",
+    "c": "red",
+    "size": 96,
+    "small": "A polite tone isn't proof"
+   },
+   "bottom": {
+    "label": "So",
+    "t": "==Check the\nfacts yourself==",
+    "c": "green",
+    "size": 88
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Give ==specific==\ninstructions",
+    "Ask for reasons\n==for and against==",
+    "Keep saying ==\"If you\ndon't know, say so\"=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
