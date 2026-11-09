@@ -126,6 +126,8 @@ nav:
         - "The context window: how much it sees at once": part3/ch11/context-window.md
     - "Ch. 12 Building Sentences with Probability":
       - part3/ch12/index.md
+      - "12.1 How it chooses":
+        - "Temperature: how adventurous to be": part3/ch12/temperature.md
   - "IV Tools and Agents":
     - part4/index.md
     - "Ch. 13 AI That Uses Tools":
