@@ -1,0 +1,120 @@
+{
+ "id": "en-086-benchmarks",
+ "lang": "en",
+ "tag": "21.1.1",
+ "name": "Benchmarks",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A high score",
+    "doesn't mean it's",
+    "good at your work"
+   ],
+   "fs": 98,
+   "y": 290,
+   "icon_y": 850,
+   "sticker": {
+    "t": "Acing math doesn't\nmake you a great cook",
+    "c": "yellow",
+    "y": 1090,
+    "size": 62
+   },
+   "icon": "target",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4,
+    "y": 1320
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "Known tests",
+   "items": [
+    {
+     "t": "MMLU → 57 subjects",
+     "c": "green",
+     "size": 60
+    },
+    {
+     "t": "HELM → 7 measures",
+     "c": "yellow",
+     "size": 60
+    },
+    {
+     "t": "Chatbot Arena → people pick",
+     "c": "blue",
+     "size": 56
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Score traps",
+   "items": [
+    {
+     "head": "Leaked\nquestions",
+     "icon": "warn"
+    },
+    {
+     "head": "Yardstick\nmatters",
+     "icon": "sliders"
+    },
+    {
+     "head": "Averages\nhide",
+     "icon": "search"
+    },
+    {
+     "head": "Liked ≠\ncorrect",
+     "icon": "chat"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "New model news",
+    "t": "Trust\n\"number one\"",
+    "c": "red",
+    "size": 96
+   },
+   "bottom": {
+    "label": "New model news",
+    "t": "==Check the test\nand the scoring==",
+    "c": "green",
+    "size": 80,
+    "small": "Then try it on your own work"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Maker's own score?\n==Compare with others==",
+    "People's favorite?\n==Check accuracy too==",
+    "==Don't trust old\nrankings=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

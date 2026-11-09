@@ -1,0 +1,127 @@
+{
+ "id": "en-014-privacy",
+ "lang": "en",
+ "tag": "3.2.1",
+ "name": "Personal info",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Hide personal",
+    "info first"
+   ],
+   "fs": 120,
+   "sticker": {
+    "t": "What you type goes\nto the company",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "lock",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "As is",
+    "t": "Jordan Smith at\n123 Oak Street…",
+    "c": "red",
+    "size": 76,
+    "small": "The name and address go too"
+   },
+   "bottom": {
+    "label": "Blanked out",
+    "t": "==Person A, in a\nsmall town…==",
+    "c": "green",
+    "size": 80
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Blank\nthese out",
+   "items": [
+    {
+     "head": "About you",
+     "ex": "name, phone,\naccount number",
+     "icon": "person"
+    },
+    {
+     "head": "Sensitive",
+     "ex": "health, religion",
+     "icon": "lock"
+    },
+    {
+     "head": "Other\npeople's",
+     "ex": "friends or\ncustomers",
+     "icon": "people"
+    },
+    {
+     "head": "Logins",
+     "ex": "passwords or\nAPI keys",
+     "icon": "warn"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "Ask with blanked text",
+     "t": "Write an apology\nto Person A.",
+     "size": 76,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "When you get the draft",
+     "t": "==Swap in the real==\n==name== yourself",
+     "size": 68,
+     "icon": "check"
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 11,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "==Pause== before\nyou hit send",
+    "Work? Check your\n==workplace rules==",
+    "Check ==how your==\n==chats are used==||e.g. used to improve the model?"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

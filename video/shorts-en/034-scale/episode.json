@@ -1,0 +1,123 @@
+{
+ "id": "en-034-scale",
+ "lang": "en",
+ "tag": "9.1.3",
+ "name": "Parameters",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Model size",
+    "isn't everything"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "Many knobs alone don't\nmake a radio sound good",
+    "c": "yellow",
+    "y": 1000,
+    "size": 56
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "other",
+     "name": "e.g. \"70B\" in a model name",
+     "t": "==70 billion== numbers\ntuned in training",
+     "size": 64,
+     "icon": "question"
+    },
+    {
+     "who": "other",
+     "t": "That's its size,\nnot a quality score",
+     "size": 66
+    }
+   ],
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Besides\nsize",
+   "items": [
+    {
+     "head": "Data",
+     "body": "grows with\nthe model",
+     "icon": "book"
+    },
+    {
+     "head": "Tuning",
+     "body": "a small one\ncan win",
+     "icon": "sliders"
+    },
+    {
+     "head": "The job",
+     "body": "easy job?\ngo small",
+     "icon": "target"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Big models",
+    "t": "For hard jobs",
+    "c": "yellow",
+    "size": 96,
+    "icon": "target",
+    "small": "Heavy, slow, and costly"
+   },
+   "bottom": {
+    "label": "Small models",
+    "t": "==Fast for\neasy jobs==",
+    "c": "green",
+    "size": 100,
+    "icon": "clock"
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "The name's number\nis ==not a score==",
+    "Be careful with\n==old comparisons==",
+    "==Check answers==\nfrom big models too"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

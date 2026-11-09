@@ -1,0 +1,129 @@
+{
+ "id": "en-085-alignment",
+ "lang": "en",
+ "tag": "20.1.3",
+ "name": "Alignment",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Alignment: getting",
+    "AI to do what",
+    "people really want"
+   ],
+   "fs": 94,
+   "y": 290,
+   "icon_y": 850,
+   "sticker": {
+    "t": "\"Clean the room\" doesn't\nmean \"trash everything\"",
+    "c": "yellow",
+    "y": 1090,
+    "size": 58
+   },
+   "icon": "target",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4,
+    "y": 1320
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Way one: RLHF",
+    "t": "People rank\nthe answers",
+    "c": "yellow",
+    "size": 92,
+    "icon": "people",
+    "small": "It picks up our weak spots too"
+   },
+   "bottom": {
+    "label": "Way two: Constitutional AI",
+    "t": "==AI critiques\nitself using a\nlist of rules==",
+    "c": "green",
+    "size": 80,
+    "icon": "book",
+    "small": "Bai and others (Anthropic), 2022"
+   },
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "Still hard",
+   "items": [
+    {
+     "head": "Agrees\ntoo much",
+     "icon": "chat"
+    },
+    {
+     "head": "Made-up\nreasoning",
+     "icon": "question"
+    },
+    {
+     "head": "Rules\ngive way",
+     "icon": "warn"
+    },
+    {
+     "head": "Hidden\ngoals",
+     "icon": "search"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "top",
+   "gap": 80,
+   "hl": "#FF9EB1",
+   "items": [
+    {
+     "who": "me",
+     "name": "Important rules?",
+     "t": "Don't leave them\nas words only",
+     "size": 68,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "Back them up with\n==permissions, approvals==",
+     "size": 58
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Read the service's\n==usage policy== once",
+    "==Don't try to get\naround== refusals",
+    "\"Solved\" or \"doom\"?\n==Check the evidence=="
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}
