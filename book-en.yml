@@ -138,7 +138,7 @@ parts:
       pages:
       - {slug: tokens-to-vectors, title: Tokens become lists of numbers, min: 6, done: true}
       - {slug: closeness, title: Similar meanings sit close together, min: 5, done: true}
-      - {slug: context-meaning, title: Meaning changes with context, min: 5, done: false}
+      - {slug: context-meaning, title: Meaning changes with context, min: 5, done: true}
   - num: 11
     title: Attention
     blurb: How a chatbot decides which parts of the text to look at.

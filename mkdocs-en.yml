@@ -117,6 +117,7 @@ nav:
       - "10.1 Embeddings":
         - "Tokens become lists of numbers": part3/ch10/tokens-to-vectors.md
         - "Similar meanings sit close together": part3/ch10/closeness.md
+        - "Meaning changes with context": part3/ch10/context-meaning.md
     - "Ch. 11 Attention":
       - part3/ch11/index.md
     - "Ch. 12 Building Sentences with Probability":
