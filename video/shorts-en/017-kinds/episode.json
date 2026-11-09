@@ -1,0 +1,125 @@
+{
+ "id": "en-017-kinds",
+ "lang": "en",
+ "tag": "4.1.1",
+ "name": "Kinds of AI",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Each AI tool",
+    "has its own job"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "Like a hammer and\na screwdriver",
+    "c": "yellow",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "sliders",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "list",
+   "bg": "white",
+   "title": "In → Out",
+   "items": [
+    {
+     "t": "Text chatbot:\ntext → text",
+     "c": "green",
+     "size": 58
+    },
+    {
+     "t": "Search chatbot:\nquestion → answer + sources",
+     "c": "yellow",
+     "size": 58
+    },
+    {
+     "t": "Image maker:\ntext → picture",
+     "c": "blue",
+     "size": 58
+    },
+    {
+     "t": "Voice:\nspeech → speech",
+     "c": "red",
+     "size": 58
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "notes",
+   "bg": "blue",
+   "title": "What to\nwatch for",
+   "items": [
+    {
+     "head": "Chatbot",
+     "body": "may miss\nrecent news",
+     "icon": "chat"
+    },
+    {
+     "head": "Search",
+     "body": "summaries\ncan be off",
+     "icon": "search"
+    },
+    {
+     "head": "Images",
+     "body": "odd hands\nor lettering",
+     "icon": "doc"
+    },
+    {
+     "head": "Code",
+     "body": "run it\nto check",
+     "icon": "check"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "Recent news? Asking",
+    "t": "A regular\nchatbot",
+    "c": "red",
+    "size": 96,
+    "small": "It may not know what\nhappened after training"
+   },
+   "bottom": {
+    "label": "Recent news? Asking",
+    "t": "==A tool that\ncan search==",
+    "c": "green",
+    "size": 92
+   },
+   "beats": 11
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "Pick ==the right tool==\nfor each job",
+    "Read your service's\n==feature list==",
+    "==Check the text==\nin AI pictures"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}
