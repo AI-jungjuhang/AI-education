@@ -84,7 +84,7 @@ parts:
       pages:
       - {slug: first-draft, title: Get a first draft, min: 5, done: true}
       - {slug: rewrite, title: Rewrite and change the tone, min: 5, done: true}
-      - {slug: summarize, title: Summarize, min: 5, done: false}
+      - {slug: summarize, title: Summarize, min: 5, done: true}
   - num: 6
     title: AI for Research and Study
     blurb: Using AI to get your bearings in a new field, read long documents, and study.
