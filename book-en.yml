@@ -215,7 +215,7 @@ parts:
       title: Checkpoints
       pages:
       - {slug: checkpoint-rewind, title: Experiment freely with rewind, min: 6, done: true}
-      - {slug: checkpoint-vs-git, title: 'How are checkpoints different from git?', min: 6, done: false}
+      - {slug: checkpoint-vs-git, title: 'How are checkpoints different from git?', min: 6, done: true}
     - num: '16.4'
       title: Command line basics
       pages:
