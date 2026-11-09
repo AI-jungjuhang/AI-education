@@ -4,39 +4,43 @@ hide:
   - toc
 ---
 
-# AI 정주행
+<div class="hero" markdown>
+<div class="hero-text" markdown>
 
-**열 살도 이해하는 AI 교과서**
+<p class="hero-kicker">AI 정주행 · 열 살도 이해하는 AI 교과서</p>
+
+# 챗봇이 왜 그렇게 답하는지 알려 주는 책
 
 챗봇을 매일 쓰는데도 "왜 이렇게 답하지?" 싶었다면, 이 책이 그 이유를 알려 줘요.
 어려운 말은 빼고, 내용 수준은 낮추지 않았어요.
 
-[첫 페이지 읽기 →](part1/ch01/next-word.md){ .md-button .md-button--primary }
-[전체 길 보기](#길){ .md-button }
-
-## 이 책이 도와주는 것
-
-<div class="grid cards" markdown>
-
--   **그럴듯한 거짓말을 알아본다**
-
-    챗봇이 왜 틀리게 답하는지 알면, 어떤 답을 의심해야 하는지 보여요.
-
--   **질문이 달라진다**
-
-    답이 엇나가는 이유를 알면, 같은 일을 시키는 질문도 더 잘 쓰게 돼요.
-
--   **페이지마다 바로 써본다**
-
-    읽고 끝나지 않아요. 페이지마다 2분 실험과 복사해서 쓰는 예시가 있어요.
-
--   **영상으로도 볼 수 있다**
-
-    모든 주제 페이지는 3~5분 영상으로도 만들 예정이에요. (영상은 v0.2부터)
-
+<div class="hero-actions" markdown>
+[첫 페이지 읽기](part1/ch01/next-word.md){ .md-button .md-button--primary }
+[전체 차례 보기](#길){ .md-button }
 </div>
 
-## 길 { #길 }
+</div>
+<div class="hero-visual">
+<div class="page-card">
+<p class="pc-meta">1장 · 1.1 · 읽는 시간 약 5분</p>
+<p class="pc-title">챗봇은 '다음 말'을 맞히는 기계</p>
+<p>챗봇이 하는 일은 <mark>다음에 올 말 하나를 고르는 것</mark>이에요. 이 한 번을 수없이 되풀이하면 긴 답이 돼요.</p>
+<p class="pc-box">써먹어 보세요 · 세 번 물어보고 겹치는 걸 먼저 확인해요</p>
+</div>
+<div class="hero-potato"><img src="assets/potato.svg" alt=""></div>
+</div>
+</div>
+
+## 이 책으로 할 수 있는 것
+
+<ul class="gains">
+<li><b>그럴듯한 거짓말을 알아봐요</b><span>챗봇이 왜 틀리게 답하는지 알면, 어떤 답을 의심할지 보여요</span></li>
+<li><b>질문이 달라져요</b><span>답이 엇나가는 이유를 알면, 같은 일도 더 잘 시켜요</span></li>
+<li><b>페이지마다 바로 써 봐요</b><span>2분 실험과 복사해서 쓰는 예시가 페이지마다 있어요</span></li>
+<li><b>30초 영상으로도 봐요</b><span>주제 페이지마다 쇼츠 한 편이 있어요. 인스타그램 @ai_jungjuhang</span></li>
+</ul>
+
+## 차례 { #길 }
 
 처음부터 끝까지 읽어도 되고, 필요한 부만 골라 읽어도 돼요. ★는 심화예요.
 

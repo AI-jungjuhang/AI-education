@@ -1,9 +1,10 @@
 site_name: AI 정주행
 site_description: 열 살도 이해하는 AI 교과서. 처음 쓰는 사람부터 원리로 쓰는 사람까지, AI를 기초에서 심화까지 다루는 한국어 웹 교과서
 site_url: https://ai-jungjuhang.github.io/AI-education/
-repo_url: https://github.com/AI-jungjuhang/AI-education
 theme:
   name: material
+  logo: assets/potato-logo.svg
+  favicon: assets/potato-logo.svg
   language: ko
   features:
     - navigation.tabs
