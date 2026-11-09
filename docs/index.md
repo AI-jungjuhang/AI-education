@@ -32,7 +32,7 @@ hide:
 [전체 차례 보기](#길){ .md-button }
 </div>
 
-<div class="band band-blue" markdown>
+<div class="band band-orange" markdown>
 
 ## 이 책으로 할 수 있는 것
 
