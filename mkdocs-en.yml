@@ -232,5 +232,8 @@ nav:
       - "23.2 Prompts from first principles":
         - "Why do context, examples, and format work?": part6/ch23/prompt-why.md
         - "How is handing off a job different?": part6/ch23/prompt-agent.md
+      - "23.3 Choosing a model":
+        - "How do you choose a model?": part6/ch23/model-choice.md
+        - "Adjust its thinking time (effort level)": part6/ch23/model-effort.md
   - "Appendix":
     - appendix/index.md

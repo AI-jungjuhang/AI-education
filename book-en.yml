@@ -330,8 +330,8 @@ parts:
     - num: '23.3'
       title: Choosing a model
       pages:
-      - {slug: model-choice, title: 'How do you choose a model?', min: 7, done: false}
-      - {slug: model-effort, title: Adjust its thinking time (effort level), min: 6, done: false}
+      - {slug: model-choice, title: 'How do you choose a model?', min: 7, done: true}
+      - {slug: model-effort, title: Adjust its thinking time (effort level), min: 6, done: true}
     - num: '23.4'
       title: Building a checking loop
       pages:
