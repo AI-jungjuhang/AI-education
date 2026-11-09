@@ -258,7 +258,7 @@ parts:
       pages:
       - {slug: plan-mode, title: Make a plan first, then hand it off, min: 7, done: true}
       - {slug: permissions, title: Permission modes and safety, min: 7, done: true}
-      - {slug: background-tasks, title: Background and scheduled tasks, min: 7, done: false}
+      - {slug: background-tasks, title: Background and scheduled tasks, min: 7, done: true}
       - {slug: agent-teams, title: Agent teams, min: 7, done: false}
     - num: '18.2'
       title: Plugins and command line skills

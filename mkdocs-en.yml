@@ -189,6 +189,7 @@ nav:
       - "18.1 Advanced features":
         - "Make a plan first": part5/ch18/plan-mode.md
         - "Permission modes and safety": part5/ch18/permissions.md
+        - "Background and scheduled tasks": part5/ch18/background-tasks.md
   - "VI Using AI from First Principles ★":
     - part6/index.md
     - "Ch. 19 Looking Inside the Model ★":
