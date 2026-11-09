@@ -30,7 +30,7 @@ The result was striking. In people's ratings, answers from the **1.3-billion-par
 
 - **Why instructions work:** It practiced following instructions. That's why the asking tips in Chapter 2 work.
 - **The friendly tone and the way it says no:** It was shaped toward answers people rated well.
-- **Why "I don't know" is hard for it:** If people rate a confident guess higher than "I don't know," it can lean toward guessing (hallucination in Chapter 1, agreeing with you in Chapter 3).
+- **Why "I don't know" is hard for it:** People may rate a confident guess higher than "I don't know." Then it can lean toward guessing. (See hallucination in Chapter 1 and agreeing with you in Chapter 3.)
 
 ## Limits
 
