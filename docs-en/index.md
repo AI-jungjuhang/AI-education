@@ -47,9 +47,9 @@ The English edition is being written now, one page at a time.
 | [IV Tools and Agents](part4/index.md) | AI that searches, reads files, uses tools, and works on its own | Done (9) |
 | [V Claude Code in Practice](part5/index.md) | Put Claude Code to work | Done (27) |
 | [VI Using AI from First Principles ★](part6/index.md) | Going deeper | Done (23) |
-| [Appendix](appendix/index.md) | Glossary, prompt collection, reading order, and references | **2/5 written** |
+| [Appendix](appendix/index.md) | Glossary, prompt collection, reading order, and references | **3/5 written** |
 
-103 of 106 pages written so far.
+104 of 106 pages written so far.
 <!-- /AUTO:progress -->
 
 </div>

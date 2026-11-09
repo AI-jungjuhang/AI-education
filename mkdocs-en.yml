@@ -242,3 +242,4 @@ nav:
     - appendix/index.md
     - "Glossary": appendix/glossary.md
     - "Prompt collection": appendix/prompt-bank.md
+    - "References": appendix/references.md
