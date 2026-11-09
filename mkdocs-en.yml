@@ -110,6 +110,7 @@ nav:
       - part3/ch09/index.md
       - "9.1 Three stages of learning":
         - "Read and imitate: pretraining": part3/ch09/pretraining.md
+        - "Learn from people: fine-tuning and feedback": part3/ch09/tuning.md
     - "Ch. 10 How Words Become Numbers":
       - part3/ch10/index.md
     - "Ch. 11 Attention":
