@@ -100,6 +100,8 @@ nav:
         - "Be careful when it does math": part2/ch07/math-caution.md
     - "Ch. 8 Make It Part of How You Work":
       - part2/ch08/index.md
+      - "8.1 Your own routine":
+        - "Keep your favorite prompts": part2/ch08/prompt-library.md
   - "III A Spoonful of How It Works":
     - part3/index.md
     - "Ch. 9 How Does AI Learn?":
