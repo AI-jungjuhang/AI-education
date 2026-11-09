@@ -6,7 +6,7 @@ Bundle repeated work into skills, run automatic checks with hooks, connect outsi
 <a href="skill-anatomy/"><span class="ep-no">17.1.1</span><span class="ep-title">What does a SKILL.md look like?</span><span class="ep-time">7 min read</span></a>
 <a href="skill-video/"><span class="ep-no">17.1.2</span><span class="ep-title">Hands-on: a skill that makes one video</span><span class="ep-time">8 min read</span></a>
 <a href="skill-safety/"><span class="ep-no">17.1.3</span><span class="ep-title">Before you open someone else's skills and settings</span><span class="ep-time">6 min read</span></a>
-<div class="soon"><span class="ep-no">17.2.1</span><span class="ep-title">Run something automatically at the right moment</span><span class="ep-time">Coming soon</span></div>
+<a href="hook-basics/"><span class="ep-no">17.2.1</span><span class="ep-title">Run something automatically at the right moment</span><span class="ep-time">7 min read</span></a>
 <div class="soon"><span class="ep-no">17.2.2</span><span class="ep-title">Hands-on: add an automatic checker</span><span class="ep-time">Coming soon</span></div>
 <div class="soon"><span class="ep-no">17.2.3</span><span class="ep-title">Hooks run with your permissions</span><span class="ep-time">Coming soon</span></div>
 <div class="soon"><span class="ep-no">17.3.1</span><span class="ep-title">MCP is Claude's plug socket</span><span class="ep-time">Coming soon</span></div>

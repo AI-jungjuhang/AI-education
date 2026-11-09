@@ -234,7 +234,7 @@ parts:
     - num: '17.2'
       title: Hooks
       pages:
-      - {slug: hook-basics, title: Run something automatically at the right moment, min: 7, done: false}
+      - {slug: hook-basics, title: Run something automatically at the right moment, min: 7, done: true}
       - {slug: hook-checker, title: 'Hands-on: add an automatic checker', min: 7, done: false}
       - {slug: hook-safety, title: Hooks run with your permissions, min: 6, done: false}
     - num: '17.3'
