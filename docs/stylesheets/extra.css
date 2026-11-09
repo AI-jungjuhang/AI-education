@@ -160,3 +160,7 @@ body,.md-typeset{font-family:var(--font)}
 .md-typeset .after-hero{display:flex;gap:.6rem;flex-wrap:wrap;margin:-.8rem 0 2.4rem}
 .md-typeset .after-hero p{display:flex;gap:.6rem;flex-wrap:wrap;margin:0}
 .md-typeset .after-hero .md-button{margin:0}
+/* 스크롤하면 하나씩 나타나기: 투명도와 위치만 짧게 바꾼다 */
+.reveal-on .reveal{opacity:0;transform:translateY(12px);transition:opacity 450ms var(--ease),transform 450ms var(--ease)}
+.reveal-on .reveal.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal-on .reveal{opacity:1;transform:none}}
