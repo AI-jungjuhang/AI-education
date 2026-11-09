@@ -287,7 +287,7 @@ parts:
     - num: '20.1'
       title: Deeper learning
       pages:
-      - {slug: scaling, title: 'Scaling: does bigger mean better?', min: 7, done: false}
+      - {slug: scaling, title: 'Scaling: does bigger mean better?', min: 7, done: true}
       - {slug: rl-reasoning, title: Reinforcement learning and reasoning models, min: 7, done: false}
       - {slug: alignment, title: 'Alignment: matching what people want', min: 7, done: false}
   - num: 21

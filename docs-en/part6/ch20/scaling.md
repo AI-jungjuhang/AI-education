@@ -3,15 +3,15 @@
 <p class="ep-meta"><span>Ch. 20 · 20.1 · Deeper</span><span>About 8 min read</span><span>2026-11-09</span></p>
 
 !!! abstract "What you'll learn on this page"
-    - **Scaling laws** say that making models bigger improves their scores in a predictable way.
-    - Some researchers argue that new abilities "suddenly appear" past a certain size (emergence). Others argue this ==may be an illusion created by how it's measured==.
+    - **Scaling laws** say that as models get bigger, their scores get better in a way you can predict.
+    - Some say new skills "pop up" once a model is big enough. Others say this ==may be a trick of how the scores are kept==.
     - Knowing this debate helps you read "AI can suddenly do X!" headlines with a level head.
 
 ## A growth chart
 
 A child's growth chart is a smooth curve. But some records seem to jump. When you go from 0 push-ups to 1, then from 1 to 5, it can feel like it happened overnight. Really, you were getting stronger a little each day. It only looked sudden because of the yardstick: **"Can you do a full push-up or not?"**
 
-The debate about AI abilities that "suddenly appear" is a lot like that.
+The fight over AI skills that "pop up" is a lot like that.
 
 !!! tip "In 10-year-old words"
     As models grow, their scores rise steadily. But "it suddenly gained a new skill" might be an illusion, depending on how you measure it.
@@ -64,7 +64,7 @@ You could say the two papers look at the same thing with different yardsticks, m
 
 - "Past a certain size, AI always gains new abilities." That's debated, and the effect of the yardstick has been pointed out.
 - "Emergence has been proven fake." There's a strong counterargument, but it's hard to say the field has settled on one answer.
-- "Bigger always means better." Average performance usually rises, but so do costs and limits.
+- "Bigger always means better." Scores on average tend to go up. But so do costs, and limits remain.
 
 ---
 
