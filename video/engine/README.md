@@ -49,3 +49,11 @@ MUSIC=loud bash video/engine/build.sh video/shorts/001-next-word   # 드럼 있�
 - 한 화면의 글은 약 35자 이하로, 글자가 흰·먹색 테두리 안에서 읽히게 써요.
 - 다음 편 예고는 넣지 않아요(2026-11-07 결정). 끝은 `outro`로 마무리해요.
 - 새 블록이 필요하면 `blocks.py`에 함수를 더하고 `BLOCKS`에 등록해요. 새 블록을 만든 뒤에는 기존 영상(001)을 다시 만들어 모양이 그대로인지 확인해요.
+
+## 영어판 (2026-11-09 추가)
+
+- `episode.json`에 `"lang": "en"`을 넣으면 영어판으로 만들어져요. 한국어 영상(`lang` 없음)의 `scene.html`은 바뀌지 않아요(001, 005-context-v3, 102로 바이트 단위 비교).
+- 바뀌는 것: 글꼴 Nunito Black(fontsource, jsdelivr), `<html lang="en">`, 위쪽 칸의 채널 이름 "AI, Start to Finish", `check`·`tip` 기본 이름 "Use it today", 메모지 예시 앞 글자 "e.g. ", `outro` 문구(채널 이름, 부제, "Full page: link in profile").
+- 영어 줄 길이: 한 줄 약 18~20자, 글 덩어리당 2줄, 장면당 약 45자. 체크리스트는 `fs` 66 정도가 안전해요.
+- 영어 단어가 길어서 더한 선택 칸: `cards`의 `fs`(기본 120), `bars` 행의 `fs`(이름 글자 크기).
+- 영어판 폴더는 `video/shorts-en/`, id는 `en-NNN-슬러그`예요.

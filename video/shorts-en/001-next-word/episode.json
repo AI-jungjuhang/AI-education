@@ -1,0 +1,191 @@
+{
+ "id": "en-001-next-word",
+ "lang": "en",
+ "tag": "1.1.1",
+ "name": "Next word",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A chatbot has",
+    "one job"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "Pick the next word",
+    "c": "yellow",
+    "rot": 0,
+    "y": 1000,
+    "size": 76
+   },
+   "icon": "chat",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "center",
+   "gap": 90,
+   "items": [
+    {
+     "who": "me",
+     "name": "Friend",
+     "t": "For lunch I'm getting\na burger and…",
+     "size": 70,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "Chatbot",
+     "t": "Fries? A shake?\nNot a spaceship.",
+     "size": 68,
+     "icon": "chat"
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 4.6
+   },
+   "beats": 9
+  },
+  {
+   "type": "bars",
+   "bg": "blue",
+   "title": "Every word gets a score",
+   "rows": [
+    {
+     "name": "fries",
+     "pct": 40,
+     "bar": 100
+    },
+    {
+     "name": "shake",
+     "pct": 20,
+     "bar": 50
+    },
+    {
+     "name": "rings",
+     "pct": 10,
+     "bar": 25
+    },
+    {
+     "name": "spaceship",
+     "bar": 3,
+     "label": "near 0",
+     "dim": true,
+     "fs": 50
+    }
+   ],
+   "beats": 8,
+   "foot": "Made-up numbers, just to show the idea"
+  },
+  {
+   "type": "dice",
+   "bg": "orange",
+   "title": "Then it rolls the dice",
+   "result": "Fries!",
+   "lines": [
+    "High scores win most",
+    "Low ones win sometimes"
+   ],
+   "beats": 8
+  },
+  {
+   "type": "chain",
+   "bg": "white",
+   "head": "The new word joins the line",
+   "start": "The sky is blue because",
+   "words": [
+    "sunlight",
+    "hits"
+   ],
+   "tail": "Pick again. And again.",
+   "beats": 12
+  },
+  {
+   "type": "stack",
+   "bg": "yellow",
+   "title": "Keep going and…",
+   "items": [
+    {
+     "t": "a sentence",
+     "size": 90
+    },
+    {
+     "t": "a paragraph",
+     "c": "green",
+     "size": 110
+    },
+    {
+     "t": "a whole email!",
+     "c": "red",
+     "size": 108
+    }
+   ],
+   "beats": 8
+  },
+  {
+   "type": "cards",
+   "bg": "blue",
+   "lines": [
+    "Ask again…",
+    "new answer!"
+   ],
+   "cards": [
+    {
+     "label": "1st",
+     "red": 55
+    },
+    {
+     "label": "2nd",
+     "red": 80
+    },
+    {
+     "label": "3rd",
+     "red": 35
+    }
+   ],
+   "stickers": [
+    {
+     "t": "Trust what repeats more",
+     "c": "green"
+    },
+    {
+     "t": "Check what changes",
+     "c": "red"
+    }
+   ],
+   "beats": 12,
+   "foot": "The picture is just to show the idea",
+   "fs": 112
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "rowh": 246,
+   "icon": "bulb",
+   "items": [
+    "Ask big questions\n==more than once==",
+    "Look harder at\nparts that ==change==",
+    "==Check a source==,\neven if it repeats"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0,
+   "fs": 66
+  }
+ ]
+}

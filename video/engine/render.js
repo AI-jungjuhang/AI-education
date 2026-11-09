@@ -17,6 +17,7 @@ fs.mkdirSync(out, { recursive: true });
     pages.push(p);
   }
   console.log('Pretendard 로드:', await pages[0].evaluate(() => document.fonts.check('900 40px "Pretendard Variable"')));
+  if (await pages[0].evaluate(() => document.documentElement.lang === 'en')) console.log('Nunito 로드:', await pages[0].evaluate(() => document.fonts.check('900 40px Nunito')));
   const tl = await pages[0].evaluate(() => window.collectSfx());
   fs.writeFileSync(TL, JSON.stringify(tl, null, 1));
   const D = tl.total * 60 / tl.bpm, N = Math.round(D * FPS);

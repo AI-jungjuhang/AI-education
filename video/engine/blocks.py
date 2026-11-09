@@ -13,6 +13,14 @@ def esc(t):
 def num(x): return f'{x:g}'
 def cc(c): return f' c-{c}' if c else ''
 
+# 언어별 기본 문구. make_scene.py가 episode.json의 "lang"(기본 "ko")으로 LANG을 정한다.
+LANG = 'ko'
+STR = {
+    'ko': {'tip': '오늘의 써먹기', 'brand': 'AI 정주행', 'sub': '열 살도 이해하는 AI 교과서', 'link': '프로필 링크에서 보기', 'eg': '예: '},
+    'en': {'tip': 'Use it today', 'brand': 'AI, Start to Finish', 'sub': 'The AI textbook a 10-year-old can follow', 'link': 'Full page: link in profile', 'eg': 'e.g. '},
+}
+def S(key): return STR[LANG][key]
+
 class Ctx:
     """장면 하나를 만드는 동안 시각을 모아 주는 도우미."""
     def __init__(self, a, sc):
@@ -113,7 +121,7 @@ def b_bars(cx, sc, bg):
         t = cx.b(f'row{i}', 1.5 + i); dim = ' dim' if r.get('dim') else ''
         val = (f'<div class="v" style="font-size:50px">{esc(r["label"])}</div>' if r.get('label')
                else f'<div class="v" data-b="{t}" data-anim="count" data-v="{r["pct"]}" data-fmt="%">0%</div>')
-        p.append(f'<div class="sticker row{dim}" data-b="{t}" data-anim="slideL" data-sfx="pop"><div class="l">{esc(r["name"])}</div>'
+        p.append(f'<div class="sticker row{dim}" data-b="{t}" data-anim="slideL" data-sfx="pop"><div class="l"{(' style="font-size:%spx"' % r['fs']) if r.get('fs') else ''}>{esc(r["name"])}</div>'
                  f'<div class="track"><div class="bar" data-b="{t}" data-anim="grow" data-v="{r["bar"]}"></div></div>{val}</div>')
     if sc.get('note'): p.append(sticker(cx, 'note', 1.5 + len(sc['rows']) + 0.5, sc['note'], 'yellow', 'pop', -5, 'ding', 64))
     return p, max(4, cx.last + 2.0), ''
@@ -160,7 +168,7 @@ def b_stack(cx, sc, bg):
     return p, max(6, cx.last + 3.4), extra
 
 def b_cards(cx, sc, bg):
-    p = [lines_html(cx, sc['lines'], bg, 'big', start=0, step=1.6, last_yel=True, fs=120)]
+    p = [lines_html(cx, sc['lines'], bg, 'big', start=0, step=1.6, last_yel=True, fs=sc.get('fs', 120))]
     for i, c in enumerate(sc['cards']):
         t = cx.b(f'card{i}', 4 + 1.2 * i)
         p.append(f'<div class="card" data-b="{t}" data-anim="slideR" data-sfx="pop"><div class="n">{esc(c["label"])}</div><div class="ln">'
@@ -173,7 +181,7 @@ def b_cards(cx, sc, bg):
     return p, max(8, cx.last + 2.2), ''
 
 def b_tip(cx, sc, bg):
-    p = [sticker(cx, 'label', 0, sc.get('label', '오늘의 써먹기'), 'red', 'slam', 0, 'slam', 78)]
+    p = [sticker(cx, 'label', 0, sc.get('label', S('tip')), 'red', 'slam', 0, 'slam', 78)]
     dark = 'st dark big'
     for i, ln in enumerate(sc['lines']):
         color = ';color:var(--red)' if i == len(sc['lines']) - 1 else ''
@@ -203,9 +211,9 @@ def b_vs(cx, sc, bg):
 
 def b_outro(cx, sc, bg):
     cx.t('mascot', 1)
-    p = [f'<div class="sticker" data-b="{cx.b("brand", 0)}" data-anim="slam" data-sfx="slam" style="font-size:120px">{esc(sc.get("brand", "AI 정주행"))}</div>',
-         f'<div class="st sm" data-b="{cx.b("sub", 1.2)}" data-anim="pop" data-sfx="pop" style="font-size:62px;-webkit-text-stroke:12px var(--ink)">{esc(sc.get("sub", "열 살도 이해하는 AI 교과서"))}</div>',
-         f'<div class="sticker c-red beat" data-b="{cx.b("link", 3)}" data-anim="pop" data-sfx="ding" style="font-size:68px">{esc(sc.get("link", "프로필 링크에서 보기"))}</div>']
+    p = [f'<div class="sticker" data-b="{cx.b("brand", 0)}" data-anim="slam" data-sfx="slam" style="font-size:120px">{esc(sc.get("brand", S("brand")))}</div>',
+         f'<div class="st sm" data-b="{cx.b("sub", 1.2)}" data-anim="pop" data-sfx="pop" style="font-size:62px;-webkit-text-stroke:12px var(--ink)">{esc(sc.get("sub", S("sub")))}</div>',
+         f'<div class="sticker c-red beat" data-b="{cx.b("link", 3)}" data-anim="pop" data-sfx="ding" style="font-size:68px">{esc(sc.get("link", S("link")))}</div>']
     sc.setdefault('mascot', {'face': 'happy:grin', 'side': 'center', 'at': 1})
     return p, 8, ''
 
@@ -228,7 +236,7 @@ def b_notes(cx, sc, bg):
     if len(sc['items']) == 3: slots[2] = (275, 1090, 0)
     for i, it in enumerate(sc['items']):
         x, y, r = slots[i]
-        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;", it.get("icon_bg") or ICON_LAV)}<b>{esc(it["head"])}</b>{("<span class=\"nbody\">" + esc(it["body"]) + "</span>") if it.get("body") else ""}{("<span class=\"nex\">예: " + esc(it["ex"]) + "</span>") if it.get("ex") else ""}</div>')
+        ex.append(f'<div class="note" data-b="{cx.b(f"n{i}", 1.4 + 1.6 * i)}" data-anim="pop" data-rot="{r}" data-sfx="pop" style="left:{x}px;top:{y}px;background:{cols[i]};--hlc:{HLC[i]}">{icon(it.get("icon"), 124, "position:absolute;top:-52px;right:-30px;", it.get("icon_bg") or ICON_LAV)}<b>{esc(it["head"])}</b>{("<span class=\"nbody\">" + esc(it["body"]) + "</span>") if it.get("body") else ""}{("<span class=\"nex\">" + S("eg") + esc(it["ex"]) + "</span>") if it.get("ex") else ""}</div>')
     return [], max(6, cx.last + 3.0), '\n'.join(ex)
 
 def b_split(cx, sc, bg):
@@ -259,7 +267,7 @@ def b_check(cx, sc, bg):
         h = len(main.split('\n')) * fs * 1.2 + 34 * 2 + 5
         if sub: h += len(sub.split('\n')) * SUBFS * 1.25 + 8
         rh.append(int(h))
-    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", d)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 195}px;font-size:68px;z-index:6">{esc(sc.get("label", "오늘의 써먹기"))}</div>'] + ([icon(sc['icon'], 132, f'position:absolute;right:100px;top:{top - 195 + ICON_DY}px;z-index:6', None, cx.b('icon', d + 0.6))] if sc.get('icon') else [])
+    ex = [f'<div class="sticker c-red" data-b="{cx.b("label", d)}" data-anim="slam" data-sfx="slam" style="position:absolute;left:90px;top:{top - 195}px;font-size:68px;z-index:6">{esc(sc.get("label", S("tip")))}</div>'] + ([icon(sc['icon'], 132, f'position:absolute;right:100px;top:{top - 195 + ICON_DY}px;z-index:6', None, cx.b('icon', d + 0.6))] if sc.get('icon') else [])
     rows = ''
     for i, (main, sub) in enumerate(parsed):
         sb = f'<div class="sub">{esc(sub)}</div>' if sub else ''

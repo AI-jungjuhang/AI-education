@@ -9,6 +9,7 @@ GAP = {'speech': 70, 'notes': 20, 'split': 20, 'check': 20, 'bigword': 20, 'titl
 
 def build(ep_dir):
     ep_dir = pathlib.Path(ep_dir); ep = json.load(open(ep_dir / 'episode.json', encoding='utf-8'))
+    lang = ep.get('lang', 'ko'); __import__('blocks').LANG = lang   # "en"이면 영어판 문구·글꼴
     secs, a = [], 0.0; seen = set()
     for i, sc in enumerate(ep['scenes']):
         typ = sc['type']
@@ -35,6 +36,11 @@ def build(ep_dir):
     tpl = open(pathlib.Path(__file__).parent / 'template.html', encoding='utf-8').read()
     out = tpl.replace('{{SCENES}}', '\n'.join(secs)).replace('{{TOTAL}}', num(a)).replace('{{TAG}}', __import__('blocks').esc((ep.get('tag', '') + ' ' + ep.get('name', '')).strip()))
     import re
+    if lang == 'en':   # 영어판: 글꼴 Nunito Black, 채널 이름, 영어 줄바꿈. 한국어 결과는 바뀌지 않는다.
+        out = out.replace('<html lang="ko">', '<html lang="en">')
+        out = out.replace('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard', '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.0.18/900.css">\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.0.18/700.css">\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard', 1)
+        out = out.replace('font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all;letter-spacing:-.03em;', 'font-family:Nunito,"Pretendard Variable",sans-serif;word-break:normal;overflow-wrap:normal;hyphens:none;letter-spacing:-.005em;', 1)
+        out = out.replace('<span class="pill k">AI 정주행</span>', '<span class="pill k">AI, Start to Finish</span>', 1)
     out = re.sub(r' data-rot="[^"]*"', '', out)   # 정지 상태에서 기울어지는 요소는 쓰지 않는다(사용자 요청 2026-11-08)
     (ep_dir / 'scene.html').write_text(out, encoding='utf-8')
     print(f'scene.html 생성: 장면 {len(secs)}개, {num(a)}박 ({a * 60 / 128:.1f}초)')
