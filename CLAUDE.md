@@ -33,3 +33,8 @@ AI를 기초부터 심화까지 다루는 한국어 웹 교과서(MkDocs Materia
 - 우회로 1(쓰는 중): 제3자 사이트 Rosetta(`rosetta.to/u/<채널>/<영상-슬러그>`)가 자막 전문과 YouTube 챕터를 제공한다. 자동 생성이라 오류가 있을 수 있으므로 **비공식 자막이라고 밝히고**, 인용은 최소로 하며, 챕터 시각은 YouTube 챕터 기준으로만 적는다.
 - 우회로 2(미사용): GitHub의 `artemchuikin/youtube-skills`(TranscriptOut API), `supadata-ai/mcp`는 계정과 API 키가 필요한 상용 서비스다. 사용자의 이메일을 외부에 보내므로 사용자가 직접 요청하기 전에는 쓰지 않는다.
 - 우회로 3: 사용자가 자기 컴퓨터에서 `yt-dlp --write-auto-subs --skip-download`로 자막을 받아 저장소에 올리면 가장 정확하다.
+
+## 사이트 디자인 (2026-11-09, unslop 점검)
+- `.claude/skills/unslop`(heydamir/unslop, CC BY 4.0, 출처는 SOURCE.md)으로 점검했다. 방향: 다정하고 또박또박하고 조금 장난스러운, 공책과 형광펜. 바탕은 따뜻한 종이색 단계, 포인트는 쇼츠 파랑 하나, 서명 디테일은 형광펜 밑줄.
+- 굵기는 400~600, 상자 아이콘은 글자 색 하나, 로고는 감자(`docs/assets/potato-logo.svg`). 홈 첫 화면은 글 왼쪽, 감자와 페이지 미리보기 오른쪽.
+- 사이트 주소는 `https://ai-jungjuhang.github.io/AI-education/`(GitHub 조직 AI-jungjuhang). 머리 부분 GitHub 표시는 뺐다(repo_url 없음).
