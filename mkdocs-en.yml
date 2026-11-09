@@ -77,10 +77,13 @@ nav:
       - "4.1 Kinds and how to choose":
         - "Chat, search, image, voice: the kinds of AI": part1/ch04/kinds.md
         - "What changes between free and paid?": part1/ch04/free-paid.md
+        - "Pick the AI that fits your work": part1/ch04/choose.md
   - "II Put AI to Work":
     - part2/index.md
     - "Ch. 5 AI for Writing":
       - part2/ch05/index.md
+      - "5.1 Your writing helper":
+        - "Get a first draft": part2/ch05/first-draft.md
     - "Ch. 6 AI for Research and Study":
       - part2/ch06/index.md
     - "Ch. 7 AI for Notes and Numbers":

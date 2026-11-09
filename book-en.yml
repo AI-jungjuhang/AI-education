@@ -70,7 +70,7 @@ parts:
       pages:
       - {slug: kinds, title: 'Chat, search, image, voice: the kinds of AI', min: 5, done: true}
       - {slug: free-paid, title: 'What changes between free and paid?', min: 5, done: true}
-      - {slug: choose, title: Pick the AI that fits your work, min: 5, done: false}
+      - {slug: choose, title: Pick the AI that fits your work, min: 5, done: true}
 - id: 2
   title: II Put AI to Work
   blurb: How to use AI for writing, research, and getting organized. Practical tips you can use right away.
@@ -82,7 +82,7 @@ parts:
     - num: '5.1'
       title: Your writing helper
       pages:
-      - {slug: first-draft, title: Get a first draft, min: 5, done: false}
+      - {slug: first-draft, title: Get a first draft, min: 5, done: true}
       - {slug: rewrite, title: Rewrite and change the tone, min: 5, done: false}
       - {slug: summarize, title: Summarize, min: 5, done: false}
   - num: 6
