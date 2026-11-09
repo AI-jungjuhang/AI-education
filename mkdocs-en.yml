@@ -226,5 +226,8 @@ nav:
         - "Comparing views: where they differ": part6/ch22/views-compare.md
     - "Ch. 23 Using AI from First Principles":
       - part6/ch23/index.md
+      - "23.1 Managing context":
+        - "What fills up its memory space?": part6/ch23/context-fill.md
+        - "Habits that save memory space": part6/ch23/context-habits.md
   - "Appendix":
     - appendix/index.md

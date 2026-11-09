@@ -320,8 +320,8 @@ parts:
     - num: '23.1'
       title: Managing context
       pages:
-      - {slug: context-fill, title: 'What fills up its memory space?', min: 7, done: false}
-      - {slug: context-habits, title: Habits that save memory space, min: 7, done: false}
+      - {slug: context-fill, title: 'What fills up its memory space?', min: 7, done: true}
+      - {slug: context-habits, title: Habits that save memory space, min: 7, done: true}
     - num: '23.2'
       title: Prompts from first principles
       pages:
