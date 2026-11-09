@@ -308,7 +308,7 @@ parts:
       title: Reading the direction through interviews
       pages:
       - {slug: karpathy, title: How Andrej Karpathy sees it, min: 8, done: true}
-      - {slug: altman, title: How Sam Altman sees it, min: 8, done: false}
+      - {slug: altman, title: How Sam Altman sees it, min: 8, done: true}
       - {slug: hinton, title: How Geoffrey Hinton sees it, min: 8, done: false}
       - {slug: amodei, title: How Dario Amodei sees it, min: 8, done: false}
       - {slug: hassabis, title: How Demis Hassabis sees it, min: 8, done: false}
