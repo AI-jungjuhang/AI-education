@@ -94,7 +94,7 @@ parts:
       pages:
       - {slug: quick-intro, title: Get to know a new field fast, min: 5, done: true}
       - {slug: long-docs, title: Read and sort out long documents, min: 5, done: true}
-      - {slug: tutor, title: Use it as a study buddy, min: 5, done: false}
+      - {slug: tutor, title: Use it as a study buddy, min: 5, done: true}
   - num: 7
     title: AI for Notes and Numbers
     blurb: Using AI for meeting notes, tables, and calculations.

@@ -52,7 +52,7 @@ say which document and which sentence it comes from.
 
 ## The longer the text, the more care it needs
 
-One study found that language models can do much worse when the key information sits in the middle of a long text (2023, with the models of that time). Today's models have likely improved, but it's hard to say the problem is completely gone. So for things that matter, check like this:
+One 2023 study tested the models of that time. They did much worse when the key information sat in the middle of a long text. Today's models have likely improved, but it's hard to say the problem is completely gone. So for things that matter, check like this:
 
 - **Ask in parts.** Asking about each chapter on its own means less gets missed.
 - **Check the supporting sentences.** Find them in the original yourself.
