@@ -42,31 +42,12 @@ hide:
 
 ## 차례 { #길 }
 
-처음부터 끝까지 읽어도 되고, 필요한 부만 골라 읽어도 돼요. ★는 심화예요.
-
-<!-- AUTO:progress -->
-| 부 | 이 부에서 | 진행 |
-|---|---|---|
-| [I 처음 쓰는 AI](part1/index.md) | AI 챗봇을 처음 쓰는 사람을 위한 부예요 | 완료 (18) |
-| [II 일에 붙이기](part2/index.md) | 글쓰기, 조사, 정리 같은 일에 AI를 붙이는 방법이에요 | 완료 (12) |
-| [III 원리 한 스푼](part3/index.md) | 어려운 수식 없이, 챗봇 안에서 일어나는 일을 한 스푼씩 맛봐요 | 완료 (12) |
-| [IV 도구와 에이전트](part4/index.md) | 검색, 파일, 도구를 쓰고 스스로 일하는 AI를 알아봐요 | 완료 (9) |
-| [V Claude Code 실전](part5/index.md) | Claude Code로 직접 일을 시켜요 | 완료 (27) |
-| [VI 원리로 쓰기 ★](part6/index.md) | 심화예요 | 완료 (23) |
-| [부록](appendix/index.md) | 용어, 질문 모음, 읽는 순서, 참고 자료예요 | 완료 (5) |
-
-전체 106페이지 중 106페이지를 썼어요.
-<!-- /AUTO:progress -->
-
-## 최근에 쓴 글
-
-<!-- AUTO:recent -->
-<div class="ep-list">
-<a href="appendix/review-log/"><span class="ep-no">새 글</span><span class="ep-title">검수 기록</span><span class="ep-time">읽기 4분</span></a>
-<a href="appendix/references/"><span class="ep-no">새 글</span><span class="ep-title">참고 자료 목록</span><span class="ep-time">읽기 4분</span></a>
-<a href="appendix/reading-order/"><span class="ep-no">새 글</span><span class="ep-title">읽는 순서 추천</span><span class="ep-time">읽기 3분</span></a>
-<a href="appendix/prompt-bank/"><span class="ep-no">새 글</span><span class="ep-title">질문 모음</span><span class="ep-time">읽기 5분</span></a>
-<a href="appendix/glossary/"><span class="ep-no">새 글</span><span class="ep-title">용어집</span><span class="ep-time">읽기 5분</span></a>
-<a href="part6/ch23/verify-build/"><span class="ep-no">새 글</span><span class="ep-title">실습: 우리 채널의 검증 루프</span><span class="ep-time">읽기 8분</span></a>
-</div>
-<!-- /AUTO:recent -->
+<ul class="parts">
+<li><a href="part1/"><b>I 처음 쓰는 AI</b><span>챗봇을 처음 쓰는 사람을 위한 부</span></a></li>
+<li><a href="part2/"><b>II 일에 붙이기</b><span>글쓰기, 조사, 정리에 AI 붙이기</span></a></li>
+<li><a href="part3/"><b>III 원리 한 스푼</b><span>챗봇 안에서 일어나는 일</span></a></li>
+<li><a href="part4/"><b>IV 도구와 에이전트</b><span>도구를 쓰고 스스로 일하는 AI</span></a></li>
+<li><a href="part5/"><b>V Claude Code 실전</b><span>Claude Code로 직접 일 시키기</span></a></li>
+<li><a href="part6/"><b>VI 원리로 쓰기</b><span>심화</span></a></li>
+<li><a href="appendix/"><b>부록</b><span>용어, 질문 모음, 참고 자료</span></a></li>
+</ul>
