@@ -1,0 +1,126 @@
+{
+ "id": "en-070-subagent-intro",
+ "lang": "en",
+ "tag": "17.4.1",
+ "name": "Subagents",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "A subagent is",
+    "a helper AI"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "It does a job and\nsends back a summary",
+    "c": "yellow",
+    "y": 1000,
+    "size": 58
+   },
+   "icon": "people",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "What a\nhelper has",
+   "items": [
+    {
+     "head": "Its own\nworkspace",
+     "icon": "doc"
+    },
+    {
+     "head": "Sends back\na summary",
+     "icon": "check"
+    },
+    {
+     "head": "Limited\ntools",
+     "body": "Read-only\nif you like",
+     "icon": "lock"
+    },
+    {
+     "head": "A cheaper\nmodel",
+     "body": "Like Haiku",
+     "icon": "sliders"
+    }
+   ],
+   "beats": 13
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Built in",
+    "t": "Explore, Plan",
+    "c": "yellow",
+    "size": 100,
+    "icon": "search",
+    "small": "Read-only"
+   },
+   "bottom": {
+    "label": "Your own",
+    "t": "==One\nMarkdown file==",
+    "c": "green",
+    "size": 84,
+    "icon": "doc",
+    "small": "Put it in .claude/agents/"
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "blue",
+   "vpos": "top",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "When logs pile up",
+     "t": "Use a subagent and\njust give me a summary",
+     "size": 60,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "t": "Your chat\n==doesn't balloon==",
+     "size": 68
+    }
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 0.2,
+    "y": 1300
+   },
+   "beats": 10,
+   "delay": 1.0
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "fs": 66,
+   "items": [
+    "Hand long searches\n==to a helper==",
+    "Keep helper\ndescriptions ==short==",
+    "==Commit first==, then\nlet it change files||Rewind usually can't undo\na helper's file changes"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "delay": 1.0
+  }
+ ]
+}

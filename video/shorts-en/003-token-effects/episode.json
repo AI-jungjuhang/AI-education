@@ -1,0 +1,160 @@
+{
+ "id": "en-003-token-effects",
+ "lang": "en",
+ "tag": "1.1.2",
+ "name": "Tokens 2/2",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Why the number",
+    "of tokens matters"
+   ],
+   "fs": 104,
+   "sticker": {
+    "t": "It changes\nfour things",
+    "c": "yellow",
+    "y": 1000,
+    "size": 76
+   },
+   "icon": "question",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "When tokens\nadd up",
+   "items": [
+    {
+     "head": "Limits",
+     "body": "how much it\nreads at once",
+     "icon": "doc"
+    },
+    {
+     "head": "Speed, cost",
+     "body": "can be slow,\ncosts more",
+     "icon": "clock"
+    },
+    {
+     "head": "Counting",
+     "body": "letters trip\nit up",
+     "icon": "warn"
+    },
+    {
+     "head": "Languages",
+     "body": "counts differ",
+     "icon": "chat"
+    }
+   ],
+   "beats": 12
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "English",
+    "t": "Usually fewer\ntokens",
+    "c": "blue",
+    "size": 96,
+    "icon": "chat"
+   },
+   "bottom": {
+    "label": "Some other languages",
+    "t": "Up to 15 times\nmore tokens",
+    "c": "red",
+    "size": 90,
+    "small": "From one study",
+    "icon": "people"
+   },
+   "beats": 10
+  },
+  {
+   "type": "bigword",
+   "bg": "yellow",
+   "lines": [
+    "Counting letters",
+    "is hard for it"
+   ],
+   "fs": 108,
+   "sticker": {
+    "t": "Newer models do\nbetter, but still slip",
+    "c": "red",
+    "y": 1000,
+    "size": 64
+   },
+   "icon": "warn",
+   "beats": 6,
+   "mascot": {
+    "face": "wide:o",
+    "side": "left",
+    "at": 1.6,
+    "y": 1270
+   }
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": false,
+   "top": {
+    "label": "Ask 1",
+    "t": "Just count\nthe letters",
+    "c": "yellow",
+    "size": 96,
+    "icon": "clock"
+   },
+   "bottom": {
+    "label": "Ask 2",
+    "t": "==Write one letter\nper line, then\ncount them==",
+    "c": "green",
+    "size": 84,
+    "small": "Compare the two answers",
+    "icon": "search"
+   },
+   "beats": 10
+  },
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Spelling it out",
+    "often helps"
+   ],
+   "fs": 112,
+   "sticker": {
+    "t": "Tokens turn back into\nsingle letters",
+    "c": "yellow",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "bulb",
+   "beats": 7
+  },
+  {
+   "type": "check",
+   "bg": "white",
+   "top": 450,
+   "icon": "bulb",
+   "items": [
+    "==Check counts==\nwith a tool",
+    "Make it ==spell==\n==things out==||e.g. \"Write each letter on\nits own line, then count.\"",
+    "Split long text.\n==Repeat key rules==\nat the end"
+   ],
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 0.2,
+    "y": 1440
+   },
+   "beats": 12,
+   "fs": 62,
+   "delay": 1.0
+  }
+ ]
+}

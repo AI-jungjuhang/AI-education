@@ -1,0 +1,28 @@
+{
+ "id": "en-071-subagent-team",
+ "lang": "en",
+ "tag": "17.4.2",
+ "name": "Three helpers",
+ "scenes": [
+  {"type": "bigword", "bg": "blue", "lines": ["Split one video", "across 3 helpers"], "fs": 104,
+   "sticker": {"t": "Writers miss their\nown mistakes", "c": "yellow", "y": 1000, "size": 70},
+   "icon": "people", "beats": 9, "mascot": {"face": "wide:o", "side": "right", "at": 4.4}},
+  {"type": "list", "bg": "white", "title": "Three helpers", "items": [
+    {"t": "researcher → 3 key points", "c": "green", "size": 52},
+    {"t": "scriptwriter → the script", "c": "yellow", "size": 52},
+    {"t": "reviewer → what's not\non the page", "c": "blue", "size": 52}], "beats": 11},
+  {"type": "notes", "bg": "blue", "title": "Tools each\none gets", "items": [
+    {"head": "Research", "body": "Read,\nweb fetch", "icon": "search"},
+    {"head": "Script", "body": "Read, Write", "icon": "doc"},
+    {"head": "Review", "body": "Read and\nsearch only", "icon": "lock"}], "beats": 12},
+  {"type": "speech", "bg": "white", "vpos": "top", "gap": 80, "items": [
+    {"who": "me", "name": "Main conversation", "t": "Research → script → review.\n==I link the steps==", "size": 56, "icon": "person"},
+    {"who": "other", "t": "The reviewer only\n==points out problems==", "size": 62}],
+   "mascot": {"face": "happy:grin", "side": "left", "at": 0.2, "y": 1300}, "beats": 10, "delay": 1.0, "hl": "#FF9EB1"},
+  {"type": "check", "bg": "white", "top": 450, "icon": "bulb", "fs": 66, "items": [
+    "Give each helper\n==one job==",
+    "Read-only helpers get\n==no writing tools==",
+    "Add ==\"If you don't\nknow, say so\"=="],
+   "mascot": {"face": "happy:grin", "side": "right", "at": 0.2, "y": 1440}, "beats": 12, "delay": 1.0}
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "id": "en-002-tokens",
+ "lang": "en",
+ "tag": "1.1.2",
+ "name": "Tokens 1/2",
+ "scenes": [
+  {
+   "type": "bigword",
+   "bg": "blue",
+   "lines": [
+    "Chatbots don't",
+    "read letters"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "So what do\nthey read?",
+    "c": "yellow",
+    "y": 1000,
+    "size": 76
+   },
+   "icon": "question",
+   "beats": 9,
+   "mascot": {
+    "face": "wide:o",
+    "side": "right",
+    "at": 4.4
+   }
+  },
+  {
+   "type": "bigword",
+   "bg": "yellow",
+   "lines": [
+    "Blocks called",
+    "tokens!"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "Text gets broken\ninto small pieces",
+    "c": "red",
+    "y": 1000,
+    "size": 72
+   },
+   "icon": "doc",
+   "beats": 8,
+   "mascot": {
+    "face": "happy:grin",
+    "side": "left",
+    "at": 2.0
+   }
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "How words split",
+   "items": [
+    {
+     "head": "french fries",
+     "body": "french | fries",
+     "icon": "doc"
+    },
+    {
+     "head": "un | bel |\nievable",
+     "body": "3 pieces",
+     "icon": "doc"
+    },
+    {
+     "head": "Supercali-\nfragilistic…",
+     "body": "==10 pieces!==",
+     "icon": "doc"
+    }
+   ],
+   "beats": 12,
+   "foot": "One real tokenizer. Others split a bit differently"
+  },
+  {
+   "type": "split",
+   "bg": "white",
+   "marks": true,
+   "top": {
+    "label": "Both are a problem",
+    "t": "One letter at a time\nis too long.\nWhole words get\nstuck on new ones.",
+    "c": "red",
+    "size": 70
+   },
+   "bottom": {
+    "label": "So instead",
+    "t": "==Medium-sized==\n==pieces==",
+    "c": "green",
+    "size": 84
+   },
+   "beats": 11
+  },
+  {
+   "type": "speech",
+   "bg": "white",
+   "vpos": "center",
+   "gap": 80,
+   "items": [
+    {
+     "who": "me",
+     "name": "What you type",
+     "t": "I love french fries",
+     "size": 66,
+     "icon": "person"
+    },
+    {
+     "who": "other",
+     "name": "As tokens",
+     "t": "[I] [love] [french] [fries]",
+     "size": 54,
+     "icon": "doc"
+    },
+    {
+     "who": "other",
+     "name": "What it gets: ==numbers==",
+     "t": "[40] [3047] [66017] [91469]",
+     "size": 54,
+     "icon": "chat"
+    }
+   ],
+   "beats": 11,
+   "foot": "Real IDs from one tokenizer"
+  },
+  {
+   "type": "notes",
+   "bg": "white",
+   "title": "How the list\nis made ★",
+   "items": [
+    {
+     "head": "Start small",
+     "body": "with very\nsmall units",
+     "icon": "search"
+    },
+    {
+     "head": "Join",
+     "body": "the pair seen\ntogether most",
+     "icon": "sliders"
+    },
+    {
+     "head": "Repeat",
+     "body": "joined pieces\nfill the list",
+     "icon": "book"
+    }
+   ],
+   "beats": 11
+  },
+  {
+   "type": "bigword",
+   "bg": "yellow",
+   "lines": [
+    "Chatbots read",
+    "blocks"
+   ],
+   "fs": 118,
+   "sticker": {
+    "t": "\"Next word\" really\nmeans ==\"next block\"==",
+    "c": "red",
+    "y": 1000,
+    "size": 68
+   },
+   "icon": "chat",
+   "beats": 6,
+   "mascot": {
+    "face": "happy:grin",
+    "side": "right",
+    "at": 1.6
+   }
+  }
+ ]
+}
