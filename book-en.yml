@@ -311,7 +311,7 @@ parts:
       - {slug: altman, title: How Sam Altman sees it, min: 8, done: true}
       - {slug: hinton, title: How Geoffrey Hinton sees it, min: 8, done: true}
       - {slug: amodei, title: How Dario Amodei sees it, min: 8, done: true}
-      - {slug: hassabis, title: How Demis Hassabis sees it, min: 8, done: false}
+      - {slug: hassabis, title: How Demis Hassabis sees it, min: 8, done: true}
       - {slug: views-compare, title: 'Comparing views: where they differ', min: 8, done: false}
   - num: 23
     title: Using AI from First Principles
