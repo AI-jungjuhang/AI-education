@@ -27,7 +27,7 @@ parts:
       title: What a chatbot does
       pages:
       - {slug: next-word, title: A chatbot guesses the next word, min: 5, done: true}
-      - {slug: tokens, title: It reads text in small pieces called tokens, min: 5, done: false}
+      - {slug: tokens, title: It reads text in small pieces called tokens, min: 5, done: true}
       - {slug: hallucination, title: 'Sounds right, can be wrong: hallucination', min: 6, done: false}
   - num: 2
     title: How to Ask Well

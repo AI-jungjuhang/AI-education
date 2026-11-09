@@ -50,6 +50,7 @@ nav:
       - part1/ch01/index.md
       - "1.1 What a chatbot does":
         - "A chatbot guesses the next word": part1/ch01/next-word.md
+        - "It reads text in small pieces called tokens": part1/ch01/tokens.md
     - "Ch. 2 How to Ask Well":
       - part1/ch02/index.md
     - "Ch. 3 When to Trust It, When Not To":
