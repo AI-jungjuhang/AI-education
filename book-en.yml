@@ -92,7 +92,7 @@ parts:
     - num: '6.1'
       title: Look things up and learn
       pages:
-      - {slug: quick-intro, title: Get to know a new field fast, min: 5, done: false}
+      - {slug: quick-intro, title: Get to know a new field fast, min: 5, done: true}
       - {slug: long-docs, title: Read and sort out long documents, min: 5, done: false}
       - {slug: tutor, title: Use it as a study buddy, min: 5, done: false}
   - num: 7
