@@ -37,7 +37,7 @@ parts:
       title: The basics of asking
       pages:
       - {slug: context, title: Give it context and the answer changes, min: 5, done: true}
-      - {slug: role-format, title: 'Set the role, the format, and an example', min: 5, done: false}
+      - {slug: role-format, title: 'Set the role, the format, and an example', min: 5, done: true}
       - {slug: specific, title: 'Be specific, one thing at a time', min: 5, done: false}
     - num: '2.2'
       title: Improving it as you talk
