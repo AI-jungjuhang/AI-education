@@ -129,6 +129,7 @@ nav:
       - "12.1 How it chooses":
         - "Temperature: how adventurous to be": part3/ch12/temperature.md
         - "Sampling: how it draws": part3/ch12/sampling.md
+        - "How a long answer keeps going": part3/ch12/long-answer.md
   - "IV Tools and Agents":
     - part4/index.md
     - "Ch. 13 AI That Uses Tools":

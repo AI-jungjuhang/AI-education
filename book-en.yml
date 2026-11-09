@@ -158,7 +158,7 @@ parts:
       pages:
       - {slug: temperature, title: 'Temperature: how adventurous to be', min: 5, done: true}
       - {slug: sampling, title: 'Sampling: how it draws', min: 5, done: true}
-      - {slug: long-answer, title: How a long answer keeps going, min: 5, done: false}
+      - {slug: long-answer, title: How a long answer keeps going, min: 5, done: true}
 - id: 4
   title: IV Tools and Agents
   blurb: AI that searches, reads files, uses tools, and works on its own.
