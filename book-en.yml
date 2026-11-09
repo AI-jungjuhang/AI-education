@@ -229,7 +229,7 @@ parts:
       title: Skills
       pages:
       - {slug: skill-anatomy, title: 'What does a SKILL.md look like?', min: 7, done: true}
-      - {slug: skill-video, title: 'Hands-on: a skill that makes one video', min: 8, done: false}
+      - {slug: skill-video, title: 'Hands-on: a skill that makes one video', min: 8, done: true}
       - {slug: skill-safety, title: Before you open someone else's skills and settings, min: 6, done: false}
     - num: '17.2'
       title: Hooks

@@ -170,6 +170,7 @@ nav:
       - part5/ch17/index.md
       - "17.1 Skills":
         - "What does a SKILL.md look like?": part5/ch17/skill-anatomy.md
+        - "Hands-on: a skill that makes one video": part5/ch17/skill-video.md
     - "Ch. 18 5C Advanced ★":
       - part5/ch18/index.md
   - "VI Using AI from First Principles ★":
