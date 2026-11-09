@@ -298,7 +298,7 @@ parts:
       title: How good is it?
       pages:
       - {slug: benchmarks, title: The traps in benchmarks, min: 7, done: true}
-      - {slug: eval-hallu, title: 'How do you measure hallucination?', min: 7, done: false}
+      - {slug: eval-hallu, title: 'How do you measure hallucination?', min: 7, done: true}
       - {slug: risks, title: How to think about safety and risk, min: 7, done: false}
   - num: 22
     title: Where Are the Pioneers Looking? ★
