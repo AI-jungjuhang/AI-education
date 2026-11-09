@@ -25,7 +25,7 @@ Here's the overall flow that 3Blue1Brown's lesson shows.
 3. **Attention block:** tokens share information with each other (the previous page).
 4. **MLP block (multilayer perceptron):** each list of numbers gets polished on its own. The lesson compares this to asking each vector a long list of questions, then updating it based on the answers.
 5. **Repeat steps 3 and 4 many times.** Attention, MLP, attention, MLP, and so on. Having this many layers is the "deep" in deep learning.
-6. **Make the score table from the last vector:** once all the information has flowed into the last vector, a final step turns it into chances for every possible next piece (the score table from Chapter 1).
+6. **Make the score table from the last vector:** all the information ends up in the last vector. A final step turns it into chances for every possible next piece (the score table from Chapter 1).
 
 ## What the two blocks do
 
@@ -38,7 +38,7 @@ Almost all of this math is **matrix multiplication**, which is big blocks of mul
 
 ## The last vector's job
 
-After all the layers, the **list of numbers for the last token** must hold everything needed to predict the next word. The lesson gives an example. Say the text is about Harry Potter, and the last word is "Professor." To predict what comes next, the last vector needs to carry "this is a Harry Potter story, and the last word is Professor," which makes "Snape" a likely next word.
+After all the layers, the **list of numbers for the last token** must hold everything needed to predict the next word. The lesson gives an example. Say the text is about Harry Potter, and the last word is "Professor." To predict what comes next, the last vector needs to carry "this is a Harry Potter story, and the last word is Professor." That makes "Snape" a likely next word.
 
 From that last vector, the model works out a score for every token. Turning those scores into chances gives you the **score table** from Chapter 1. Once it draws a token, it adds that token to the input and runs the whole thing again.
 
