@@ -32,6 +32,8 @@ hide:
 [전체 차례 보기](#길){ .md-button }
 </div>
 
+<div class="band band-blue" markdown>
+
 ## 이 책으로 할 수 있는 것
 
 <ul class="gains">
@@ -40,6 +42,10 @@ hide:
 <li><b>페이지마다 바로 써 봐요</b><span>2분 실험과 복사해서 쓰는 예시가 페이지마다 있어요</span></li>
 <li><b>30초 영상으로도 봐요</b><span>주제 페이지마다 쇼츠 한 편이 있어요. 인스타그램 @ai_jungjuhang</span></li>
 </ul>
+
+</div>
+
+<div class="band band-paper" markdown>
 
 ## 차례 { #길 }
 
@@ -52,3 +58,13 @@ hide:
 <li><a href="part6/"><b>VI 원리로 쓰기</b><span>심화</span></a></li>
 <li><a href="appendix/"><b>부록</b><span>용어, 질문 모음, 참고 자료</span></a></li>
 </ul>
+
+</div>
+
+<div class="band band-ink" markdown>
+<p class="band-kicker">오늘 바로 시작</p>
+<p class="band-title">첫 페이지는 5분이면 읽어요</p>
+<p class="band-sub">챗봇이 하는 일 딱 하나부터 알고 가요</p>
+
+[첫 페이지 읽기](part1/ch01/next-word.md){ .md-button .md-button--primary }
+</div>
