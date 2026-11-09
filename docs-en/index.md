@@ -43,13 +43,13 @@ The English edition is being written now, one page at a time.
 |---|---|---|
 | [I Your First AI](part1/index.md) | For people using an AI chatbot for the first time | Done (18) |
 | [II Put AI to Work](part2/index.md) | How to use AI for writing, research, and getting organized | Done (12) |
-| [III A Spoonful of How It Works](part3/index.md) | No hard math | **4/12 written** |
+| [III A Spoonful of How It Works](part3/index.md) | No hard math | **5/12 written** |
 | [IV Tools and Agents](part4/index.md) | AI that searches, reads files, uses tools, and works on its own | Coming soon |
 | [V Claude Code in Practice](part5/index.md) | Put Claude Code to work | Coming soon |
 | [VI Using AI from First Principles ★](part6/index.md) | Going deeper | Coming soon |
 | [Appendix](appendix/index.md) | Glossary, prompt collection, reading order, and references | Coming soon |
 
-34 of 106 pages written so far.
+35 of 106 pages written so far.
 <!-- /AUTO:progress -->
 
 </div>
