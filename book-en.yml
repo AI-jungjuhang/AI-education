@@ -157,7 +157,7 @@ parts:
       title: How it chooses
       pages:
       - {slug: temperature, title: 'Temperature: how adventurous to be', min: 5, done: true}
-      - {slug: sampling, title: 'Sampling: how it draws', min: 5, done: false}
+      - {slug: sampling, title: 'Sampling: how it draws', min: 5, done: true}
       - {slug: long-answer, title: How a long answer keeps going, min: 5, done: false}
 - id: 4
   title: IV Tools and Agents
