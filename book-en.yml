@@ -58,7 +58,7 @@ parts:
     - num: '3.2'
       title: Using it safely
       pages:
-      - {slug: privacy, title: Personal and sensitive information, min: 5, done: false}
+      - {slug: privacy, title: Personal and sensitive information, min: 5, done: true}
       - {slug: copyright, title: Copyright and plagiarism, min: 5, done: false}
       - {slug: bias, title: Spotting bias and limits, min: 5, done: false}
   - num: 4
