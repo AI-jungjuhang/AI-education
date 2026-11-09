@@ -18,13 +18,13 @@ A chatbot has knobs like these, called **parameters**: billions to hundreds of b
 
 ## Bigger gets better: scaling laws
 
-In 2020, a paper by Jared Kaplan and others, *Scaling Laws for Neural Language Models*, found a pattern. A language model's error score drops in a steady way, following what's called a **power law**, as you grow three things: the model's size, the amount of data, and the computing power used for training. Some of these trends held across a range of more than ten million times. Details of the design, like how wide or deep the network was, mattered little within a wide range.
+In 2020, a paper by Jared Kaplan and others, *Scaling Laws for Neural Language Models*, found a pattern. Grow three things: the model's size, the amount of data, and the computing power used for training. As you do, a language model's error score drops in a steady way, following what's called a **power law**. Some of these trends held across a range of more than ten million times. Details of the design, like how wide or deep the network was, mattered little within a wide range.
 
 Put simply: add more resources, and the score table improves by a rule you can predict. That's why companies kept investing in bigger models.
 
 ## But it's not just size
 
-**Data has to grow too.** In 2022, a paper by Jordan Hoffmann and others argued that for a fixed amount of computing, it's most efficient to grow the model and the training data **at the same rate**. If you double the model, double the training tokens too. They concluded that big models of the time had grown without enough extra data, so they were **undertrained**. To test this, they built **Chinchilla**, with 70 billion parameters and four times as much data, using the same computing budget as a bigger model. Chinchilla beat much larger models across many tests, including Gopher (280 billion), GPT-3 (175 billion), and Megatron-Turing NLG (530 billion).
+**Data has to grow too.** In 2022, a paper by Jordan Hoffmann and others looked at a fixed amount of computing. It argued that the most efficient choice is to grow the model and the training data **at the same rate**. If you double the model, double the training tokens too. They concluded that big models of the time had grown without enough extra data, so they were **undertrained**. To test this, they built **Chinchilla**, with 70 billion parameters and four times as much data, using the same computing budget as a bigger model. Chinchilla beat much larger models across many tests, including Gopher (280 billion), GPT-3 (175 billion), and Megatron-Turing NLG (530 billion).
 
 **How you tune it matters too.** The InstructGPT model on the last page was 100 times smaller, and people still preferred it.
 
@@ -33,7 +33,7 @@ Put simply: add more resources, and the score table improves by a rule you can p
 
 ## What comes with being big
 
-- **It's heavy.** More parameters need more memory and more computer power to run. As a rough example, if each parameter takes 2 bytes, 175 billion parameters take about 350 GB just for the numbers (175 × 10⁹ × 2 bytes). That's why big models usually run on a company's servers, not on a home computer.
+- **It's heavy.** More parameters need more memory and more computer power to run. Here's a rough example. Say each parameter takes 2 bytes. Then 175 billion parameters take about 350 GB just for the numbers (175 × 10⁹ × 2 bytes). That's why big models usually run on a company's servers, not on a home computer.
 - **It's slow and costly.** Each question needs more computing (see free vs paid in Chapter 4).
 - **For some jobs, a smaller model is better.** For simple jobs, a small, fast model is often enough.
 
