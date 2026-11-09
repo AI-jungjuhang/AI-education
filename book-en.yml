@@ -248,7 +248,7 @@ parts:
       pages:
       - {slug: subagent-intro, title: Subagents share out the work, min: 7, done: true}
       - {slug: subagent-team, title: 'Hands-on: research, script, and review agents', min: 8, done: true}
-      - {slug: subagent-vs-mcp, title: 'How are subagents different from MCP?', min: 5, done: false}
+      - {slug: subagent-vs-mcp, title: 'How are subagents different from MCP?', min: 5, done: true}
   - num: 18
     title: 5C Advanced ★
     blurb: Going deeper. Plan before you hand off work, set permissions, run background jobs, and bundle everything you've built to share.

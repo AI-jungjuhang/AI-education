@@ -14,5 +14,5 @@ Bundle repeated work into skills, run automatic checks with hooks, connect outsi
 <a href="mcp-token-safety/"><span class="ep-no">17.3.3</span><span class="ep-title">Tokens: read-only, and delete when done</span><span class="ep-time">6 min read</span></a>
 <a href="subagent-intro/"><span class="ep-no">17.4.1</span><span class="ep-title">Subagents share out the work</span><span class="ep-time">7 min read</span></a>
 <a href="subagent-team/"><span class="ep-no">17.4.2</span><span class="ep-title">Hands-on: research, script, and review agents</span><span class="ep-time">8 min read</span></a>
-<div class="soon"><span class="ep-no">17.4.3</span><span class="ep-title">How are subagents different from MCP?</span><span class="ep-time">Coming soon</span></div>
+<a href="subagent-vs-mcp/"><span class="ep-no">17.4.3</span><span class="ep-title">How are subagents different from MCP?</span><span class="ep-time">5 min read</span></a>
 </div>
