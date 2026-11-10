@@ -3,15 +3,15 @@
 아래 글을 Claude 데스크톱 앱(브라우저 조작 또는 컴퓨터 사용이 켜진 대화)에 그대로 붙여 넣으세요. zip을 풀거나 파일을 따로 보낼 필요가 없어요.
 
 **먼저 직접 해 둘 일**
-- 영어 전용 인스타그램 계정을 만들고 Meta Business Suite에 연결해 두세요(계정 만들기와 로그인은 Claude가 하지 않아요).
+- 영어 전용 인스타그램 계정 `ai_start.to.finish`(만들어 둠)를 Meta Business Suite에 연결해 두세요(로그인과 계정 연결은 Claude가 하지 않아요).
 - 그 계정의 프로필 링크를 영어 사이트로 해 두세요: https://ai-jungjuhang.github.io/AI-education/en/
-- 아래 부탁의 `<영어 계정 이름>`을 실제 계정 이름으로 바꿔서 붙여 넣으세요.
+- 프로필 이름·소개는 대화에서 정한 안을 쓰세요(이름 "AI, Start to Finish | Learn AI").
 
 ---
 
 영어 인스타그램 릴스 102편을 Meta Business Suite(business.facebook.com)에서 예약 게시해 줘.
 
-- **올릴 계정은 `<영어 계정 이름>`이야.** 한국어 계정(ai_jungjuhang)에는 절대 올리지 마. 매 편 예약을 저장하기 전에 화면 위쪽에서 고른 계정이 `<영어 계정 이름>`인지 확인해.
+- **올릴 계정은 `ai_start.to.finish`이야.** 한국어 계정(ai_jungjuhang)에는 절대 올리지 마. 매 편 예약을 저장하기 전에 화면 위쪽에서 고른 계정이 `ai_start.to.finish`인지 확인해.
 - 영상과 예약표는 GitHub 저장소 AI-jungjuhang/AI-education 의 브랜치 claude/keen-planck-pyt819 에 있어. 먼저 이 브랜치를 내 컴퓨터로 내려받아 줘(git clone --branch claude/keen-planck-pyt819 --depth 1). 한국어 릴스용으로 이미 받아 둔 폴더와 섞이지 않게 다른 폴더에 받아.
 - 예약표: video/all-en/reels-schedule.csv (열: 편, 예약 날짜, 예약 시각, 영상 파일, 번호, 이름, 설명글). 시각은 한국 시간이야.
 - 영상 파일: video/shorts-en/<편 폴더>/out/<영상 파일>. 예: en-001-next-word.mp4 는 video/shorts-en/001-next-word/out/en-001-next-word.mp4. video/all-en 의 mp4는 바로가기라서 Windows에서는 열리지 않을 수 있으니 쓰지 마.
@@ -20,4 +20,4 @@
 - 10편마다 진행 상황(몇 번까지 했는지)을 알려 줘.
 - 로그인 창, 결제, 광고 홍보(부스트), 계정 설정 변경이 나오면 누르지 말고 멈춰서 나에게 물어봐.
 - 업로드가 실패하거나 화면이 예상과 다르면 그 편 번호를 적어 두고 멈춰.
-- 이미 예약된 편은 다시 올리지 마. 시작 전에 `<영어 계정 이름>`의 "예약됨" 목록을 먼저 확인해.
+- 이미 예약된 편은 다시 올리지 마. 시작 전에 `ai_start.to.finish`의 "예약됨" 목록을 먼저 확인해.
