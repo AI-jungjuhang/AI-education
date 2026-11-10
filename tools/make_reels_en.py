@@ -53,4 +53,13 @@ for d in sorted((root / 'video/shorts-en').iterdir()):
 out = root / 'video/all-en/reels-captions.csv'
 with open(out, 'w', encoding='utf-8-sig', newline='') as f:
     w = csv.writer(f); w.writerow(['편', '예약 날짜', '예약 시각', '영상 파일', '번호', '이름', '제목', '설명글']); w.writerows(rows)
-print(f'{len(rows)}편 → {out.relative_to(root)}')
+# 릴스 예약표: 한국어 예약표와 같은 열·같은 시간표(하루 10편). 2026-11-10 사용자 결정: 2026-11-11부터, 영어 전용 새 계정.
+import datetime
+START = datetime.date(2026, 11, 11)
+TIMES = ['08:00', '09:30', '11:00', '12:30', '14:00', '15:30', '17:00', '18:30', '20:00', '21:30']
+sch = root / 'video/all-en/reels-schedule.csv'
+with open(sch, 'w', encoding='utf-8-sig', newline='') as f:
+    w = csv.writer(f); w.writerow(['편', '예약 날짜', '예약 시각', '영상 파일', '번호', '이름', '설명글'])
+    for i, r in enumerate(rows):
+        w.writerow([r[0], (START + datetime.timedelta(days=i // 10)).isoformat(), TIMES[i % 10], r[3], r[4], r[5], r[7]])
+print(f'{len(rows)}편 → {out.relative_to(root)}, {sch.relative_to(root)}')

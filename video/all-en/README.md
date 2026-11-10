@@ -2,7 +2,9 @@
 
 영어판 쇼츠를 책 순서대로 모은 목록이에요. 실제 파일은 `video/shorts-en/<편>/out/`에 있고, 이 폴더의 mp4는 그 파일을 가리키는 바로가기예요.
 
-- 설명글 초안: [reels-captions.csv](reels-captions.csv) (제목, 설명글). 한국어 `video/all/reels-schedule.csv`와 같은 모양이에요. 예약 날짜·시각 칸은 비워 뒀어요.
+- 릴스 예약표: [reels-schedule.csv](reels-schedule.csv). 한국어 예약표와 같은 열이에요. 2026-11-11부터 하루 10편(08:00~21:30, 한국 시간), 영어 전용 새 계정(2026-11-10 사용자 결정).
+- 업로드 부탁 글: [reels-upload-prompt.md](reels-upload-prompt.md) (내 컴퓨터의 Claude에게 붙여 넣기).
+- 유튜브용 제목+설명글: [reels-captions.csv](reels-captions.csv) (예약 칸은 비어 있어요).
 - 다시 만들기: `python3 tools/make_reels_en.py`. 손으로 고친 문장은 [caption-overrides.json](caption-overrides.json)에 있어요.
 
 | 편 | 번호 | 이름 | 제목 | 파일 |

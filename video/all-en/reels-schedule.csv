@@ -1,0 +1,1325 @@
+﻿편,예약 날짜,예약 시각,영상 파일,번호,이름,설명글
+001,2026-11-11,08:00,en-001-next-word.mp4,1.1.1,Next word,"🤖 A chatbot has one job
+Pick the next word
+
+📌 Use it today
+- Ask big questions more than once
+- Look harder at parts that change
+- Check a source, even if it repeats
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 1 What Does a Chatbot Actually Do?
+   › 1.1 What a chatbot does › 1.1.1 A chatbot guesses the next word
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+002,2026-11-11,09:30,en-002-tokens.mp4,1.1.2,Tokens 1/2,"🧩 Chatbots don't read letters
+So what do they read?
+
+Chatbots read blocks called tokens
+The ""next word"" is really the ""next block""
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 1 What Does a Chatbot Actually Do?
+   › 1.1 What a chatbot does › 1.1.2 It reads text in small pieces called tokens (1/2)
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+003,2026-11-11,11:00,en-003-token-effects.mp4,1.1.2,Tokens 2/2,"🧩 Why the number of tokens matters
+It changes four things
+
+📌 Use it today
+- Check counts with a tool
+- Make it spell things out
+- Split long text. Repeat key rules at the end
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 1 What Does a Chatbot Actually Do?
+   › 1.1 What a chatbot does › 1.1.2 It reads text in small pieces called tokens (2/2)
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+004,2026-11-11,12:30,en-004-hallucination.mp4,1.1.3,Hallucination,"🤥 Chatbots can make things up
+Ask about a book that doesn't exist
+
+📌 Use it today
+- Let it say ""I don't know""
+- ""Answer only from this""
+- Double-check numbers and names
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 1 What Does a Chatbot Actually Do?
+   › 1.1 What a chatbot does › 1.1.3 Sounds right, can be wrong: hallucination
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+005,2026-11-11,14:00,en-005-context.mp4,2.1.1,Context,"🗺️ It can't know what you don't say
+Tell it more and the answer changes
+
+📌 Use it today
+- Check the four before you send
+- Give a reason with each rule
+- Paste your notes under the question
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 2 How to Ask Well
+   › 2.1 The basics of asking › 2.1.1 Give it context and the answer changes
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+006,2026-11-11,15:30,en-006-role-format.mp4,2.1.2,"Role, format, example","🎭 Role, format, example!
+Set these for the chatbot
+
+📌 Use it today
+- Keep a three-line template
+- Use writing you like as the sample
+- Use roles for tone, not for facts
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 2 How to Ask Well
+   › 2.1 The basics of asking › 2.1.2 Set the role, the format, and an example
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+007,2026-11-11,17:00,en-007-specific.mp4,2.1.3,Be specific,"🎯 Be specific, one job at a time
+Too many jobs at once get blurry
+
+📌 Use it today
+- Turn ""good"" into numbers and rules
+- If order matters, number the steps
+- Check small results first
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 2 How to Ask Well
+   › 2.1 The basics of asking › 2.1.3 Be specific, one thing at a time
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+008,2026-11-11,18:30,en-008-iterate.mp4,2.2.1,Asking for changes,"✂️ Say exactly what to change
+A hairdresser can't work with ""different""
+
+📌 Use it today
+- Say where to fix and how
+- Say which parts to keep
+- After a fix, ask what changed
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 2 How to Ask Well
+   › 2.2 Improving it as you talk › 2.2.1 How to ask for changes
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+009,2026-11-11,20:00,en-009-fresh-start.mp4,2.2.2,New chat,"🧹 Long chat? Start a new one
+Key rules get buried in a long chat
+
+📌 Use it today
+- Fixes keep missing? Try a new chat
+- New topic, new chat
+- Put key rules at the top
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 2 How to Ask Well
+   › 2.2 Improving it as you talk › 2.2.2 When a new chat works better
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+010,2026-11-11,21:30,en-010-templates.mp4,2.2.3,Templates,"🍪 Save repeat asks as templates
+Then just change the blanks
+
+📌 Use it today
+- Ask for it often? Save a template
+- Wrap your material in markers
+- Keep personal info out of templates
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 2 How to Ask Well
+   › 2.2 Improving it as you talk › 2.2.3 Make your own question templates
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+011,2026-11-12,08:00,en-011-check-sources.mp4,3.1.1,Check sources,"🔎 Check sources in three steps
+A chatbot can make up sources too
+
+📌 Use it today
+- Always open the source
+- Find the key line in the original
+- Check the date it was written
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 3 When to Trust It, When Not To
+   › 3.1 The checking habit › 3.1.1 How to check sources
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+012,2026-11-12,09:30,en-012-check-numbers.mp4,3.1.2,Numbers and quotes,"🔢 Numbers, quotes: easy to get wrong
+They look right, so we miss them
+
+📌 Use it today
+- Ask for the source sentence too
+- Find quotes in the original
+- Check units and the year
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 3 When to Trust It, When Not To
+   › 3.1 The checking habit › 3.1.2 Check numbers and quotes
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+013,2026-11-12,11:00,en-013-second-opinion.mp4,3.1.3,Second opinion,"🩺 Answer matters? Check it again
+Like seeing a second doctor
+
+📌 Use it today
+- Ask again in a new chat
+- Start with the parts that disagree
+- Answers agree? Still check sources
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 3 When to Trust It, When Not To
+   › 3.1 The checking habit › 3.1.3 Get a second opinion
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+014,2026-11-12,12:30,en-014-privacy.mp4,3.2.1,Personal info,"🔒 Hide personal info first
+What you type goes to the company
+
+📌 Use it today
+- Pause before you hit send
+- Work? Check your workplace rules
+- Check how your chats are used
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 3 When to Trust It, When Not To
+   › 3.2 Using it safely › 3.2.1 Personal and sensitive information
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+015,2026-11-12,14:00,en-015-copyright.mp4,3.2.2,Copyright,"©️ Its writing can look like others'
+It learned from huge amounts of text
+
+📌 Use it today
+- Check the AI rules at school or work
+- Say you used AI
+- Making money? Read the terms
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 3 When to Trust It, When Not To
+   › 3.2 Using it safely › 3.2.2 Copyright and plagiarism
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+016,2026-11-12,15:30,en-016-bias.mp4,3.2.3,Bias,"⚖️ Chatbots can be biased too
+They learned from text people wrote
+
+📌 Use it today
+- Don't let it decide about people
+- Ask for other points of view
+- Double-check rare topics
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 3 When to Trust It, When Not To
+   › 3.2 Using it safely › 3.2.3 Spotting bias and limits
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+017,2026-11-12,17:00,en-017-kinds.mp4,4.1.1,Kinds of AI,"🧰 Each AI tool has its own job
+Like a hammer and a screwdriver
+
+📌 Use it today
+- Pick the right tool for each job
+- Read your service's feature list
+- Check the text in AI pictures
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 4 Which AI Should You Pick?
+   › 4.1 Kinds and how to choose › 4.1.1 Chat, search, image, voice: the kinds of AI
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+018,2026-11-12,18:30,en-018-free-paid.mp4,4.1.2,Free or paid,"💳 Paid isn't always more accurate
+It changes how much you can do
+
+📌 Use it today
+- Decide from your use log
+- Compare with the same question
+- Check prices on the official page
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 4 Which AI Should You Pick?
+   › 4.1 Kinds and how to choose › 4.1.2 What changes between free and paid?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+019,2026-11-12,20:00,en-019-choose.mp4,4.1.3,Choose a tool,"👟 Pick the job before the tool
+Like picking shoes for a hike
+
+📌 Use it today
+- Job first, tool second
+- For work, start with approved tools
+- Check again in about a month
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part I Your First AI › Ch. 4 Which AI Should You Pick?
+   › 4.1 Kinds and how to choose › 4.1.3 Pick the AI that fits your work
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIForBeginners"
+020,2026-11-12,21:30,en-020-first-draft.mp4,5.1.1,First draft,"📝 AI drafts fast. You finish it.
+Make the dough first, then shape the bread
+
+📌 Use it today
+- Say: if unsure, leave it blank
+- Check the facts yourself
+- Read it out loud before you send
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 5 AI for Writing
+   › 5.1 Your writing helper › 5.1.1 Get a first draft
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+021,2026-11-13,08:00,en-021-rewrite.mp4,5.1.2,Rewrite,"👔 Rewrite it, same meaning
+New clothes, same person inside
+
+📌 Use it today
+- Look hard at numbers and negatives
+- Show a sample for the tone
+- Get versions for different readers
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 5 AI for Writing
+   › 5.1 Your writing helper › 5.1.2 Rewrite and change the tone
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+022,2026-11-13,09:30,en-022-summarize.mp4,5.1.3,Summarize,"📚 Summaries can add extra bits
+Like a book blurb, it must match the book
+
+📌 Use it today
+- Add: ""Don't add what isn't in the original""
+- Check numbers, dates in the original
+- See if the tone shifted
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 5 AI for Writing
+   › 5.1 Your writing helper › 5.1.3 Summarize
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+023,2026-11-13,11:00,en-023-quick-intro.mp4,6.1.1,New field,"🗺️ New field? Get a map first
+AI draws the map. You walk and check it.
+
+📌 Use it today
+- Look up new terms one at a time
+- Check that books it names really exist
+- List questions for an expert
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 6 AI for Research and Study
+   › 6.1 Look things up and learn › 6.1.1 Get to know a new field fast
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+024,2026-11-13,12:30,en-024-long-docs.mp4,6.1.2,Long documents,"📑 Long document? Question first
+""Sort this out"" gets an ordinary summary
+
+📌 Use it today
+- Document on top, question below
+- Very long? Ask chapter by chapter
+- Contracts: AI only flags the risks
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 6 AI for Research and Study
+   › 6.1 Look things up and learn › 6.1.2 Read and sort out long documents
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+025,2026-11-13,14:00,en-025-tutor.mp4,6.1.3,Study buddy,"🧠 Don't just read. Get quizzed.
+Copying the answer key doesn't help on the test
+
+📌 Use it today
+- After ""explain this,"" add ""now quiz me""
+- Space it out
+- Compare with your textbook
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 6 AI for Research and Study
+   › 6.1 Look things up and learn › 6.1.3 Use it as a study buddy
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+026,2026-11-13,15:30,en-026-meeting-notes.mp4,7.1.1,Meeting notes,"🗂️ Meeting notes? Set the slots first
+A messy drawer sorts faster with dividers
+
+📌 Use it today
+- Before sharing, have each person confirm
+- Check dates and numbers in the notes
+- Save the template for next time
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 7 AI for Notes and Numbers
+   › 7.1 Documents and tables › 7.1.1 Meeting notes and emails
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+027,2026-11-13,17:00,en-027-tables.mp4,7.1.2,Spreadsheet formulas,"📊 Need a formula? Show your table
+A cook needs to know what's in your fridge
+
+📌 Use it today
+- Test it on a small table
+- Check the function really exists
+- Use fake data instead of real names
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 7 AI for Notes and Numbers
+   › 7.1 Documents and tables › 7.1.2 Help with tables and spreadsheet formulas
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+028,2026-11-13,18:30,en-028-math-caution.mp4,7.1.3,Math with care,"🧮 Long math can go wrong
+One wrong step carries forward
+
+📌 Use it today
+- Ask for the formula, not the value
+- Check dates and units on their own
+- Money and health: ask an expert
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 7 AI for Notes and Numbers
+   › 7.1 Documents and tables › 7.1.3 Be careful when it does math
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+029,2026-11-13,20:00,en-029-prompt-library.mp4,8.1.1,Prompt library,"📒 Save prompts that worked
+Like writing down a recipe that worked
+
+📌 Use it today
+- Always fill in ""Watch for""
+- Clean up once a month
+- Remove personal details to share
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 8 Make It Part of How You Work
+   › 8.1 Your own routine › 8.1.1 Keep your favorite prompts
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+030,2026-11-13,21:30,en-030-rollout-check.mp4,8.1.2,Before you roll out,"🚲 AI can make some jobs worse
+Like a bike in front of stairs
+
+📌 Use it today
+- Start with one low-risk job
+- Don't hand off jobs you can't check
+- Review every couple of months
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 8 Make It Part of How You Work
+   › 8.1 Your own routine › 8.1.2 A checklist before using it at work
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+031,2026-11-14,08:00,en-031-team-rules.mp4,8.1.3,Team rules,"📋 Team AI rules fit on one page
+Short class rules are the ones people keep
+
+📌 Use it today
+- Start with three data levels
+- Name one person to ask when unsure
+- A person checks what goes outside
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part II Put AI to Work › Ch. 8 Make It Part of How You Work
+   › 8.1 Your own routine › 8.1.3 Rules your team agrees on
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAtWork"
+032,2026-11-14,09:30,en-032-pretraining.mp4,9.1.1,Pretraining,"📖 First lesson: guess what's next
+Text holds the answers, so no teacher grades it
+
+📌 Use it today
+- Recent news? Use a search tool
+- Rare topics? Be extra careful
+- Keep giving examples
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 9 How Does AI Learn?
+   › 9.1 Three stages of learning › 9.1.1 Read and imitate: pretraining
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+033,2026-11-14,11:00,en-033-tuning.mp4,9.1.2,Fine-tuning,"🎓 It learns to help from people
+A well-read student still practices for interviews
+
+📌 Use it today
+- Give specific instructions
+- Ask for reasons for and against
+- Keep saying ""If you don't know, say so""
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 9 How Does AI Learn?
+   › 9.1 Three stages of learning › 9.1.2 Learn from people: fine-tuning and feedback
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+034,2026-11-14,12:30,en-034-scale.mp4,9.1.3,Parameters,"🎛️ Model size isn't everything
+Many knobs alone don't make a radio sound good
+
+📌 Use it today
+- The name's number is not a score
+- Be careful with old comparisons
+- Check answers from big models too
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 9 How Does AI Learn?
+   › 9.1 Three stages of learning › 9.1.3 Why size matters: parameters
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+035,2026-11-14,14:00,en-035-tokens-to-vectors.mp4,10.1.1,Lists of numbers,"🔢 Words become lists of numbers
+Like a map turning an address into coordinates
+
+📌 Use it today
+- Spell names and key words exactly
+- Spell out slang and odd short forms
+- Weak answer? Try other words for it
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 10 How Words Become Numbers
+   › 10.1 Embeddings › 10.1.1 Tokens become lists of numbers
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+036,2026-11-14,15:30,en-036-closeness.mp4,10.1.2,Close meanings,"👫 Similar words sit close
+Like close friends at one lunch table
+
+📌 Use it today
+- Ask for 3 similar examples
+- Ask how they're similar but different
+- Don't let closeness judge people
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 10 How Words Become Numbers
+   › 10.1 Embeddings › 10.1.2 Similar meanings sit close together
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+037,2026-11-14,17:00,en-037-context-meaning.mp4,10.1.3,Context and meaning,"🍐 Context picks the meaning
+""Bat"": an animal, or what you swing?
+
+📌 Use it today
+- Name the field and situation first
+- Say what your technical words mean
+- Ask ""What did you take 'bat' to mean?""
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 10 How Words Become Numbers
+   › 10.1 Embeddings › 10.1.3 Meaning changes with context
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+038,2026-11-14,18:30,en-038-attention-idea.mp4,11.1.1,Attention,"🖍️ Attention picks where to look
+Like looking back to see what ""it"" was
+
+📌 Use it today
+- Use names, not ""it"" or ""this""
+- Put key conditions near your question
+- Label things that could get mixed up
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 11 Attention
+   › 11.1 Where to look › 11.1.1 Attention: picking out what matters
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+039,2026-11-14,20:00,en-039-transformer-layer.mp4,11.1.2,Transformer,"🏭 Two blocks, many times
+A transformer is like a conveyor belt
+
+📌 Use it today
+- Many layers is not proof it's right
+- Answers differ from the draw at the end
+- Hard? It's fine to skip this part
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 11 Attention
+   › 11.1 Where to look › 11.1.2 What one transformer layer looks like
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+040,2026-11-14,21:30,en-040-context-window.mp4,11.1.3,Context window,"🪑 It sees only so much at once
+Only what's on its desk
+
+📌 Use it today
+- Sum up long chats, start a new chat
+- Paste in only the parts you need
+- Check the limits of your service
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 11 Attention
+   › 11.1 Where to look › 11.1.3 The context window: how much it sees at once
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+041,2026-11-15,08:00,en-041-temperature.mp4,12.1.1,Temperature,"🌡️ Temperature sets safe or varied
+Low: the top choice. High: more variety.
+
+📌 Use it today
+- For exact jobs, rely on checking
+- Important answer? Get a few, compare
+- Got the setting? Try a few values
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 12 Building Sentences with Probability
+   › 12.1 How it chooses › 12.1.1 Temperature: how adventurous to be
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+042,2026-11-15,09:30,en-042-sampling.mp4,12.1.2,Sampling,"🎲 How it draws changes writing
+Like a friend who orders the same dish
+
+📌 Use it today
+- Phrase repeats? Ban it
+- Odd answer? Try again
+- Exact jobs need a checking step
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 12 Building Sentences with Probability
+   › 12.1 How it chooses › 12.1.2 Sampling: how it draws
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+043,2026-11-15,11:00,en-043-long-answer.mp4,12.1.3,Long answers,"🏃 Long answers grow one token at a time
+Like a relay race: no running a leg again
+
+📌 Use it today
+- Check the end for contradictions
+- Treat word counts as rough
+- Stopped midway? Say ""Keep going""
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part III A Spoonful of How It Works › Ch. 12 Building Sentences with Probability
+   › 12.1 How it chooses › 12.1.3 How a long answer keeps going
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #HowAIWorks"
+044,2026-11-15,12:30,en-044-search-rag.mp4,13.1.1,Adding search,"🔍 Search lets it look things up
+A closed-book test turns open-book
+
+📌 Use it today
+- Open the sources and check them
+- Leave out personal details
+- Ask for two different sources
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 13 AI That Uses Tools
+   › 13.1 Search, files, connections › 13.1.1 What changes when you add search
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+045,2026-11-15,14:00,en-045-files-code.mp4,13.1.2,Running code,"💻 For exact math, let it run code
+Like a student with a calculator
+
+📌 Use it today
+- Remove personal details first
+- Watch for hidden instructions
+- Check a few rows by hand
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 13 AI That Uses Tools
+   › 13.1 Search, files, connections › 13.1.2 AI that reads files and runs code
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+046,2026-11-15,15:30,en-046-connectors.mp4,13.1.3,MCP,"🔌 MCP plugs AI into your tools
+Like a USB-C port for AI apps
+
+📌 Use it today
+- Read the permission list first
+- Disconnect what you don't use
+- Read approvals before you click
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 13 AI That Uses Tools
+   › 13.1 Search, files, connections › 13.1.3 The standard for connecting tools: MCP
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+047,2026-11-15,17:00,en-047-what-agent.mp4,14.1.1,Agents,"👨‍🍳 An agent picks its own steps
+Like a chef who opens the fridge and decides
+
+📌 Use it today
+- Try the simplest way first
+- Fixed order? Hand it off step by step
+- Test it on practice files
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 14 Agents
+   › 14.1 AI that works on its own › 14.1.1 What is an agent?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+048,2026-11-15,18:30,en-048-loop.mp4,14.1.2,The agent loop,"🔁 Agents work in a loop
+Like a scavenger hunt: clue, go, check
+
+📌 Use it today
+- Ask to see the plan first
+- Pause after each step
+- Said ""Done""? Check it yourself
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 14 Agents
+   › 14.1 AI that works on its own › 14.1.2 Plan, act, check
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+049,2026-11-15,20:00,en-049-failures.mp4,14.1.3,Agent failures,"🏪 An AI ran a shop and lost money
+Gave discounts, even freebies
+
+📌 Use it today
+- Start with the fewest permissions
+- Money or deleting? A person approves
+- Set limits on time, tries, money
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 14 Agents
+   › 14.1 AI that works on its own › 14.1.3 How agents fail
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+050,2026-11-15,21:30,en-050-instructions.mp4,15.1.1,Instructions,"📋 Give your agent clear instructions
+Like a first-day guide for a new employee
+
+📌 Use it today
+- First 3 lines: role, goal, reason
+- Always add ""when you don't know""
+- Odd behavior? Add a line
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 15 Try Building an Agent
+   › 15.1 A taste of design › 15.1.1 Write good instructions
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+051,2026-11-16,08:00,en-051-tool-design.mp4,15.1.2,Tool design,"🧰 Make tools an AI can read
+Like labels on every toolbox drawer
+
+📌 Use it today
+- Give the AI less material
+- Say what each column means
+- Ask for short results
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 15 Try Building an Agent
+   › 15.1 A taste of design › 15.1.2 Design good tools
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+052,2026-11-16,09:30,en-052-evaluate.mp4,15.1.3,Testing,"🏅 Test it with a score
+Like an athlete timing each race
+
+📌 Use it today
+- Hide a few test questions
+- AI grades? A person checks some
+- New model? Rerun the same test
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part IV Tools and Agents › Ch. 15 Try Building an Agent
+   › 15.1 A taste of design › 15.1.3 Test it and fix it
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIAgents"
+053,2026-11-16,11:00,en-053-slash-basics.mp4,16.1.1,Slash commands,"🎮 Start with / for a shortcut
+One button instead of a long message
+
+📌 Use it today
+- Fuzzy answers? Check /context first
+- Forgot a name? Type / and search
+- Don't memorize, look it up with /help
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.1 Slash commands › 16.1.1 Slash commands you'll use often
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+054,2026-11-16,12:30,en-054-slash-custom.mp4,16.1.2,Your own commands,"⌨️ Save a request, call it /name
+Typed it three times? Make it a button
+
+📌 Use it today
+- Keep names short and lowercase
+- Write what to do, its shape, the don'ts
+- Same ask 3 times? Make it a file
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.1 Slash commands › 16.1.2 Make your own shortcut commands
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+055,2026-11-16,14:00,en-055-claudemd-intro.mp4,16.2.1,CLAUDE.md,"🗒️ A note Claude reads first
+New sessions start with no memory
+
+📌 Use it today
+- Explaining it twice? Make a note
+- Got it wrong once? Add a line that day
+- Then check it loaded with /context all
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.2 CLAUDE.md › 16.2.1 The note Claude reads every time
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+056,2026-11-16,15:30,en-056-claudemd-write.mp4,16.2.2,Writing notes,"📝 Keep notes short and checkable
+Vague words don't get followed
+
+📌 Use it today
+- Top rules go first, with one line why
+- New rule, one line: what, where, how
+- Write decisions the code can't show
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.2 CLAUDE.md › 16.2.2 How to write a good CLAUDE.md
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+057,2026-11-16,17:00,en-057-checkpoint-rewind.mp4,16.3.1,Rewind,"💾 Each message saves your files
+Like a save point in a game
+
+📌 Use it today
+- Big change? Go ahead. It's a save point.
+- Text in the prompt? Use /rewind
+- Long chat? Sum up from the middle
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.3 Checkpoints › 16.3.1 Experiment freely with rewind
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+058,2026-11-16,18:30,en-058-checkpoint-vs-git.mp4,16.3.2,Checkpoints vs git,"📸 Checkpoints: a quick undo
+Lasting history is git's job
+
+📌 Use it today
+- Using subagents? Commit first
+- Terminal changes? Undo with git
+- Like the result? Commit again
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.3 Checkpoints › 16.3.2 How are checkpoints different from git?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+059,2026-11-16,20:00,en-059-cli-modes.mp4,16.4.1,One-line mode,"🥤 claude -p: one answer, done
+No person needed, so it can run alone
+
+📌 Use it today
+- One-off question? claude -p
+- Yesterday's work? claude -c
+- A named chat? claude -r ""name""
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.4 Command line basics › 16.4.1 Chat mode and one-line mode
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+060,2026-11-16,21:30,en-060-cli-pipe.mp4,16.4.2,Pipes,"🚰 A | passes output along
+Like a conveyor belt from a file to the AI
+
+📌 Use it today
+- Before piping, check for passwords
+- Same check twice? Save the command
+- Keep the result: add > review.md
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 16 5A First Steps
+   › 16.4 Command line basics › 16.4.2 Hand it a file and give it a job in one line
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+061,2026-11-17,08:00,en-061-skill-anatomy.mp4,17.1.1,Inside a skill,"🃏 A skill loads only when used
+Like recipe cards: only titles on the wall
+
+📌 Use it today
+- Side effects? Only you call it
+- Body too long? Move it to a file
+- Spell field names letter for letter
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.1 Skills › 17.1.1 What does a SKILL.md look like?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+062,2026-11-17,09:30,en-062-skill-video.mp4,17.1.2,A video skill,"🎬 A skill is written steps
+So you can write one yourself
+
+📌 Use it today
+- Doing it again? Make it a skill
+- Version one? Five lines is enough
+- Saves files? Say where
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.1 Skills › 17.1.2 Hands-on: a skill that makes one video
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+063,2026-11-17,11:00,en-063-skill-safety.mp4,17.1.3,Other people's skills,"🚪 Someone's repo? Read .claude/ first
+Its files may run on your computer
+
+📌 Use it today
+- Before opening, read the settings
+- Trust prompt? Only with a reason
+- Sharing a skill? Check its ! lines
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.1 Skills › 17.1.3 Before you open someone else's skills and settings
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+064,2026-11-17,12:30,en-064-hook-basics.mp4,17.2.1,Hooks,"💡 A hook runs at a set moment
+It runs without the AI deciding
+
+📌 Use it today
+- Must always happen? A hook, not a note
+- Start with harmless hooks
+- Added one? Check with /hooks
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.2 Hooks › 17.2.1 Run something automatically at the right moment
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+065,2026-11-17,14:00,en-065-hook-checker.mp4,17.2.2,A checker hook,"🕵️ A hook checks every edit
+Is the sources section there?
+
+📌 Use it today
+- Same check often? Move it to a hook
+- New hook? Run it alone first
+- Heavy check? Save it for Stop
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.2 Hooks › 17.2.2 Hands-on: add an automatic checker
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+066,2026-11-17,15:30,en-066-hook-safety.mp4,17.2.3,Hook safety,"🔑 Hooks run with your permissions
+They can delete files, and read them too
+
+📌 Use it today
+- New repo? Read its hooks first
+- claude -p for jobs? Add --bare
+- Something odd? Check /hooks
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.2 Hooks › 17.2.3 Hooks run with your permissions
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+067,2026-11-17,17:00,en-067-mcp-intro.mp4,17.3.1,MCP,"🔌 MCP plugs Claude into your services
+Use it when you keep copying things in
+
+📌 Use it today
+- Copied it 3+ times? Note it to connect
+- Before connecting, decide read or write
+- Now and then, check with /mcp
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.3 MCP › 17.3.1 MCP is Claude's plug socket
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+068,2026-11-17,18:30,en-068-mcp-connect.mp4,17.3.2,Connect a service,"🔗 Connect, sign in, then test reading
+In that order, it's safe
+
+📌 Use it today
+- Practice with a practice account
+- If you can, allow reading only
+- Name it after the service
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.3 MCP › 17.3.2 Hands-on: connect an outside service
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+069,2026-11-17,20:00,en-069-mcp-token-safety.mp4,17.3.3,Token safety,"🗝️ Tokens: read-only, cancel when done
+A leaked token lets others act as you
+
+📌 Use it today
+- Before connecting, ask for the least
+- When done: remove, cancel, then check
+- Tokens in commands? Don't type them
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.3 MCP › 17.3.3 Tokens: read-only, and delete when done
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+070,2026-11-17,21:30,en-070-subagent-intro.mp4,17.4.1,Subagents,"🛵 A subagent is a helper AI
+It does a job and sends back a summary
+
+📌 Use it today
+- Hand long searches to a helper
+- Keep helper descriptions short
+- Commit first, then let it change files
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.4 Subagents › 17.4.1 Subagents share out the work
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+071,2026-11-18,08:00,en-071-subagent-team.mp4,17.4.2,Three helpers,"👥 Split one video across 3 helpers
+Writers miss their own mistakes
+
+📌 Use it today
+- Give each helper one job
+- Read-only helpers get no writing tools
+- Add ""If you don't know, say so""
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.4 Subagents › 17.4.2 Hands-on: research, script, and review agents
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+072,2026-11-18,09:30,en-072-subagent-vs-mcp.mp4,17.4.3,Pick a tool,"🧭 MCP is where, subagents are who
+MCP adds places to go. Subagents add workers.
+
+📌 Use it today
+- Before picking, ask what you need
+- Start in the main conversation
+- Repeats or clutters? Move to a tool
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 17 5B Automate and Connect
+   › 17.4 Subagents › 17.4.3 How are subagents different from MCP?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+073,2026-11-18,11:00,en-073-plan-mode.mp4,18.1.1,Plan mode,"📐 Plan mode plans before it edits
+You read the plan, then say go
+
+📌 Use it today
+- 3 or more files? Plan first
+- Is it adding things you didn't ask for?
+- Vague plan? Ask questions
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 18 5C Advanced ★
+   › 18.1 Advanced features › 18.1.1 Make a plan first
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+074,2026-11-18,12:30,en-074-permissions.mp4,18.1.2,Permission modes,"🚗 A mode sets what Claude may do without asking
+A trade between ease and safety
+
+📌 Use it today
+- Start with Manual and plan mode
+- acceptEdits only if you'll check results
+- Keep out of settings: bypassPermissions
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 18 5C Advanced ★
+   › 18.1 Advanced features › 18.1.2 Permission modes and safety
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+075,2026-11-18,14:00,en-075-background-tasks.mp4,18.1.3,Background,"🧹 Long jobs can run in the background
+You don't have to watch them
+
+📌 Use it today
+- Over 5 minutes? Send it to the back
+- Write what it must not do first
+- See them all with claude agents
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 18 5C Advanced ★
+   › 18.1 Advanced features › 18.1.3 Background and scheduled tasks
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+076,2026-11-18,15:30,en-076-agent-teams.mp4,18.1.4,Agent teams,"🤝 Agent teams are sessions that work together
+They share one task list and message each other
+
+📌 Use it today
+- Try subagents first, before a team
+- Test a small job and check your usage
+- One file, never two teammates
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 18 5C Advanced ★
+   › 18.1 Advanced features › 18.1.4 Agent teams
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+077,2026-11-18,17:00,en-077-plugin-bundle.mp4,18.2.1,Plugins,"📦 A plugin bundles your tools
+One folder you can install and share
+
+📌 Use it today
+- Only plugin.json goes in .claude-plugin/
+- Say what it runs in the README
+- Before installing, read the hooks
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 18 5C Advanced ★
+   › 18.2 Plugins and command line skills › 18.2.1 Bundle and share with plugins
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+078,2026-11-18,18:30,en-078-super-skill.mp4,18.2.2,Super skill,"🪄 A super skill is a list of steps
+It calls the tools you already made
+
+📌 Use it today
+- It handles the order and hand-offs
+- Test on one short page first
+- Save results where you can check them
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 18 5C Advanced ★
+   › 18.2 Plugins and command line skills › 18.2.2 Hands-on: a super skill for making videos
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+079,2026-11-18,20:00,en-079-cli-automation.mp4,18.2.3,Automation,"🔄 Put claude -p in a loop
+It checks many files at once
+
+📌 Use it today
+- Ten or more files? Use a loop
+- Put the original path in result names
+- Check for secret files before running
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part V Claude Code in Practice › Ch. 18 5C Advanced ★
+   › 18.2 Plugins and command line skills › 18.2.3 Build an automation pipeline on the command line
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #ClaudeCode"
+080,2026-11-18,21:30,en-080-interp-intro.mp4,19.1.1,Looking inside,"🔬 Even its makers don't fully know why AI answers
+It worked out its own methods in training
+
+📌 Use it today
+- Treat its ""thinking"" as reference only
+- Ask ""What source did you base that on?""
+- How AI thinks is still being studied
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 19 Looking Inside the Model ★
+   › 19.1 Interpretability › 19.1.1 Why look inside a model?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+081,2026-11-19,08:00,en-081-features.mp4,19.1.2,Features,"🧱 Inside a model, each idea is spread over many parts
+Parts that switch on together: a feature
+
+📌 Use it today
+- Be careful saying ""AI understands""
+- News about this? Read the original
+- Try another language for the same idea
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 19 Looking Inside the Model ★
+   › 19.1 Interpretability › 19.1.2 Features: the ideas inside a model
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+082,2026-11-19,09:30,en-082-circuits.mp4,19.1.3,Circuits,"🚇 A circuit is a path of thought
+Features link up to do one piece of thinking
+
+📌 Use it today
+- Good steps? Still check the result
+- Ask it to ""push back if I might be wrong""
+- Simple tasks only: don't generalize
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 19 Looking Inside the Model ★
+   › 19.1 Interpretability › 19.1.3 Circuits: tracing a path of thought
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+083,2026-11-19,11:00,en-083-scaling.mp4,20.1.1,Scaling,"📈 ""Sudden"" AI skills may come from how we score
+Scores rise steadily as models grow
+
+📌 Use it today
+- ""Suddenly does X""? Check the yardstick
+- Don't assume bigger is always better
+- ""Unpredictable"" is still argued
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 20 Training, Deeper ★
+   › 20.1 Deeper learning › 20.1.1 Scaling: does bigger mean better?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+084,2026-11-19,12:30,en-084-rl-reasoning.mp4,20.1.2,Reasoning models,"🧠 Writing steps first helps with hard problems
+Like showing your work on a test
+
+📌 Use it today
+- Hard problem? Ask for the steps
+- Read the steps and find where they slip
+- Steps shown? Still check the result
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 20 Training, Deeper ★
+   › 20.1 Deeper learning › 20.1.2 Reinforcement learning and reasoning models
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+085,2026-11-19,14:00,en-085-alignment.mp4,20.1.3,Alignment,"🎯 Alignment: getting AI to do what people really want
+""Clean the room"" doesn't mean ""trash everything""
+
+📌 Use it today
+- Read the service's usage policy once
+- Don't try to get around refusals
+- ""Solved"" or ""doom""? Check the evidence
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 20 Training, Deeper ★
+   › 20.1 Deeper learning › 20.1.3 Alignment: matching what people want
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+086,2026-11-19,15:30,en-086-benchmarks.mp4,21.1.1,Benchmarks,"🏆 A high score doesn't mean it's good at your work
+Acing math doesn't make you a great cook
+
+📌 Use it today
+- Maker's own score? Compare with others
+- People's favorite? Check accuracy too
+- Don't trust old rankings
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 21 Testing and Limits ★
+   › 21.1 How good is it? › 21.1.1 The traps in benchmarks
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+087,2026-11-19,17:00,en-087-eval-hallu.mp4,21.1.2,Hallucination tests,"❓ Score ""wrong"" and ""don't know"" apart
+If guessing pays, everyone guesses
+
+📌 Use it today
+- Check long text fact by fact
+- Add ""Say if unsure"" and count the change
+- New model? Re-run the same questions
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 21 Testing and Limits ★
+   › 21.1 How good is it? › 21.1.2 How do you measure hallucination?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+088,2026-11-19,18:30,en-088-risks.mp4,21.1.3,Seeing risk,"⛈️ Split AI risks into big and small
+Like umbrella days and earthquake plans
+
+📌 Use it today
+- Ask five questions for each job
+- Tell evidence apart from opinion
+- Be extra careful with claims tied to a year
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 21 Testing and Limits ★
+   › 21.1 How good is it? › 21.1.3 How to think about safety and risk
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+089,2026-11-19,20:00,en-089-karpathy.mp4,22.1.1,Karpathy,"👤 Karpathy's guess about 2055
+One person's view, from his own blog
+
+📌 Use it today
+- Read predictions as predictions
+- Easy-looking tool? Keep checking
+- Don't judge a field from one person
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 22 Where Are the Pioneers Looking? ★
+   › 22.1 Reading the direction through interviews › 22.1.1 How Andrej Karpathy sees it
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+090,2026-11-19,21:30,en-090-altman.mp4,22.1.2,Altman,"👤 Altman's view, and his stake
+OpenAI's CEO, on his own blog
+
+📌 Use it today
+- Keep predictions with their dates
+- Tell observations from predictions
+- Read other views alongside his
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 22 Where Are the Pioneers Looking? ★
+   › 22.1 Reading the direction through interviews › 22.1.2 How Sam Altman sees it
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+091,2026-11-20,08:00,en-091-hinton.mp4,22.1.3,Hinton,"👤 Hinton sees big gains and risks
+From his Nobel speech and interview, 2024
+
+📌 Use it today
+- Smooth message? Check the link
+- Keep ""now"" apart from ""may happen""
+- Read Amodei and Hassabis too
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 22 Where Are the Pioneers Looking? ★
+   › 22.1 Reading the direction through interviews › 22.1.3 How Geoffrey Hinton sees it
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+092,2026-11-20,09:30,en-092-amodei.mp4,22.1.4,Amodei,"👤 Amodei sees big gains and risks
+CEO of Anthropic, which makes Claude
+
+📌 Use it today
+- Remember who's writing
+- Keep a date next to each prediction
+- Read hope and worry together
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 22 Where Are the Pioneers Looking? ★
+   › 22.1 Reading the direction through interviews › 22.1.4 How Dario Amodei sees it
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+093,2026-11-20,11:00,en-093-hassabis.mp4,22.1.5,Hassabis,"👤 Hassabis: AI is a tool for science
+Google DeepMind CEO, in two Nobel interviews
+
+📌 Use it today
+- You pick the question, AI does the legwork
+- Agent acts alone? Give it limits
+- Notice limits like ""foreseeable future""
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 22 Where Are the Pioneers Looking? ★
+   › 22.1 Reading the direction through interviews › 22.1.5 How Demis Hassabis sees it
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+094,2026-11-20,12:30,en-094-views-compare.mp4,22.1.6,Comparing views,"⚖️ Experts don't all say the same
+Same statement, different views
+
+📌 Use it today
+- Dated prediction? Check it later
+- Respect ""we don't know""
+- Look for people who disagree
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 22 Where Are the Pioneers Looking? ★
+   › 22.1 Reading the direction through interviews › 22.1.6 Comparing views: where they differ
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+095,2026-11-20,14:00,en-095-context-fill.mp4,23.1.1,Memory space,"🗃️ Its memory fills before you type
+Claude sees only what's on its desk
+
+📌 Use it today
+- Fuzzy answers? Check /context
+- Turn off unused skills and MCP
+- Big reading job? Hand it to a helper
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.1 Managing context › 23.1.1 What fills up its memory space?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+096,2026-11-20,15:30,en-096-context-habits.mp4,23.1.2,Tidy desk,"🧽 Lasting rules go in CLAUDE.md
+Chat-only rules can get lost in a summary
+
+📌 Use it today
+- New task? /clear
+- Too long? /compact with what to keep
+- Put key lines at the top of each skill
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.1 Managing context › 23.1.2 Habits that save memory space
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+097,2026-11-20,17:00,en-097-prompt-why.mp4,23.2.1,Why tips work,"💬 The text in front shapes the answer
+So context, examples, and format help
+
+📌 Use it today
+- Add one sentence of reason
+- Show examples if format matters
+- One plain line instead of shouting
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.2 Prompts from first principles › 23.2.1 Why do context, examples, and format work?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+098,2026-11-20,18:30,en-098-prompt-agent.mp4,23.2.2,Handing off a job,"📋 Handing off a job? Say what ""done"" is
+It can't see what's only in your head
+
+📌 Use it today
+- Hand over @file or a screenshot
+- Size matters? Give a number
+- Three lines: where, done, what not to do
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.2 Prompts from first principles › 23.2.2 How is handing off a job different?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+099,2026-11-20,20:00,en-099-model-choice.mp4,23.3.1,Choosing a model,"🚀 Pick a model to fit the job
+Bike for short trips, plane for long ones
+
+📌 Use it today
+- Light, repeated jobs: a small model
+- Big, tricky jobs: a big model
+- Use aliases, and check with /model
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.3 Choosing a model › 23.3.1 How do you choose a model?
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+100,2026-11-20,21:30,en-100-model-effort.mp4,23.3.2,Thinking time,"⏱️ Thinking time is set with /effort
+Writing ""think hard"" doesn't turn the dial
+
+📌 Use it today
+- low for quick back-and-forth
+- high for a review that must be right
+- Save max for rare, very hard problems
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.3 Choosing a model › 23.3.2 Adjust its thinking time (effort level)
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+101,2026-11-21,08:00,en-101-verify-loop.mp4,23.4.1,Check loop,"✅ Give Claude a test it can check
+It stops when the job looks done
+
+📌 Use it today
+- Write ""done"" as pass or fail
+- Narrow the review: correctness only
+- Ask for the command and its output
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.4 Building a checking loop › 23.4.1 Give it a test it can check itself against
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
+102,2026-11-21,09:30,en-102-verify-build.mp4,23.4.2,"Check loop, hands-on","🛡️ Checks decide when it's ""done""
+Three layers of gatekeepers
+
+📌 Use it today
+- Does -q hide failures? Test once
+- Test new checks with fail and pass cases
+- Hook sends it back? Add a loop guard
+
+👉 Want more? It's all in the book site (link in profile)
+📖 Part VI Using AI from First Principles ★ › Ch. 23 Using AI from First Principles
+   › 23.4 Building a checking loop › 23.4.2 Hands-on: this channel's checking loop
+
+#AIStartToFinish #LearnAI #ArtificialIntelligence #Chatbot #AITextbook #AIDeepDive"
