@@ -1,0 +1,7 @@
+{
+ "002": {"extra": ["Chatbots read blocks called tokens", "The \"next word\" is really the \"next block\""]},
+ "041": {"hook": ["Temperature sets safe or varied", "Low: the top choice. High: more variety."]},
+ "047": {"hook": ["An agent picks its own steps", "Like a chef who opens the fridge and decides"]},
+ "072": {"hook": ["MCP is where, subagents are who", "MCP adds places to go. Subagents add workers."]},
+ "093": {"tips": ["You pick the question, AI does the legwork", "Agent acts alone? Give it limits", "Notice limits like \"foreseeable future\""]}
+}
