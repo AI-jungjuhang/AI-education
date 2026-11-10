@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -30 340 390"  stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="150" cy="342" rx="95" ry="14" fill="#000" opacity=".14"/>
+  <!-- 발 -->
+  <ellipse cx="103" cy="330" rx="34" ry="19" fill="#E9B26A" stroke="#242424" stroke-width="10"/>
+  <ellipse cx="197" cy="330" rx="34" ry="19" fill="#E9B26A" stroke="#242424" stroke-width="10"/>
+  <!-- 팔 -->
+  <ellipse cx="28" cy="226" rx="24" ry="19" transform="rotate(-25 28 226)" fill="#F2C27B" stroke="#242424" stroke-width="10"/>
+  <ellipse cx="272" cy="226" rx="24" ry="19" transform="rotate(25 272 226)" fill="#F2C27B" stroke="#242424" stroke-width="10"/>
+  <!-- 새싹 -->
+  <path d="M150 52 Q146 22 150 8" fill="none" stroke="#242424" stroke-width="10"/>
+  <path d="M150 14 C120 -22 78 -6 96 20 C112 34 140 28 150 14Z" fill="#7BD66B" stroke="#242424" stroke-width="9"/>
+  <path d="M150 14 C180 -26 226 -10 208 18 C192 34 162 28 150 14Z" fill="#5CC24E" stroke="#242424" stroke-width="9"/>
+  <!-- 몸 -->
+  <path d="M150 48 C236 44 288 108 288 200 C288 288 232 340 150 340 C68 340 12 288 12 200 C12 108 64 52 150 48Z" fill="#F2C27B" stroke="#242424" stroke-width="11"/>
+  <path d="M70 100 C92 70 124 60 150 60" fill="none" stroke="#fff" stroke-width="12" opacity=".55"/>
+  <ellipse cx="150" cy="262" rx="70" ry="48" fill="#F8D9A0" opacity=".7"/>
+  <circle cx="226" cy="98" r="9" fill="#D9A25A"/><circle cx="62" cy="276" r="8" fill="#D9A25A"/><circle cx="246" cy="278" r="7" fill="#D9A25A"/><circle cx="196" cy="58" r="6" fill="#D9A25A"/>
+  <!-- 볼 -->
+  <ellipse cx="58" cy="214" rx="26" ry="17" fill="#FF8FA0" opacity=".85"/>
+  <ellipse cx="242" cy="214" rx="26" ry="17" fill="#FF8FA0" opacity=".85"/>
+  <!-- 눈 -->
+  <g class="e-open" style="display:none"><ellipse cx="106" cy="176" rx="25" ry="31" fill="#242424"/><ellipse cx="194" cy="176" rx="25" ry="31" fill="#242424"/><circle cx="114" cy="164" r="10" fill="#fff"/><circle cx="202" cy="164" r="10" fill="#fff"/><circle cx="98" cy="190" r="5" fill="#fff"/><circle cx="186" cy="190" r="5" fill="#fff"/></g>
+  <g class="e-wide"><ellipse cx="106" cy="172" rx="32" ry="38" fill="#242424"/><ellipse cx="194" cy="172" rx="32" ry="38" fill="#242424"/><circle cx="116" cy="158" r="13" fill="#fff"/><circle cx="204" cy="158" r="13" fill="#fff"/><circle cx="96" cy="188" r="6" fill="#fff"/><circle cx="184" cy="188" r="6" fill="#fff"/></g>
+  <g class="e-happy" style="display:none" fill="none" stroke="#242424" stroke-width="12"><path d="M78 188 Q106 148 134 188"/><path d="M166 188 Q194 148 222 188"/></g>
+  <!-- 입 -->
+  <g class="m-smile" style="display:none" fill="none" stroke="#242424" stroke-width="8"><path d="M132 214 Q141 228 150 214 Q159 228 168 214"/></g>
+  <g class="m-o"><ellipse cx="150" cy="224" rx="13" ry="17" fill="#8a2f3a" stroke="#242424" stroke-width="7"/></g>
+  <g class="m-grin" style="display:none"><path d="M118 206 Q150 268 182 206Z" fill="#8a2f3a" stroke="#242424" stroke-width="9"/><path d="M134 242 Q150 226 166 242 Q150 258 134 242Z" fill="#FF8FA0"/></g>
+</svg>
