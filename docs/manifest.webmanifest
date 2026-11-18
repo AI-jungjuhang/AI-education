@@ -1,0 +1,24 @@
+{
+  "name": "AI 정주행 · 열 살도 이해하는 AI 교과서",
+  "short_name": "AI 정주행",
+  "description": "챗봇이 왜 그렇게 답하는지, 처음 쓰는 사람부터 원리로 쓰는 사람까지 열 살 눈높이로 읽는 한국어 AI 교과서",
+  "lang": "ko",
+  "id": "./",
+  "start_url": "./?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#faf8f3",
+  "theme_color": "#ff8a50",
+  "categories": ["education", "books"],
+  "icons": [
+    {"src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "차례", "url": "./#길", "icons": [{"src": "assets/icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "용어집", "url": "./appendix/glossary/", "icons": [{"src": "assets/icons/icon-192.png", "sizes": "192x192"}]}
+  ]
+}

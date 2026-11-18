@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  <link rel="manifest" href="{{ base_url }}/manifest.webmanifest">
+  <meta name="theme-color" content="#ff8a50">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="AI 정주행">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="{{ base_url }}/assets/icons/apple-touch-icon.png">
+  <script>window.AJ_APP = {sw: "{{ base_url }}/sw.js", install: "{{ base_url }}/install/"};</script>
+{% endblock %}
