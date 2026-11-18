@@ -101,3 +101,30 @@ def on_post_build(config, **kwargs):
             h.update(open(p, "rb").read())
     sw = SW.replace("__VERSION__", h.hexdigest()[:12]).replace("__CORE__", json.dumps(core, ensure_ascii=False)).replace("__PAGES__", json.dumps(pages, ensure_ascii=False))
     open(os.path.join(site, "sw.js"), "w", encoding="utf-8").write(sw)
+
+
+def _bust(site):
+    """브라우저가 예전 extra.css·스크립트를 계속 쓰지 않게, 파일 내용으로 만든 꼬리표(?v=...)를 붙인다."""
+    import re
+    tags = {}
+    for rel in ["stylesheets/extra.css"] + ["javascripts/" + f for f in os.listdir(os.path.join(site, "javascripts"))]:
+        p = os.path.join(site, rel)
+        if os.path.isfile(p):
+            tags[rel] = hashlib.sha1(open(p, "rb").read()).hexdigest()[:10]
+    pat = re.compile(r'((?:href|src)="(?:[^"]*/)?)(' + "|".join(re.escape(k) for k in tags) + r')(")')
+    for root, _, files in os.walk(site):
+        for f in files:
+            if f.endswith(".html"):
+                p = os.path.join(root, f)
+                t = open(p, encoding="utf-8").read()
+                n = pat.sub(lambda m: m.group(1) + m.group(2) + "?v=" + tags[m.group(2)] + m.group(3), t)
+                if n != t:
+                    open(p, "w", encoding="utf-8").write(n)
+
+
+_orig_post_build = on_post_build
+
+
+def on_post_build(config, **kwargs):
+    _orig_post_build(config, **kwargs)
+    _bust(config["site_dir"])
